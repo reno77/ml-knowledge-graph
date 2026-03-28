@@ -581,7 +581,7 @@
       "sx": 149.98,
       "sy": -90.73,
       "sz": -200.17,
-      "summary": "variance. These methods, evaluated"
+      "summary": "Learning Machine learning workflows commonly incorporate missing data handling as a preprocessing step, where imputation replaces absent values to enable"
     },
     {
       "id": "Feature Selection",
@@ -2110,7 +2110,7 @@
       "sx": -346.18,
       "sy": 425.13,
       "sz": -157.19,
-      "summary": "Rectified Linear Unit The rectified linear unit (ReLU) is a piecewise linear activation function defined as \\( f(x) = \\max(0, x) \\), which outputs the"
+      "summary": "The Gaussian Error Linear Unit (GELU) is an activation function defined as x * \u03a6(x), where \u03a6 is the standard Gaussian cumulative distribution function. It smoothly blends the identity and zero functions based on the input value, providing a stochastic regularization effect. GELU is the default activation in modern transformer architectures including BERT, GPT, and Vision Transformers, where it consistently outperforms ReLU."
     },
     {
       "id": "Swish",
@@ -2385,7 +2385,7 @@
       "sx": -266.24,
       "sy": 493.81,
       "sz": -270.5,
-      "summary": "Deep Lab is a collaborative cyberfeminist collective of researchers, artists, writers, engineers, and cultural producers dedicated to examining digital culture through lenses including privacy, security, surveillance, code, anonymity, and technologi\u2026"
+      "summary": "DeepLab is a family of semantic segmentation models developed by Google that use atrous (dilated) convolution to capture multi-scale context and conditional random fields (CRFs) for refined boundary detection. DeepLabv3+ combines an encoder-decoder architecture with atrous spatial pyramid pooling (ASPP) to achieve state-of-the-art pixel-level image segmentation across benchmarks like PASCAL VOC and Cityscapes."
     },
     {
       "id": "Mask R-CNN",
@@ -2517,7 +2517,7 @@
       "sx": -271.52,
       "sy": 490.0,
       "sz": -169.48,
-      "summary": "consistency in gradient flow.[]("
+      "summary": "Bidirectional recurrent neural networks A bidirectional recurrent neural network (BRNN) is an extension of the standard recurrent neural network (RNN)"
     },
     {
       "id": "Seq2Seq",
@@ -2836,7 +2836,7 @@
       "sx": 283.44,
       "sy": -31.07,
       "sz": 391.75,
-      "summary": "A priority encoder is a combinational logic circuit in digital electronics that encodes multiple input lines into a binary output code corresponding to the highest-priority active..."
+      "summary": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model developed by Google in 2018. Unlike previous models that read text left-to-right or right-to-left, BERT reads the entire sequence bidirectionally, using masked language modeling and next sentence prediction during pre-training. It revolutionized NLP by achieving state-of-the-art results on a wide range of tasks including question answering, sentiment analysis, and named entity recognition through fine-tuning."
     },
     {
       "id": "GPT",
@@ -2858,7 +2858,7 @@
       "sx": 300.31,
       "sy": 30.23,
       "sz": 400.78,
-      "summary": "Text is any coherent stretch of spoken or written language that can be understood in its context, ranging from simple phrases like a stop sign to complex works such as novels. In linguistics, the term encompasses sequences of symbols or sounds that\u2026"
+      "summary": "T5 (Text-to-Text Transfer Transformer) is a language model developed by Google that frames all NLP tasks as text-to-text problems. Given an input text with a task-specific prefix (e.g., \"translate English to German:\", \"summarize:\"), T5 generates the output as text. Pre-trained on the C4 corpus using a denoising objective, T5 achieved state-of-the-art results across translation, summarization, question answering, and classification tasks."
     },
     {
       "id": "Vision Transformers",
@@ -3738,7 +3738,7 @@
       "sx": 109.75,
       "sy": 49.86,
       "sz": 412.74,
-      "summary": "Du Quoin station is an unstaffed Amtrak intercity train station located at 20 North Chestnut Street in Du Quoin, Illinois, serving the Illini and Saluki routes that connect Chicago to Carbondale."
+      "summary": "Deep reinforcement learning Deep reinforcement learning (DRL) is a machine learning paradigm that integrates reinforcement learning principles with deep"
     },
     {
       "id": "PPO",
@@ -3936,7 +3936,7 @@
       "sx": -133.08,
       "sy": 26.15,
       "sz": 414.29,
-      "summary": "Hotel RL is an upscale lifestyle hotel brand that emphasizes authentic, creative, and curious experiences for open-minded travelers, offering laid-back environments infused with local scenes to inspire work, play, and personal passions under the mot\u2026"
+      "summary": "Reinforcement learning Reinforcement learning (RL) is a paradigm in machine learning where an intelligent agent learns optimal behavior through trial-and-error"
     },
     {
       "id": "Option Framework",
@@ -4013,7 +4013,7 @@
       "sx": 434.7,
       "sy": 212.32,
       "sz": 15.11,
-      "summary": "Question: How to get a summary from transcribed audio text? Answer: After obtaining the transcription text, paste it into ChatGPT or Grok and request a summary of the text."
+      "summary": "Text summarization is the NLP task of producing a concise version of a document while preserving its key information. Extractive methods select and combine existing sentences from the source, while abstractive methods generate new text using sequence-to-sequence models. Modern approaches use pre-trained transformers like BART, T5, and Pegasus, achieving near-human performance on benchmarks like CNN/DailyMail and XSum."
     },
     {
       "id": "Code Generation",
@@ -5069,7 +5069,7 @@
       "sx": 161.93,
       "sy": -237.04,
       "sz": 349.91,
-      "summary": "Flag of Mali .ml is the country code top-level domain (ccTLD) for the Republic of Mali, a landlocked nation in West Africa. It is delegated to and..."
+      "summary": "Bias in machine learning refers to systematic errors or unfair outcomes that arise from assumptions in the learning algorithm, training data, or model design. Common forms include data bias (unrepresentative training sets), algorithmic bias (model assumptions favoring certain outcomes), and societal bias reflected in historical data. Addressing bias is critical for building fair, equitable ML systems."
     },
     {
       "id": "Fairness in ML",
