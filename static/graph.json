@@ -493,7 +493,7 @@
       "sx": 253.74,
       "sy": -91.67,
       "sz": -109.85,
-      "summary": "Precision and recall Precision and recall are fundamental performance metrics in information retrieval and machine learning, particularly for evaluating"
+      "summary": "Evaluation measures in information retrieval (IR) are standardized quantitative metrics designed to assess the effectiveness of search systems in retrieving relevant documents from large collections in response to user queries. These measures evaluate aspects such as the accuracy, completeness, and ranking quality of results, enabling systematic comparisons between different IR algorithms and systems. They rely on test collections comprising document sets, predefined queries, and human-assessed relevance judgments, typically binary (relevant or non-relevant), to simulate real-world performance."
     },
     {
       "id": "Overfitting",
