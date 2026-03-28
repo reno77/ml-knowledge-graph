@@ -233,6 +233,22 @@
       <div style="display:flex;justify-content:space-between;font-size:10px;color:#aab;margin-top:2px;">
         <span>Log</span><span>Linear</span><span>Power ×50</span>
       </div>
+      <div style="margin-top:10px;border-top:1px solid #dde3f5;padding-top:8px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <span style="font-size:11px;color:#556;font-weight:600;">Year range</span>
+          <span id="tl-range-label" style="font-size:11px;color:#1a4da0;font-weight:700;">1640 – 2030</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+          <span style="font-size:10px;color:#889;width:28px;flex-shrink:0;">From</span>
+          <input id="tl-start-slider" type="range" min="1640" max="2030" step="5" value="1640"
+            style="flex:1;accent-color:#1a4da0;cursor:pointer;">
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span style="font-size:10px;color:#889;width:28px;flex-shrink:0;">To</span>
+          <input id="tl-end-slider" type="range" min="1640" max="2030" step="5" value="2030"
+            style="flex:1;accent-color:#1a4da0;cursor:pointer;">
+        </div>
+      </div>
     </div>
 
     <div class="section-title" style="margin-top:6px">Actions</div>
@@ -317,9 +333,14 @@ fetch('graph.json').then(r => r.json()).then(data => {
 
   // ── Filtered graph data ──────────────────────────────────────────────
   function getFilteredData() {
-    const visNodes = allNodes.filter(n =>
-      !state.hiddenCats.has(n.category) && !state.hiddenLevels.has(n.level)
-    );
+    const visNodes = allNodes.filter(n => {
+      if (state.hiddenCats.has(n.category) || state.hiddenLevels.has(n.level)) return false;
+      if (currentLayout === 'time') {
+        const yr = NODE_YEARS[n.label] ?? NODE_YEARS[n.id] ?? 2000;
+        if (yr < tlStartYear || yr > tlEndYear) return false;
+      }
+      return true;
+    });
     const visNodeIds = new Set(visNodes.map(n => n.id));
 
     const visLinks = allLinks.filter(l => {
@@ -1454,12 +1475,22 @@ fetch('graph.json').then(r => r.json()).then(data => {
 
   // ── Timeline scale ────────────────────────────────────────────────────
   let timelineGamma = 1.0;
-  const TL_MIN = 1640, TL_MAX = 2030, TL_DISPLAY = (TL_MAX - TL_MIN) * 5;
+  let tlStartYear = 1640, tlEndYear = 2030;
 
   // Power-law mapping: gamma=1 → linear, <1 → spreads old history, >1 → spreads recent
+  // Range is driven by tlStartYear/tlEndYear so the scale slider and range slider compose.
   function yearToX(year) {
-    const t = (year - TL_MIN) / (TL_MAX - TL_MIN);        // [0, 1]
-    return Math.pow(Math.max(t, 0), timelineGamma) * TL_DISPLAY + (TL_MIN - 1990) * 5;
+    const range = tlEndYear - tlStartYear;
+    const t = (year - tlStartYear) / range;
+    return Math.pow(Math.max(t, 0), timelineGamma) * range * 5 + (tlStartYear - 1990) * 5;
+  }
+
+  function applyTimelineRange() {
+    if (currentLayout !== 'time') return;
+    document.getElementById('tl-range-label').textContent = tlStartYear + ' – ' + tlEndYear;
+    refreshGraph();           // rebuilds filtered node list, then repins in setLayout path
+    hideTimelineAxis();
+    showTimelineAxis();
   }
 
   function gammaLabel(g) {
@@ -1497,6 +1528,21 @@ fetch('graph.json').then(r => r.json()).then(data => {
     }
   });
 
+  // ── Timeline range sliders ───────────────────────────────────────────
+  const tlStartSlider = document.getElementById('tl-start-slider');
+  const tlEndSlider   = document.getElementById('tl-end-slider');
+
+  tlStartSlider.addEventListener('input', () => {
+    tlStartYear = parseInt(tlStartSlider.value);
+    if (tlStartYear >= tlEndYear) { tlStartYear = tlEndYear - 5; tlStartSlider.value = tlStartYear; }
+    applyTimelineRange();
+  });
+  tlEndSlider.addEventListener('input', () => {
+    tlEndYear = parseInt(tlEndSlider.value);
+    if (tlEndYear <= tlStartYear) { tlEndYear = tlStartYear + 5; tlEndSlider.value = tlEndYear; }
+    applyTimelineRange();
+  });
+
   // ── Timeline axis ─────────────────────────────────────────────────────
   let timelineAxisGroup = null;
 
@@ -1506,8 +1552,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
     const AY    = -420;   // y position of the axis line (below node scatter)
     const AZ    = 0;
 
-    // Axis line from ~1640 to ~2030
-    const x0 = toX(1640), x1 = toX(2030);
+    // Axis line spanning the selected year range
+    const x0 = toX(tlStartYear), x1 = toX(tlEndYear);
     const axisGeo = new THREE.BufferGeometry().setFromPoints([
       new THREE.Vector3(x0, AY, AZ),
       new THREE.Vector3(x1, AY, AZ),
@@ -1524,9 +1570,12 @@ fetch('graph.json').then(r => r.json()).then(data => {
     group.add(new THREE.Line(arrowGeo,
       new THREE.LineBasicMaterial({ color: 0x8899cc, opacity: 0.7, transparent: true })));
 
-    // Determine which years to tick
+    // Determine tick interval based on range span
+    const span = tlEndYear - tlStartYear;
+    const tickStep = span <= 30 ? 1 : span <= 80 ? 5 : span <= 200 ? 10 : span <= 400 ? 20 : 50;
     const tickYears = [];
-    for (let y = 1650; y <= 2025; y += 10) tickYears.push(y);
+    const firstTick = Math.ceil(tlStartYear / tickStep) * tickStep;
+    for (let y = firstTick; y <= tlEndYear; y += tickStep) tickYears.push(y);
 
     tickYears.forEach(year => {
       const x       = toX(year);
@@ -1543,8 +1592,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
       group.add(new THREE.Line(tGeo,
         new THREE.LineBasicMaterial({ color: col, opacity: 0.8, transparent: true })));
 
-      // Label — century marks always, post-1950 every decade
-      const showLabel = isCent || (year >= 1950 && year % 10 === 0);
+      // Show label on every tick when zoomed in, otherwise selectively
+      const showLabel = span <= 60 || isCent || (span <= 200 && isFifty) || (year >= 1950 && year % 10 === 0);
       if (showLabel) {
         const sp = new SpriteText(String(year));
         sp.color          = isCent ? '#445588' : '#778899';
@@ -1592,6 +1641,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
       mode==='time' ? 'Timeline: x-axis = year concept originated'
                     : 'Semantic: cosine similarity (UMAP 3D)';
     document.getElementById('timeline-scale-wrap').style.display = mode === 'time' ? 'block' : 'none';
+    if (mode === 'time') document.getElementById('tl-range-label').textContent = tlStartYear + ' – ' + tlEndYear;
 
     const fd = Graph.graphData();
     if (mode === 'semantic') {
