@@ -165,9 +165,12 @@
       <label class="toggle-switch"><input type="checkbox" id="linkSame" checked><span class="toggle-slider"></span></label>
     </div>
 
+    <div class="section-title" style="margin-top:14px">Quick Categories</div>
+    <div id="cat-quick"></div>
+
     <div class="section-title" style="margin-top:14px">Actions</div>
     <button onclick="resetAll()" style="width:100%;padding:6px;background:#0d1a3a;border:1px solid #1a2a4a;color:#7ecfff;border-radius:6px;cursor:pointer;font-size:12px;margin-bottom:6px;">Reset All Filters</button>
-    <button onclick="selectAll()" style="width:100%;padding:6px;background:#0d1a3a;border:1px solid #1a2a4a;color:#7ecfff;border-radius:6px;cursor:pointer;font-size:12px;">Show All</button>
+    <button onclick="selectAll()" style="width:100%;padding:6px;background:#0d1a3a;border:1px solid #1a2a4a;color:#7ecfff;border-radius:6px;cursor:pointer;font-size:12px;">Clear Highlight</button>
   </div>
 
   <!-- Categories tab -->
@@ -436,24 +439,49 @@ fetch('graph.json').then(r => r.json()).then(data => {
   // ── Category toggles ─────────────────────────────────────────────────
   const catCounts = {};
   allNodes.forEach(n => catCounts[n.category]=(catCounts[n.category]||0)+1);
-  const catList = document.getElementById('cat-list');
+  const catList  = document.getElementById('cat-list');
+  const catQuick = document.getElementById('cat-quick');
+  const catInputs = {}; // track all inputs for sync
+
   Object.entries(data.categories).forEach(([cat, color]) => {
+    const label = cat.charAt(0).toUpperCase()+cat.slice(1);
+    const count = catCounts[cat]||0;
+
+    // Full row (Categories tab)
     const row = document.createElement('div');
     row.className = 'cat-row';
     row.innerHTML = `
       <div class="cat-dot-label">
         <div class="cat-dot" style="background:${color}"></div>
-        <span class="cat-name">${cat.charAt(0).toUpperCase()+cat.slice(1)}</span>
+        <span class="cat-name">${label}</span>
       </div>
       <div style="display:flex;align-items:center;gap:6px">
-        <span class="cat-count">${catCounts[cat]||0}</span>
-        <label class="toggle-switch"><input type="checkbox" checked data-cat="${cat}"><span class="toggle-slider"></span></label>
+        <span class="cat-count">${count}</span>
+        <label class="toggle-switch"><input type="checkbox" checked data-cat="${cat}" data-role="full"><span class="toggle-slider"></span></label>
       </div>`;
-    row.querySelector('input').addEventListener('change', e => {
-      e.target.checked ? state.hiddenCats.delete(cat) : state.hiddenCats.add(cat);
-      refreshGraph();
-    });
     catList.appendChild(row);
+
+    // Quick row (Filters tab)
+    const qrow = document.createElement('div');
+    qrow.className = 'cat-row';
+    qrow.innerHTML = `
+      <div class="cat-dot-label">
+        <div class="cat-dot" style="background:${color}"></div>
+        <span class="cat-name" style="font-size:11px">${label}</span>
+      </div>
+      <label class="toggle-switch"><input type="checkbox" checked data-cat="${cat}" data-role="quick"><span class="toggle-slider"></span></label>`;
+    catQuick.appendChild(qrow);
+
+    // Sync both inputs together
+    catInputs[cat] = [row.querySelector('input'), qrow.querySelector('input')];
+    catInputs[cat].forEach(inp => {
+      inp.addEventListener('change', e => {
+        const checked = e.target.checked;
+        catInputs[cat].forEach(i => i.checked = checked); // sync pair
+        checked ? state.hiddenCats.delete(cat) : state.hiddenCats.add(cat);
+        refreshGraph();
+      });
+    });
   });
 
   // ── Level toggles ────────────────────────────────────────────────────
@@ -481,6 +509,14 @@ fetch('graph.json').then(r => r.json()).then(data => {
   window.resetAll = () => {
     state.hiddenCats.clear(); state.hiddenLevels.clear();
     document.querySelectorAll('[data-cat],[data-level]').forEach(el => el.checked=true);
+    // Reset all display toggles too
+    ['showLabels','showLinks','showArrows','showParticles','showGlow',
+     'linkSameCat','linkCrossCat','linkUp','linkSame'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) { el.checked=true; }
+    });
+    Object.assign(state, {labels:true,links:true,arrows:true,particles:true,glow:true,
+      linkSameCat:true,linkCrossCat:true,linkUp:true,linkSame:true});
     refreshGraph();
   };
   window.selectAll = () => {
