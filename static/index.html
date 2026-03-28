@@ -793,6 +793,11 @@ fetch('graph.json').then(r => r.json()).then(data => {
     el.style.display = 'flex';
   }
 
+  // Grokipedia slug overrides for concepts whose search result isn't ideal
+  const GROK_OVERRIDES = {
+    'KL Divergence': 'Kullback%E2%80%93Leibler_divergence',
+  };
+
   async function fetchWikiSummary(label) {
     const wikiEl    = document.getElementById('ni-wiki');
     const summaryEl = document.getElementById('ni-wiki-summary');
@@ -802,7 +807,10 @@ fetch('graph.json').then(r => r.json()).then(data => {
     summaryEl.className = 'wiki-loading';
     summaryEl.textContent = 'Loading summary…';
 
-    const searchUrl = `https://grokipedia.com/api/full-text-search?query=${encodeURIComponent(label)}&limit=1`;
+    const override = GROK_OVERRIDES[label];
+    const searchUrl = override
+      ? `https://grokipedia.com/api/full-text-search?query=${encodeURIComponent(label)}&limit=1`
+      : `https://grokipedia.com/api/full-text-search?query=${encodeURIComponent(label)}&limit=1`;
 
     try {
       const resp = await fetch(searchUrl, {headers: {'Accept': 'application/json'}});
@@ -812,7 +820,9 @@ fetch('graph.json').then(r => r.json()).then(data => {
       if (!top) throw new Error('No results');
       summaryEl.className = '';
       summaryEl.textContent = top.snippet || 'No summary available.';
-      linkEl.href = `https://grokipedia.com/page/${top.slug}`;
+      linkEl.href = override
+        ? `https://grokipedia.com/page/${override}`
+        : `https://grokipedia.com/page/${top.slug}`;
       linkEl.querySelector('span').textContent = 'Read on Grokipedia';
     } catch(e) {
       summaryEl.className = '';
