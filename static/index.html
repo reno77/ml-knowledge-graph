@@ -201,7 +201,16 @@
     <div class="section-title" style="margin-top:14px">Quick Categories</div>
     <div id="cat-quick"></div>
 
-    <div class="section-title" style="margin-top:14px">Actions</div>
+    <div class="section-title" style="margin-top:14px">Layout</div>
+    <div style="display:flex;gap:4px;margin-bottom:8px;">
+      <button id="btn-spiral" onclick="setLayout('spiral')"
+        style="flex:1;padding:6px 2px;background:#1a4da0;border:1px solid #1a4da0;color:#fff;border-radius:6px;cursor:pointer;font-size:11px;font-weight:600;">🌀 Spiral</button>
+      <button id="btn-semantic" onclick="setLayout('semantic')"
+        style="flex:1;padding:6px 2px;background:#dde3f5;border:1px solid #b0bcd8;color:#334;border-radius:6px;cursor:pointer;font-size:11px;">🧠 Semantic</button>
+    </div>
+    <div id="layout-hint" style="font-size:10px;color:#889;margin-bottom:8px;">Spiral: level-based · Semantic: cosine similarity</div>
+
+    <div class="section-title" style="margin-top:6px">Actions</div>
     <button onclick="resetAll()" style="width:100%;padding:6px;background:#dde3f5;border:1px solid #b0bcd8;color:#1a4da0;border-radius:6px;cursor:pointer;font-size:12px;margin-bottom:6px;">Reset All Filters</button>
     <button onclick="selectAll()" style="width:100%;padding:6px;background:#dde3f5;border:1px solid #b0bcd8;color:#1a4da0;border-radius:6px;cursor:pointer;font-size:12px;">Clear Highlight</button>
   </div>
@@ -782,6 +791,37 @@ fetch('graph.json').then(r => r.json()).then(data => {
     }
   });
   searchClear.addEventListener('click', () => { searchBox.value=''; doSearch(''); searchBox.focus(); });
+
+
+  // ── Layout switching ─────────────────────────────────────────────────
+  let currentLayout = 'spiral';
+
+  function setLayout(mode) {
+    currentLayout = mode;
+    document.getElementById('btn-spiral').style.background   = mode==='spiral'  ? '#1a4da0' : '#dde3f5';
+    document.getElementById('btn-spiral').style.color        = mode==='spiral'  ? '#fff' : '#334';
+    document.getElementById('btn-semantic').style.background = mode==='semantic'? '#1a4da0' : '#dde3f5';
+    document.getElementById('btn-semantic').style.color      = mode==='semantic'? '#fff' : '#334';
+    document.getElementById('layout-hint').textContent       =
+      mode==='spiral' ? 'Spiral: level-based hierarchy' : 'Semantic: cosine similarity (UMAP 3D)';
+
+    const fd = Graph.graphData();
+    if (mode === 'semantic') {
+      // Pin each node to its semantic coords
+      fd.nodes.forEach(n => {
+        const orig = allNodes.find(x=>x.id===n.id);
+        if (orig && orig.sx != null) {
+          n.fx = orig.sx; n.fy = orig.sy; n.fz = orig.sz;
+        }
+      });
+    } else {
+      // Unpin — let spiral force take over
+      fd.nodes.forEach(n => { delete n.fx; delete n.fy; delete n.fz; });
+    }
+    Graph.graphData(fd);
+    // Reheat simulation briefly
+    Graph.d3ReheatSimulation();
+  }
 
   // ── Panel show/hide ───────────────────────────────────────────────────
   let panelVisible = true;

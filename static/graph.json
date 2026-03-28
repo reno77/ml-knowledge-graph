@@ -5,1638 +5,2340 @@
       "label": "Linear Algebra",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": -7.56,
+      "sy": -142.95,
+      "sz": -358.29
     },
     {
       "id": "Calculus",
       "label": "Calculus",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": -11.09,
+      "sy": -39.22,
+      "sz": -307.47
     },
     {
       "id": "Probability & Stats",
       "label": "Probability & Stats",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 37.02,
+      "sy": -187.48,
+      "sz": -417.64
     },
     {
       "id": "Python",
       "label": "Python",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 48.49,
+      "sy": -96.8,
+      "sz": -331.97
     },
     {
       "id": "Information Theory",
       "label": "Information Theory",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 4.46,
+      "sy": -142.68,
+      "sz": -434.94
     },
     {
       "id": "Optimization Theory",
       "label": "Optimization Theory",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": -7.52,
+      "sy": -82.74,
+      "sz": -393.27
     },
     {
       "id": "Numerical Methods",
       "label": "Numerical Methods",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": -17.63,
+      "sy": -63.98,
+      "sz": -343.34
     },
     {
       "id": "Set Theory",
       "label": "Set Theory",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 12.22,
+      "sy": -112.63,
+      "sz": -437.83
     },
     {
       "id": "Graph Theory",
       "label": "Graph Theory",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": -11.94,
+      "sy": -105.58,
+      "sz": -411.97
     },
     {
       "id": "Linear Programming",
       "label": "Linear Programming",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 18.31,
+      "sy": -122.67,
+      "sz": -345.99
     },
     {
       "id": "Dynamic Programming",
       "label": "Dynamic Programming",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 10.34,
+      "sy": -85.5,
+      "sz": -244.04
     },
     {
       "id": "Matrix Decomposition",
       "label": "Matrix Decomposition",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": -4.53,
+      "sy": -154.14,
+      "sz": -330.28
     },
     {
       "id": "Fourier Analysis",
       "label": "Fourier Analysis",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": -40.6,
+      "sy": -78.6,
+      "sz": -378.39
     },
     {
       "id": "Stochastic Processes",
       "label": "Stochastic Processes",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 25.16,
+      "sy": -206.59,
+      "sz": -398.56
     },
     {
       "id": "Bayesian Statistics",
       "label": "Bayesian Statistics",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 15.32,
+      "sy": -240.31,
+      "sz": -385.75
     },
     {
       "id": "Hypothesis Testing",
       "label": "Hypothesis Testing",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 25.62,
+      "sy": -197.09,
+      "sz": -430.8
     },
     {
       "id": "Convex Optimization",
       "label": "Convex Optimization",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 2.86,
+      "sy": -81.5,
+      "sz": -343.42
     },
     {
       "id": "SQL & Databases",
       "label": "SQL & Databases",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 70.88,
+      "sy": -113.32,
+      "sz": -408.86
     },
     {
       "id": "Data Structures",
       "label": "Data Structures",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": 41.87,
+      "sy": -114.37,
+      "sz": -420.9
     },
     {
       "id": "Game Theory",
       "label": "Game Theory",
       "level": 0,
       "category": "foundation",
-      "color": "#1a6985"
+      "color": "#1a6985",
+      "sx": -23.97,
+      "sy": -118.86,
+      "sz": -420.26
     },
     {
       "id": "Loss Functions",
       "label": "Loss Functions",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 203.11,
+      "sy": 406.44,
+      "sz": -112.71
     },
     {
       "id": "Gradient Descent",
       "label": "Gradient Descent",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 172.66,
+      "sy": 414.17,
+      "sz": -63.16
     },
     {
       "id": "Backpropagation",
       "label": "Backpropagation",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 189.12,
+      "sy": 457.03,
+      "sz": -18.82
     },
     {
       "id": "Regularization",
       "label": "Regularization",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 140.33,
+      "sy": 399.27,
+      "sz": -121.34
     },
     {
       "id": "Feature Engineering",
       "label": "Feature Engineering",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 88.8,
+      "sy": 246.18,
+      "sz": -192.5
     },
     {
       "id": "Cross-Validation",
       "label": "Cross-Validation",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 137.89,
+      "sy": 328.44,
+      "sz": -188.27
     },
     {
       "id": "Bias-Variance Tradeoff",
       "label": "Bias-Variance Tradeoff",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 177.75,
+      "sy": 381.63,
+      "sz": -172.74
     },
     {
       "id": "Hyperparameter Tuning",
       "label": "Hyperparameter Tuning",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 58.85,
+      "sy": 289.78,
+      "sz": -99.04
     },
     {
       "id": "Data Preprocessing",
       "label": "Data Preprocessing",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 78.87,
+      "sy": 310.72,
+      "sz": -203.75
     },
     {
       "id": "Evaluation Metrics",
       "label": "Evaluation Metrics",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 83.09,
+      "sy": 273.28,
+      "sz": -141.49
     },
     {
       "id": "Overfitting",
       "label": "Overfitting",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 149.58,
+      "sy": 363.53,
+      "sz": -211.43
     },
     {
       "id": "Underfitting",
       "label": "Underfitting",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 123.85,
+      "sy": 390.79,
+      "sz": -172.19
     },
     {
       "id": "Learning Rate Scheduling",
       "label": "Learning Rate Scheduling",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 127.08,
+      "sy": 340.7,
+      "sz": -95.71
     },
     {
       "id": "Early Stopping",
       "label": "Early Stopping",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 169.03,
+      "sy": 330.12,
+      "sz": -130.55
     },
     {
       "id": "Data Augmentation",
       "label": "Data Augmentation",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 107.34,
+      "sy": 348.57,
+      "sz": -209.82
     },
     {
       "id": "Transfer Learning",
       "label": "Transfer Learning",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 134.47,
+      "sy": 345.03,
+      "sz": -136.57
     },
     {
       "id": "Imbalanced Data",
       "label": "Imbalanced Data",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 147.09,
+      "sy": 405.28,
+      "sz": -215.67
     },
     {
       "id": "Missing Data Imputation",
       "label": "Missing Data Imputation",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 124.28,
+      "sy": 387.58,
+      "sz": -195.61
     },
     {
       "id": "Feature Selection",
       "label": "Feature Selection",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 121.98,
+      "sy": 265.57,
+      "sz": -193.98
     },
     {
       "id": "Model Selection",
       "label": "Model Selection",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 145.63,
+      "sy": 255.15,
+      "sz": -143.2
     },
     {
       "id": "Pipeline Design",
       "label": "Pipeline Design",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 23.95,
+      "sy": 215.27,
+      "sz": -145.8
     },
     {
       "id": "Normalization",
       "label": "Normalization",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 102.24,
+      "sy": 440.35,
+      "sz": -111.23
     },
     {
       "id": "Cross-Entropy Loss",
       "label": "Cross-Entropy Loss",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 208.21,
+      "sy": 366.1,
+      "sz": -139.3
     },
     {
       "id": "KL Divergence",
       "label": "KL Divergence",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 214.85,
+      "sy": 359.14,
+      "sz": -73.48
     },
     {
       "id": "Contrastive Loss",
       "label": "Contrastive Loss",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 214.29,
+      "sy": 383.97,
+      "sz": -90.29
     },
     {
       "id": "Stratified Sampling",
       "label": "Stratified Sampling",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 157.81,
+      "sy": 390.46,
+      "sz": -231.26
     },
     {
       "id": "Class Weights",
       "label": "Class Weights",
       "level": 1,
       "category": "core",
-      "color": "#c17d1a"
+      "color": "#c17d1a",
+      "sx": 168.85,
+      "sy": 479.92,
+      "sz": -143.28
     },
     {
       "id": "Linear Regression",
       "label": "Linear Regression",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -46.4,
+      "sy": -292.79,
+      "sz": -213.18
     },
     {
       "id": "Logistic Regression",
       "label": "Logistic Regression",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -31.22,
+      "sy": -318.68,
+      "sz": -163.22
     },
     {
       "id": "Decision Trees",
       "label": "Decision Trees",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -98.33,
+      "sy": -321.69,
+      "sz": -130.01
     },
     {
       "id": "SVM",
       "label": "SVM",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -66.59,
+      "sy": -366.54,
+      "sz": -123.78
     },
     {
       "id": "k-NN",
       "label": "k-NN",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -24.07,
+      "sy": -447.52,
+      "sz": -64.56
     },
     {
       "id": "Naive Bayes",
       "label": "Naive Bayes",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -10.66,
+      "sy": -326.96,
+      "sz": -260.89
     },
     {
       "id": "Ridge & Lasso",
       "label": "Ridge & Lasso",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -20.86,
+      "sy": -240.57,
+      "sz": -232.94
     },
     {
       "id": "Polynomial Regression",
       "label": "Polynomial Regression",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -57.46,
+      "sy": -331.66,
+      "sz": -200.62
     },
     {
       "id": "Elastic Net",
       "label": "Elastic Net",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -27.86,
+      "sy": -281.84,
+      "sz": -89.12
     },
     {
       "id": "Perceptron",
       "label": "Perceptron",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -60.05,
+      "sy": -324.49,
+      "sz": -64.44
     },
     {
       "id": "Gaussian Process",
       "label": "Gaussian Process",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -62.17,
+      "sy": -403.82,
+      "sz": -188.06
     },
     {
       "id": "Kernel Methods",
       "label": "Kernel Methods",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -85.49,
+      "sy": -321.94,
+      "sz": -165.48
     },
     {
       "id": "Bayesian Linear Regression",
       "label": "Bayesian Linear Regression",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -35.36,
+      "sy": -336.15,
+      "sz": -239.66
     },
     {
       "id": "AdaBoost",
       "label": "AdaBoost",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -122.89,
+      "sy": -335.75,
+      "sz": -89.91
     },
     {
       "id": "Multi-task Learning",
       "label": "Multi-task Learning",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -39.24,
+      "sy": -252.2,
+      "sz": -27.73
     },
     {
       "id": "Semi-supervised Learning",
       "label": "Semi-supervised Learning",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -74.14,
+      "sy": -307.91,
+      "sz": -104.22
     },
     {
       "id": "Active Learning",
       "label": "Active Learning",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -65.76,
+      "sy": -233.86,
+      "sz": -78.93
     },
     {
       "id": "Online Learning",
       "label": "Online Learning",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -40.7,
+      "sy": -277.94,
+      "sz": -110.15
     },
     {
       "id": "Label Propagation",
       "label": "Label Propagation",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -78.15,
+      "sy": -305.76,
+      "sz": -137.44
     },
     {
       "id": "Isotonic Regression",
       "label": "Isotonic Regression",
       "level": 2,
       "category": "supervised",
-      "color": "#2d8a4e"
+      "color": "#2d8a4e",
+      "sx": -30.21,
+      "sy": -314.55,
+      "sz": -192.56
     },
     {
       "id": "k-Means",
       "label": "k-Means",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -96.06,
+      "sy": -755.18,
+      "sz": -203.87
     },
     {
       "id": "PCA",
       "label": "PCA",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -103.64,
+      "sy": -796.49,
+      "sz": -198.8
     },
     {
       "id": "DBSCAN",
       "label": "DBSCAN",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -132.93,
+      "sy": -762.01,
+      "sz": -224.83
     },
     {
       "id": "Gaussian Mixture Models",
       "label": "Gaussian Mixture Models",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -74.67,
+      "sy": -714.69,
+      "sz": -204.07
     },
     {
       "id": "t-SNE",
       "label": "t-SNE",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -84.79,
+      "sy": -765.75,
+      "sz": -143.51
     },
     {
       "id": "UMAP",
       "label": "UMAP",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -145.42,
+      "sy": -807.04,
+      "sz": -151.46
     },
     {
       "id": "ICA",
       "label": "ICA",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -123.71,
+      "sy": -787.45,
+      "sz": -178.26
     },
     {
       "id": "NMF",
       "label": "NMF",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -112.86,
+      "sy": -747.4,
+      "sz": -155.28
     },
     {
       "id": "Spectral Clustering",
       "label": "Spectral Clustering",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -133.91,
+      "sy": -752.08,
+      "sz": -224.35
     },
     {
       "id": "Hierarchical Clustering",
       "label": "Hierarchical Clustering",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -129.54,
+      "sy": -805.27,
+      "sz": -236.39
     },
     {
       "id": "OPTICS",
       "label": "OPTICS",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -44.85,
+      "sy": -780.83,
+      "sz": -173.26
     },
     {
       "id": "Isolation Forest",
       "label": "Isolation Forest",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -203.03,
+      "sy": -785.96,
+      "sz": -188.85
     },
     {
       "id": "One-Class SVM",
       "label": "One-Class SVM",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -129.8,
+      "sy": -736.11,
+      "sz": -179.22
     },
     {
       "id": "LOF",
       "label": "LOF",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -133.67,
+      "sy": -775.96,
+      "sz": -117.35
     },
     {
       "id": "Self-Organizing Maps",
       "label": "Self-Organizing Maps",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -87.34,
+      "sy": -794.51,
+      "sz": -253.96
     },
     {
       "id": "Word2Vec",
       "label": "Word2Vec",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -79.56,
+      "sy": -810.12,
+      "sz": -108.91
     },
     {
       "id": "GloVe",
       "label": "GloVe",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -56.63,
+      "sy": -822.61,
+      "sz": -185.59
     },
     {
       "id": "FastText",
       "label": "FastText",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -98.38,
+      "sy": -822.62,
+      "sz": -88.69
     },
     {
       "id": "Topic Modeling (LDA)",
       "label": "Topic Modeling (LDA)",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -90.41,
+      "sy": -810.46,
+      "sz": -166.56
     },
     {
       "id": "Matrix Factorization",
       "label": "Matrix Factorization",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -86.26,
+      "sy": -741.7,
+      "sz": -220.3
     },
     {
       "id": "Collaborative Filtering",
       "label": "Collaborative Filtering",
       "level": 2,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -53.67,
+      "sy": -755.22,
+      "sz": -240.02
     },
     {
       "id": "Bagging",
       "label": "Bagging",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -623.99,
+      "sy": -774.31,
+      "sz": -135.71
     },
     {
       "id": "Boosting",
       "label": "Boosting",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -630.5,
+      "sy": -724.31,
+      "sz": -75.62
     },
     {
       "id": "Random Forest",
       "label": "Random Forest",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -582.89,
+      "sy": -775.64,
+      "sz": -106.41
     },
     {
       "id": "Gradient Boosting",
       "label": "Gradient Boosting",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -595.38,
+      "sy": -714.38,
+      "sz": -77.0
     },
     {
       "id": "XGBoost",
       "label": "XGBoost",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -595.32,
+      "sy": -746.63,
+      "sz": -66.96
     },
     {
       "id": "LightGBM",
       "label": "LightGBM",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -562.46,
+      "sy": -750.3,
+      "sz": -69.6
     },
     {
       "id": "CatBoost",
       "label": "CatBoost",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -632.63,
+      "sy": -710.06,
+      "sz": -105.45
     },
     {
       "id": "Stacking",
       "label": "Stacking",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -636.65,
+      "sy": -742.12,
+      "sz": -130.53
     },
     {
       "id": "Blending",
       "label": "Blending",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -601.7,
+      "sy": -710.92,
+      "sz": -146.9
     },
     {
       "id": "Voting Classifier",
       "label": "Voting Classifier",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -596.91,
+      "sy": -729.7,
+      "sz": -101.6
     },
     {
       "id": "ExtraTrees",
       "label": "ExtraTrees",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -583.07,
+      "sy": -742.79,
+      "sz": -128.86
     },
     {
       "id": "TabNet",
       "label": "TabNet",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -651.17,
+      "sy": -743.02,
+      "sz": -94.03
     },
     {
       "id": "DART",
       "label": "DART",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -617.4,
+      "sy": -782.22,
+      "sz": -96.63
     },
     {
       "id": "Snapshot Ensembles",
       "label": "Snapshot Ensembles",
       "level": 3,
       "category": "ensemble",
-      "color": "#1a7a6b"
+      "color": "#1a7a6b",
+      "sx": -615.72,
+      "sy": -772.53,
+      "sz": -109.67
     },
     {
       "id": "Activation Functions",
       "label": "Activation Functions",
       "level": 2,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 192.96,
+      "sy": 605.86,
+      "sz": 119.58
     },
     {
       "id": "Weight Initialization",
       "label": "Weight Initialization",
       "level": 2,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 210.38,
+      "sy": 617.69,
+      "sz": -40.77
     },
     {
       "id": "Vanishing Gradient",
       "label": "Vanishing Gradient",
       "level": 2,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 276.54,
+      "sy": 582.21,
+      "sz": -14.55
     },
     {
       "id": "Exploding Gradient",
       "label": "Exploding Gradient",
       "level": 2,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 238.06,
+      "sy": 561.93,
+      "sz": -7.29
     },
     {
       "id": "Neural Networks",
       "label": "Neural Networks",
       "level": 3,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 221.07,
+      "sy": 631.84,
+      "sz": 146.41
     },
     {
       "id": "Batch Normalization",
       "label": "Batch Normalization",
       "level": 3,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 116.15,
+      "sy": 493.38,
+      "sz": -68.07
     },
     {
       "id": "Layer Normalization",
       "label": "Layer Normalization",
       "level": 3,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 149.77,
+      "sy": 549.18,
+      "sz": -24.25
     },
     {
       "id": "Dropout",
       "label": "Dropout",
       "level": 3,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 297.77,
+      "sy": 580.53,
+      "sz": 31.15
     },
     {
       "id": "Optimizers (Adam/SGD)",
       "label": "Optimizers (Adam/SGD)",
       "level": 3,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 260.23,
+      "sy": 549.69,
+      "sz": 68.04
     },
     {
       "id": "Weight Decay",
       "label": "Weight Decay",
       "level": 3,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 249.1,
+      "sy": 617.32,
+      "sz": -39.8
     },
     {
       "id": "Gradient Clipping",
       "label": "Gradient Clipping",
       "level": 3,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 269.53,
+      "sy": 565.6,
+      "sz": -0.27
     },
     {
       "id": "Residual Connections",
       "label": "Residual Connections",
       "level": 3,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 291.38,
+      "sy": 651.26,
+      "sz": 51.97
     },
     {
       "id": "CNNs",
       "label": "CNNs",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 209.19,
+      "sy": 679.17,
+      "sz": 141.3
     },
     {
       "id": "Residual Networks",
       "label": "Residual Networks",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 268.43,
+      "sy": 642.55,
+      "sz": 112.26
     },
     {
       "id": "DenseNet",
       "label": "DenseNet",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 283.74,
+      "sy": 689.95,
+      "sz": 46.34
     },
     {
       "id": "MobileNet",
       "label": "MobileNet",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 269.86,
+      "sy": 723.85,
+      "sz": 62.02
     },
     {
       "id": "EfficientNet",
       "label": "EfficientNet",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 288.2,
+      "sy": 735.73,
+      "sz": 79.38
     },
     {
       "id": "Inception",
       "label": "Inception",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 233.32,
+      "sy": 657.99,
+      "sz": 65.75
     },
     {
       "id": "U-Net",
       "label": "U-Net",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 272.43,
+      "sy": 668.0,
+      "sz": 93.09
     },
     {
       "id": "YOLO",
       "label": "YOLO",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 202.18,
+      "sy": 748.09,
+      "sz": 89.43
     },
     {
       "id": "R-CNN",
       "label": "R-CNN",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 220.98,
+      "sy": 724.13,
+      "sz": 108.15
     },
     {
       "id": "Feature Pyramid Networks",
       "label": "Feature Pyramid Networks",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 187.32,
+      "sy": 633.17,
+      "sz": 99.78
     },
     {
       "id": "Capsule Networks",
       "label": "Capsule Networks",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 200.67,
+      "sy": 690.0,
+      "sz": 109.51
     },
     {
       "id": "Deformable Conv",
       "label": "Deformable Conv",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 197.87,
+      "sy": 640.58,
+      "sz": 34.41
     },
     {
       "id": "RNNs",
       "label": "RNNs",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 192.59,
+      "sy": 693.79,
+      "sz": 180.55
     },
     {
       "id": "LSTMs",
       "label": "LSTMs",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 251.81,
+      "sy": 673.78,
+      "sz": 192.24
     },
     {
       "id": "GRUs",
       "label": "GRUs",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 290.66,
+      "sy": 579.39,
+      "sz": 69.02
     },
     {
       "id": "Bidirectional RNN",
       "label": "Bidirectional RNN",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 212.81,
+      "sy": 701.45,
+      "sz": 193.21
     },
     {
       "id": "Seq2Seq",
       "label": "Seq2Seq",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 205.07,
+      "sy": 718.44,
+      "sz": 162.92
     },
     {
       "id": "Attention Mechanism",
       "label": "Attention Mechanism",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 174.48,
+      "sy": 446.86,
+      "sz": 220.54
     },
     {
       "id": "Multi-Head Attention",
       "label": "Multi-Head Attention",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 147.1,
+      "sy": 308.67,
+      "sz": 234.99
     },
     {
       "id": "Positional Encoding",
       "label": "Positional Encoding",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 174.27,
+      "sy": 644.16,
+      "sz": 163.44
     },
     {
       "id": "Graph Neural Networks",
       "label": "Graph Neural Networks",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 222.96,
+      "sy": 568.52,
+      "sz": 176.61
     },
     {
       "id": "Graph Attention Networks",
       "label": "Graph Attention Networks",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 195.47,
+      "sy": 505.26,
+      "sz": 203.69
     },
     {
       "id": "Message Passing",
       "label": "Message Passing",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 206.45,
+      "sy": 625.56,
+      "sz": 197.27
     },
     {
       "id": "Siamese Networks",
       "label": "Siamese Networks",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 250.67,
+      "sy": 642.67,
+      "sz": 157.07
     },
     {
       "id": "Hypernetworks",
       "label": "Hypernetworks",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 301.01,
+      "sy": 727.16,
+      "sz": 60.63
     },
     {
       "id": "Neural ODEs",
       "label": "Neural ODEs",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": 203.48,
+      "sy": 637.37,
+      "sz": 177.14
     },
     {
       "id": "Mixture of Experts",
       "label": "Mixture of Experts",
       "level": 4,
       "category": "neural",
-      "color": "#1a4da0"
+      "color": "#1a4da0",
+      "sx": -126.9,
+      "sy": 237.06,
+      "sz": 74.47
     },
     {
       "id": "Transformers",
       "label": "Transformers",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -98.05,
+      "sy": 146.39,
+      "sz": 207.6
     },
     {
       "id": "BERT",
       "label": "BERT",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -146.94,
+      "sy": 2.88,
+      "sz": 289.99
     },
     {
       "id": "GPT",
       "label": "GPT",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -137.78,
+      "sy": -33.15,
+      "sz": 90.68
     },
     {
       "id": "T5",
       "label": "T5",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -96.52,
+      "sy": 3.77,
+      "sz": 261.18
     },
     {
       "id": "Vision Transformers",
       "label": "Vision Transformers",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -113.83,
+      "sy": 157.81,
+      "sz": 236.72
     },
     {
       "id": "CLIP",
       "label": "CLIP",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -54.67,
+      "sy": 106.32,
+      "sz": 227.93
     },
     {
       "id": "BPE Tokenization",
       "label": "BPE Tokenization",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -86.23,
+      "sy": 70.82,
+      "sz": -37.61
     },
     {
       "id": "Flash Attention",
       "label": "Flash Attention",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 109.64,
+      "sy": 225.89,
+      "sz": 243.95
     },
     {
       "id": "Rotary Embeddings",
       "label": "Rotary Embeddings",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -35.79,
+      "sy": 117.19,
+      "sz": 324.26
     },
     {
       "id": "Sparse Attention",
       "label": "Sparse Attention",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 110.21,
+      "sy": 192.95,
+      "sz": 219.23
     },
     {
       "id": "Feed-Forward Networks",
       "label": "Feed-Forward Networks",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 54.04,
+      "sy": 65.48,
+      "sz": 187.08
     },
     {
       "id": "Mixture of Experts (MoE)",
       "label": "Mixture of Experts (MoE)",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -158.9,
+      "sy": 143.51,
+      "sz": 95.92
     },
     {
       "id": "GANs",
       "label": "GANs",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -76.54,
+      "sy": 185.5,
+      "sz": 225.75
     },
     {
       "id": "Autoencoders",
       "label": "Autoencoders",
       "level": 3,
       "category": "unsupervised",
-      "color": "#7b3fa0"
+      "color": "#7b3fa0",
+      "sx": -31.16,
+      "sy": -787.31,
+      "sz": -212.99
     },
     {
       "id": "VAE",
       "label": "VAE",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -197.45,
+      "sy": 76.94,
+      "sz": 177.77
     },
     {
       "id": "Diffusion Models",
       "label": "Diffusion Models",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 190.14,
+      "sy": 11.2,
+      "sz": 149.85
     },
     {
       "id": "Score Matching",
       "label": "Score Matching",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 55.8,
+      "sy": 3.89,
+      "sz": 456.21
     },
     {
       "id": "Flow Models",
       "label": "Flow Models",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 214.45,
+      "sy": 11.81,
+      "sz": 167.35
     },
     {
       "id": "Energy-Based Models",
       "label": "Energy-Based Models",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 218.46,
+      "sy": 19.26,
+      "sz": 123.17
     },
     {
       "id": "DALL-E / Stable Diffusion",
       "label": "DALL-E / Stable Diffusion",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 177.83,
+      "sy": -18.07,
+      "sz": 127.79
     },
     {
       "id": "VideoGen",
       "label": "VideoGen",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -160.67,
+      "sy": 84.91,
+      "sz": 216.34
     },
     {
       "id": "Text-to-Speech",
       "label": "Text-to-Speech",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 13.33,
+      "sy": 14.67,
+      "sz": 365.55
     },
     {
       "id": "Speech Recognition",
       "label": "Speech Recognition",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -28.95,
+      "sy": 29.77,
+      "sz": 311.27
     },
     {
       "id": "Self-Supervised Learning",
       "label": "Self-Supervised Learning",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -69.17,
+      "sy": -215.28,
+      "sz": -20.54
     },
     {
       "id": "Contrastive Learning",
       "label": "Contrastive Learning",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 45.03,
+      "sy": 75.15,
+      "sz": 282.6
     },
     {
       "id": "SimCLR",
       "label": "SimCLR",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -190.07,
+      "sy": -8.91,
+      "sz": 181.15
     },
     {
       "id": "MoCo",
       "label": "MoCo",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -226.44,
+      "sy": -8.71,
+      "sz": 168.2
     },
     {
       "id": "DINO",
       "label": "DINO",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -188.43,
+      "sy": -6.53,
+      "sz": 253.02
     },
     {
       "id": "MAE",
       "label": "MAE",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -225.41,
+      "sy": 28.43,
+      "sz": 178.72
     },
     {
       "id": "Word Embeddings",
       "label": "Word Embeddings",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -7.34,
+      "sy": 74.68,
+      "sz": 395.28
     },
     {
       "id": "Sentence Embeddings",
       "label": "Sentence Embeddings",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 13.4,
+      "sy": 80.13,
+      "sz": 413.76
     },
     {
       "id": "Multimodal Models",
       "label": "Multimodal Models",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 225.67,
+      "sy": 46.9,
+      "sz": 151.89
     },
     {
       "id": "Reinforcement Learning",
       "label": "Reinforcement Learning",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 49.39,
+      "sy": -67.3,
+      "sz": 182.49
     },
     {
       "id": "Policy Gradient",
       "label": "Policy Gradient",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 53.71,
+      "sy": -27.07,
+      "sz": 192.56
     },
     {
       "id": "Q-Learning",
       "label": "Q-Learning",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -15.87,
+      "sy": -11.54,
+      "sz": 188.76
     },
     {
       "id": "DQN",
       "label": "DQN",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -33.26,
+      "sy": -51.51,
+      "sz": 186.15
     },
     {
       "id": "PPO",
       "label": "PPO",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -158.33,
+      "sy": -32.9,
+      "sz": 125.46
     },
     {
       "id": "SAC",
       "label": "SAC",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -205.56,
+      "sy": 47.02,
+      "sz": 163.79
     },
     {
       "id": "A3C",
       "label": "A3C",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -205.93,
+      "sy": -38.53,
+      "sz": 214.86
     },
     {
       "id": "Model-Based RL",
       "label": "Model-Based RL",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 148.62,
+      "sy": -41.8,
+      "sz": 54.2
     },
     {
       "id": "Offline RL",
       "label": "Offline RL",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 114.17,
+      "sy": -58.09,
+      "sz": 57.57
     },
     {
       "id": "Multi-Agent RL",
       "label": "Multi-Agent RL",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 109.04,
+      "sy": -93.79,
+      "sz": 97.03
     },
     {
       "id": "Imitation Learning",
       "label": "Imitation Learning",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 44.49,
+      "sy": -37.86,
+      "sz": 185.52
     },
     {
       "id": "Inverse RL",
       "label": "Inverse RL",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 103.72,
+      "sy": -34.24,
+      "sz": 81.43
     },
     {
       "id": "Named Entity Recognition",
       "label": "Named Entity Recognition",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 2.85,
+      "sy": -21.98,
+      "sz": 427.5
     },
     {
       "id": "Question Answering",
       "label": "Question Answering",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 30.63,
+      "sy": 56.03,
+      "sz": 415.47
     },
     {
       "id": "Machine Translation",
       "label": "Machine Translation",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 46.14,
+      "sy": 13.16,
+      "sz": 427.77
     },
     {
       "id": "Summarization",
       "label": "Summarization",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 47.41,
+      "sy": 27.5,
+      "sz": 403.61
     },
     {
       "id": "Code Generation",
       "label": "Code Generation",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -55.94,
+      "sy": 37.75,
+      "sz": -85.37
     },
     {
       "id": "Information Extraction",
       "label": "Information Extraction",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 21.02,
+      "sy": -33.27,
+      "sz": 444.8
     },
     {
       "id": "Sentiment Analysis",
       "label": "Sentiment Analysis",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -6.12,
+      "sy": 22.45,
+      "sz": 410.23
     },
     {
       "id": "Text Classification",
       "label": "Text Classification",
       "level": 5,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -23.23,
+      "sy": 13.73,
+      "sz": 410.28
     },
     {
       "id": "LLM Fine-tuning",
       "label": "LLM Fine-tuning",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -1.66,
+      "sy": 242.75,
+      "sz": -41.08
     },
     {
       "id": "LoRA",
       "label": "LoRA",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -253.3,
+      "sy": 9.02,
+      "sz": 204.96
     },
     {
       "id": "QLoRA",
       "label": "QLoRA",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -126.49,
+      "sy": -19.8,
+      "sz": 198.31
     },
     {
       "id": "Prefix Tuning",
       "label": "Prefix Tuning",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 22.29,
+      "sy": 267.88,
+      "sz": -58.18
     },
     {
       "id": "Prompt Engineering",
       "label": "Prompt Engineering",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -24.7,
+      "sy": 52.97,
+      "sz": -80.61
     },
     {
       "id": "RLHF",
       "label": "RLHF",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 61.77,
+      "sy": -26.49,
+      "sz": 60.64
     },
     {
       "id": "Constitutional AI",
       "label": "Constitutional AI",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 78.59,
+      "sy": -119.62,
+      "sz": 188.08
     },
     {
       "id": "Chain-of-Thought",
       "label": "Chain-of-Thought",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -15.61,
+      "sy": 19.6,
+      "sz": 72.37
     },
     {
       "id": "ReAct",
       "label": "ReAct",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 10.65,
+      "sy": -54.85,
+      "sz": 213.07
     },
     {
       "id": "Tool Use",
       "label": "Tool Use",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -24.1,
+      "sy": 27.0,
+      "sz": -45.66
     },
     {
       "id": "AI Agents",
       "label": "AI Agents",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 69.09,
+      "sy": -113.22,
+      "sz": 201.19
     },
     {
       "id": "RAG",
       "label": "RAG",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -218.84,
+      "sy": 39.04,
+      "sz": 230.58
     },
     {
       "id": "Memory Systems",
       "label": "Memory Systems",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 74.74,
+      "sy": 220.56,
+      "sz": 176.91
     },
     {
       "id": "Multi-Agent Systems",
       "label": "Multi-Agent Systems",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 109.19,
+      "sy": -115.89,
+      "sz": 140.64
     },
     {
       "id": "Meta-Learning",
       "label": "Meta-Learning",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -35.67,
+      "sy": 8.65,
+      "sz": 88.25
     },
     {
       "id": "Few-Shot Learning",
       "label": "Few-Shot Learning",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 18.84,
+      "sy": 110.49,
+      "sz": 197.31
     },
     {
       "id": "Zero-Shot Learning",
       "label": "Zero-Shot Learning",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 36.65,
+      "sy": 130.9,
+      "sz": 180.5
     },
     {
       "id": "Neural Architecture Search",
       "label": "Neural Architecture Search",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 108.42,
+      "sy": 299.02,
+      "sz": 167.15
     },
     {
       "id": "AutoML",
       "label": "AutoML",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -71.51,
+      "sy": -67.83,
+      "sz": -40.62
     },
     {
       "id": "Federated Learning",
       "label": "Federated Learning",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 24.45,
+      "sy": -137.17,
+      "sz": 46.27
     },
     {
       "id": "Differential Privacy",
       "label": "Differential Privacy",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 10.39,
+      "sy": -169.91,
+      "sz": 45.49
     },
     {
       "id": "Quantization & Pruning",
       "label": "Quantization & Pruning",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -60.88,
+      "sy": -28.46,
+      "sz": 185.09
     },
     {
       "id": "Knowledge Distillation",
       "label": "Knowledge Distillation",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -83.11,
+      "sy": 46.19,
+      "sz": 67.54
     },
     {
       "id": "Sparse Models",
       "label": "Sparse Models",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 193.57,
+      "sy": 88.17,
+      "sz": 110.14
     },
     {
       "id": "NeRF",
       "label": "NeRF",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 23.15,
+      "sy": 149.37,
+      "sz": 100.2
     },
     {
       "id": "3D Gaussian Splatting",
       "label": "3D Gaussian Splatting",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -192.72,
+      "sy": -103.69,
+      "sz": 130.38
     },
     {
       "id": "AlphaFold",
       "label": "AlphaFold",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -168.69,
+      "sy": -62.81,
+      "sz": 236.06
     },
     {
       "id": "World Models",
       "label": "World Models",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 240.74,
+      "sy": 5.73,
+      "sz": 130.98
     },
     {
       "id": "Causal ML",
       "label": "Causal ML",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -27.45,
+      "sy": 15.76,
+      "sz": 30.25
     },
     {
       "id": "Interpretability",
       "label": "Interpretability",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 65.67,
+      "sy": -21.41,
+      "sz": 374.35
     },
     {
       "id": "SHAP",
       "label": "SHAP",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -161.63,
+      "sy": 26.25,
+      "sz": 97.78
     },
     {
       "id": "LIME",
       "label": "LIME",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -131.0,
+      "sy": -1.18,
+      "sz": 161.76
     },
     {
       "id": "Conformal Prediction",
       "label": "Conformal Prediction",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -85.94,
+      "sy": 66.16,
+      "sz": 170.28
     },
     {
       "id": "AI Safety",
       "label": "AI Safety",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 88.52,
+      "sy": -117.96,
+      "sz": 240.25
     },
     {
       "id": "Alignment",
       "label": "Alignment",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 70.5,
+      "sy": -0.1,
+      "sz": 428.65
     },
     {
       "id": "MLOps",
       "label": "MLOps",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": -84.85,
+      "sy": 47.84,
+      "sz": -7.8
     },
     {
       "id": "Model Monitoring",
       "label": "Model Monitoring",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 152.92,
+      "sy": 20.65,
+      "sz": 16.25
     },
     {
       "id": "Feature Stores",
       "label": "Feature Stores",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 80.93,
+      "sy": 174.15,
+      "sz": -183.9
     },
     {
       "id": "Experiment Tracking",
       "label": "Experiment Tracking",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 66.35,
+      "sy": -42.18,
+      "sz": 147.35
     },
     {
       "id": "Edge AI",
       "label": "Edge AI",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 27.13,
+      "sy": -109.02,
+      "sz": 216.15
     },
     {
       "id": "TensorRT / ONNX",
       "label": "TensorRT / ONNX",
       "level": 6,
       "category": "advanced",
-      "color": "#a01a1a"
+      "color": "#a01a1a",
+      "sx": 305.73,
+      "sy": 731.13,
+      "sz": 94.68
     }
   ],
   "edges": [
