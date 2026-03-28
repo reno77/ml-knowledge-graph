@@ -42,7 +42,7 @@
       "sx": 237.7,
       "sy": -477.23,
       "sz": -167.73,
-      "summary": "Python is a steel roller coaster at Efteling theme park in Kaatsheuvel, Netherlands, featuring a Vekoma MK-1200 design with two vertical loops, a double corkscrew, and a helix, resulting in four inversions. Opened on April 12, 1981, it reaches a max\u2026"
+      "summary": "An overview of the Python programming language, including resources and methods for learning it."
     },
     {
       "id": "Information Theory",
@@ -449,7 +449,7 @@
       "sx": 178.31,
       "sy": -43.86,
       "sz": -210.24,
-      "summary": "Techniques Leave-One-Out Cross-Validation Leave-one-out cross-validation (LOOCV) is a special case of exhaustive cross-validation techniques, particularly"
+      "summary": "Validation in machine learning contexts In machine learning, validation must address unique challenges arising from high-dimensional data and complex"
     },
     {
       "id": "Bias-Variance Tradeoff",
@@ -493,7 +493,7 @@
       "sx": 253.74,
       "sy": -91.67,
       "sz": -109.85,
-      "summary": "Evaluation metrics used for hedging a net short-theta SPX options portfolio. Cost: Annualized drag (theta + roll), % BP usage; Protection: Worst-day/week reduction, CVaR-95/99 improvement, payout vs. SPX drawdown; Portfolio: Sharpe/Sortino uplift, h\u2026"
+      "summary": "Precision and recall Precision and recall are fundamental performance metrics in information retrieval and machine learning, particularly for evaluating"
     },
     {
       "id": "Overfitting",
@@ -614,7 +614,7 @@
       "sx": 141.96,
       "sy": 63.07,
       "sz": 121.9,
-      "summary": "The main norms for designing nitrogen gas pipelines are GB 50316-2023 (Industrial Metal Pipeline Design), GB 50160 (Petrochemical Process Pipeline Installation), and GB 50646-2011 (Special Gas System Engineering). This fully answers the question on\u2026"
+      "summary": "Machine learning AI hierarchy Machine learning is the study of algorithms that improve their performance at a task through experience with data, enabling"
     },
     {
       "id": "Normalization",
@@ -691,7 +691,7 @@
       "sx": 219.23,
       "sy": -134.05,
       "sz": -156.08,
-      "summary": "Bootstrapping Illustration of Baron M\u00fcnchhausen extracting himself from a swamp by his own pigtail Bootstrapping denotes a self-initiating mechanism"
+      "summary": "Resampling (statistics) Resampling methods in statistics are a class of nonparametric techniques that leverage computational power to repeatedly draw"
     },
     {
       "id": "Dimensionality Reduction",
@@ -977,7 +977,7 @@
       "sx": -351.31,
       "sy": -170.69,
       "sz": -358.28,
-      "summary": "NN Group NN Group logo NN Group N.V. is an international financial services company headquartered in The Hague, Netherlands, specializing in retirement"
+      "summary": "k -nearest neighbors algorithm The k-nearest neighbors (k-NN) algorithm is a non-parametric, instance-based supervised machine learning method used for"
     },
     {
       "id": "Naive Bayes",
@@ -1296,7 +1296,7 @@
       "sx": -329.33,
       "sy": -370.65,
       "sz": -419.19,
-      "summary": "PCA Skin is a professional skincare brand founded in 1990 by an aesthetician and developed by a dermatologist. It specializes in science-backed daily care products and professional treatments, particularly chemical peels, and is recognized as the #1\u2026"
+      "summary": "Principal component analysis Principal component analysis (PCA) is a statistical technique used to reduce the dimensionality of a dataset consisting of"
     },
     {
       "id": "DBSCAN",
@@ -1340,7 +1340,7 @@
       "sx": -407.96,
       "sy": -259.93,
       "sz": -430.37,
-      "summary": "Vitthal Umap Vitthal Umap Vitthal Umap (15 July 1931 \u2013 27 November 2010) was an Indian folk singer, shahir, and performer specializing in Lok Shahiri"
+      "summary": "Uniform Manifold Approximation and Projection (UMAP) is a nonlinear dimensionality reduction technique used for visualization and general-purpose dimension reduction. It constructs a high-dimensional graph representation of the data and optimizes a low-dimensional layout to preserve both local and global structure. UMAP is faster than t-SNE and often produces better-separated clusters, making it widely used for exploring embeddings and high-dimensional datasets."
     },
     {
       "id": "ICA",
@@ -1362,7 +1362,7 @@
       "sx": -400.95,
       "sy": -269.83,
       "sz": -461.57,
-      "summary": "The National Monuments Foundation (NMF) is a 501(c)(3) non-profit organization incorporated in 2003, granted tax-exempt status in 2004, and headquartered in Atlanta, Georgia, dedicated to the creation and preservation of historical, cultural, and ar\u2026"
+      "summary": "Non-negative matrix factorization Non-negative matrix factorization (NMF) is a dimensionality reduction technique in linear algebra and machine learning"
     },
     {
       "id": "Spectral Clustering",
@@ -1395,7 +1395,7 @@
       "sx": -377.95,
       "sy": -165.0,
       "sz": -429.34,
-      "summary": "Optics Optics is the branch of physics that studies the behavior and properties of light, including how it is generated, propagated, detected, and interacts"
+      "summary": "Density-based clustering validation refers to the objective assessment of clustering results obtained from density-based algorithms, which define clusters as high-density regions of data points separated by low-density areas, potentially including n\u2026"
     },
     {
       "id": "Isolation Forest",
@@ -1428,7 +1428,7 @@
       "sx": -405.53,
       "sy": -283.61,
       "sz": -462.43,
-      "summary": "Lof is the foundational kinship and residential unit in traditional Mapuche society, consisting of extended patrilineal families united by common ancestry, territory, and mutual obligations, which historically served as the primary locus for economi\u2026"
+      "summary": "Local outlier factor The Local Outlier Factor (LOF) is an unsupervised density-based algorithm for anomaly detection that assigns to each data point a"
     },
     {
       "id": "Self-Organizing Maps",
@@ -1439,7 +1439,7 @@
       "sx": -407.51,
       "sy": -346.02,
       "sz": -405.83,
-      "summary": "and Associative Memory, which introduced self-organizing principles to a broader audience, and culminating in the 1995 Self-Organizing Maps, which detailed"
+      "summary": "The Hybrid Kohonen self-organizing map (HKSOM) is an advanced artificial neural network architecture that extends the traditional self-organizing map (SOM)\u2014an unsupervised learning algorithm developed by Teuvo Kohonen for dimensionality reduction\u2026"
     },
     {
       "id": "Word2Vec",
@@ -1461,7 +1461,7 @@
       "sx": -416.76,
       "sy": -231.53,
       "sz": -426.79,
-      "summary": "Glove A glove is a garment designed to cover the hand, typically featuring separate sheaths for each finger and the thumb, serving primarily to protect"
+      "summary": "Word embedding Word embedding illustration Word embedding is a computational technique in natural language processing that maps words or phrases from"
     },
     {
       "id": "FastText",
@@ -1505,7 +1505,7 @@
       "sx": -367.22,
       "sy": -388.79,
       "sz": -445.82,
-      "summary": "Filtering Hybrid collaborative filtering integrates multiple collaborative filtering techniques or combines collaborative filtering with other methods"
+      "summary": "Matrix factorization (recommender systems) Matrix factorization is a cornerstone technique in collaborative filtering recommender systems, which decomposes"
     },
     {
       "id": "HDBSCAN",
@@ -1714,7 +1714,7 @@
       "sx": -1064.55,
       "sy": -88.63,
       "sz": -139.61,
-      "summary": "Blending inheritance Blending inheritance is an obsolete theory of heredity from the 19th century that proposed offspring inherit traits as an intermediate"
+      "summary": "In machine learning, ensemble averaging is a technique that constructs a set of models, often classifiers or regressors, and combines their individual predictions\u2014typically through methods like voting or weighted averaging\u2014to produce a final out\u2026"
     },
     {
       "id": "Voting Classifier",
@@ -1758,7 +1758,7 @@
       "sx": -1088.71,
       "sy": -116.81,
       "sz": -183.28,
-      "summary": "/) Dart SPD Variant The Dart SPD (Super Pointer Dart) was launched in 1997 as an extended 11.3 m version of the low-floor Dart SLF, aimed at competing"
+      "summary": "Additive utility, also referred to as additively separable utility, is a representation of preferences in economic decision theory where the overall utility of a multi-attribute outcome or consumption bundle is expressed as the sum of individual uti\u2026"
     },
     {
       "id": "Snapshot Ensembles",
@@ -1780,7 +1780,7 @@
       "sx": -1085.71,
       "sy": -61.29,
       "sz": -172.96,
-      "summary": "Dropout Bear (Graduation variant)) Dropout Bear is an anthropomorphic bear character that served as a mascot for American rapper Kanye West's early career, particularly symbolizing his..."
+      "summary": "Dropout is a regularization technique in neural networks that randomly drops units (along with their connections) during training to prevent co-adaptation between neurons and reduce overfitting. This approach improves generalization by forcing the n\u2026"
     },
     {
       "id": "Deep Ensembles",
@@ -1823,7 +1823,8 @@
       "color": "#1a7a6b",
       "sx": -1013.65,
       "sy": -108.89,
-      "sz": -196.58
+      "sz": -196.58,
+      "summary": "HistGradientBoosting is a gradient boosting implementation in scikit-learn inspired by LightGBM that uses histogram-based splitting for decision trees. Instead of evaluating every possible split point, it bins continuous features into discrete histograms, dramatically speeding up training on large datasets while maintaining competitive accuracy. It supports native handling of missing values and categorical features."
     },
     {
       "id": "NGBoost",
@@ -1933,7 +1934,7 @@
       "sx": 37.77,
       "sy": 145.48,
       "sz": -281.95,
-      "summary": "Group Normalization is a 2018 computer vision paper by Yuxin Wu and Kaiming He, published at the European Conference on Computer Vision (ECCV) with preprint arXiv:1803.08494. The paper introduces Group Normalization (GN), a normalization technique a\u2026"
+      "summary": "Batch normalization is a technique in deep learning that normalizes the inputs to each layer of a neural network by subtracting the batch mean and dividing by the batch standard..."
     },
     {
       "id": "Instance Normalization",
@@ -1955,7 +1956,7 @@
       "sx": -291.12,
       "sy": 300.31,
       "sz": -148.5,
-      "summary": "Dropout is a novel by Cass Tell first published on March 20, 2012, and the third installment in the Blue Fate series, which explores the idea that \"fate is more than chance.\" The story follows Justin Collins, who suffers a devastating tragedy that s\u2026"
+      "summary": "Dropout is a regularization technique in neural networks that randomly drops units (along with their connections) during training to prevent co-adaptation between neurons and reduce overfitting. This approach improves generalization by forcing the n\u2026"
     },
     {
       "id": "Optimizers (Adam/SGD)",
@@ -1966,7 +1967,7 @@
       "sx": -307.52,
       "sy": 352.63,
       "sz": -143.8,
-      "summary": "Steps to measure output resistance on Huawei optimizers before mounting: Set multimeter to resistance (ohm, lowest range for precision); measure between positive and negative output terminals (OUT) with output cables disconnected; expected normal va\u2026"
+      "summary": "Deep learning Representing images on multiple layers of abstraction in deep learning Deep learning encompasses machine learning methods that employ artificial"
     },
     {
       "id": "Weight Decay",
@@ -2021,7 +2022,7 @@
       "sx": -300.82,
       "sy": 306.98,
       "sz": -256.57,
-      "summary": "Dense is the standard English adjective meaning closely compacted in substance or having a high mass/volume ratio (high density). Densed is not a recognized word in standard English; it is likely a non-standard usage, misspelling, or mishearing (e.g\u2026"
+      "summary": "Dense connections, as used in DenseNet architectures, connect each layer to every other layer in a feed-forward fashion. In a dense block, each layer receives feature maps from all preceding layers and passes its own feature maps to all subsequent layers, enabling feature reuse, strengthening gradient flow, and substantially reducing the number of parameters."
     },
     {
       "id": "Depthwise Convolution",
@@ -2065,7 +2066,7 @@
       "sx": -114.24,
       "sy": 370.75,
       "sz": -258.94,
-      "summary": "Tax pooling is a flexible provisional tax payment system established by New Zealand's Inland Revenue Department (IRD) in 2003, allowing eligible taxpayers to deposit income tax installments into intermediary-managed pools rather than paying directly\u2026"
+      "summary": "Convolutional neural network A convolutional neural network (CNN) is a deep learning architecture consisting of interconnected layers that process grid-structured"
     },
     {
       "id": "Embedding Layers",
@@ -2098,7 +2099,7 @@
       "sx": -346.18,
       "sy": 386.94,
       "sz": -88.87,
-      "summary": "'''Jos\u00e9 Mar\u00eda Relucio Gallego''' (born 9 February 1998 in Madrid), commonly known as '''Relu''', is a Spanish professional footballer who plays as a central midfielder for CD Teruel in the Primera Federaci\u00f3n."
+      "summary": "Rectified Linear Unit The rectified linear unit (ReLU) is a piecewise linear activation function defined as \\( f(x) = \\max(0, x) \\), which outputs the"
     },
     {
       "id": "GELU",
@@ -2109,7 +2110,7 @@
       "sx": -346.18,
       "sy": 425.13,
       "sz": -157.19,
-      "summary": "''Gelu'' is a Vlach voivode known for ruling the region beyond the forests\u2014later known as Transylvania\u2014around the year 900, as recounted in the medieval Hungarian chronicle Gesta Hungarorum. Described as dux Blacorum (duke of the Vlachs), he gov\u2026"
+      "summary": "Rectified Linear Unit The rectified linear unit (ReLU) is a piecewise linear activation function defined as \\( f(x) = \\max(0, x) \\), which outputs the"
     },
     {
       "id": "Swish",
@@ -2131,7 +2132,7 @@
       "sx": -336.62,
       "sy": 415.15,
       "sz": -137.2,
-      "summary": "Mish Mish (Egyptian Arabic: \u0645\u0634, romanized: mish) is a traditional Egyptian cheese made by salting and fermenting fresh cheese curds, typically from buffalo"
+      "summary": "In artificial neural networks, an activation function is a mathematical operation applied to the weighted sum of inputs at a neuron, transforming it into an output that..."
     },
     {
       "id": "CNNs",
@@ -2164,7 +2165,7 @@
       "sx": -373.45,
       "sy": 358.88,
       "sz": -203.63,
-      "summary": "The MD5 checksum for the official PyTorch pre-trained DenseNet-121 weights file (densenet121-a639ec97.pth, downloaded from is a7047f0b44515469c3965e85cc31e512. PyTorch does not officially publish MD5 checksums for these legacy model files, but this\u2026"
+      "summary": "Deformable Convolutional Networks (DCN) is a 2017 convolutional neural network architecture extension that learns 2D offsets for sampling locations in convolution kernels, allowing adaptive, geometrically-aware receptive fields that significantly im\u2026"
     },
     {
       "id": "MobileNet",
@@ -2197,7 +2198,7 @@
       "sx": -344.51,
       "sy": 400.41,
       "sz": -237.06,
-      "summary": "Inception is a compilation album by the American heavy metal band Sanctuary, featuring restored and remastered versions of their previously unreleased 1986 demo recordings. Released on February 24, 2017, through Century Media Records, the album capt\u2026"
+      "summary": "Convolutional neural network A convolutional neural network (CNN) is a deep learning architecture consisting of interconnected layers that process grid-structured"
     },
     {
       "id": "U-Net",
@@ -2219,7 +2220,7 @@
       "sx": -377.32,
       "sy": 466.88,
       "sz": -158.81,
-      "summary": "YOLO stands for \"You Only Live Once,\" a mantra for the terminally reckless."
+      "summary": "Multiple student projects, academic papers, and GitHub repositories implement yoga pose correction or exercise form detection using YOLO (You Only Look Once) object detection models, often combined with tools like MediaPipe for keypoint estimation a\u2026"
     },
     {
       "id": "R-CNN",
@@ -2350,7 +2351,8 @@
       "color": "#1a4da0",
       "sx": -225.59,
       "sy": 317.4,
-      "sz": -169.37
+      "sz": -169.37,
+      "summary": "MaxViT (Multi-Axis Vision Transformer) is a vision transformer architecture that combines local and global self-attention in each block. It uses blocked local attention within small windows followed by dilated global attention across the grid, achieving linear complexity while maintaining the ability to capture long-range dependencies. This multi-axis approach enables strong performance on image classification, object detection, and dense prediction tasks."
     },
     {
       "id": "Swin Transformer",
@@ -2460,7 +2462,7 @@
       "sx": -272.29,
       "sy": 410.0,
       "sz": -276.28,
-      "summary": "cloud \\( S \\) and a target point cloud \\( T \\)."
+      "summary": "Cloud Data (PCD) format, native to the Point Cloud Library (PCL), provides flexible binary or ASCII storage tailored for 2D/3D point cloud processing."
     },
     {
       "id": "3D CNNs",
@@ -2504,7 +2506,7 @@
       "sx": -288.04,
       "sy": 405.81,
       "sz": -135.83,
-      "summary": "Grus (constellation) Grus is a southern constellation representing a crane, one of the 88 modern constellations officially recognized by the International"
+      "summary": "Gated recurrent unit A gated recurrent unit (GRU) is a type of recurrent neural network (RNN) architecture designed to model sequential data by incorporating"
     },
     {
       "id": "Bidirectional RNN",
@@ -2603,7 +2605,7 @@
       "sx": 70.72,
       "sy": -20.1,
       "sz": -340.59,
-      "summary": "TUTUN-CTC is a leading tobacco manufacturing company headquartered in Chi\u0219in\u0103u, Moldova, specializing in cigarette production and tobacco fermentation processes. Originating from a cigarette-filling workshop established in 1924\u2014the first of its\u2026"
+      "summary": "Recognition In automatic speech recognition (ASR), connectionist temporal classification (CTC) enables end-to-end training of neural networks that map"
     },
     {
       "id": "Connectionist Models",
@@ -2658,7 +2660,7 @@
       "sx": -209.17,
       "sy": 498.93,
       "sz": -179.74,
-      "summary": "Message passing Message passing is a fundamental communication paradigm in concurrent, parallel, and distributed computing systems, wherein independent"
+      "summary": "Attention-Based Graph Neural Networks Attention-based graph neural networks extend the message passing paradigm by incorporating attention mechanisms"
     },
     {
       "id": "Siamese Networks",
@@ -2812,7 +2814,7 @@
       "sx": 290.64,
       "sy": -84.9,
       "sz": 223.57,
-      "summary": "LLM Communications was a British political lobbying and public relations firm founded in June 1997 by Neal Lawson, Ben Lucas, and Jonathan Mendelsohn as a breakaway operation from the Lowe Bell Political consultancy. The firm capitalized on its foun\u2026"
+      "summary": "Large language model The Transformer model architecture A large language model (LLM) is a transformer-based deep neural network pre-trained on vast quantities"
     },
     {
       "id": "Transformers",
@@ -2834,7 +2836,7 @@
       "sx": 283.44,
       "sy": -31.07,
       "sz": 391.75,
-      "summary": "Bert Willis Karlsson (born June 21, 1945) is a prominent Swedish entrepreneur, record company manager, and former politician. He is a household name in Sweden. In the music industry, Karlsson founded Mariann Grammofon AB in 1972, which became a lead\u2026"
+      "summary": "A priority encoder is a combinational logic circuit in digital electronics that encodes multiple input lines into a binary output code corresponding to the highest-priority active..."
     },
     {
       "id": "GPT",
@@ -2845,7 +2847,7 @@
       "sx": 288.23,
       "sy": 63.1,
       "sz": 350.83,
-      "summary": "The GPT Store is the official platform operated by OpenAI for discovering and sharing custom GPTs (also known as GPTs) in ChatGPT, accessible at It serves as the primary platform for custom GPTs, organized by categories such as writing, productivity\u2026"
+      "summary": "Generative pre-trained transformer A generative pre-trained transformer (GPT) is a type of large language model that employs a transformer-based neural"
     },
     {
       "id": "T5",
@@ -2856,7 +2858,7 @@
       "sx": 300.31,
       "sy": 30.23,
       "sz": 400.78,
-      "summary": "The SPARC T5 is a system-on-a-chip (SoC) microprocessor developed by Oracle Corporation as part of the SPARC (Scalable Processor ARChitecture) family, serving as the successor to the SPARC T4 and marking the fifth generation of multithreaded SPARC p\u2026"
+      "summary": "Text is any coherent stretch of spoken or written language that can be understood in its context, ranging from simple phrases like a stop sign to complex works such as novels. In linguistics, the term encompasses sequences of symbols or sounds that\u2026"
     },
     {
       "id": "Vision Transformers",
@@ -2878,7 +2880,7 @@
       "sx": 204.97,
       "sy": 183.79,
       "sz": 205.24,
-      "summary": "A media clip is a short extract or segment taken from a larger source of electronic media, such as a film, television program, radio broadcast, or digital recording, and is typically broadcast, shared, or presented separately. These clips may consis\u2026"
+      "summary": "Contrastive Language-Image Pre-training (CLIP) is a multimodal neural network technique developed by OpenAI that aligns images and text in a shared embedding space, enabling zero-shot classification and other cross-modal applications. Installation o\u2026"
     },
     {
       "id": "BPE Tokenization",
@@ -3065,7 +3067,7 @@
       "sx": 357.61,
       "sy": 43.62,
       "sz": 451.75,
-      "summary": "/animal/mamba) There are four extant species: the black mamba (D. polylepis), eastern green mamba (D. angusticeps), western green mamba (D. viridis), and"
+      "summary": "The Mamba model is a machine learning architecture with key advantages including linear scaling for long sequences; no quadratic attention mechanism resulting in faster inference and lower memory; recurrent hidden state processing enabling constant\u2026"
     },
     {
       "id": "RetNet",
@@ -3076,7 +3078,7 @@
       "sx": -388.2,
       "sy": 374.06,
       "sz": -69.14,
-      "summary": "gene hunting, revealing over 100 RP-causative genes by the early 21st century, with more than 100 identified as of 2025.[]("
+      "summary": "An alternative purchase network (APN) refers to commerce systems and platforms that enable the exchange, sharing, or gifting of goods and services as alternatives to conventional retail consumerism, often emphasizing community ties, sustainability,\u2026"
     },
     {
       "id": "RWKV",
@@ -3098,7 +3100,7 @@
       "sx": 391.31,
       "sy": 76.55,
       "sz": 436.12,
-      "summary": "HyENA is a USDe-margined perpetuals decentralized exchange (DEX) built on Hyperliquid's HIP-3 framework, enabling trading of perpetual contracts with yield-bearing USDe collateral from Ethena. The funding rate for the BTC-USDE perpetual on HyENA (US\u2026"
+      "summary": "The Nonlocal Attention Operator (NAO), proposed in 2024, is a neural operator architecture that leverages attention mechanisms to enable nonlocal interactions in modeling physical systems. The attention mechanism acts as a double integral operator,\u2026"
     },
     {
       "id": "State Space Models",
@@ -3131,7 +3133,7 @@
       "sx": 220.02,
       "sy": -90.25,
       "sz": 361.09,
-      "summary": "Services and Commercial Aspects Role of Alibi Agencies Alibi agencies emerged in the 1990s in Japan, where firms known as alibi-ya began offering excuses"
+      "summary": "The proposed K biases variant in transformer attention is defined as Softmax(1/\u221ad_h Q [k; K]\u1d40 + M) [0; V]. It adds only a learnable key bias (k), with a fixed zero value bias; concatenates k* to K but zeros for V. This variant shows that the att\u2026"
     },
     {
       "id": "RoPE",
@@ -3142,7 +3144,7 @@
       "sx": 37.02,
       "sy": -29.41,
       "sz": 357.43,
-      "summary": "/rope-construction)"
+      "summary": "Rotary Positional Embeddings (RoPE) in Large Language Models (LLMs). Replaces absolute embeddings; rotates query/key vectors for better relative position handling and length extrapolation."
     },
     {
       "id": "Sinusoidal Embeddings",
@@ -3208,7 +3210,7 @@
       "sx": 251.65,
       "sy": 280.3,
       "sz": 337.17,
-      "summary": "Richard Martin Gans (7 March 1880 \u2013 27 June 1954), a German-Jewish theoretical physicist born in Hamburg, was a pioneering figure who made foundational contributions to early quantum theory and electromagnetic scattering, notably through his devel\u2026"
+      "summary": "Models Types of deep generative models Generative adversarial networks (GANs) model data distributions implicitly through an adversarial game between"
     },
     {
       "id": "VAE",
@@ -3219,7 +3221,7 @@
       "sx": 302.47,
       "sy": 218.23,
       "sz": 429.14,
-      "summary": "Vae victis Brennus adding his sword to the scales during the ransom weighing Vae victis, Latin for \"woe to the vanquished,\" is a phrase attributed to"
+      "summary": "Variational autoencoder A variational autoencoder (VAE) is a type of probabilistic generative model in machine learning that extends traditional autoencoders"
     },
     {
       "id": "Diffusion Models",
@@ -3417,7 +3419,7 @@
       "sx": 35.77,
       "sy": 134.53,
       "sz": 163.96,
-      "summary": "Rectified spirit Bottle of Spirytus Rektyfikowany, a commercial example of rectified spirit Rectified spirit is a highly concentrated form of ethanol,"
+      "summary": "Flow-based generative model Flow-based generative models, also known as normalizing flows, are a class of probabilistic generative models in machine learning"
     },
     {
       "id": "VQ-VAE",
@@ -3428,7 +3430,7 @@
       "sx": 290.13,
       "sy": 238.22,
       "sz": 429.5,
-      "summary": "Brennus adding his sword to the scales during the ransom weighing Vae victis, Latin for \"woe to the vanquished,\" is a phrase attributed to Brennus, the chieftain of the Senones Gauls,..."
+      "summary": "The Vector Quantized VAE (VQ-VAE) introduces discrete latents by quantizing continuous encodings to a finite codebook, replacing the KL divergence with"
     },
     {
       "id": "VQGAN",
@@ -3516,7 +3518,7 @@
       "sx": 396.28,
       "sy": 30.6,
       "sz": 488.56,
-      "summary": "Moco moco striped pajamas, known in Japanese as \"\u3082\u3053\u3082\u3053 \u30b9\u30c8\u30e9\u30a4\u30d7 \u30d1\u30b8\u30e3\u30de,\" refer to fluffy (moco moco) striped pajamas, a popular category of winter roomwear in Japan. These are widely sold on sites like Rakuten with various design\u2026"
+      "summary": "Self-supervised learning Self-supervised learning (SSL) is a paradigm within machine learning, specifically a subset of unsupervised learning, that trains"
     },
     {
       "id": "DINO",
@@ -3527,7 +3529,7 @@
       "sx": 394.36,
       "sy": 89.69,
       "sz": 446.82,
-      "summary": "Dino is the stage name of Eugenio Zambelli (born May 3, 1948), an Italian singer and actor known primarily for his work as a pop and y\u00e9-y\u00e9 singer in the 1960s, when he was a popular teen idol. He also appeared in several films during that period,\u2026"
+      "summary": "Self-supervised learning Self-supervised learning (SSL) is a paradigm within machine learning, specifically a subset of unsupervised learning, that trains"
     },
     {
       "id": "MAE",
@@ -3538,7 +3540,7 @@
       "sx": 364.12,
       "sy": 3.36,
       "sz": 387.87,
-      "summary": "Mae Mae is an American rock band from Norfolk, Virginia, formed in early 2001."
+      "summary": "Self-supervised learning Self-supervised learning (SSL) is a paradigm within machine learning, specifically a subset of unsupervised learning, that trains"
     },
     {
       "id": "Word Embeddings",
@@ -3582,7 +3584,7 @@
       "sx": 407.18,
       "sy": 21.87,
       "sz": 472.4,
-      "summary": "Ho Un-byol (born 19 January 1992) is a North Korean professional footballer who plays primarily as a defender for the North Korea women's national football team and April 25 Sports Club. Standing at 165 cm (5 ft 5 in), she has been a consistent pres\u2026"
+      "summary": "Self-supervised learning Self-supervised learning (SSL) is a paradigm within machine learning, specifically a subset of unsupervised learning, that trains"
     },
     {
       "id": "VICReg",
@@ -3637,7 +3639,7 @@
       "sx": 311.95,
       "sy": 7.04,
       "sz": 318.55,
-      "summary": "Beit Hanina Beit Hanina al-Jadid and behind it Beit Hanina al-Balad Beit Hanina is a predominantly Arab neighborhood in northern East Jerusalem, located"
+      "summary": "Contrastive Language-Image Pre-training (CLIP) is a multimodal neural network technique developed by OpenAI that aligns images and text in a shared embedding space, enabling zero-shot classification and other cross-modal applications. Installation o\u2026"
     },
     {
       "id": "DINOv2",
@@ -3681,7 +3683,7 @@
       "sx": 371.19,
       "sy": 70.1,
       "sz": 382.11,
-      "summary": "flamingo (Phoeniconaias minor), Andean flamingo (Phoenicoparrus andinus), and James's flamingo (Phoenicoparrus jamesi)."
+      "summary": "Flamingo is DeepMind's 2022 few-shot visual language model that interleaves a frozen vision encoder with a frozen language model using gated cross-attention layers and perceiver resamplers, allowing in-context learning from interleaved image-text ex\u2026"
     },
     {
       "id": "ImageBind",
@@ -3747,7 +3749,7 @@
       "sx": 412.37,
       "sy": -62.31,
       "sz": 358.74,
-      "summary": "PPO Rotterdam is the abbreviation for \"Samenwerkingsverband Passend Primair Onderwijs Rotterdam,\" the regional collaborative partnership responsible for implementing Passend Onderwijs (appropriate education) in primary education in Rotterdam. It sup\u2026"
+      "summary": "In off-policy reinforcement learning, distribution shift occurs when the behavior policy generating data differs from the target policy, leading to biased"
     },
     {
       "id": "SAC",
@@ -3769,7 +3771,7 @@
       "sx": 300.06,
       "sy": 69.45,
       "sz": 450.16,
-      "summary": "The Air Copter A3C is a two-seat, side-by-side, kit-built autogyro ultralight aircraft designed and manufactured by Air Copter Sarl, based at the A\u00e9rodrome de Muret-Lherm in Lherm, Haute-Garonne, France. Introduced with its first flight in 2011, th\u2026"
+      "summary": "Asynchronous Advantage Actor-Critic (A3C) is a reinforcement learning algorithm that combines actor-critic methods with asynchronous parallel training of multiple agents on multiple instances of the environment. It improves training efficiency and s\u2026"
     },
     {
       "id": "Model-Based RL",
@@ -3824,7 +3826,7 @@
       "sx": -140.47,
       "sy": 30.42,
       "sz": 421.66,
-      "summary": "RL circuit An RL circuit is an electrical circuit composed of a resistor and an inductor connected in series or parallel, driven by a voltage or current"
+      "summary": "Inverse and Multi-Objective RL Inverse reinforcement learning (IRL) addresses the challenge of inferring an underlying reward function from observed expert"
     },
     {
       "id": "TD3",
@@ -3835,7 +3837,7 @@
       "sx": 254.58,
       "sy": 78.53,
       "sz": 443.29,
-      "summary": "The Taiwan Dancer TD-3, also known as the Alluvion Legend, is a Taiwanese amateur-built light fixed-wing aircraft equipped with a single piston engine. Developed in 2007 by Taiwan Dancer Technology Company Ltd., located in Taoyuan City, Taiwan, it f\u2026"
+      "summary": "Deep reinforcement learning Deep reinforcement learning (DRL) is a machine learning paradigm that integrates reinforcement learning principles with deep"
     },
     {
       "id": "DDPG",
@@ -3890,7 +3892,7 @@
       "sx": 351.26,
       "sy": 45.29,
       "sz": 320.68,
-      "summary": "Dreamer is a 1979 American sports drama film directed by Noel Nosseck and written by James Proctor and Larry Bischof, focusing on the world of professional bowling. Released on April 27, 1979, the story centers on Harold \"Dreamer\" Nuttingham (played\u2026"
+      "summary": "Model-free (reinforcement learning) Model-free reinforcement learning is a paradigm within reinforcement learning where an agent learns an optimal policy directly from interactions with the..."
     },
     {
       "id": "World Models RL",
@@ -3945,7 +3947,7 @@
       "sx": 217.65,
       "sy": -414.29,
       "sz": -133.5,
-      "summary": "/article27abf166-5c60-5128-a785-d30923566dc5.html) Modern Variations Run-Pass Options In run-pass options (RPOs) adapted to the triple option framework"
+      "summary": "Reinforcement learning Reinforcement learning (RL) is a paradigm in machine learning where an intelligent agent learns optimal behavior through trial-and-error"
     },
     {
       "id": "Multi-Task RL",
@@ -4088,7 +4090,7 @@
       "sx": 516.41,
       "sy": 246.74,
       "sz": 12.05,
-      "summary": "www.cs.utexas.edu/~mooney/cs343/slide-handouts/nlp.pdf) Two primary paradigms define syntactic structures in parsing: constituency parsing and dependency"
+      "summary": "Natural language processing Natural language processing (NLP) is a subfield of artificial intelligence (AI) and computational linguistics that enables"
     },
     {
       "id": "POS Tagging",
@@ -4154,7 +4156,7 @@
       "sx": 519.46,
       "sy": 231.04,
       "sz": 22.59,
-      "summary": "Parsing Approaches Shallow Semantic Parsing Shallow semantic parsing, also known as semantic role labeling (SRL), involves identifying and classifying"
+      "summary": "Semantic parsing Semantic parsing is the task of mapping natural language utterances to machine-interpretable meaning representations, such as logical"
     },
     {
       "id": "Cross-Lingual Transfer",
@@ -4176,7 +4178,7 @@
       "sx": 229.48,
       "sy": 153.46,
       "sz": 191.72,
-      "summary": ") Challenges in slot filling arise from the need to accommodate divergent taken and not-taken paths, often requiring separate instruction selection for"
+      "summary": "Slot filling is a key component of natural language understanding (NLU) in dialogue systems, where the goal is to extract specific pieces of information (slots) from user utterances. For example, in a flight booking system, slots might include departure city, destination, and date. It is typically framed as a sequence labeling task using BIO tagging and solved with models like BiLSTM-CRF or BERT-based architectures."
     },
     {
       "id": "Intent Detection",
@@ -4209,7 +4211,7 @@
       "sx": 398.47,
       "sy": 10.8,
       "sz": 453.87,
-      "summary": ", mutual authentication, and integrity checks. Additionally, LoRa enables geolocation without GPS and maintains"
+      "summary": "Low-rank adaptation (LoRA) is a technique for fine-tuning machine learning models, particularly in AI image generation. UPDATE: When blending multiple LoRAs for AI image quality enhancement, set strengths for quality boosters like Aesthetic Quality\u2026"
     },
     {
       "id": "QLoRA",
@@ -4264,7 +4266,7 @@
       "sx": 68.18,
       "sy": -189.33,
       "sz": 433.49,
-      "summary": "debate to verify outputs, and debate over constitutional AI principles to embed robustness, though each faces theoretical hurdles such as the unavailability"
+      "summary": "Constitutional AI and alignment techniques Constitutional AI (CAI) is a training methodology developed by Anthropic to align large language models with"
     },
     {
       "id": "Chain-of-Thought",
@@ -4286,7 +4288,7 @@
       "sx": 92.06,
       "sy": 14.91,
       "sz": 449.09,
-      "summary": "React is a concept extended play (EP) by the Japanese rock band Wagakki Band, released on December 4, 2019, through Universal Music LLC. As their first studio release under the label following a global partnership agreement, the EP features four ori\u2026"
+      "summary": "A reasoning model is a type of large language model (LLM) optimized for complex, multi-step reasoning tasks such as mathematics, coding, and logical inference, often through extended internal deliberation before producing a final answer. Unlike stan\u2026"
     },
     {
       "id": "Tool Use",
@@ -4319,7 +4321,7 @@
       "sx": 337.92,
       "sy": 9.04,
       "sz": 471.23,
-      "summary": "Rag-stone, also known as rag, refers to any of various hard rocks, such as sandstone or limestone, that are quarried in thin, irregular slabs and used primarily for building purposes due to their durability and ease of working into rubble or random\u2026"
+      "summary": "Retrieval-augmented generation (RAG) is a method to augment prompts with relevant external knowledge from reliable sources, grounding outputs in verifiable data rather than solely internal parameters. It is a hybrid framework in artificial intellige\u2026"
     },
     {
       "id": "Memory Systems",
@@ -4330,7 +4332,7 @@
       "sx": 219.71,
       "sy": 85.34,
       "sz": 95.57,
-      "summary": "Colorado Memory Systems, Inc. (CMS) was an American technology company founded in 1985 and headquartered in Loveland, Colorado. Initially established as a division of Colorado Time Systems, it became independent in 1990 and specialized in designing\u2026"
+      "summary": "Neural Networks is a monthly peer-reviewed scientific journal published by Elsevier, established in 1988 as the official archival publication of three leading neural network societies: the International Neural Network Society (INNS), the Asia-Pacifi\u2026"
     },
     {
       "id": "Multi-Agent Systems",
@@ -4418,7 +4420,7 @@
       "sx": 195.84,
       "sy": -199.99,
       "sz": 283.47,
-      "summary": "/~aaroth/Papers/privacybook.pdf) Definition and Variants Pure \u03b5-Differential Privacy Differential privacy formal definition Pure \u03b5-differential privacy"
+      "summary": "on leakage. In machine learning applications, companies often misuse differential privacy by selecting loose privacy"
     },
     {
       "id": "Quantization & Pruning",
@@ -4462,7 +4464,7 @@
       "sx": 47.73,
       "sy": 64.77,
       "sz": 12.3,
-      "summary": "Nerf NERF is a globally recognized toy brand owned by Hasbro, specializing in safe, foam-based active play products such as projectile blasters, balls"
+      "summary": "Neural radiance field A neural radiance field (NeRF) is a machine learning technique that represents three-dimensional scenes as continuous 5D functions"
     },
     {
       "id": "3D Gaussian Splatting",
@@ -4484,7 +4486,7 @@
       "sx": 369.97,
       "sy": 86.28,
       "sz": 401.89,
-      "summary": "/alphafold-3-and-alphafold-server/introducing-alphafold-3/what-alphafold-3-struggles-with/) In edge cases, AlphaFold exhibits poor performance on intrinsically"
+      "summary": "Protein structure prediction Protein structure prediction is the computational process of determining the three-dimensional (3D) arrangement of atoms"
     },
     {
       "id": "World Models",
@@ -4528,7 +4530,7 @@
       "sx": 264.94,
       "sy": 93.79,
       "sz": 302.14,
-      "summary": "Shap Shap is a village and civil parish in Westmorland and Furness, Cumbria, England."
+      "summary": "SHAP (SHapley Additive exPlanations) is a Python library for explaining machine learning model predictions using game-theoretic Shapley values. In version 0.46.0, released in June 2024, SHAP added official support for NumPy 2.0. This version require\u2026"
     },
     {
       "id": "LIME",
@@ -4539,7 +4541,7 @@
       "sx": 208.0,
       "sy": 64.57,
       "sz": 376.08,
-      "summary": "Lime Cookie is an Epic Cookie of the Support type in Cookie Run: Kingdom, positioned in the Rear, and a member of the Citrus Squad."
+      "summary": "Local Interpretable Model-agnostic Explanations (LIME) approximates complex models locally around a specific instance by fitting an interpretable surrogate"
     },
     {
       "id": "Conformal Prediction",
@@ -4572,7 +4574,7 @@
       "sx": 336.68,
       "sy": 177.0,
       "sz": 57.17,
-      "summary": "Polar alignment Polar alignment is the process of aligning the polar axis of an equatorial telescope mount parallel to Earth's rotational axis, directing"
+      "summary": "AI alignment is the research field focused on ensuring that artificial intelligence systems pursue goals and behaviors that are beneficial to humans. It encompasses technical problems such as reward specification, goal stability, and corrigibility, as well as broader challenges of ensuring AI systems remain safe and controllable as they become more capable."
     },
     {
       "id": "MLOps",
@@ -4671,7 +4673,7 @@
       "sx": 431.33,
       "sy": -114.17,
       "sz": 86.01,
-      "summary": "://steelguitaracademy.com/instruction/tuning/)"
+      "summary": "Fine-tuning large language models (LLMs) for CAD tasks is an active research area, with models adapted for parametric CAD generation, code/script creation, and precision-related workflows like dimension extraction and clash detection. Specialized CA\u2026"
     },
     {
       "id": "DPO",
@@ -4737,7 +4739,7 @@
       "sx": 62.1,
       "sy": 98.9,
       "sz": -98.89,
-      "summary": "/whitepapers/latest/practicing-continuous-integration-continuous-delivery/testing-stages-in-continuous-integration-and-continuous-delivery.html) Automation"
+      "summary": "LLM inference is the process of generating outputs from large language models given input prompts, representing the primary operational cost in RAG systems. Inference optimization impacts response latency, throughput, and cost. Inference approaches\u2026"
     },
     {
       "id": "vLLM",
@@ -4792,7 +4794,7 @@
       "sx": 92.92,
       "sy": 39.49,
       "sz": 101.1,
-      "summary": "Tensor parallelism with an RTX 4080 (Ada architecture) and RTX 3060 (Ampere architecture) is not supported in major local LLM frameworks like vLLM, which requires identical GPU types and architectures for tensor parallelism to avoid errors (e.g., NC\u2026"
+      "summary": "Tensor parallelism is a model parallelism strategy for distributed deep learning that splits individual weight tensors across multiple GPUs. Each GPU holds a slice of the tensor and computes a partial result, which is then combined via all-reduce operations. It is commonly used for large transformer layers where a single weight matrix is too large for one GPU's memory, as implemented in frameworks like Megatron-LM."
     },
     {
       "id": "ZeRO Optimization",
@@ -4814,7 +4816,7 @@
       "sx": 336.87,
       "sy": -95.83,
       "sz": 118.78,
-      "summary": "Mixed-precision arithmetic is a numerical computing technique that integrates multiple floating-point precision formats\u2014such as FP64 (double precision), FP32 (single precision), FP16 (half precision), BF16 (bfloat16), and emerging FP8 variants\u2014w\u2026"
+      "summary": "Deep learning Representing images on multiple layers of abstraction in deep learning Deep learning encompasses machine learning methods that employ artificial"
     },
     {
       "id": "Gradient Checkpointing",
@@ -4858,7 +4860,7 @@
       "sx": -30.91,
       "sy": -126.1,
       "sz": 448.72,
-      "summary": "/) Common examples include air, which is a gaseous mixture of nitrogen, oxygen, and other gases, and saltwater, a liquid solution of sodium chloride dissolved"
+      "summary": "In early 2026, prominent methods to transform local large language models (LLMs) into computer-controlling agents focus on privacy, offline functionality, and customization. These approaches enable local LLMs to act as autonomous agents capable of c\u2026"
     },
     {
       "id": "Agentic Workflows",
@@ -4990,7 +4992,7 @@
       "sx": 53.1,
       "sy": -127.27,
       "sz": 439.32,
-      "summary": "Quantum superposition Quantum superposition is a core principle of quantum mechanics in which a quantum system, such as an electron or photon, can exist"
+      "summary": "As of February 2026, mechanistic interpretability is recognized as a major breakthrough technology for understanding the inner workings of large language models (LLMs). Named by MIT Technology Review as one of the 10 Breakthrough Technologies of 202\u2026"
     },
     {
       "id": "Sparse Features",
@@ -5034,7 +5036,7 @@
       "sx": 122.47,
       "sy": -177.99,
       "sz": 344.2,
-      "summary": "/science/synthid/) OpenAI employs watermarking in DALL-E"
+      "summary": "Text watermarking is a digital technique for embedding imperceptible, robust identifiers\u2014known as watermarks\u2014into textual content to enable ownership verification, authenticity proof, and traceability without compromising the text's readability,\u2026"
     },
     {
       "id": "AI Governance",
@@ -5056,7 +5058,7 @@
       "sx": 89.3,
       "sy": -193.84,
       "sz": 410.89,
-      "summary": "Microsoft Responsible AI refers to the company's comprehensive framework and practices for developing, deploying, and using artificial intelligence ethically, safely, and responsibly. It is anchored in six core principles: fairness, reliability and\u2026"
+      "summary": "Amazon's Responsible AI principles emphasize safety to prevent harmful system outputs and misuse, alongside controllability, governance, and user accountability. The AWS Responsible AI Policy prohibits misuse such as intentional disinformation, priv\u2026"
     },
     {
       "id": "Bias in ML",
@@ -5078,7 +5080,7 @@
       "sx": 158.29,
       "sy": -239.46,
       "sz": 358.43,
-      "summary": "A 2023 survey on intersectional fairness in ML outlines metrics that extend traditional group fairness to multi-attribute scenarios, addressing how overlapping"
+      "summary": "Fairness (machine learning) Fairness in machine learning refers to the interdisciplinary effort to define, quantify, and mitigate systematic disparities"
     },
     {
       "id": "Robustness",
@@ -5089,7 +5091,7 @@
       "sx": 152.71,
       "sy": -194.87,
       "sz": 230.99,
-      "summary": "Robustness Robustness is a core principle across multiple fields, denoting the ability of a system, method, or design to maintain its intended performance"
+      "summary": "The Transformer architecture used in large language models (LLMs). Resources to understand it include The Illustrated Transformer by Jay Alammar for visual intuition, the original paper \"Attention is All You Need,\" and Andrej Karpathy's \"Neural Netw\u2026"
     },
     {
       "id": "Adversarial Attacks",
@@ -5100,7 +5102,7 @@
       "sx": 152.6,
       "sy": -186.16,
       "sz": 298.59,
-      "summary": "Adversarial Cybernetics is the field examining intentional manipulation or destabilization within complex socio-technical systems, particularly those involving ecological stability, resource allocation, and critical infrastructure such as smart grid\u2026"
+      "summary": "Neural network (machine learning) A colored neural network diagram illustrating interconnected layers of neurons A neural network in machine learning"
     },
     {
       "id": "Adversarial Training",
@@ -5122,7 +5124,7 @@
       "sx": 158.15,
       "sy": -184.07,
       "sz": 214.56,
-      "summary": "Robustness Robustness is a core principle across multiple fields, denoting the ability of a system, method, or design to maintain its intended performance"
+      "summary": "Generative adversarial network architecture A generative adversarial network (GAN) is a framework for training generative models through an adversarial process..."
     },
     {
       "id": "Data-Centric AI",
@@ -5188,7 +5190,7 @@
       "sx": 28.37,
       "sy": -126.23,
       "sz": 411.57,
-      "summary": "Technologies to improve memory in physical AI (also known as embodied AI or robotics) include brain-inspired multi-memory frameworks like RoboMemory, which unifies spatial, temporal, episodic, and semantic memory in a parallel architecture for lifel\u2026"
+      "summary": "Embodied AI refers to artificial intelligence systems that interact with the physical world through a body or robotic platform. These systems integrate perception, planning, and action to perform tasks in real environments, combining computer vision, natural language understanding, and reinforcement learning to enable robots and agents to navigate, manipulate objects, and follow instructions."
     },
     {
       "id": "Robotics Learning",
@@ -5243,7 +5245,7 @@
       "sx": -45.88,
       "sy": 134.2,
       "sz": -162.2,
-      "summary": "principles are applied to assess the stability of municipal solid waste (MSW) fills, where primary consolidation from self-weight and secondary creep"
+      "summary": "Elastic Weight Consolidation (EWC) is a regularization technique for continual learning that mitigates catastrophic forgetting by selectively constraining important parameters. It uses the Fisher information matrix to estimate each parameter's importance to previously learned tasks, then adds a quadratic penalty to the loss function that discourages changes to critical weights while allowing less important ones to adapt to new tasks."
     },
     {
       "id": "Progressive Neural Networks",
