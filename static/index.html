@@ -240,12 +240,12 @@
         </div>
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
           <span style="font-size:10px;color:#889;width:28px;flex-shrink:0;">From</span>
-          <input id="tl-start-slider" type="range" min="1640" max="2030" step="5" value="1640"
+          <input id="tl-start-slider" type="range" min="1640" step="5" value="1640"
             style="flex:1;accent-color:#1a4da0;cursor:pointer;">
         </div>
         <div style="display:flex;align-items:center;gap:6px;">
           <span style="font-size:10px;color:#889;width:28px;flex-shrink:0;">To</span>
-          <input id="tl-end-slider" type="range" min="1640" max="2030" step="5" value="2030"
+          <input id="tl-end-slider" type="range" min="1640" step="5"
             style="flex:1;accent-color:#1a4da0;cursor:pointer;">
         </div>
       </div>
@@ -1475,7 +1475,13 @@ fetch('graph.json').then(r => r.json()).then(data => {
 
   // ── Timeline scale ────────────────────────────────────────────────────
   let timelineGamma = 1.0;
-  let tlStartYear = 1640, tlEndYear = 2030;
+  const TL_CURRENT_YEAR = new Date().getFullYear();
+  let tlStartYear = 1640, tlEndYear = TL_CURRENT_YEAR;
+  // Set slider max and default values to current year
+  document.getElementById('tl-start-slider').max = TL_CURRENT_YEAR;
+  document.getElementById('tl-end-slider').max   = TL_CURRENT_YEAR;
+  document.getElementById('tl-end-slider').value = TL_CURRENT_YEAR;
+  document.getElementById('tl-range-label').textContent = tlStartYear + ' – ' + tlEndYear;
 
   // Power-law mapping: gamma=1 → linear, <1 → spreads old history, >1 → spreads recent
   // TL_DISPLAY is fixed so the physical timeline length never changes when the range is adjusted.
@@ -1486,12 +1492,27 @@ fetch('graph.json').then(r => r.json()).then(data => {
     return Math.pow(Math.max(t, 0), timelineGamma) * TL_DISPLAY + (tlStartYear - 1990) * 5;
   }
 
+  function repinTimelineNodes() {
+    const CAT_ORDER = ['foundation','core','supervised','unsupervised','ensemble','neural','advanced'];
+    // Pin every node in allNodes so positions are correct before getFilteredData runs
+    allNodes.forEach(n => {
+      const year = NODE_YEARS[n.label] ?? NODE_YEARS[n.id] ?? 2000;
+      const h = strHash(n.id);
+      const catIdx = CAT_ORDER.indexOf(n.category);
+      n.fx = yearToX(year);
+      n.fy = (catIdx - 3) * 160 + (((h & 0xff) / 255) - 0.5) * 200;
+      n.fz = (n.level - 3) * 100 + ((((h >> 8) & 0xff) / 255) - 0.5) * 180;
+    });
+  }
+
   function applyTimelineRange() {
     if (currentLayout !== 'time') return;
     document.getElementById('tl-range-label').textContent = tlStartYear + ' – ' + tlEndYear;
-    refreshGraph();           // rebuilds filtered node list, then repins in setLayout path
+    repinTimelineNodes();   // update fx/fy/fz on allNodes with new yearToX
+    refreshGraph();         // filter by year range (nodes already have correct positions)
     hideTimelineAxis();
     showTimelineAxis();
+    Graph.d3ReheatSimulation();
   }
 
   function gammaLabel(g) {
@@ -1511,18 +1532,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     timelineGamma = parseFloat(gammaSlider.value);
     gammaLabelEl.textContent = gammaLabel(timelineGamma);
     if (currentLayout === 'time') {
-      // Repin nodes
-      const fd = Graph.graphData();
-      const CAT_ORDER = ['foundation','core','supervised','unsupervised','ensemble','neural','advanced'];
-      fd.nodes.forEach(n => {
-        const year = NODE_YEARS[n.label] ?? NODE_YEARS[n.id] ?? 2000;
-        const h = strHash(n.id);
-        const catIdx = CAT_ORDER.indexOf(n.category);
-        n.fx = yearToX(year);
-        n.fy = (catIdx - 3) * 80 + (((h & 0xff) / 255) - 0.5) * 120;
-        n.fz = (n.level - 3) * 50 + ((((h >> 8) & 0xff) / 255) - 0.5) * 100;
-      });
-      // Rebuild axis
+      repinTimelineNodes();
       hideTimelineAxis();
       showTimelineAxis();
       Graph.d3ReheatSimulation();
@@ -1653,16 +1663,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
         }
       });
     } else {
-      // time layout: x = year, y/z = jitter by category + hash
-      const CAT_ORDER = ['foundation','core','supervised','unsupervised','ensemble','neural','advanced'];
-      fd.nodes.forEach(n => {
-        const year = NODE_YEARS[n.label] ?? NODE_YEARS[n.id] ?? 2000;
-        const h = strHash(n.id);
-        const catIdx = CAT_ORDER.indexOf(n.category);
-        n.fx = yearToX(year);
-        n.fy = (catIdx - 3) * 80 + (((h & 0xff) / 255) - 0.5) * 120;
-        n.fz = (n.level - 3) * 50 + (((( h >> 8) & 0xff) / 255) - 0.5) * 100;
-      });
+      repinTimelineNodes();
     }
     // Show/hide the 3D timeline axis
     if (mode === 'time') showTimelineAxis();
