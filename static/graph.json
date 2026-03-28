@@ -4434,6 +4434,72 @@
       "summary": "Color quantization Color quantization is a fundamental technique in computer graphics and image processing that reduces the number of distinct colors"
     },
     {
+      "id": "Post-Training Quantization",
+      "label": "Post-Training Quantization",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 42.01,
+      "sy": -214.36,
+      "sz": 180.08,
+      "summary": "Post-training quantization (PTQ) reduces model precision (e.g., FP32 to INT8) after training is complete, without requiring retraining. It calibrates quantization parameters using a small representative dataset, offering significant speedup and memory reduction with minimal accuracy loss. PTQ is the fastest path to deploying compressed models."
+    },
+    {
+      "id": "Quantization-Aware Training",
+      "label": "Quantization-Aware Training",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": -2.99,
+      "sy": -179.36,
+      "sz": 140.08,
+      "summary": "Quantization-aware training (QAT) simulates low-precision arithmetic during training by inserting fake quantization nodes into the computation graph. The model learns to compensate for quantization error, typically achieving higher accuracy than post-training quantization at the cost of a full training or fine-tuning run."
+    },
+    {
+      "id": "GPTQ",
+      "label": "GPTQ",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 62.01,
+      "sy": -229.36,
+      "sz": 165.08,
+      "summary": "GPTQ is a one-shot post-training quantization method for large language models that uses approximate second-order information (Hessian-based) to quantize weights to 3-4 bits with minimal perplexity loss. It processes weights column by column, using the inverse Hessian to optimally distribute quantization error across remaining weights."
+    },
+    {
+      "id": "AWQ",
+      "label": "AWQ",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 57.01,
+      "sy": -189.36,
+      "sz": 190.08,
+      "summary": "Activation-aware Weight Quantization (AWQ) is a post-training quantization method that identifies salient weight channels by observing activation magnitudes rather than weight magnitudes. By protecting the 1% of weights most important to activations, AWQ achieves better quality than round-to-nearest quantization at 4-bit precision for large language models."
+    },
+    {
+      "id": "GGUF",
+      "label": "GGUF",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 40.15,
+      "sy": -130.9,
+      "sz": 281.93,
+      "summary": "GGUF (GPT-Generated Unified Format) is a binary file format for storing quantized LLM weights, designed for efficient CPU and edge inference with llama.cpp. It supports multiple quantization levels (Q2 through Q8) and stores model metadata, tokenizer, and weights in a single portable file, enabling local LLM deployment on consumer hardware."
+    },
+    {
+      "id": "Model Inference",
+      "label": "Model Inference",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 113.78,
+      "sy": 177.19,
+      "sz": 8.4,
+      "summary": "Model inference is the process of using a trained machine learning model to make predictions on new data. Inference optimization focuses on reducing latency, memory usage, and compute cost through techniques like quantization, pruning, batching, caching, and hardware-specific compilation (e.g., TensorRT, ONNX Runtime). Efficient inference is critical for deploying models in production."
+    },
+    {
       "id": "Knowledge Distillation",
       "label": "Knowledge Distillation",
       "level": 6,
@@ -6147,6 +6213,10 @@
       "to": "Deep Ensembles"
     },
     {
+      "from": "Neural Networks",
+      "to": "Model Inference"
+    },
+    {
       "from": "Batch Normalization",
       "to": "Residual Networks"
     },
@@ -7365,6 +7435,62 @@
     {
       "from": "Quantization & Pruning",
       "to": "Mixed Precision Training"
+    },
+    {
+      "from": "Quantization & Pruning",
+      "to": "Post-Training Quantization"
+    },
+    {
+      "from": "Quantization & Pruning",
+      "to": "Quantization-Aware Training"
+    },
+    {
+      "from": "Post-Training Quantization",
+      "to": "GPTQ"
+    },
+    {
+      "from": "Post-Training Quantization",
+      "to": "AWQ"
+    },
+    {
+      "from": "Post-Training Quantization",
+      "to": "GGUF"
+    },
+    {
+      "from": "Quantization-Aware Training",
+      "to": "Mixed Precision Training"
+    },
+    {
+      "from": "GPTQ",
+      "to": "vLLM"
+    },
+    {
+      "from": "AWQ",
+      "to": "vLLM"
+    },
+    {
+      "from": "GGUF",
+      "to": "Edge AI"
+    },
+    {
+      "from": "Model Inference",
+      "to": "LLM Serving"
+    },
+    {
+      "from": "Model Inference",
+      "to": "Quantization & Pruning"
+    },
+    {
+      "from": "Model Inference",
+      "to": "TensorRT / ONNX"
+    },
+    {
+      "from": "Model Inference",
+      "to": "Edge AI"
+    },
+    {
+      "from": "Model Inference",
+      "to": "Speculative Decoding"
     },
     {
       "from": "Knowledge Distillation",
