@@ -329,6 +329,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     category: n.category, color: n.color,
     val: n.level <= 1 ? 6 : n.level >= 5 ? 5 : 3,
     sx: n.sx || 0, sy: n.sy || 0, sz: n.sz || 0,
+    summary: n.summary || '',
   }));
   const allLinks = data.edges.map(e => ({ source: e.from, target: e.to }));
 
@@ -1054,37 +1055,24 @@ fetch('graph.json').then(r => r.json()).then(data => {
     't-SNE':'t-SNE', 'vLLM':'vLLM',
   };
 
-  async function fetchWikiSummary(label) {
+  function fetchWikiSummary(label) {
     const wikiEl    = document.getElementById('ni-wiki');
     const summaryEl = document.getElementById('ni-wiki-summary');
     const linkEl    = document.getElementById('ni-wiki-link');
     wikiEl.style.display = 'block';
-    summaryEl.textContent = '';
-    summaryEl.className = 'wiki-loading';
-    summaryEl.textContent = 'Loading summary…';
 
     const slug = GROK_SLUGS[label];
-    const searchUrl = `https://grokipedia.com/api/full-text-search?query=${encodeURIComponent(label)}&limit=1`;
     const pageUrl = slug
       ? `https://grokipedia.com/page/${slug}`
       : `https://grokipedia.com/search?q=${encodeURIComponent(label)}`;
 
-    try {
-      const resp = await fetch(searchUrl, {headers: {'Accept': 'application/json'}});
-      if (!resp.ok) throw new Error('Not found');
-      const data = await resp.json();
-      const top = data.results && data.results[0];
-      if (!top) throw new Error('No results');
-      summaryEl.className = '';
-      summaryEl.textContent = top.snippet || 'No summary available.';
-      linkEl.href = pageUrl;
-      linkEl.querySelector('span').textContent = 'Read on Grokipedia';
-    } catch(e) {
-      summaryEl.className = '';
-      summaryEl.textContent = 'No Grokipedia article found.';
-      linkEl.href = pageUrl;
-      linkEl.querySelector('span').textContent = slug ? 'Read on Grokipedia' : 'Search Grokipedia';
-    }
+    const node = nodeMap[label] || allNodes.find(n => n.label === label);
+    const summary = node ? node.summary : '';
+
+    summaryEl.className = '';
+    summaryEl.textContent = summary || 'No summary available.';
+    linkEl.href = pageUrl;
+    linkEl.querySelector('span').textContent = slug ? 'Read on Grokipedia' : 'Search Grokipedia';
   }
 
   function showNodeInfo(node, fd) {

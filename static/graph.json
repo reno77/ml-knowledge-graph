@@ -8,7 +8,8 @@
       "color": "#1a6985",
       "sx": 238.61,
       "sy": -495.36,
-      "sz": -115.13
+      "sz": -115.13,
+      "summary": "Linear algebra Linear algebra is the branch of mathematics that studies systems of linear equations and linear transformations between vector spaces,"
     },
     {
       "id": "Calculus",
@@ -18,7 +19,8 @@
       "color": "#1a6985",
       "sx": 222.83,
       "sy": -468.15,
-      "sz": -27.97
+      "sz": -27.97,
+      "summary": "Calculus Calculus is the study of how things change, providing a framework for modeling systems in which there is change and a way to deduce the predictions"
     },
     {
       "id": "Probability & Stats",
@@ -28,7 +30,8 @@
       "color": "#1a6985",
       "sx": 159.08,
       "sy": -571.86,
-      "sz": -121.21
+      "sz": -121.21,
+      "summary": "Stats Perform Stats Perform is a global sports technology company specializing in artificial intelligence (AI), data analytics, and content solutions"
     },
     {
       "id": "Python",
@@ -38,7 +41,8 @@
       "color": "#1a6985",
       "sx": 237.7,
       "sy": -477.23,
-      "sz": -167.73
+      "sz": -167.73,
+      "summary": "Python is a steel roller coaster at Efteling theme park in Kaatsheuvel, Netherlands, featuring a Vekoma MK-1200 design with two vertical loops, a double corkscrew, and a helix, resulting in four inversions. Opened on April 12, 1981, it reaches a max\u2026"
     },
     {
       "id": "Information Theory",
@@ -48,7 +52,8 @@
       "color": "#1a6985",
       "sx": 287.23,
       "sy": -576.78,
-      "sz": -136.56
+      "sz": -136.56,
+      "summary": "Information theory Information theory is a mathematical discipline that quantifies, stores, and communicates information, focusing on the fundamental"
     },
     {
       "id": "Optimization Theory",
@@ -58,7 +63,8 @@
       "color": "#1a6985",
       "sx": 283.07,
       "sy": -532.38,
-      "sz": -112.96
+      "sz": -112.96,
+      "summary": "Optimization Theory for Large Systems is a foundational textbook in mathematical optimization authored by Leon S. Lasdon, first published in 1970 by the Macmillan Company. The book provides a comprehensive examination of the most significant algorit\u2026"
     },
     {
       "id": "Numerical Methods",
@@ -68,7 +74,8 @@
       "color": "#1a6985",
       "sx": 223.22,
       "sy": -513.79,
-      "sz": -77.47
+      "sz": -77.47,
+      "summary": "Sinc numerical methods are a family of numerical approximation techniques rooted in the cardinal sinc function, \\(\\operatorname{sinc}(z) = \\sin(\\pi z)/(\\pi z)\\), which enable highly accurate solutions to problems in function approximation, interpola\u2026"
     },
     {
       "id": "Set Theory",
@@ -78,7 +85,8 @@
       "color": "#1a6985",
       "sx": 295.34,
       "sy": -574.46,
-      "sz": -164.38
+      "sz": -164.38,
+      "summary": "Axiomatic Set Theory Zermelo-Fraenkel Set Theory Zermelo-Fraenkel set theory with the axiom of choice, commonly denoted ZFC, is the standard axiomatic"
     },
     {
       "id": "Graph Theory",
@@ -88,7 +96,8 @@
       "color": "#1a6985",
       "sx": 299.05,
       "sy": -551.33,
-      "sz": -176.32
+      "sz": -176.32,
+      "summary": "Graph theory Graph theory is a branch of discrete mathematics that studies graphs, which are abstract mathematical structures consisting of a set of vertices"
     },
     {
       "id": "Linear Programming",
@@ -98,7 +107,8 @@
       "color": "#1a6985",
       "sx": 252.11,
       "sy": -474.18,
-      "sz": -106.58
+      "sz": -106.58,
+      "summary": "Linear programming Linear programming (LP), also known as linear optimization, is a mathematical method used to optimize (maximize or minimize) a linear"
     },
     {
       "id": "Dynamic Programming",
@@ -108,7 +118,8 @@
       "color": "#1a6985",
       "sx": 257.88,
       "sy": -434.01,
-      "sz": -97.03
+      "sz": -97.03,
+      "summary": "Dynamic programming Dynamic programming is an optimization approach and algorithmic paradigm that solves complex problems by breaking them down into a"
     },
     {
       "id": "Matrix Decomposition",
@@ -118,7 +129,8 @@
       "color": "#1a6985",
       "sx": 225.7,
       "sy": -493.01,
-      "sz": -128.05
+      "sz": -128.05,
+      "summary": "Matrix decomposition Matrix decomposition, also known as matrix factorization, refers to the process of factoring a matrix into a product of matrices"
     },
     {
       "id": "Fourier Analysis",
@@ -128,7 +140,8 @@
       "color": "#1a6985",
       "sx": 261.18,
       "sy": -582.02,
-      "sz": -90.06
+      "sz": -90.06,
+      "summary": "Fourier analysis Fourier analysis is a mathematical technique for decomposing functions or signals into sums or integrals of sinusoidal components, such"
     },
     {
       "id": "Stochastic Processes",
@@ -138,7 +151,8 @@
       "color": "#1a6985",
       "sx": 176.21,
       "sy": -575.64,
-      "sz": -93.6
+      "sz": -93.6,
+      "summary": "A stochastic process is a mathematical object consisting of a collection of random variables indexed by time or another parameter, providing a framework to model systems or phenomena that evolve in a probabilistic manner. These processes capture the\u2026"
     },
     {
       "id": "Bayesian Statistics",
@@ -148,7 +162,8 @@
       "color": "#1a6985",
       "sx": 107.59,
       "sy": -555.06,
-      "sz": -88.41
+      "sz": -88.41,
+      "summary": "Bayesian statistics Bayesian statistics is a paradigm in statistical inference that applies Bayes' theorem to update the probability of a hypothesis as"
     },
     {
       "id": "Hypothesis Testing",
@@ -158,7 +173,8 @@
       "color": "#1a6985",
       "sx": 133.18,
       "sy": -584.69,
-      "sz": -137.55
+      "sz": -137.55,
+      "summary": "Two-sample hypothesis testing Two-sample hypothesis testing is a fundamental statistical method used to assess whether observed differences between two"
     },
     {
       "id": "Convex Optimization",
@@ -168,7 +184,8 @@
       "color": "#1a6985",
       "sx": 268.87,
       "sy": -449.81,
-      "sz": -91.79
+      "sz": -91.79,
+      "summary": "Convex optimization Convex optimization is a subfield of mathematical optimization focused on minimizing a convex objective function over a convex set"
     },
     {
       "id": "SQL & Databases",
@@ -178,7 +195,8 @@
       "color": "#1a6985",
       "sx": 218.9,
       "sy": -537.6,
-      "sz": -178.14
+      "sz": -178.14,
+      "summary": "Documenting an undocumented SQL Server database involves reverse-engineering the schema directly from the live database without any prior documentation. The best free tools for this purpose include SchemaSpy, DBeaver, and SchemaCrawler. SchemaSpy is\u2026"
     },
     {
       "id": "Data Structures",
@@ -188,7 +206,8 @@
       "color": "#1a6985",
       "sx": 233.97,
       "sy": -532.58,
-      "sz": -164.06
+      "sz": -164.06,
+      "summary": "List of data structures A list of data structures in computer science catalogs the various formats and methods for organizing, storing, and managing data"
     },
     {
       "id": "Game Theory",
@@ -198,7 +217,8 @@
       "color": "#1a6985",
       "sx": 332.38,
       "sy": -551.36,
-      "sz": -122.46
+      "sz": -122.46,
+      "summary": ", integrated in psychological game theory."
     },
     {
       "id": "Complex Analysis",
@@ -208,7 +228,8 @@
       "color": "#1a6985",
       "sx": 272.75,
       "sy": -602.26,
-      "sz": -98.27
+      "sz": -98.27,
+      "summary": "Complex analysis Complex analysis is the branch of mathematical analysis that studies functions of complex variables, particularly those that are analytic"
     },
     {
       "id": "Real Analysis",
@@ -218,7 +239,8 @@
       "color": "#1a6985",
       "sx": 254.81,
       "sy": -590.38,
-      "sz": -121.72
+      "sz": -121.72,
+      "summary": "Real analysis Real analysis is the branch of mathematics that deals with limits, continuity, and related concepts for real-valued functions of a real"
     },
     {
       "id": "Topology",
@@ -228,7 +250,8 @@
       "color": "#1a6985",
       "sx": 266.18,
       "sy": -528.44,
-      "sz": -189.6
+      "sz": -189.6,
+      "summary": "in general topology, geometric topology, set-theoretic topology, and algebraic topology.[]("
     },
     {
       "id": "Measure Theory",
@@ -238,7 +261,8 @@
       "color": "#1a6985",
       "sx": 270.77,
       "sy": -612.51,
-      "sz": -148.65
+      "sz": -148.65,
+      "summary": "Geometric measure theory Geometric measure theory is a branch of mathematics that generalizes classical measure theory and differential geometry to analyze"
     },
     {
       "id": "Monte Carlo Methods",
@@ -248,7 +272,8 @@
       "color": "#1a6985",
       "sx": 176.91,
       "sy": -540.78,
-      "sz": -79.21
+      "sz": -79.21,
+      "summary": "Monte Carlo methods in finance Monte Carlo methods in finance are computational algorithms that rely on repeated random sampling to estimate the probabilities"
     },
     {
       "id": "Markov Chains",
@@ -258,7 +283,8 @@
       "color": "#1a6985",
       "sx": 170.31,
       "sy": -564.62,
-      "sz": -95.21
+      "sz": -95.21,
+      "summary": "Examples of Markov chains Markov chains are stochastic processes consisting of a sequence of random variables where the probability distribution for the"
     },
     {
       "id": "Signal Processing",
@@ -268,7 +294,8 @@
       "color": "#1a6985",
       "sx": 242.37,
       "sy": -563.23,
-      "sz": -131.29
+      "sz": -131.29,
+      "summary": "Signal processing Signal processing is the interdisciplinary field concerned with the representation, analysis, modification, and synthesis of signals"
     },
     {
       "id": "Control Theory",
@@ -278,7 +305,8 @@
       "color": "#1a6985",
       "sx": 288.89,
       "sy": -552.68,
-      "sz": -112.05
+      "sz": -112.05,
+      "summary": "Control theory Control theory is a branch of engineering and mathematics focused on the behavior of dynamical systems and the design of controllers to"
     },
     {
       "id": "Information Retrieval",
@@ -288,7 +316,8 @@
       "color": "#1a6985",
       "sx": 240.3,
       "sy": -568.56,
-      "sz": -153.51
+      "sz": -153.51,
+      "summary": "Information retrieval Information retrieval (IR) is the activity of obtaining material, usually unstructured text documents, from large collections that"
     },
     {
       "id": "Combinatorics",
@@ -298,7 +327,8 @@
       "color": "#1a6985",
       "sx": 224.09,
       "sy": -545.93,
-      "sz": -159.51
+      "sz": -159.51,
+      "summary": "Combinatorics Combinatorics is a branch of mathematics concerned with selecting, arranging, constructing, classifying, and counting discrete objects,"
     },
     {
       "id": "Algorithms",
@@ -308,7 +338,8 @@
       "color": "#1a6985",
       "sx": 267.08,
       "sy": -514.14,
-      "sz": -157.16
+      "sz": -157.16,
+      "summary": "Professional speedcubing algorithms for different methods and cube types across all events in the World Cube Association (WCA). This includes algs used in official WCA competitions for puzzles such as 2x2x2, 3x3x3, 4x4x4, 5x5x5, 6x6x6, 7x7x7, and ot\u2026"
     },
     {
       "id": "Complexity Theory",
@@ -318,7 +349,8 @@
       "color": "#1a6985",
       "sx": 312.43,
       "sy": -581.26,
-      "sz": -140.28
+      "sz": -140.28,
+      "summary": "Computational complexity theory Computational complexity theory is a subfield of theoretical computer science that classifies computational problems according"
     },
     {
       "id": "Statistics (Frequentist)",
@@ -328,7 +360,8 @@
       "color": "#1a6985",
       "sx": 143.63,
       "sy": -582.37,
-      "sz": -135.03
+      "sz": -135.03,
+      "summary": "Pearson refined hypothesis testing and interval estimation in the 1930s, establishing a decision-theoretic framework for frequentist statistics."
     },
     {
       "id": "Multivariate Calculus",
@@ -338,7 +371,8 @@
       "color": "#1a6985",
       "sx": 213.27,
       "sy": -438.18,
-      "sz": -24.25
+      "sz": -24.25,
+      "summary": "Multivariate interpolation Multivariate interpolation is a fundamental technique in numerical analysis and approximation theory that involves constructing"
     },
     {
       "id": "Differential Equations",
@@ -348,7 +382,8 @@
       "color": "#1a6985",
       "sx": 179.56,
       "sy": -398.07,
-      "sz": 2.83
+      "sz": 2.83,
+      "summary": "Differential Equations is a widely used undergraduate textbook on ordinary differential equations, authored by mathematician Shepley L. Ross and published in its third edition by John Wiley & Sons on February 6, 1984. The 816-page work presents a re\u2026"
     },
     {
       "id": "Loss Functions",
@@ -358,7 +393,8 @@
       "color": "#c17d1a",
       "sx": 81.09,
       "sy": -31.72,
-      "sz": -316.35
+      "sz": -316.35,
+      "summary": "Loss functions for classification Loss functions for classification are mathematical measures used in machine learning to quantify the discrepancy between"
     },
     {
       "id": "Gradient Descent",
@@ -368,7 +404,8 @@
       "color": "#c17d1a",
       "sx": 51.09,
       "sy": -7.96,
-      "sz": -178.45
+      "sz": -178.45,
+      "summary": "/~qnie/Publications/NumericalOptimization.pdf) Standard Batch Gradient Descent Algorithm Description Batch gradient descent, also known as vanilla gradient"
     },
     {
       "id": "Backpropagation",
@@ -378,7 +415,8 @@
       "color": "#c17d1a",
       "sx": -122.22,
       "sy": 179.04,
-      "sz": -175.22
+      "sz": -175.22,
+      "summary": "Backpropagation Backpropagation is a supervised learning algorithm widely used for training multilayer artificial neural networks by efficiently computing"
     },
     {
       "id": "Regularization",
@@ -388,7 +426,8 @@
       "color": "#c17d1a",
       "sx": 82.86,
       "sy": -61.31,
-      "sz": -196.84
+      "sz": -196.84,
+      "summary": "Regularization (mathematics) In mathematics, regularization encompasses a set of techniques designed to address ill-posed problems, particularly inverse"
     },
     {
       "id": "Feature Engineering",
@@ -398,7 +437,8 @@
       "color": "#c17d1a",
       "sx": 155.47,
       "sy": -125.52,
-      "sz": -138.01
+      "sz": -138.01,
+      "summary": "Feature engineering Feature engineering is the process of transforming raw data into meaningful features that enhance the performance of machine learning"
     },
     {
       "id": "Cross-Validation",
@@ -408,7 +448,8 @@
       "color": "#c17d1a",
       "sx": 178.31,
       "sy": -43.86,
-      "sz": -210.24
+      "sz": -210.24,
+      "summary": "Techniques Leave-One-Out Cross-Validation Leave-one-out cross-validation (LOOCV) is a special case of exhaustive cross-validation techniques, particularly"
     },
     {
       "id": "Bias-Variance Tradeoff",
@@ -418,7 +459,8 @@
       "color": "#c17d1a",
       "sx": 135.29,
       "sy": -85.76,
-      "sz": -180.29
+      "sz": -180.29,
+      "summary": "Bias\u2013variance tradeoff The bias\u2013variance tradeoff is a foundational concept in statistics and machine learning that describes the decomposition of a model's"
     },
     {
       "id": "Hyperparameter Tuning",
@@ -428,7 +470,8 @@
       "color": "#c17d1a",
       "sx": 388.58,
       "sy": -126.44,
-      "sz": 24.01
+      "sz": 24.01,
+      "summary": "tabular data, vision, and natural language processing, often alongside automated ensembling.[]("
     },
     {
       "id": "Data Preprocessing",
@@ -438,7 +481,8 @@
       "color": "#c17d1a",
       "sx": 187.62,
       "sy": -85.44,
-      "sz": -154.53
+      "sz": -154.53,
+      "summary": "Data preprocessing is the essential initial phase in data analysis pipelines, involving the systematic preparation of raw data through cleaning, integration, transformation, and reduction to enhance its quality, consistency, and suitability for subs\u2026"
     },
     {
       "id": "Evaluation Metrics",
@@ -448,7 +492,8 @@
       "color": "#c17d1a",
       "sx": 253.74,
       "sy": -91.67,
-      "sz": -109.85
+      "sz": -109.85,
+      "summary": "Evaluation metrics used for hedging a net short-theta SPX options portfolio. Cost: Annualized drag (theta + roll), % BP usage; Protection: Worst-day/week reduction, CVaR-95/99 improvement, payout vs. SPX drawdown; Portfolio: Sharpe/Sortino uplift, h\u2026"
     },
     {
       "id": "Overfitting",
@@ -458,7 +503,8 @@
       "color": "#c17d1a",
       "sx": 169.59,
       "sy": -87.41,
-      "sz": -209.63
+      "sz": -209.63,
+      "summary": "Overfitting Illustration of overfitting Overfitting is a modeling error that arises in statistical learning when a function is excessively tailored to"
     },
     {
       "id": "Underfitting",
@@ -468,7 +514,8 @@
       "color": "#c17d1a",
       "sx": 145.07,
       "sy": -61.64,
-      "sz": -232.12
+      "sz": -232.12,
+      "summary": "The impact of the number of hidden units in a neural network. The number of hidden units is a hyperparameter; too many leads to overfitting risk, while too few leads to underfitting risk."
     },
     {
       "id": "Learning Rate Scheduling",
@@ -478,7 +525,8 @@
       "color": "#c17d1a",
       "sx": 92.68,
       "sy": -2.79,
-      "sz": -168.41
+      "sz": -168.41,
+      "summary": "Rate-monotonic scheduling Rate-monotonic scheduling (RMS) is a preemptive, fixed-priority scheduling algorithm used in real-time computing systems to"
     },
     {
       "id": "Early Stopping",
@@ -488,7 +536,8 @@
       "color": "#c17d1a",
       "sx": 91.52,
       "sy": -29.3,
-      "sz": -156.71
+      "sz": -156.71,
+      "summary": "Early stopping Early stopping is a regularization technique in machine learning that prevents overfitting in iterative optimization algorithms, such as"
     },
     {
       "id": "Data Augmentation",
@@ -498,7 +547,8 @@
       "color": "#c17d1a",
       "sx": 165.61,
       "sy": -33.52,
-      "sz": -152.72
+      "sz": -152.72,
+      "summary": "Data augmentation Data augmentation is a set of techniques in machine learning that generate high-quality synthetic data by applying transformations to"
     },
     {
       "id": "Transfer Learning",
@@ -508,7 +558,8 @@
       "color": "#c17d1a",
       "sx": 126.99,
       "sy": -15.47,
-      "sz": -178.58
+      "sz": -178.58,
+      "summary": "Classification and Types Inductive Transfer Learning Inductive transfer learning refers to the paradigm in transfer learning where the source and target"
     },
     {
       "id": "Imbalanced Data",
@@ -518,7 +569,8 @@
       "color": "#c17d1a",
       "sx": 167.64,
       "sy": -80.17,
-      "sz": -235.51
+      "sz": -235.51,
+      "summary": ": | Aspect | Real Data Pros | Real Data Cons | Synthetic Data Pros | Synthetic Data Cons | |---------------------|------------------------------------"
     },
     {
       "id": "Missing Data Imputation",
@@ -528,7 +580,8 @@
       "color": "#c17d1a",
       "sx": 149.98,
       "sy": -90.73,
-      "sz": -200.17
+      "sz": -200.17,
+      "summary": "variance. These methods, evaluated"
     },
     {
       "id": "Feature Selection",
@@ -538,7 +591,8 @@
       "color": "#c17d1a",
       "sx": 129.04,
       "sy": -141.44,
-      "sz": -158.17
+      "sz": -158.17,
+      "summary": "Feature selection Feature selection is a preprocessing technique in machine learning and statistics that identifies and selects a subset of relevant variables"
     },
     {
       "id": "Model Selection",
@@ -548,7 +602,8 @@
       "color": "#c17d1a",
       "sx": 125.64,
       "sy": -111.07,
-      "sz": -128.73
+      "sz": -128.73,
+      "summary": "Model selection Model selection is a fundamental process in statistical modeling and machine learning, involving the selection of the most appropriate"
     },
     {
       "id": "Pipeline Design",
@@ -558,7 +613,8 @@
       "color": "#c17d1a",
       "sx": 141.96,
       "sy": 63.07,
-      "sz": 121.9
+      "sz": 121.9,
+      "summary": "The main norms for designing nitrogen gas pipelines are GB 50316-2023 (Industrial Metal Pipeline Design), GB 50160 (Petrochemical Process Pipeline Installation), and GB 50646-2011 (Special Gas System Engineering). This fully answers the question on\u2026"
     },
     {
       "id": "Normalization",
@@ -568,7 +624,8 @@
       "color": "#c17d1a",
       "sx": 62.48,
       "sy": 69.0,
-      "sz": -256.4
+      "sz": -256.4,
+      "summary": "adjust dynamically to the changing distributions during training. Layer Normalization Layer normalization is a normalization"
     },
     {
       "id": "Cross-Entropy Loss",
@@ -578,7 +635,8 @@
       "color": "#c17d1a",
       "sx": 123.7,
       "sy": -41.22,
-      "sz": -299.76
+      "sz": -299.76,
+      "summary": "Variants Amended Cross-entropy The amended cross-entropy, also known as the amended cross-entropy cost (ACE), is a modified loss function that extends"
     },
     {
       "id": "KL Divergence",
@@ -588,7 +646,8 @@
       "color": "#c17d1a",
       "sx": 49.24,
       "sy": -92.99,
-      "sz": -266.88
+      "sz": -266.88,
+      "summary": "K2 is a low-variance approximation to the Kullback-Leibler (KL) divergence. Formula: \u2248 1/2 (log_ratio)^2 or similar quadratic form. Properties: low variance, but biased (slightly underestimates KL), always non-negative. Usage: less common as prima\u2026"
     },
     {
       "id": "Contrastive Loss",
@@ -598,7 +657,8 @@
       "color": "#c17d1a",
       "sx": 85.44,
       "sy": -56.07,
-      "sz": -303.04
+      "sz": -303.04,
+      "summary": "Visuo-Tactile Contrastive Loss is a contrastive loss function used in multimodal machine learning to align visual and tactile representations. It adapts principles from contrastive learning frameworks like CLIP to pretrain encoders for vision and to\u2026"
     },
     {
       "id": "Stratified Sampling",
@@ -608,7 +668,8 @@
       "color": "#c17d1a",
       "sx": 219.93,
       "sy": -135.61,
-      "sz": -199.42
+      "sz": -199.42,
+      "summary": "Stratified sampling Stratified sampling is a probability sampling method in statistics used to select a representative sample from a population by first"
     },
     {
       "id": "Class Weights",
@@ -618,7 +679,8 @@
       "color": "#c17d1a",
       "sx": 43.2,
       "sy": 50.79,
-      "sz": -212.85
+      "sz": -212.85,
+      "summary": "Calibration weights are standardized masses used to calibrate precision scales, including digital gold and jewelry scales that require high accuracy for reliable measurements. Popular and highly rated calibration weights for gold/jewelry scales on A\u2026"
     },
     {
       "id": "Bootstrapping",
@@ -628,7 +690,8 @@
       "color": "#c17d1a",
       "sx": 219.23,
       "sy": -134.05,
-      "sz": -156.08
+      "sz": -156.08,
+      "summary": "Bootstrapping Illustration of Baron M\u00fcnchhausen extracting himself from a swamp by his own pigtail Bootstrapping denotes a self-initiating mechanism"
     },
     {
       "id": "Dimensionality Reduction",
@@ -638,7 +701,8 @@
       "color": "#c17d1a",
       "sx": 91.27,
       "sy": -183.42,
-      "sz": -189.99
+      "sz": -189.99,
+      "summary": "Dimensionality reduction Dimensionality reduction is the process of transforming data from a high-dimensional space into a lower-dimensional representation"
     },
     {
       "id": "Curse of Dimensionality",
@@ -648,7 +712,8 @@
       "color": "#c17d1a",
       "sx": 76.0,
       "sy": -158.44,
-      "sz": -220.87
+      "sz": -220.87,
+      "summary": "Curse of dimensionality The curse of dimensionality is a phenomenon in which the complexity of computational problems increases exponentially with the"
     },
     {
       "id": "No Free Lunch Theorem",
@@ -658,7 +723,8 @@
       "color": "#c17d1a",
       "sx": 351.08,
       "sy": -477.14,
-      "sz": -110.72
+      "sz": -110.72,
+      "summary": "No free lunch theorem The no free lunch (NFL) theorems are a family of theoretical results in computer science, particularly in the domains of optimization"
     },
     {
       "id": "Maximum Likelihood",
@@ -668,7 +734,8 @@
       "color": "#c17d1a",
       "sx": 175.0,
       "sy": -161.8,
-      "sz": -207.55
+      "sz": -207.55,
+      "summary": "Restricted maximum likelihood Restricted maximum likelihood (REML) is a likelihood-based technique for estimating variance components in linear mixed"
     },
     {
       "id": "MAP Estimation",
@@ -678,7 +745,8 @@
       "color": "#c17d1a",
       "sx": 151.26,
       "sy": -202.08,
-      "sz": -204.15
+      "sz": -204.15,
+      "summary": "Maximum a posteriori estimation Maximum a posteriori (MAP) estimation is a Bayesian statistical method for obtaining a point estimate of an unknown parameter"
     },
     {
       "id": "EM Algorithm",
@@ -688,7 +756,8 @@
       "color": "#c17d1a",
       "sx": 237.05,
       "sy": -194.49,
-      "sz": -181.74
+      "sz": -181.74,
+      "summary": "EM algorithm and GMM model The Expectation-maximization (EM) algorithm is an iterative computational method for obtaining maximum likelihood estimates"
     },
     {
       "id": "Expectation Maximization",
@@ -698,7 +767,8 @@
       "color": "#c17d1a",
       "sx": 214.75,
       "sy": -198.15,
-      "sz": -205.35
+      "sz": -205.35,
+      "summary": "Expectation\u2013maximization algorithm The Expectation\u2013maximization (EM) algorithm is an iterative computational method for obtaining maximum likelihood estimates"
     },
     {
       "id": "Covariate Shift",
@@ -708,7 +778,8 @@
       "color": "#c17d1a",
       "sx": -46.41,
       "sy": -59.76,
-      "sz": -242.02
+      "sz": -242.02,
+      "summary": "In statistics, particularly within survival analysis and longitudinal modeling, a time-varying covariate\u2014also termed a time-dependent covariate\u2014is a predictor variable whose value can change over the course of follow-up or observation for an ind\u2026"
     },
     {
       "id": "Distribution Shift",
@@ -718,7 +789,8 @@
       "color": "#c17d1a",
       "sx": -65.78,
       "sy": -47.49,
-      "sz": -225.98
+      "sz": -225.98,
+      "summary": "The shifted log-logistic distribution, also known as the three-parameter log-logistic distribution, is a continuous probability distribution that extends the standard two-parameter log-logistic distribution by incorporating a location (shift) parame\u2026"
     },
     {
       "id": "Label Smoothing",
@@ -728,7 +800,8 @@
       "color": "#c17d1a",
       "sx": -149.79,
       "sy": -230.38,
-      "sz": 5.98
+      "sz": 5.98,
+      "summary": "Label smoothing is a regularization technique in machine learning, particularly in deep learning classification tasks, that replaces hard one-hot encoded target labels (e.g., [1, 0, 0]) with softer smoothed distributions (e.g., [0.9, 0.05, 0.05]) by\u2026"
     },
     {
       "id": "Mixup Augmentation",
@@ -738,7 +811,8 @@
       "color": "#c17d1a",
       "sx": 174.2,
       "sy": 7.53,
-      "sz": -82.4
+      "sz": -82.4,
+      "summary": "Data augmentation Data augmentation is a set of techniques in machine learning that generate high-quality synthetic data by applying transformations to"
     },
     {
       "id": "CutMix",
@@ -748,7 +822,8 @@
       "color": "#c17d1a",
       "sx": 159.34,
       "sy": 143.6,
-      "sz": 224.56
+      "sz": 224.56,
+      "summary": "padding images by 4 pixels on each side followed by random 32\u00d732 crops, horizontal flipping, and sometimes color jittering or more advanced methods like CutMix"
     },
     {
       "id": "Focal Loss",
@@ -758,7 +833,8 @@
       "color": "#c17d1a",
       "sx": 75.78,
       "sy": -48.96,
-      "sz": -347.42
+      "sz": -347.42,
+      "summary": "Focal dystonia Focal dystonia is a neurological movement disorder characterized by sustained or intermittent involuntary muscle contractions that affect"
     },
     {
       "id": "Triplet Loss",
@@ -768,7 +844,8 @@
       "color": "#c17d1a",
       "sx": 102.58,
       "sy": -44.72,
-      "sz": -345.97
+      "sz": -345.97,
+      "summary": "Triplet loss Triplet loss is a loss function in deep learning designed for metric learning tasks, where the objective is to learn embeddings of data points"
     },
     {
       "id": "Huber Loss",
@@ -778,7 +855,8 @@
       "color": "#c17d1a",
       "sx": 92.05,
       "sy": -34.61,
-      "sz": -344.53
+      "sz": -344.53,
+      "summary": "Huber loss The Huber loss, also known as the Huber function or \u03c1-function in the context of M-estimators, is a robust loss function introduced by Swiss"
     },
     {
       "id": "Cosine Similarity",
@@ -788,7 +866,8 @@
       "color": "#c17d1a",
       "sx": 85.98,
       "sy": -142.94,
-      "sz": -212.06
+      "sz": -212.06,
+      "summary": "Cosine similarity Cosine similarity is a metric that measures the similarity between two non-zero vectors in an inner product space by calculating the"
     },
     {
       "id": "Batch Gradient Descent",
@@ -798,7 +877,8 @@
       "color": "#c17d1a",
       "sx": 66.09,
       "sy": -32.96,
-      "sz": -168.45
+      "sz": -168.45,
+      "summary": "/~qnie/Publications/NumericalOptimization.pdf) Standard Batch Gradient Descent Algorithm Description Batch gradient descent, also known as vanilla gradient"
     },
     {
       "id": "Stochastic Gradient Descent",
@@ -808,7 +888,8 @@
       "color": "#c17d1a",
       "sx": 31.09,
       "sy": 22.04,
-      "sz": -193.45
+      "sz": -193.45,
+      "summary": "Stochastic gradient descent Stochastic gradient descent (SGD) is an optimization algorithm used to minimize an objective function, particularly in machine"
     },
     {
       "id": "Mini-batch Gradient Descent",
@@ -818,7 +899,8 @@
       "color": "#c17d1a",
       "sx": 86.09,
       "sy": 7.04,
-      "sz": -153.45
+      "sz": -153.45,
+      "summary": "Gradient Descent Mini-batch gradient descent is a variant of gradient descent that computes the gradient estimate as the average over a small subset,"
     },
     {
       "id": "Momentum (SGD)",
@@ -828,7 +910,8 @@
       "color": "#c17d1a",
       "sx": -108.21,
       "sy": 162.34,
-      "sz": -146.12
+      "sz": -146.12,
+      "summary": "In classical mechanics, momentum is a vector quantity defined as the product of an object's mass and its velocity, often denoted as p = m v, where m is mass and v is..."
     },
     {
       "id": "Nesterov Accelerated Gradient",
@@ -838,7 +921,8 @@
       "color": "#c17d1a",
       "sx": -143.21,
       "sy": 197.34,
-      "sz": -181.12
+      "sz": -181.12,
+      "summary": "Accelerated Gradient Nesterov Accelerated Gradient (NAG), also known as Nesterov's method, is an optimization technique that enhances the momentum method"
     },
     {
       "id": "Linear Regression",
@@ -848,7 +932,8 @@
       "color": "#2d8a4e",
       "sx": -242.99,
       "sy": -386.54,
-      "sz": 0.85
+      "sz": 0.85,
+      "summary": "Extensions and Variants Multiple Linear Regression Multiple linear regression extends the simple linear regression framework to incorporate multiple"
     },
     {
       "id": "Logistic Regression",
@@ -858,7 +943,8 @@
       "color": "#2d8a4e",
       "sx": -239.7,
       "sy": -345.84,
-      "sz": 6.48
+      "sz": 6.48,
+      "summary": "Specification Binary Logistic Regression Binary logistic regression, introduced by statistician David R."
     },
     {
       "id": "Decision Trees",
@@ -868,7 +954,8 @@
       "color": "#2d8a4e",
       "sx": -217.79,
       "sy": -302.12,
-      "sz": 25.94
+      "sz": 25.94,
+      "summary": "Proactive Data Mining with Decision Trees is a 2014 technical book authored by Haim Dahan, Shahar Cohen, Lior Rokach, and Oded Maimon and published by Springer as part of the SpringerBriefs in Electrical and Computer Engineering series. The work int\u2026"
     },
     {
       "id": "SVM",
@@ -878,7 +965,8 @@
       "color": "#2d8a4e",
       "sx": -229.55,
       "sy": -276.87,
-      "sz": -10.55
+      "sz": -10.55,
+      "summary": "Ranking SVM is a machine learning algorithm that extends the support vector machine (SVM) framework to address ranking problems, particularly in information retrieval, by learning a linear ranking function from pairwise preferences to optimize docum\u2026"
     },
     {
       "id": "k-NN",
@@ -888,7 +976,8 @@
       "color": "#2d8a4e",
       "sx": -351.31,
       "sy": -170.69,
-      "sz": -358.28
+      "sz": -358.28,
+      "summary": "NN Group NN Group logo NN Group N.V. is an international financial services company headquartered in The Hague, Netherlands, specializing in retirement"
     },
     {
       "id": "Naive Bayes",
@@ -898,7 +987,8 @@
       "color": "#2d8a4e",
       "sx": -156.16,
       "sy": -391.55,
-      "sz": -9.43
+      "sz": -9.43,
+      "summary": "Gaussian Naive Bayes Gaussian Naive Bayes extends the Naive Bayes framework to handle continuous-valued features by assuming that each feature variable"
     },
     {
       "id": "Ridge & Lasso",
@@ -908,7 +998,8 @@
       "color": "#2d8a4e",
       "sx": -159.72,
       "sy": -325.01,
-      "sz": -62.96
+      "sz": -62.96,
+      "summary": "When \\( \\alpha = 1 \\), the elastic net reduces to the Lasso; when \\( \\alpha = 0 \\), it becomes ridge regression."
     },
     {
       "id": "Polynomial Regression",
@@ -918,7 +1009,8 @@
       "color": "#2d8a4e",
       "sx": -263.29,
       "sy": -371.1,
-      "sz": 25.93
+      "sz": 25.93,
+      "summary": "Polynomial regression Polynomial regression is a form of regression analysis in which the relationship between one or more independent variables and a"
     },
     {
       "id": "Elastic Net",
@@ -928,7 +1020,8 @@
       "color": "#2d8a4e",
       "sx": -340.88,
       "sy": 274.49,
-      "sz": -53.15
+      "sz": -53.15,
+      "summary": "Elastic net regularization Elastic net regularization is a hybrid penalized regression technique that combines the L1 penalty from lasso regression, which"
     },
     {
       "id": "Perceptron",
@@ -938,7 +1031,8 @@
       "color": "#2d8a4e",
       "sx": -232.61,
       "sy": -225.6,
-      "sz": 2.5
+      "sz": 2.5,
+      "summary": "Perceptron The perceptron is a foundational algorithm in machine learning, serving as a binary linear classifier that simulates a single artificial neuron"
     },
     {
       "id": "Gaussian Process",
@@ -948,7 +1042,8 @@
       "color": "#2d8a4e",
       "sx": -233.95,
       "sy": -278.77,
-      "sz": -114.96
+      "sz": -114.96,
+      "summary": "Gaussian process A Gaussian process (GP) is a stochastic process in which every finite collection of random variables from the process has a multivariate"
     },
     {
       "id": "Kernel Methods",
@@ -958,7 +1053,8 @@
       "color": "#2d8a4e",
       "sx": -203.68,
       "sy": -294.14,
-      "sz": -29.85
+      "sz": -29.85,
+      "summary": "Kernel methods for vector output, also known as vector-valued or operator-valued kernel methods, extend classical kernel techniques from scalar-valued functions to those mapping inputs to multidimensional outputs, enabling the capture of correlation\u2026"
     },
     {
       "id": "Bayesian Linear Regression",
@@ -968,7 +1064,8 @@
       "color": "#2d8a4e",
       "sx": -219.35,
       "sy": -394.32,
-      "sz": -9.15
+      "sz": -9.15,
+      "summary": "Bayesian linear regression Bayesian linear regression is a probabilistic extension of classical linear regression that applies Bayes' theorem to model"
     },
     {
       "id": "AdaBoost",
@@ -978,7 +1075,8 @@
       "color": "#2d8a4e",
       "sx": -953.41,
       "sy": -139.28,
-      "sz": -180.01
+      "sz": -180.01,
+      "summary": "Gentle AdaBoost and Early Stopping Gentle AdaBoost, proposed by Friedman, Hastie, and Tibshirani in 2000, modifies the standard AdaBoost algorithm by"
     },
     {
       "id": "Multi-task Learning",
@@ -988,7 +1086,8 @@
       "color": "#2d8a4e",
       "sx": -192.52,
       "sy": -200.26,
-      "sz": 93.15
+      "sz": 93.15,
+      "summary": "Multi-task learning Multi-task learning (MTL) is a machine learning paradigm in which multiple related tasks are trained simultaneously using a shared"
     },
     {
       "id": "Semi-supervised Learning",
@@ -998,7 +1097,8 @@
       "color": "#2d8a4e",
       "sx": -218.96,
       "sy": -249.37,
-      "sz": 18.64
+      "sz": 18.64,
+      "summary": "Supervised learning is a fundamental paradigm in machine learning where an algorithm is trained on a labeled dataset comprising input features paired with corresponding output..."
     },
     {
       "id": "Active Learning",
@@ -1008,7 +1108,8 @@
       "color": "#2d8a4e",
       "sx": -136.15,
       "sy": -238.78,
-      "sz": 53.21
+      "sz": 53.21,
+      "summary": "Active learning Active learning is an instructional approach in which students engage with the material through activities, discussions, and problem-solving"
     },
     {
       "id": "Online Learning",
@@ -1018,7 +1119,8 @@
       "color": "#2d8a4e",
       "sx": -205.24,
       "sy": -267.59,
-      "sz": 39.02
+      "sz": 39.02,
+      "summary": "In a 2024 study by Ayman Alarabiat published in the Journal of Theoretical and Applied Information Technology (JATIT), Volume 102, No. 20, the significant factors of online learning fatigue (burden of the online course, psychological challenges, lac\u2026"
     },
     {
       "id": "Label Propagation",
@@ -1028,7 +1130,8 @@
       "color": "#2d8a4e",
       "sx": -194.85,
       "sy": -254.0,
-      "sz": 14.48
+      "sz": 14.48,
+      "summary": "Label propagation algorithm The label propagation algorithm is a semi-supervised machine learning method that assigns labels to unlabeled data points"
     },
     {
       "id": "Isotonic Regression",
@@ -1038,7 +1141,8 @@
       "color": "#2d8a4e",
       "sx": -262.48,
       "sy": -371.18,
-      "sz": 26.77
+      "sz": 26.77,
+      "summary": ") Variants and Extensions Centered Isotonic Regression Centered isotonic regression (CIR) is a refinement of standard isotonic regression designed to"
     },
     {
       "id": "Quantile Regression",
@@ -1048,7 +1152,8 @@
       "color": "#2d8a4e",
       "sx": -225.46,
       "sy": -377.24,
-      "sz": 35.95
+      "sz": 35.95,
+      "summary": "Quantile regression Quantile regression is a statistical method in econometrics and data analysis that estimates conditional quantiles of a response variable"
     },
     {
       "id": "Survival Analysis",
@@ -1058,7 +1163,8 @@
       "color": "#2d8a4e",
       "sx": -230.42,
       "sy": -294.79,
-      "sz": 21.41
+      "sz": 21.41,
+      "summary": "Survival analysis Survival analysis is a branch of statistics focused on the analysis of time-to-event data, where the primary outcome is the time until"
     },
     {
       "id": "Poisson Regression",
@@ -1068,7 +1174,8 @@
       "color": "#2d8a4e",
       "sx": -245.6,
       "sy": -372.08,
-      "sz": 8.76
+      "sz": 8.76,
+      "summary": "/poisson-regression-analysis/) Unlike linear regression, which can predict negative values unsuitable for counts, Poisson regression ensures predictions"
     },
     {
       "id": "Ordinal Regression",
@@ -1078,7 +1185,8 @@
       "color": "#2d8a4e",
       "sx": -269.31,
       "sy": -387.39,
-      "sz": 9.58
+      "sz": 9.58,
+      "summary": "Ordinal regression Ordinal regression is a type of statistical analysis used to predict an ordinal dependent variable\u2014categories with a natural order,"
     },
     {
       "id": "Zero-Inflated Models",
@@ -1088,7 +1196,8 @@
       "color": "#2d8a4e",
       "sx": 233.02,
       "sy": -176.21,
-      "sz": 37.93
+      "sz": 37.93,
+      "summary": "Ridge regression estimators have been developed for zero-inflated Poisson models to handle multicollinearity, with proposed methods for estimating the ridge parameter k via simulation-based approaches or other data-driven techniques. Similar ridge r\u2026"
     },
     {
       "id": "Regression Trees",
@@ -1098,7 +1207,8 @@
       "color": "#2d8a4e",
       "sx": -260.52,
       "sy": -337.62,
-      "sz": 26.33
+      "sz": 26.33,
+      "summary": "iteratively removing such subtrees until the desired size is reached.[]("
     },
     {
       "id": "Prototype Methods",
@@ -1108,7 +1218,8 @@
       "color": "#2d8a4e",
       "sx": -230.21,
       "sy": -278.59,
-      "sz": -17.2
+      "sz": -17.2,
+      "summary": "Explanation of why prototype-based methods excel in interpretability and generalization for medical image segmentation. Prototypes capture both semantic (text-derived) and appearance (image-derived) cues; in cross-modal settings, training involves c\u2026"
     },
     {
       "id": "Fisher Discriminant",
@@ -1118,7 +1229,8 @@
       "color": "#2d8a4e",
       "sx": -230.79,
       "sy": -345.44,
-      "sz": -53.98
+      "sz": -53.98,
+      "summary": "Kernel Fisher discriminant analysis (KFDA), also known as kernel Fisher discriminant analysis, is a supervised machine learning method for dimensionality reduction and classification that generalizes linear discriminant analysis (LDA) to nonlinear s\u2026"
     },
     {
       "id": "LDA (Linear Discriminant)",
@@ -1128,7 +1240,8 @@
       "color": "#2d8a4e",
       "sx": -244.18,
       "sy": -351.32,
-      "sz": -127.43
+      "sz": -127.43,
+      "summary": "Linear discriminant analysis Linear discriminant analysis (LDA) is a supervised statistical method for classification and dimensionality reduction that"
     },
     {
       "id": "QDA",
@@ -1138,7 +1251,8 @@
       "color": "#2d8a4e",
       "sx": -133.29,
       "sy": -227.1,
-      "sz": 142.72
+      "sz": 142.72,
+      "summary": "QDA Miner is a computer-assisted qualitative data analysis (CAQDAS) software package developed by Provalis Research, first released in 2004 as a pioneering mixed-methods tool for organizing, coding, annotating, retrieving, and analyzing collections\u2026"
     },
     {
       "id": "RBF Networks",
@@ -1148,7 +1262,8 @@
       "color": "#2d8a4e",
       "sx": -151.16,
       "sy": 502.6,
-      "sz": -299.56
+      "sz": -299.56,
+      "summary": "Radial basis function (RBF) networks are a class of artificial neural networks that employ radial basis functions as activation functions in the hidden"
     },
     {
       "id": "Learning Vector Quantization",
@@ -1158,7 +1273,8 @@
       "color": "#2d8a4e",
       "sx": -142.14,
       "sy": -286.64,
-      "sz": 88.25
+      "sz": 88.25,
+      "summary": "Learning vector quantization Learning vector quantization (LVQ) is a family of supervised prototype-based machine learning algorithms designed for statistical"
     },
     {
       "id": "k-Means",
@@ -1168,7 +1284,8 @@
       "color": "#7b3fa0",
       "sx": -374.03,
       "sy": -299.36,
-      "sz": -416.09
+      "sz": -416.09,
+      "summary": "k -means++ k-means++ is a seeding algorithm for the k-means clustering method that selects initial cluster centers in a way that improves both the speed"
     },
     {
       "id": "PCA",
@@ -1178,7 +1295,8 @@
       "color": "#7b3fa0",
       "sx": -329.33,
       "sy": -370.65,
-      "sz": -419.19
+      "sz": -419.19,
+      "summary": "PCA Skin is a professional skincare brand founded in 1990 by an aesthetician and developed by a dermatologist. It specializes in science-backed daily care products and professional treatments, particularly chemical peels, and is recognized as the #1\u2026"
     },
     {
       "id": "DBSCAN",
@@ -1188,7 +1306,8 @@
       "color": "#7b3fa0",
       "sx": -373.84,
       "sy": -306.12,
-      "sz": -463.42
+      "sz": -463.42,
+      "summary": "DBSCAN DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering algorithm that discovers clusters of arbitrary"
     },
     {
       "id": "Gaussian Mixture Models",
@@ -1198,7 +1317,8 @@
       "color": "#7b3fa0",
       "sx": -365.16,
       "sy": -324.77,
-      "sz": -385.81
+      "sz": -385.81,
+      "summary": "Gaussian World Models introduce innovations for 3D dynamics in AI by providing explicit 3D representations for forecasting and integrating easily into reinforcement learning (RL) and imitation learning."
     },
     {
       "id": "t-SNE",
@@ -1208,7 +1328,8 @@
       "color": "#7b3fa0",
       "sx": -365.99,
       "sy": -242.41,
-      "sz": -438.77
+      "sz": -438.77,
+      "summary": "PCA, t-SNE, LDA, and Wavelet Transform are distinct techniques with varying purposes in data analysis and dimensionality reduction/feature extraction. PCA, t-SNE, and LDA are primarily dimensionality reduction methods (unsupervised or supervised), w\u2026"
     },
     {
       "id": "UMAP",
@@ -1218,7 +1339,8 @@
       "color": "#7b3fa0",
       "sx": -407.96,
       "sy": -259.93,
-      "sz": -430.37
+      "sz": -430.37,
+      "summary": "Vitthal Umap Vitthal Umap Vitthal Umap (15 July 1931 \u2013 27 November 2010) was an Indian folk singer, shahir, and performer specializing in Lok Shahiri"
     },
     {
       "id": "ICA",
@@ -1228,7 +1350,8 @@
       "color": "#7b3fa0",
       "sx": -349.97,
       "sy": -308.83,
-      "sz": -427.17
+      "sz": -427.17,
+      "summary": "Ica District is one of fourteen districts comprising Ica Province in the Ica Region of southern Peru, serving as the provincial and regional capital and encompassing the city of Ica at an elevation of approximately 406 meters above sea level. As of\u2026"
     },
     {
       "id": "NMF",
@@ -1238,7 +1361,8 @@
       "color": "#7b3fa0",
       "sx": -400.95,
       "sy": -269.83,
-      "sz": -461.57
+      "sz": -461.57,
+      "summary": "The National Monuments Foundation (NMF) is a 501(c)(3) non-profit organization incorporated in 2003, granted tax-exempt status in 2004, and headquartered in Atlanta, Georgia, dedicated to the creation and preservation of historical, cultural, and ar\u2026"
     },
     {
       "id": "Spectral Clustering",
@@ -1248,7 +1372,8 @@
       "color": "#7b3fa0",
       "sx": -388.06,
       "sy": -348.2,
-      "sz": -422.44
+      "sz": -422.44,
+      "summary": "Spectral clustering Spectral clustering is a family of unsupervised machine learning algorithms that partition a set of data points into clusters by leveraging"
     },
     {
       "id": "Hierarchical Clustering",
@@ -1258,7 +1383,8 @@
       "color": "#7b3fa0",
       "sx": -406.57,
       "sy": -338.06,
-      "sz": -434.69
+      "sz": -434.69,
+      "summary": "Hierarchical clustering Hierarchical clustering is a class of unsupervised machine learning algorithms used in cluster analysis to organize data points"
     },
     {
       "id": "OPTICS",
@@ -1268,7 +1394,8 @@
       "color": "#7b3fa0",
       "sx": -377.95,
       "sy": -165.0,
-      "sz": -429.34
+      "sz": -429.34,
+      "summary": "Optics Optics is the branch of physics that studies the behavior and properties of light, including how it is generated, propagated, detected, and interacts"
     },
     {
       "id": "Isolation Forest",
@@ -1278,7 +1405,8 @@
       "color": "#7b3fa0",
       "sx": -464.07,
       "sy": -286.58,
-      "sz": -442.17
+      "sz": -442.17,
+      "summary": "Isolation forest The Isolation Forest is an unsupervised anomaly detection algorithm that identifies outliers in data by explicitly isolating them through"
     },
     {
       "id": "One-Class SVM",
@@ -1288,7 +1416,8 @@
       "color": "#7b3fa0",
       "sx": -348.4,
       "sy": -337.55,
-      "sz": -385.41
+      "sz": -385.41,
+      "summary": "classifiers trained on healthy lung images identified infected cases as deviations, with methods like one-class SVM achieving up to 95% sensitivity on"
     },
     {
       "id": "LOF",
@@ -1298,7 +1427,8 @@
       "color": "#7b3fa0",
       "sx": -405.53,
       "sy": -283.61,
-      "sz": -462.43
+      "sz": -462.43,
+      "summary": "Lof is the foundational kinship and residential unit in traditional Mapuche society, consisting of extended patrilineal families united by common ancestry, territory, and mutual obligations, which historically served as the primary locus for economi\u2026"
     },
     {
       "id": "Self-Organizing Maps",
@@ -1308,7 +1438,8 @@
       "color": "#7b3fa0",
       "sx": -407.51,
       "sy": -346.02,
-      "sz": -405.83
+      "sz": -405.83,
+      "summary": "and Associative Memory, which introduced self-organizing principles to a broader audience, and culminating in the 1995 Self-Organizing Maps, which detailed"
     },
     {
       "id": "Word2Vec",
@@ -1318,7 +1449,8 @@
       "color": "#7b3fa0",
       "sx": -312.59,
       "sy": -261.83,
-      "sz": -416.43
+      "sz": -416.43,
+      "summary": "Word2vec Word2vec is a family of shallow neural network architectures designed to learn continuous vector representations, or embeddings, of words from"
     },
     {
       "id": "GloVe",
@@ -1328,7 +1460,8 @@
       "color": "#7b3fa0",
       "sx": -416.76,
       "sy": -231.53,
-      "sz": -426.79
+      "sz": -426.79,
+      "summary": "Glove A glove is a garment designed to cover the hand, typically featuring separate sheaths for each finger and the thumb, serving primarily to protect"
     },
     {
       "id": "FastText",
@@ -1338,7 +1471,8 @@
       "color": "#7b3fa0",
       "sx": -317.16,
       "sy": -275.81,
-      "sz": -428.72
+      "sz": -428.72,
+      "summary": "fastText fastText is an open-source, free, lightweight library developed by Facebook AI Research (FAIR) for efficient learning of word representations"
     },
     {
       "id": "Topic Modeling (LDA)",
@@ -1348,7 +1482,8 @@
       "color": "#7b3fa0",
       "sx": -326.61,
       "sy": -353.55,
-      "sz": -386.75
+      "sz": -386.75,
+      "summary": "By modeling text as mixtures of topics\u2014where each topic is a distribution over words\u2014topic models facilitate the extraction of hidden patterns that reflect"
     },
     {
       "id": "Matrix Factorization",
@@ -1358,7 +1493,8 @@
       "color": "#7b3fa0",
       "sx": -343.44,
       "sy": -364.38,
-      "sz": -437.21
+      "sz": -437.21,
+      "summary": "In linear algebra, matrix factorization refers to the decomposition of a matrix into a product of two or more simpler matrices, often with special structures such as triangular, orthogonal, or diagonal forms, to facilitate computations like solving\u2026"
     },
     {
       "id": "Collaborative Filtering",
@@ -1368,7 +1504,8 @@
       "color": "#7b3fa0",
       "sx": -367.22,
       "sy": -388.79,
-      "sz": -445.82
+      "sz": -445.82,
+      "summary": "Filtering Hybrid collaborative filtering integrates multiple collaborative filtering techniques or combines collaborative filtering with other methods"
     },
     {
       "id": "HDBSCAN",
@@ -1378,7 +1515,8 @@
       "color": "#7b3fa0",
       "sx": -372.56,
       "sy": -266.87,
-      "sz": -466.22
+      "sz": -466.22,
+      "summary": "In 2023, integrations with NVIDIA's RAPIDS cuML introduced GPU acceleration for HDBSCAN, significantly speeding up computations on large high-dimensional"
     },
     {
       "id": "Agglomerative Clustering",
@@ -1388,7 +1526,8 @@
       "color": "#7b3fa0",
       "sx": -380.97,
       "sy": -336.56,
-      "sz": -454.67
+      "sz": -454.67,
+      "summary": ": agglomerative and divisive. Agglomerative clustering, also known as bottom-up clustering, begins with"
     },
     {
       "id": "Mean Shift",
@@ -1398,7 +1537,8 @@
       "color": "#7b3fa0",
       "sx": -116.24,
       "sy": -86.49,
-      "sz": -268.09
+      "sz": -268.09,
+      "summary": "Mean shift Mean shift is a non-parametric, mode-seeking algorithm that iteratively shifts data points toward the local maxima, or modes, of an underlying"
     },
     {
       "id": "Affinity Propagation",
@@ -1408,7 +1548,8 @@
       "color": "#7b3fa0",
       "sx": -387.94,
       "sy": -345.88,
-      "sz": -463.22
+      "sz": -463.22,
+      "summary": "Affinity propagation Affinity propagation is an exemplar-based clustering algorithm that identifies representative data points, or exemplars, by iteratively"
     },
     {
       "id": "k-Medoids",
@@ -1418,7 +1559,8 @@
       "color": "#7b3fa0",
       "sx": -366.73,
       "sy": -239.89,
-      "sz": -409.56
+      "sz": -409.56,
+      "summary": "k -medoids k-medoids is a partitional clustering algorithm that divides a dataset of n objects into k non-overlapping clusters, where each cluster is"
     },
     {
       "id": "BIRCH",
@@ -1428,7 +1570,8 @@
       "color": "#7b3fa0",
       "sx": -438.48,
       "sy": -272.76,
-      "sz": -443.21
+      "sz": -443.21,
+      "summary": "/) The bark of birch trees, particularly paper birch"
     },
     {
       "id": "Mini-Batch k-Means",
@@ -1438,7 +1581,8 @@
       "color": "#7b3fa0",
       "sx": -373.1,
       "sy": -321.87,
-      "sz": -398.78
+      "sz": -398.78,
+      "summary": "One prominent approach is the mini-batch k-means algorithm, which approximates the full-batch Lloyd's iteration by updating centroids using small, randomly"
     },
     {
       "id": "Sparse PCA",
@@ -1448,7 +1592,8 @@
       "color": "#7b3fa0",
       "sx": -307.72,
       "sy": -340.84,
-      "sz": -422.21
+      "sz": -422.21,
+      "summary": "Sparse PCA Sparse principal component analysis (Sparse PCA) is a dimensionality reduction technique that extends classical principal component analysis"
     },
     {
       "id": "Kernel PCA",
@@ -1458,7 +1603,8 @@
       "color": "#7b3fa0",
       "sx": -335.57,
       "sy": -355.41,
-      "sz": -372.5
+      "sz": -372.5,
+      "summary": "Kernel principal component analysis (Kernel PCA) provides a nonlinear generalization of classical principal component analysis by performing eigen-decomposition"
     },
     {
       "id": "Robust PCA",
@@ -1468,7 +1614,8 @@
       "color": "#7b3fa0",
       "sx": -311.12,
       "sy": -370.08,
-      "sz": -395.57
+      "sz": -395.57,
+      "summary": "Recent advances in iterative methods for sparse PCA, such as deep unfolding networks and robust variants, further improve scalability and outlier handling"
     },
     {
       "id": "Bagging",
@@ -1478,7 +1625,8 @@
       "color": "#1a7a6b",
       "sx": -1089.76,
       "sy": -103.76,
-      "sz": -174.25
+      "sz": -174.25,
+      "summary": "Worm bagging is a reproductive phenomenon primarily observed in the nematode model organism Caenorhabditis elegans, in which hermaphroditic adults retain eggs internally rather than laying them externally, leading to the hatching of larvae within th\u2026"
     },
     {
       "id": "Boosting",
@@ -1488,7 +1636,8 @@
       "color": "#1a7a6b",
       "sx": -1052.91,
       "sy": -96.08,
-      "sz": -185.29
+      "sz": -185.29,
+      "summary": "Boosting in Brawl Stars refers to account sharing or using third-party services to artificially improve ranks. This practice violates Supercell's Terms of Service, which prohibit account sharing, ranking manipulation, win trading, and unauthorized t\u2026"
     },
     {
       "id": "Random Forest",
@@ -1498,7 +1647,8 @@
       "color": "#1a7a6b",
       "sx": -1112.91,
       "sy": -93.92,
-      "sz": -197.82
+      "sz": -197.82,
+      "summary": "Random forest A random forest is an ensemble learning method for classification, regression, and other supervised machine learning tasks that constructs"
     },
     {
       "id": "Gradient Boosting",
@@ -1508,7 +1658,8 @@
       "color": "#1a7a6b",
       "sx": -1035.82,
       "sy": -82.49,
-      "sz": -210.2
+      "sz": -210.2,
+      "summary": "Gradient boosting Gradient boosting is a machine learning ensemble technique that constructs a strong predictive model by sequentially combining multiple"
     },
     {
       "id": "XGBoost",
@@ -1518,7 +1669,8 @@
       "color": "#1a7a6b",
       "sx": -1095.09,
       "sy": -80.78,
-      "sz": -216.55
+      "sz": -216.55,
+      "summary": "XGBoost XGBoost, or eXtreme Gradient Boosting, is an open-source software library implementing an optimized distributed gradient boosting framework designed"
     },
     {
       "id": "LightGBM",
@@ -1528,7 +1680,8 @@
       "color": "#1a7a6b",
       "sx": -1066.67,
       "sy": -74.6,
-      "sz": -206.16
+      "sz": -206.16,
+      "summary": "LightGBM LightGBM, short for Light Gradient Boosting Machine, is an open-source, distributed gradient boosting framework that uses tree-based learning"
     },
     {
       "id": "CatBoost",
@@ -1538,7 +1691,8 @@
       "color": "#1a7a6b",
       "sx": -1036.03,
       "sy": -127.96,
-      "sz": -193.37
+      "sz": -193.37,
+      "summary": "CatBoost CatBoost is an open-source gradient boosting library that implements an algorithm for gradient boosting on decision trees, with native support"
     },
     {
       "id": "Stacking",
@@ -1548,7 +1702,8 @@
       "color": "#1a7a6b",
       "sx": -1059.29,
       "sy": -112.8,
-      "sz": -151.91
+      "sz": -151.91,
+      "summary": "Player stacking is a strategy in NBA Daily Fantasy Sports (DFS) where multiple players from the same team or game are selected in a lineup to exploit correlations in scoring, such as increased playing time in competitive, high-pace games. The concep\u2026"
     },
     {
       "id": "Blending",
@@ -1558,7 +1713,8 @@
       "color": "#1a7a6b",
       "sx": -1064.55,
       "sy": -88.63,
-      "sz": -139.61
+      "sz": -139.61,
+      "summary": "Blending inheritance Blending inheritance is an obsolete theory of heredity from the 19th century that proposed offspring inherit traits as an intermediate"
     },
     {
       "id": "Voting Classifier",
@@ -1568,7 +1724,8 @@
       "color": "#1a7a6b",
       "sx": -1063.93,
       "sy": -104.95,
-      "sz": -209.9
+      "sz": -209.9,
+      "summary": "Linear classifier A linear classifier is a supervised machine learning model that performs classification by partitioning the input feature space using"
     },
     {
       "id": "ExtraTrees",
@@ -1578,7 +1735,8 @@
       "color": "#1a7a6b",
       "sx": -1102.99,
       "sy": -121.19,
-      "sz": -170.11
+      "sz": -170.11,
+      "summary": "By drawing on the random subspace method for feature selection while extending randomization to split points, ExtraTrees produces trees that are less prone"
     },
     {
       "id": "TabNet",
@@ -1588,7 +1746,8 @@
       "color": "#1a7a6b",
       "sx": -1050.63,
       "sy": -139.8,
-      "sz": -201.04
+      "sz": -201.04,
+      "summary": "TabNet is a 2019 interpretable deep learning model tailored for tabular data. It employs sequential attention mechanisms to select relevant features at each decision step, combining strong predictive performance with built-in feature importance expl\u2026"
     },
     {
       "id": "DART",
@@ -1598,7 +1757,8 @@
       "color": "#1a7a6b",
       "sx": -1088.71,
       "sy": -116.81,
-      "sz": -183.28
+      "sz": -183.28,
+      "summary": "/) Dart SPD Variant The Dart SPD (Super Pointer Dart) was launched in 1997 as an extended 11.3 m version of the low-floor Dart SLF, aimed at competing"
     },
     {
       "id": "Snapshot Ensembles",
@@ -1608,7 +1768,8 @@
       "color": "#1a7a6b",
       "sx": -1098.63,
       "sy": -77.46,
-      "sz": -165.42
+      "sz": -165.42,
+      "summary": "Minecraft Snapshot 26.1-snapshot-2 is a development version released by Mojang featuring revamped baby mob models, including updates to farm animals, rabbits, Toast, and the Killer Bunny. This snapshot generated trending topic buzz with 19 posts and\u2026"
     },
     {
       "id": "Dropout Ensembles",
@@ -1618,7 +1779,8 @@
       "color": "#1a7a6b",
       "sx": -1085.71,
       "sy": -61.29,
-      "sz": -172.96
+      "sz": -172.96,
+      "summary": "Dropout Bear (Graduation variant)) Dropout Bear is an anthropomorphic bear character that served as a mascot for American rapper Kanye West's early career, particularly symbolizing his..."
     },
     {
       "id": "Deep Ensembles",
@@ -1628,7 +1790,8 @@
       "color": "#1a7a6b",
       "sx": -1072.02,
       "sy": -91.22,
-      "sz": -184.85
+      "sz": -184.85,
+      "summary": "Edie's Ensembles is a children's picture book written and illustrated by Canadian author Ashley Spires, published on October 14, 2014, by Tundra Books. The story follows Edie, a young girl known for her stylish outfits and creative flair, who loves\u2026"
     },
     {
       "id": "Bayesian Model Averaging",
@@ -1638,7 +1801,8 @@
       "color": "#1a7a6b",
       "sx": -1084.05,
       "sy": -109.59,
-      "sz": -132.35
+      "sz": -132.35,
+      "summary": "Bayesian model reduction is a statistical technique in Bayesian inference that enables the efficient computation of the model evidence and posterior parameter distributions for a family of probabilistic models that differ solely in their prior speci\u2026"
     },
     {
       "id": "AdaBoost.R2",
@@ -1648,7 +1812,8 @@
       "color": "#1a7a6b",
       "sx": -991.0,
       "sy": -128.16,
-      "sz": -194.28
+      "sz": -194.28,
+      "summary": "generalization error via structural risk minimization. An extension to regression tasks, known as AdaBoost.R2"
     },
     {
       "id": "HistGradientBoosting",
@@ -1668,7 +1833,8 @@
       "color": "#1a7a6b",
       "sx": -1045.23,
       "sy": -106.57,
-      "sz": -212.23
+      "sz": -212.23,
+      "summary": "In the Santos Basin, workflows combining random forest for data quality control, DBSCAN for outlier detection in well logs, and NGBoost for TOC prediction"
     },
     {
       "id": "Forest of Random Patches",
@@ -1678,7 +1844,8 @@
       "color": "#1a7a6b",
       "sx": -1133.37,
       "sy": -100.4,
-      "sz": -199.72
+      "sz": -199.72,
+      "summary": "A random forest is an ensemble learning method for classification, regression, and other supervised machine learning tasks that constructs a multitude of decision trees during training..."
     },
     {
       "id": "Activation Functions",
@@ -1688,7 +1855,8 @@
       "color": "#1a4da0",
       "sx": -178.13,
       "sy": 423.15,
-      "sz": -235.34
+      "sz": -235.34,
+      "summary": "/neural-networks/activation-functions) Chemistry Activation"
     },
     {
       "id": "Weight Initialization",
@@ -1698,7 +1866,8 @@
       "color": "#1a4da0",
       "sx": -59.96,
       "sy": 163.69,
-      "sz": -215.58
+      "sz": -215.58,
+      "summary": "Weight initialization is the process of setting initial values for the parameters (weights and biases) of a neural network before commencing training, a foundational technique in deep learning that significantly impacts training stability, gradient\u2026"
     },
     {
       "id": "Vanishing Gradient",
@@ -1708,7 +1877,8 @@
       "color": "#1a4da0",
       "sx": -186.42,
       "sy": 256.46,
-      "sz": -246.77
+      "sz": -246.77,
+      "summary": "Vanishing gradient problem The vanishing gradient problem is a fundamental challenge in training deep neural networks using gradient-based optimization"
     },
     {
       "id": "Exploding Gradient",
@@ -1718,7 +1888,8 @@
       "color": "#1a4da0",
       "sx": -190.08,
       "sy": 252.61,
-      "sz": -216.69
+      "sz": -216.69,
+      "summary": "Issues Exploding Gradient Problem The exploding gradient problem arises during backpropagation when the magnitudes of gradients with respect to the"
     },
     {
       "id": "Neural Networks",
@@ -1728,7 +1899,8 @@
       "color": "#1a4da0",
       "sx": -209.9,
       "sy": 441.57,
-      "sz": -231.27
+      "sz": -231.27,
+      "summary": "Dropout is a regularization technique in neural networks that randomly drops units (along with their connections) during training to prevent co-adaptation between neurons and reduce overfitting. This approach improves generalization by forcing the n\u2026"
     },
     {
       "id": "Batch Normalization",
@@ -1738,7 +1910,8 @@
       "color": "#1a4da0",
       "sx": 42.21,
       "sy": 131.9,
-      "sz": -256.64
+      "sz": -256.64,
+      "summary": "Batch normalization Batch normalization is a technique in deep learning that normalizes the inputs to each layer of a neural network by subtracting the"
     },
     {
       "id": "Layer Normalization",
@@ -1748,7 +1921,8 @@
       "color": "#1a4da0",
       "sx": 21.11,
       "sy": 161.74,
-      "sz": -278.28
+      "sz": -278.28,
+      "summary": "Adaptive Layer Normalization is a technique used for conditioning in generative models."
     },
     {
       "id": "Group Normalization",
@@ -1758,7 +1932,8 @@
       "color": "#1a4da0",
       "sx": 37.77,
       "sy": 145.48,
-      "sz": -281.95
+      "sz": -281.95,
+      "summary": "Group Normalization is a 2018 computer vision paper by Yuxin Wu and Kaiming He, published at the European Conference on Computer Vision (ECCV) with preprint arXiv:1803.08494. The paper introduces Group Normalization (GN), a normalization technique a\u2026"
     },
     {
       "id": "Instance Normalization",
@@ -1768,7 +1943,8 @@
       "color": "#1a4da0",
       "sx": 51.36,
       "sy": 128.81,
-      "sz": -286.66
+      "sz": -286.66,
+      "summary": "For instance, when applied to an image classification model like Inception, batch normalization achieved equivalent accuracy in 14 times fewer training"
     },
     {
       "id": "Dropout",
@@ -1778,7 +1954,8 @@
       "color": "#1a4da0",
       "sx": -291.12,
       "sy": 300.31,
-      "sz": -148.5
+      "sz": -148.5,
+      "summary": "Dropout is a novel by Cass Tell first published on March 20, 2012, and the third installment in the Blue Fate series, which explores the idea that \"fate is more than chance.\" The story follows Justin Collins, who suffers a devastating tragedy that s\u2026"
     },
     {
       "id": "Optimizers (Adam/SGD)",
@@ -1788,7 +1965,8 @@
       "color": "#1a4da0",
       "sx": -307.52,
       "sy": 352.63,
-      "sz": -143.8
+      "sz": -143.8,
+      "summary": "Steps to measure output resistance on Huawei optimizers before mounting: Set multimeter to resistance (ohm, lowest range for precision); measure between positive and negative output terminals (OUT) with output cables disconnected; expected normal va\u2026"
     },
     {
       "id": "Weight Decay",
@@ -1798,7 +1976,8 @@
       "color": "#1a4da0",
       "sx": -81.19,
       "sy": 183.18,
-      "sz": -236.17
+      "sz": -236.17,
+      "summary": "L2 regularization, also known as a weight decay technique, penalizes the squared magnitude of parameters to prevent overfitting. It is foundational in ridge regression."
     },
     {
       "id": "Gradient Clipping",
@@ -1808,7 +1987,8 @@
       "color": "#1a4da0",
       "sx": -185.01,
       "sy": 274.93,
-      "sz": -266.64
+      "sz": -266.64,
+      "summary": "Gradient clipping is a stabilization technique in deep learning that caps gradient norms during backpropagation to prevent exploding gradients in deep neural networks, particularly in recurrent neural networks (RNNs)."
     },
     {
       "id": "Residual Connections",
@@ -1818,7 +1998,8 @@
       "color": "#1a4da0",
       "sx": -274.48,
       "sy": 333.94,
-      "sz": -256.57
+      "sz": -256.57,
+      "summary": "and beyond. Mathematical foundations Residual connections Residual connections, also referred to as skip connections"
     },
     {
       "id": "Skip Connections",
@@ -1828,7 +2009,8 @@
       "color": "#1a4da0",
       "sx": -288.17,
       "sy": 309.12,
-      "sz": -236.13
+      "sz": -236.13,
+      "summary": "Skeletal muscle and kidney-enriched inositol phosphatase (SKIP), encoded by the human gene INPP5K, is an enzyme that functions as an inositol polyphosphate-5-phosphatase, specifically removing the phosphate group at the 5-position of inositol 1,4,5-\u2026"
     },
     {
       "id": "Dense Connections",
@@ -1838,7 +2020,8 @@
       "color": "#1a4da0",
       "sx": -300.82,
       "sy": 306.98,
-      "sz": -256.57
+      "sz": -256.57,
+      "summary": "Dense is the standard English adjective meaning closely compacted in substance or having a high mass/volume ratio (high density). Densed is not a recognized word in standard English; it is likely a non-standard usage, misspelling, or mishearing (e.g\u2026"
     },
     {
       "id": "Depthwise Convolution",
@@ -1848,7 +2031,8 @@
       "color": "#1a4da0",
       "sx": -284.43,
       "sy": 370.05,
-      "sz": -368.62
+      "sz": -368.62,
+      "summary": "Convolution is a fundamental mathematical operation that combines two functions to form a third function expressing the extent to which one function overlaps with the other as it is..."
     },
     {
       "id": "Dilated Convolution",
@@ -1858,7 +2042,8 @@
       "color": "#1a4da0",
       "sx": -309.69,
       "sy": 347.31,
-      "sz": -371.38
+      "sz": -371.38,
+      "summary": "The Multiscale Dilated Convolutional Subdomain Adaptation Network with Attention (MCSANA) is a deep learning approach for unsupervised domain adaptation in time series data, specifically designed for cross-operating condition fault diagnosis in rota\u2026"
     },
     {
       "id": "Transposed Convolution",
@@ -1868,7 +2053,8 @@
       "color": "#1a4da0",
       "sx": -316.15,
       "sy": 371.74,
-      "sz": -365.36
+      "sz": -365.36,
+      "summary": "Convolution is a fundamental mathematical operation that combines two functions to form a third function expressing the extent to which one function overlaps with the other as it is..."
     },
     {
       "id": "Pooling Layers",
@@ -1878,7 +2064,8 @@
       "color": "#1a4da0",
       "sx": -114.24,
       "sy": 370.75,
-      "sz": -258.94
+      "sz": -258.94,
+      "summary": "Tax pooling is a flexible provisional tax payment system established by New Zealand's Inland Revenue Department (IRD) in 2003, allowing eligible taxpayers to deposit income tax installments into intermediary-managed pools rather than paying directly\u2026"
     },
     {
       "id": "Embedding Layers",
@@ -1888,7 +2075,8 @@
       "color": "#1a4da0",
       "sx": -104.56,
       "sy": 406.47,
-      "sz": -231.63
+      "sz": -231.63,
+      "summary": "In mathematics, an embedding (or imbedding) is one instance of some mathematical structure contained within another instance, such as a group that is a subgroup."
     },
     {
       "id": "Softmax",
@@ -1898,7 +2086,8 @@
       "color": "#1a4da0",
       "sx": -228.19,
       "sy": 419.32,
-      "sz": -180.04
+      "sz": -180.04,
+      "summary": "Softmax function The softmax function, also known as softargmax, is a normalized exponential function that transforms a finite-dimensional vector of real"
     },
     {
       "id": "ReLU & Variants",
@@ -1908,7 +2097,8 @@
       "color": "#1a4da0",
       "sx": -346.18,
       "sy": 386.94,
-      "sz": -88.87
+      "sz": -88.87,
+      "summary": "'''Jos\u00e9 Mar\u00eda Relucio Gallego''' (born 9 February 1998 in Madrid), commonly known as '''Relu''', is a Spanish professional footballer who plays as a central midfielder for CD Teruel in the Primera Federaci\u00f3n."
     },
     {
       "id": "GELU",
@@ -1918,7 +2108,8 @@
       "color": "#1a4da0",
       "sx": -346.18,
       "sy": 425.13,
-      "sz": -157.19
+      "sz": -157.19,
+      "summary": "''Gelu'' is a Vlach voivode known for ruling the region beyond the forests\u2014later known as Transylvania\u2014around the year 900, as recounted in the medieval Hungarian chronicle Gesta Hungarorum. Described as dux Blacorum (duke of the Vlachs), he gov\u2026"
     },
     {
       "id": "Swish",
@@ -1928,7 +2119,8 @@
       "color": "#1a4da0",
       "sx": -323.27,
       "sy": 462.05,
-      "sz": -136.89
+      "sz": -136.89,
+      "summary": "SWiSH Max is a Windows-based multimedia software tool for creating vector-based animations, interactive presentations, and web content in the Adobe Flash SWF format. Developed as an accessible alternative to Adobe Flash, it emphasizes ease of use th\u2026"
     },
     {
       "id": "Mish",
@@ -1938,7 +2130,8 @@
       "color": "#1a4da0",
       "sx": -336.62,
       "sy": 415.15,
-      "sz": -137.2
+      "sz": -137.2,
+      "summary": "Mish Mish (Egyptian Arabic: \u0645\u0634, romanized: mish) is a traditional Egyptian cheese made by salting and fermenting fresh cheese curds, typically from buffalo"
     },
     {
       "id": "CNNs",
@@ -1948,7 +2141,8 @@
       "color": "#1a4da0",
       "sx": -253.98,
       "sy": 458.43,
-      "sz": -297.31
+      "sz": -297.31,
+      "summary": "Neural style transfer Neural style transfer is a computer vision technique that leverages convolutional neural networks (CNNs) to separate the content"
     },
     {
       "id": "Residual Networks",
@@ -1958,7 +2152,8 @@
       "color": "#1a4da0",
       "sx": -256.43,
       "sy": 385.93,
-      "sz": -235.75
+      "sz": -235.75,
+      "summary": "High-Frequency Residual Mapping is a technique in deep learning and image processing that utilizes residual mappings to focus on and reconstruct high-frequency components of data, such as images or signals. This approach helps preserve fine details\u2026"
     },
     {
       "id": "DenseNet",
@@ -1968,7 +2163,8 @@
       "color": "#1a4da0",
       "sx": -373.45,
       "sy": 358.88,
-      "sz": -203.63
+      "sz": -203.63,
+      "summary": "The MD5 checksum for the official PyTorch pre-trained DenseNet-121 weights file (densenet121-a639ec97.pth, downloaded from is a7047f0b44515469c3965e85cc31e512. PyTorch does not officially publish MD5 checksums for these legacy model files, but this\u2026"
     },
     {
       "id": "MobileNet",
@@ -1978,7 +2174,8 @@
       "color": "#1a4da0",
       "sx": -417.37,
       "sy": 405.27,
-      "sz": -149.41
+      "sz": -149.41,
+      "summary": "MobileNet is a family of efficient convolutional neural network (CNN) architectures designed for mobile and embedded vision applications, prioritizing low latency, small model size, and competitive accuracy on resource-constrained devices. Introduce\u2026"
     },
     {
       "id": "EfficientNet",
@@ -1988,7 +2185,8 @@
       "color": "#1a4da0",
       "sx": -405.78,
       "sy": 372.63,
-      "sz": -146.92
+      "sz": -146.92,
+      "summary": "EfficientNet is a compound scaling method for convolutional neural networks that uniformly scales depth, width, and resolution to achieve state-of-the-art accuracy with far fewer parameters and FLOPs."
     },
     {
       "id": "Inception",
@@ -1998,7 +2196,8 @@
       "color": "#1a4da0",
       "sx": -344.51,
       "sy": 400.41,
-      "sz": -237.06
+      "sz": -237.06,
+      "summary": "Inception is a compilation album by the American heavy metal band Sanctuary, featuring restored and remastered versions of their previously unreleased 1986 demo recordings. Released on February 24, 2017, through Century Media Records, the album capt\u2026"
     },
     {
       "id": "U-Net",
@@ -2008,7 +2207,8 @@
       "color": "#1a4da0",
       "sx": -334.02,
       "sy": 400.42,
-      "sz": -217.04
+      "sz": -217.04,
+      "summary": "U-Net U-Net is a fully convolutional neural network architecture designed for fast and precise biomedical image segmentation, featuring a symmetric U-shaped"
     },
     {
       "id": "YOLO",
@@ -2018,7 +2218,8 @@
       "color": "#1a4da0",
       "sx": -377.32,
       "sy": 466.88,
-      "sz": -158.81
+      "sz": -158.81,
+      "summary": "YOLO stands for \"You Only Live Once,\" a mantra for the terminally reckless."
     },
     {
       "id": "R-CNN",
@@ -2028,7 +2229,8 @@
       "color": "#1a4da0",
       "sx": -300.95,
       "sy": 461.32,
-      "sz": -301.8
+      "sz": -301.8,
+      "summary": "Cascade R-CNN is a multi-stage object detection framework introduced in 2018. It builds on previous region-based convolutional neural networks (like Faster R-CNN) by using a sequence of detectors trained with increasing Intersection over Union (IoU)\u2026"
     },
     {
       "id": "Feature Pyramid Networks",
@@ -2038,7 +2240,8 @@
       "color": "#1a4da0",
       "sx": -189.29,
       "sy": 459.9,
-      "sz": -295.63
+      "sz": -295.63,
+      "summary": "\"Feature Pyramid Networks for Object Detection\" is a 2017 research paper that introduces Feature Pyramid Networks (FPN), a method for building rich, multi-scale feature pyramids to improve object detection performance across various object sizes. Th\u2026"
     },
     {
       "id": "Capsule Networks",
@@ -2048,7 +2251,8 @@
       "color": "#1a4da0",
       "sx": -278.02,
       "sy": 454.06,
-      "sz": -283.23
+      "sz": -283.23,
+      "summary": "Capsule networks have been applied in multi-view learning contexts, but primarily for supervised classification rather than unsupervised multi-view clustering. A key example is the Multi-View Capsule Network (MVCapsNet) proposed in 2019, which uses\u2026"
     },
     {
       "id": "Deformable Conv",
@@ -2058,7 +2262,8 @@
       "color": "#1a4da0",
       "sx": -350.98,
       "sy": 368.99,
-      "sz": -358.59
+      "sz": -358.59,
+      "summary": "Deformable Convolutional Networks (DCN) is a 2017 convolutional neural network architecture extension that learns 2D offsets for sampling locations in convolution kernels, allowing adaptive, geometrically-aware receptive fields that significantly im\u2026"
     },
     {
       "id": "VGG",
@@ -2068,7 +2273,8 @@
       "color": "#1a4da0",
       "sx": 283.22,
       "sy": 262.12,
-      "sz": 423.13
+      "sz": 423.13,
+      "summary": "VGGNet is a family of deep convolutional neural network (ConvNet) architectures developed by Karen Simonyan and Andrew Zisserman of the Visual Geometry Group at the University of Oxford for large-scale image recognition tasks. Introduced as an arXiv\u2026"
     },
     {
       "id": "AlexNet",
@@ -2078,7 +2284,8 @@
       "color": "#1a4da0",
       "sx": -382.1,
       "sy": 401.85,
-      "sz": -135.58
+      "sz": -135.58,
+      "summary": "AlexNet AlexNet is a pioneering deep convolutional neural network (CNN) architecture developed by Alex Krizhevsky, Ilya Sutskever, and Geoffrey E."
     },
     {
       "id": "SqueezeNet",
@@ -2088,7 +2295,8 @@
       "color": "#1a4da0",
       "sx": -367.15,
       "sy": 371.74,
-      "sz": -174.17
+      "sz": -174.17,
+      "summary": "SqueezeNet is a compact convolutional neural network (CNN) architecture for image classification that achieves accuracy levels comparable to AlexNet on the ImageNet dataset while utilizing approximately 50 times fewer parameters and a model size com\u2026"
     },
     {
       "id": "ShuffleNet",
@@ -2098,7 +2306,8 @@
       "color": "#1a4da0",
       "sx": -410.73,
       "sy": 378.55,
-      "sz": -174.43
+      "sz": -174.43,
+      "summary": "adaptations, enabled real-time processing with reduced parameters (e.g., 1.53 million in self-attentive ShuffleNet), suitable for edge devices while maintaining"
     },
     {
       "id": "NASNet",
@@ -2108,7 +2317,8 @@
       "color": "#1a4da0",
       "sx": -404.23,
       "sy": 420.41,
-      "sz": -164.55
+      "sz": -164.55,
+      "summary": "NASNet is a family of convolutional neural networks generated through Neural Architecture Search in 2018. It introduced the NAS cell concept and achieved state-of-the-art accuracy on ImageNet through automated architecture search, influencing many l\u2026"
     },
     {
       "id": "RegNet",
@@ -2118,7 +2328,8 @@
       "color": "#1a4da0",
       "sx": -392.99,
       "sy": 390.56,
-      "sz": -113.04
+      "sz": -113.04,
+      "summary": "RegNet is Facebook\u2019s 2020 family of simple, regularized convolutional neural networks (CNNs) discovered via neural architecture search. These models follow a single design pattern (stage widths, depths, groups) and outperform complex searched mode\u2026"
     },
     {
       "id": "ConvNeXt",
@@ -2128,7 +2339,8 @@
       "color": "#1a4da0",
       "sx": -345.09,
       "sy": 396.19,
-      "sz": -356.1
+      "sz": -356.1,
+      "summary": "ConvNeXt is a modernized pure convolutional neural network architecture that rivals transformer-based models. It incorporates design elements such as large kernels, inverted bottlenecks, and LayerNorm, proving that convolutional networks (convnets)\u2026"
     },
     {
       "id": "MaxViT",
@@ -2148,7 +2360,8 @@
       "color": "#1a4da0",
       "sx": -329.34,
       "sy": 471.28,
-      "sz": -137.34
+      "sz": -137.34,
+      "summary": "The Swin Transformer is a hierarchical vision transformer using shifted windows for local attention and linear complexity, enabling strong performance on dense prediction tasks like detection and segmentation. This architecture serves as a general-p\u2026"
     },
     {
       "id": "SegNet",
@@ -2158,7 +2371,8 @@
       "color": "#1a4da0",
       "sx": -353.77,
       "sy": 502.85,
-      "sz": -175.21
+      "sz": -175.21,
+      "summary": "Bayou Segnette State Park is a 580-acre state park in Westwego, Jefferson Parish, Louisiana, at 7777 Westbank Expressway, situated along the west bank of the Mississippi River about 15 minutes' drive from downtown New Orleans. Established in the 198\u2026"
     },
     {
       "id": "DeepLab",
@@ -2168,7 +2382,8 @@
       "color": "#1a4da0",
       "sx": -266.24,
       "sy": 493.81,
-      "sz": -270.5
+      "sz": -270.5,
+      "summary": "Deep Lab is a collaborative cyberfeminist collective of researchers, artists, writers, engineers, and cultural producers dedicated to examining digital culture through lenses including privacy, security, surveillance, code, anonymity, and technologi\u2026"
     },
     {
       "id": "Mask R-CNN",
@@ -2178,7 +2393,8 @@
       "color": "#1a4da0",
       "sx": -311.28,
       "sy": 418.16,
-      "sz": -337.08
+      "sz": -337.08,
+      "summary": "Cascade R-CNN is a multi-stage object detection framework introduced in 2018. It builds on previous region-based convolutional neural networks (like Faster R-CNN) by using a sequence of detectors trained with increasing Intersection over Union (IoU)\u2026"
     },
     {
       "id": "Panoptic Segmentation",
@@ -2188,7 +2404,8 @@
       "color": "#1a4da0",
       "sx": -237.66,
       "sy": 337.92,
-      "sz": -371.66
+      "sz": -371.66,
+      "summary": "the same class (e.g., individual cars); and panoptic segmentation, which unifies semantic and instance segmentation to provide a complete labeling of"
     },
     {
       "id": "Keypoint Detection",
@@ -2198,7 +2415,8 @@
       "color": "#1a4da0",
       "sx": -217.93,
       "sy": 399.61,
-      "sz": -302.62
+      "sz": -302.62,
+      "summary": "Keypoint detection is a computer vision task that involves identifying and locating distinctive points (keypoints) in images, commonly used in applications like pose estimation, object tracking, and image matching. Provide an overview of keypoint de\u2026"
     },
     {
       "id": "Optical Flow",
@@ -2208,7 +2426,8 @@
       "color": "#1a4da0",
       "sx": -275.66,
       "sy": 295.01,
-      "sz": -366.26
+      "sz": -366.26,
+      "summary": "Optical flow Optical flow is the distribution of apparent velocities of brightness patterns in an image, arising from relative motion between objects"
     },
     {
       "id": "Depth Estimation",
@@ -2218,7 +2437,8 @@
       "color": "#1a4da0",
       "sx": -243.08,
       "sy": 360.85,
-      "sz": -366.67
+      "sz": -366.67,
+      "summary": "Limitations of single-image metric depth estimation for object measurement. The process involves running metric depth estimation to generate an absolute depth map; segmenting the object (e.g., using models like Segment Anything); back-projecting pix\u2026"
     },
     {
       "id": "Stereo Vision",
@@ -2228,7 +2448,8 @@
       "color": "#1a4da0",
       "sx": -251.1,
       "sy": 345.94,
-      "sz": -372.95
+      "sz": -372.95,
+      "summary": "Computer stereo vision Computer stereo vision is a fundamental technique in computer vision that extracts three-dimensional (3D) depth information from"
     },
     {
       "id": "Point Cloud Networks",
@@ -2238,7 +2459,8 @@
       "color": "#1a4da0",
       "sx": -272.29,
       "sy": 410.0,
-      "sz": -276.28
+      "sz": -276.28,
+      "summary": "cloud \\( S \\) and a target point cloud \\( T \\)."
     },
     {
       "id": "3D CNNs",
@@ -2248,7 +2470,8 @@
       "color": "#1a4da0",
       "sx": -275.11,
       "sy": 410.49,
-      "sz": -333.09
+      "sz": -333.09,
+      "summary": "3D reconstruction 3D reconstruction is the process of generating digital three-dimensional representations of objects, scenes, or environments from two-dimensional"
     },
     {
       "id": "RNNs",
@@ -2258,7 +2481,8 @@
       "color": "#1a4da0",
       "sx": -234.07,
       "sy": 477.22,
-      "sz": -188.37
+      "sz": -188.37,
+      "summary": "Backpropagation through time Backpropagation through time (BPTT) is a gradient-based algorithm for training recurrent neural networks (RNNs) that extends"
     },
     {
       "id": "LSTMs",
@@ -2268,7 +2492,8 @@
       "color": "#1a4da0",
       "sx": -238.12,
       "sy": 485.35,
-      "sz": -206.65
+      "sz": -206.65,
+      "summary": ") This efficiency makes LSTMs suitable for on-device inference in mobile NLP applications, even as transformers handle large-scale training."
     },
     {
       "id": "GRUs",
@@ -2278,7 +2503,8 @@
       "color": "#1a4da0",
       "sx": -288.04,
       "sy": 405.81,
-      "sz": -135.83
+      "sz": -135.83,
+      "summary": "Grus (constellation) Grus is a southern constellation representing a crane, one of the 88 modern constellations officially recognized by the International"
     },
     {
       "id": "Bidirectional RNN",
@@ -2288,7 +2514,8 @@
       "color": "#1a4da0",
       "sx": -271.52,
       "sy": 490.0,
-      "sz": -169.48
+      "sz": -169.48,
+      "summary": "consistency in gradient flow.[]("
     },
     {
       "id": "Seq2Seq",
@@ -2298,7 +2525,8 @@
       "color": "#1a4da0",
       "sx": -331.6,
       "sy": 520.06,
-      "sz": -195.55
+      "sz": -195.55,
+      "summary": "Seq2seq Sequence-to-sequence (seq2seq) models are a class of neural network architectures in deep learning designed to transform an input sequence into"
     },
     {
       "id": "Attention Mechanism",
@@ -2308,7 +2536,8 @@
       "color": "#1a4da0",
       "sx": 429.18,
       "sy": 260.73,
-      "sz": -192.42
+      "sz": -192.42,
+      "summary": "Channel attention mechanism is a technique in deep learning used primarily in convolutional neural networks (CNNs) to recalibrate channel-wise features for improved model performance. Surveys on attention mechanisms in deep learning, particularly in\u2026"
     },
     {
       "id": "Multi-Head Attention",
@@ -2318,7 +2547,8 @@
       "color": "#1a4da0",
       "sx": 453.8,
       "sy": 249.03,
-      "sz": -193.31
+      "sz": -193.31,
+      "summary": "In multi-modal models for protein-small molecule interaction prediction, multi-head attention fuses embeddings using a dual-tower architecture where enzyme sequence embeddings (e.g., from CBOW, dim=100) serve as the query and substrate graph embeddi\u2026"
     },
     {
       "id": "Positional Encoding",
@@ -2328,7 +2558,8 @@
       "color": "#1a4da0",
       "sx": -165.38,
       "sy": 465.45,
-      "sz": -204.09
+      "sz": -204.09,
+      "summary": "Positional encoding in Transformers. The two main types are absolute positional encoding and relative positional encoding."
     },
     {
       "id": "Temporal Convolutional Net",
@@ -2338,7 +2569,8 @@
       "color": "#1a4da0",
       "sx": -359.54,
       "sy": 390.86,
-      "sz": -293.5
+      "sz": -293.5,
+      "summary": "Temporal convolutional networks (TCNs) are causal, dilated convolutional architectures designed for sequence modeling. They outperform recurrent networks in efficiency and parallelism by using 1D convolutions with increasing receptive fields to capt\u2026"
     },
     {
       "id": "WaveNet",
@@ -2348,7 +2580,8 @@
       "color": "#1a4da0",
       "sx": -365.34,
       "sy": 404.09,
-      "sz": -186.15
+      "sz": -186.15,
+      "summary": "WaveNet WaveNet is a deep generative neural network developed by A\u00e4ron van den Oord, Sander Dieleman, and colleagues at Google DeepMind for synthesizing"
     },
     {
       "id": "Neural Machine Translation",
@@ -2358,7 +2591,8 @@
       "color": "#1a4da0",
       "sx": -280.54,
       "sy": 525.28,
-      "sz": -166.85
+      "sz": -166.85,
+      "summary": "Neural machine translation Neural machine translation (NMT) is an end-to-end approach to machine translation that employs deep neural networks to directly"
     },
     {
       "id": "CTC Loss",
@@ -2368,7 +2602,8 @@
       "color": "#1a4da0",
       "sx": 70.72,
       "sy": -20.1,
-      "sz": -340.59
+      "sz": -340.59,
+      "summary": "TUTUN-CTC is a leading tobacco manufacturing company headquartered in Chi\u0219in\u0103u, Moldova, specializing in cigarette production and tobacco fermentation processes. Originating from a cigarette-filling workshop established in 1924\u2014the first of its\u2026"
     },
     {
       "id": "Connectionist Models",
@@ -2378,7 +2613,8 @@
       "color": "#1a4da0",
       "sx": -265.36,
       "sy": 335.86,
-      "sz": -230.9
+      "sz": -230.9,
+      "summary": "Connectionist temporal classification Connectionist temporal classification (CTC) is an algorithm for training recurrent neural networks (RNNs) to label"
     },
     {
       "id": "Echo State Networks",
@@ -2388,7 +2624,8 @@
       "color": "#1a4da0",
       "sx": -261.79,
       "sy": 420.16,
-      "sz": -203.31
+      "sz": -203.31,
+      "summary": "theoretical requirement for echo state networks (ESNs), ensuring that the reservoir state at time step \\(n\\), denoted \\(x(n)\\), is solely determined by"
     },
     {
       "id": "Graph Neural Networks",
@@ -2398,7 +2635,8 @@
       "color": "#1a4da0",
       "sx": -178.45,
       "sy": 538.73,
-      "sz": -323.91
+      "sz": -323.91,
+      "summary": "Class imbalance is a key challenge in graph neural networks (GNNs), where certain classes (e.g., nodes or edges) are significantly underrepresented compared to others, impacting model performance on tasks like fraud detection or node classification.\u2026"
     },
     {
       "id": "Graph Attention Networks",
@@ -2408,7 +2646,8 @@
       "color": "#1a4da0",
       "sx": -142.37,
       "sy": 572.0,
-      "sz": -349.97
+      "sz": -349.97,
+      "summary": "The core contribution of Graph Attention Networks to attention as relation modeling is that it applies attention to graph neural networks by computing attention coefficients to weigh neighbor nodes dynamically, with multi-head attention capturing di\u2026"
     },
     {
       "id": "Message Passing",
@@ -2418,7 +2657,8 @@
       "color": "#1a4da0",
       "sx": -209.17,
       "sy": 498.93,
-      "sz": -179.74
+      "sz": -179.74,
+      "summary": "Message passing Message passing is a fundamental communication paradigm in concurrent, parallel, and distributed computing systems, wherein independent"
     },
     {
       "id": "Siamese Networks",
@@ -2428,7 +2668,8 @@
       "color": "#1a4da0",
       "sx": -219.65,
       "sy": 433.1,
-      "sz": -278.2
+      "sz": -278.2,
+      "summary": "Hybrid Siamese networks with partial weight sharing represent a modification of the standard Siamese architecture in which the twin subnetworks share"
     },
     {
       "id": "Hypernetworks",
@@ -2438,7 +2679,8 @@
       "color": "#1a4da0",
       "sx": -411.19,
       "sy": 371.75,
-      "sz": -123.33
+      "sz": -123.33,
+      "summary": "drift\" without priors, where the model overfits to the identifier at the expense of broader text adherence. Hypernetworks"
     },
     {
       "id": "Neural ODEs",
@@ -2448,7 +2690,8 @@
       "color": "#1a4da0",
       "sx": -218.71,
       "sy": 445.81,
-      "sz": -193.02
+      "sz": -193.02,
+      "summary": "Neural differential equations (NDEs) are a family of machine learning models that unify deep neural networks with differential equations, parameterizing continuous-time dynamical systems where the evolution of states is governed by neural networks a\u2026"
     },
     {
       "id": "Mixture of Experts",
@@ -2458,7 +2701,8 @@
       "color": "#1a4da0",
       "sx": -343.81,
       "sy": 235.28,
-      "sz": -173.02
+      "sz": -173.02,
+      "summary": "As of early 2026, Mixture of Experts (MoE) architectures dominate frontier large language models (LLMs) for improved energy efficiency. MoE models activate only a subset of specialized \"experts\" per token, reducing inference energy consumption propo\u2026"
     },
     {
       "id": "Autoencoders",
@@ -2468,7 +2712,8 @@
       "color": "#1a4da0",
       "sx": -139.55,
       "sy": 431.33,
-      "sz": -186.03
+      "sz": -186.03,
+      "summary": "Matryoshka SAEs scale sparse autoencoders (SAEs) to large protein models (e.g., ESM2-3B) and use hierarchical (\u201cMatryoshka\u201d) SAEs to obtain multi-scale features and steer structure predictors."
     },
     {
       "id": "Sparse Autoencoders",
@@ -2478,7 +2723,8 @@
       "color": "#1a4da0",
       "sx": -112.61,
       "sy": 388.19,
-      "sz": -152.82
+      "sz": -152.82,
+      "summary": "Matryoshka SAEs scale sparse autoencoders (SAEs) to large protein models (e.g., ESM2-3B) and use hierarchical (\u201cMatryoshka\u201d) SAEs to obtain multi-scale features and steer structure predictors."
     },
     {
       "id": "Denoising Autoencoders",
@@ -2488,7 +2734,8 @@
       "color": "#1a4da0",
       "sx": -128.97,
       "sy": 407.4,
-      "sz": -167.23
+      "sz": -167.23,
+      "summary": "Image denoising is the process of removing noise from images while preserving important features such as edges, textures, and fine details. Noise in images can arise from sensor limitations, low-light conditions, transmission errors, or other factor\u2026"
     },
     {
       "id": "Graph Convolutional Networks",
@@ -2498,7 +2745,8 @@
       "color": "#1a4da0",
       "sx": -169.32,
       "sy": 551.81,
-      "sz": -335.5
+      "sz": -335.5,
+      "summary": "Deformable Convolutional Networks (DCN) is a 2017 convolutional neural network architecture extension that learns 2D offsets for sampling locations in convolution kernels, allowing adaptive, geometrically-aware receptive fields that significantly im\u2026"
     },
     {
       "id": "GraphSAGE",
@@ -2508,7 +2756,8 @@
       "color": "#1a4da0",
       "sx": -164.87,
       "sy": 551.48,
-      "sz": -330.59
+      "sz": -330.59,
+      "summary": "by exchanging information with neighbors, ultimately enabling a holistic graph vector via readout aggregation. GraphSAGE"
     },
     {
       "id": "Node2Vec",
@@ -2518,7 +2767,8 @@
       "color": "#1a4da0",
       "sx": -321.38,
       "sy": 510.85,
-      "sz": -249.51
+      "sz": -249.51,
+      "summary": "Node2vec is a 2016 graph embedding algorithm that generates node sequences via biased random walks, balancing between breadth-first search (BFS) and depth-first search (DFS) through tunable parameters p and q. It then applies the Skip-Gram model to\u2026"
     },
     {
       "id": "DeepWalk",
@@ -2528,7 +2778,8 @@
       "color": "#1a4da0",
       "sx": -264.87,
       "sy": 525.02,
-      "sz": -283.44
+      "sz": -283.44,
+      "summary": "challenges in scalability and expressiveness for large-scale graphs. By the mid-2010s, foundational algorithms like DeepWalk"
     },
     {
       "id": "Knowledge Graphs",
@@ -2538,7 +2789,8 @@
       "color": "#1a4da0",
       "sx": -149.48,
       "sy": 531.63,
-      "sz": -314.53
+      "sz": -314.53,
+      "summary": "Knowledge graphs have been applied in educational contexts, with multiple systematic reviews published between 2022 and 2025 surveying their construction, methodologies, evaluation, and applications. Key examples include: Abu-Salih and Alotaibi (202\u2026"
     },
     {
       "id": "TransE",
@@ -2548,7 +2800,8 @@
       "color": "#1a4da0",
       "sx": -308.21,
       "sy": 495.54,
-      "sz": -174.48
+      "sz": -174.48,
+      "summary": "Transe is a 2006 Portuguese-French-Italian drama film directed and written by Teresa Villaverde. Starring Ana Moreira as a young woman from St. Petersburg migrating to Europe in search of a better life, the film explores themes of exploitation and h\u2026"
     },
     {
       "id": "LLM",
@@ -2558,7 +2811,8 @@
       "color": "#a01a1a",
       "sx": 290.64,
       "sy": -84.9,
-      "sz": 223.57
+      "sz": 223.57,
+      "summary": "LLM Communications was a British political lobbying and public relations firm founded in June 1997 by Neal Lawson, Ben Lucas, and Jonathan Mendelsohn as a breakaway operation from the Lowe Bell Political consultancy. The firm capitalized on its foun\u2026"
     },
     {
       "id": "Transformers",
@@ -2568,7 +2822,8 @@
       "color": "#a01a1a",
       "sx": 127.31,
       "sy": 224.59,
-      "sz": 170.07
+      "sz": 170.07,
+      "summary": "The Transformers franchise is a major media franchise originating from a line of toys created by Hasbro and Takara Tomy in the 1980s. It centers on two factions of sentient extraterrestrial robots\u2014the heroic Autobots and the villainous Decepticons\u2026"
     },
     {
       "id": "BERT",
@@ -2578,7 +2833,8 @@
       "color": "#a01a1a",
       "sx": 283.44,
       "sy": -31.07,
-      "sz": 391.75
+      "sz": 391.75,
+      "summary": "Bert Willis Karlsson (born June 21, 1945) is a prominent Swedish entrepreneur, record company manager, and former politician. He is a household name in Sweden. In the music industry, Karlsson founded Mariann Grammofon AB in 1972, which became a lead\u2026"
     },
     {
       "id": "GPT",
@@ -2588,7 +2844,8 @@
       "color": "#a01a1a",
       "sx": 288.23,
       "sy": 63.1,
-      "sz": 350.83
+      "sz": 350.83,
+      "summary": "The GPT Store is the official platform operated by OpenAI for discovering and sharing custom GPTs (also known as GPTs) in ChatGPT, accessible at It serves as the primary platform for custom GPTs, organized by categories such as writing, productivity\u2026"
     },
     {
       "id": "T5",
@@ -2598,7 +2855,8 @@
       "color": "#a01a1a",
       "sx": 300.31,
       "sy": 30.23,
-      "sz": 400.78
+      "sz": 400.78,
+      "summary": "The SPARC T5 is a system-on-a-chip (SoC) microprocessor developed by Oracle Corporation as part of the SPARC (Scalable Processor ARChitecture) family, serving as the successor to the SPARC T4 and marking the fifth generation of multithreaded SPARC p\u2026"
     },
     {
       "id": "Vision Transformers",
@@ -2608,7 +2866,8 @@
       "color": "#a01a1a",
       "sx": 141.98,
       "sy": 259.6,
-      "sz": 165.82
+      "sz": 165.82,
+      "summary": "Self-supervised vision transformers have been demonstrated to function as scalable generative models for domain generalization, particularly in histopathology imaging. A 2024 paper accepted at MICCAI proposes a novel generative method that employs a\u2026"
     },
     {
       "id": "CLIP",
@@ -2618,7 +2877,8 @@
       "color": "#a01a1a",
       "sx": 204.97,
       "sy": 183.79,
-      "sz": 205.24
+      "sz": 205.24,
+      "summary": "A media clip is a short extract or segment taken from a larger source of electronic media, such as a film, television program, radio broadcast, or digital recording, and is typically broadcast, shared, or presented separately. These clips may consis\u2026"
     },
     {
       "id": "BPE Tokenization",
@@ -2628,7 +2888,8 @@
       "color": "#a01a1a",
       "sx": 323.53,
       "sy": 128.0,
-      "sz": 224.31
+      "sz": 224.31,
+      "summary": "Music tokenization is the process of converting musical information\u2014such as symbolic data (e.g., MIDI notes, chords, rhythms) or audio features\u2014into discrete tokens that machine learning models, particularly transformer-based architectures, can\u2026"
     },
     {
       "id": "Flash Attention",
@@ -2638,7 +2899,8 @@
       "color": "#a01a1a",
       "sx": 446.24,
       "sy": 241.69,
-      "sz": -156.68
+      "sz": -156.68,
+      "summary": "FlashAttention is an algorithm for exact attention computation in transformer models that significantly reduces memory usage and speeds up training and inference by optimizing I/O operations between GPU high bandwidth memory (HBM) and on-chip SRAM."
     },
     {
       "id": "Rotary Embeddings",
@@ -2648,7 +2910,8 @@
       "color": "#a01a1a",
       "sx": 318.0,
       "sy": 263.61,
-      "sz": 11.25
+      "sz": 11.25,
+      "summary": "Rotary Positional Embeddings (RoPE) in Large Language Models (LLMs). Replaces absolute embeddings; rotates query/key vectors for better relative position handling and length extrapolation."
     },
     {
       "id": "Sparse Attention",
@@ -2658,7 +2921,8 @@
       "color": "#a01a1a",
       "sx": 423.82,
       "sy": 205.27,
-      "sz": -158.9
+      "sz": -158.9,
+      "summary": "Sparse attention is a family of techniques in Transformer models that modify standard dense self-attention to reduce the quadratic O(N\u00b2) complexity in sequence length N by restricting each query to attend to a subset of keys/values, often achieving\u2026"
     },
     {
       "id": "Feed-Forward Networks",
@@ -2668,7 +2932,8 @@
       "color": "#a01a1a",
       "sx": -10.54,
       "sy": 189.08,
-      "sz": 34.48
+      "sz": 34.48,
+      "summary": "Forward Networks is an American software company founded in 2013 and headquartered in Santa Clara, California, that develops network assurance and modeling solutions using mathematically precise digital twin technology to provide visibility, verific\u2026"
     },
     {
       "id": "Mixture of Experts (MoE)",
@@ -2678,7 +2943,8 @@
       "color": "#a01a1a",
       "sx": 218.48,
       "sy": -49.78,
-      "sz": 475.52
+      "sz": 475.52,
+      "summary": "Mixture of experts A mixture of experts (MoE) is a machine learning technique that integrates multiple specialized sub-models, referred to as experts,"
     },
     {
       "id": "RoBERTa",
@@ -2688,7 +2954,8 @@
       "color": "#a01a1a",
       "sx": 293.22,
       "sy": -11.94,
-      "sz": 419.54
+      "sz": 419.54,
+      "summary": "RoBERTa (Robustly optimized BERT approach) is a robustly optimized variant of the BERT language model. It removes the next-sentence prediction objective, uses dynamic masking instead of static masking, trains with larger batch sizes, and is trained\u2026"
     },
     {
       "id": "XLNet",
@@ -2698,7 +2965,8 @@
       "color": "#a01a1a",
       "sx": -321.7,
       "sy": 310.08,
-      "sz": 8.96
+      "sz": 8.96,
+      "summary": "XLNet is a machine learning model for natural language processing, introduced as a generalized autoregressive pretraining method that enables bidirectional context learning by maximizing the expected likelihood over all permutations of the input fac\u2026"
     },
     {
       "id": "ALBERT",
@@ -2708,7 +2976,8 @@
       "color": "#a01a1a",
       "sx": 275.77,
       "sy": -34.78,
-      "sz": 386.5
+      "sz": 386.5,
+      "summary": "Albert Tatlock Albert Tatlock is a fictional character from the long-running British soap opera Coronation Street, portrayed by actor Jack Howarth from"
     },
     {
       "id": "DistilBERT",
@@ -2718,7 +2987,8 @@
       "color": "#a01a1a",
       "sx": 263.98,
       "sy": -9.78,
-      "sz": 303.27
+      "sz": 303.27,
+      "summary": "DistilBERT is a distilled version of BERT for natural language processing. UPDATE: Explanation of how DistilBERT can be combined with other tools for NLP applications, specifically with scikit-learn classifiers for simple yet powerful NLP apps."
     },
     {
       "id": "DeBERTa",
@@ -2728,7 +2998,8 @@
       "color": "#a01a1a",
       "sx": 316.21,
       "sy": -47.9,
-      "sz": 402.13
+      "sz": 402.13,
+      "summary": "DeBERTa (Decoding-enhanced BERT with disentangled attention) is an enhanced transformer-based language model that improves upon BERT by using disentangled attention matrices (separating content and position representations) and an improved mask deco\u2026"
     },
     {
       "id": "ELECTRA",
@@ -2738,7 +3009,8 @@
       "color": "#a01a1a",
       "sx": 353.46,
       "sy": 39.35,
-      "sz": 401.21
+      "sz": 401.21,
+      "summary": "Electra In Greek mythology, Electra (also spelled Elektra; Ancient Greek: \u1f28\u03bb\u03ad\u03ba\u03c4\u03c1\u03b1) is the daughter of King Agamemnon of Mycenae and his wife Queen Clytemnestra"
     },
     {
       "id": "Longformer",
@@ -2748,7 +3020,8 @@
       "color": "#a01a1a",
       "sx": 417.09,
       "sy": 15.32,
-      "sz": 324.73
+      "sz": 324.73,
+      "summary": "Longformer is a sparse transformer with global and sliding-window attention patterns, designed for long-document tasks like summarization and QA, supporting up to 4k-16k token contexts with linear scaling."
     },
     {
       "id": "BigBird",
@@ -2758,7 +3031,8 @@
       "color": "#a01a1a",
       "sx": 404.83,
       "sy": 24.48,
-      "sz": 385.65
+      "sz": 385.65,
+      "summary": "More recently, in September 2025, Vector collaborated with Bigbird Kuti on the EP BIGBIRD & THA VIPER, a six-track fusion of rap, Afrobeat, and high-energy"
     },
     {
       "id": "Reformer",
@@ -2768,7 +3042,8 @@
       "color": "#a01a1a",
       "sx": 153.11,
       "sy": 25.3,
-      "sz": 201.24
+      "sz": 201.24,
+      "summary": "The Reformer is an efficient transformer implementation incorporating locality-sensitive hashing (LSH) for sparse attention and reversible layers to minimize memory footprint, enabling training on sequences up to 1 million tokens."
     },
     {
       "id": "Perceiver",
@@ -2778,7 +3053,8 @@
       "color": "#a01a1a",
       "sx": 335.22,
       "sy": 46.77,
-      "sz": 132.66
+      "sz": 132.66,
+      "summary": "Perceiver The Perceiver is a general-purpose neural network architecture developed by DeepMind, introduced in 2021, that extends the Transformer model"
     },
     {
       "id": "Mamba",
@@ -2788,7 +3064,8 @@
       "color": "#a01a1a",
       "sx": 357.61,
       "sy": 43.62,
-      "sz": 451.75
+      "sz": 451.75,
+      "summary": "/animal/mamba) There are four extant species: the black mamba (D. polylepis), eastern green mamba (D. angusticeps), western green mamba (D. viridis), and"
     },
     {
       "id": "RetNet",
@@ -2798,7 +3075,8 @@
       "color": "#a01a1a",
       "sx": -388.2,
       "sy": 374.06,
-      "sz": -69.14
+      "sz": -69.14,
+      "summary": "gene hunting, revealing over 100 RP-causative genes by the early 21st century, with more than 100 identified as of 2025.[]("
     },
     {
       "id": "RWKV",
@@ -2808,7 +3086,8 @@
       "color": "#a01a1a",
       "sx": 294.81,
       "sy": 135.95,
-      "sz": 404.26
+      "sz": 404.26,
+      "summary": "The RWKV architecture (Receptance Weighted Key Value) is a neural network architecture that reinvents recurrent neural networks (RNNs) for the transformer era. It combines the efficient parallelizable training of transformers with the recurrent infe\u2026"
     },
     {
       "id": "Hyena",
@@ -2818,7 +3097,8 @@
       "color": "#a01a1a",
       "sx": 391.31,
       "sy": 76.55,
-      "sz": 436.12
+      "sz": 436.12,
+      "summary": "HyENA is a USDe-margined perpetuals decentralized exchange (DEX) built on Hyperliquid's HIP-3 framework, enabling trading of perpetual contracts with yield-bearing USDe collateral from Ethena. The funding rate for the BTC-USDE perpetual on HyENA (US\u2026"
     },
     {
       "id": "State Space Models",
@@ -2828,7 +3108,8 @@
       "color": "#a01a1a",
       "sx": -67.29,
       "sy": 14.07,
-      "sz": 271.27
+      "sz": 271.27,
+      "summary": "State-Space Models with Regime Switching: Classical and Gibbs-Sampling Approaches with Applications is a technical monograph in econometrics by Chang-Jin Kim and Charles R. Nelson, published by The MIT Press in 1999. Both state-space models and Mark\u2026"
     },
     {
       "id": "Linear Attention",
@@ -2838,7 +3119,8 @@
       "color": "#a01a1a",
       "sx": 450.34,
       "sy": 240.18,
-      "sz": -169.47
+      "sz": -169.47,
+      "summary": "Infini-attention and Recurrent Memory Tokens refer to key components of an efficient attention mechanism introduced in the 2024 research paper \"Leave No Context Behind: Efficient Infinite Context Transformers with Infini-attention.\" This method enab\u2026"
     },
     {
       "id": "ALiBi",
@@ -2848,7 +3130,8 @@
       "color": "#a01a1a",
       "sx": 220.02,
       "sy": -90.25,
-      "sz": 361.09
+      "sz": 361.09,
+      "summary": "Services and Commercial Aspects Role of Alibi Agencies Alibi agencies emerged in the 1990s in Japan, where firms known as alibi-ya began offering excuses"
     },
     {
       "id": "RoPE",
@@ -2858,7 +3141,8 @@
       "color": "#a01a1a",
       "sx": 37.02,
       "sy": -29.41,
-      "sz": 357.43
+      "sz": 357.43,
+      "summary": "/rope-construction)"
     },
     {
       "id": "Sinusoidal Embeddings",
@@ -2868,7 +3152,8 @@
       "color": "#a01a1a",
       "sx": 321.15,
       "sy": 259.1,
-      "sz": 4.92
+      "sz": 4.92,
+      "summary": "mlx-embeddings is a Python package created by GitHub user Blaizzy (Prince Canuma) and hosted at It enables running vision and language embedding models locally on Mac computers using Apple's MLX framework. Key features include support for models suc\u2026"
     },
     {
       "id": "Grouped Query Attention",
@@ -2878,7 +3163,8 @@
       "color": "#a01a1a",
       "sx": 449.62,
       "sy": 247.84,
-      "sz": -138.73
+      "sz": -138.73,
+      "summary": "Grouped-Query Attention (GQA) in large language models (LLMs) shares key/value heads across query groups, cutting KV cache memory for faster inference."
     },
     {
       "id": "Multi-Query Attention",
@@ -2888,7 +3174,8 @@
       "color": "#a01a1a",
       "sx": 454.47,
       "sy": 248.95,
-      "sz": -138.25
+      "sz": -138.25,
+      "summary": "Grouped-Query Attention (GQA) in large language models (LLMs) shares key/value heads across query groups, cutting KV cache memory for faster inference."
     },
     {
       "id": "Sliding Window Attention",
@@ -2898,7 +3185,8 @@
       "color": "#a01a1a",
       "sx": 443.4,
       "sy": 228.48,
-      "sz": -187.06
+      "sz": -187.06,
+      "summary": "The Sliding window protocol is a bidirectional protocol used in computer networking to enable reliable, ordered, and flow-controlled data transmission over unreliable..."
     },
     {
       "id": "Cross-Attention",
@@ -2908,7 +3196,8 @@
       "color": "#a01a1a",
       "sx": 415.75,
       "sy": 220.27,
-      "sz": -151.88
+      "sz": -151.88,
+      "summary": "The \"Abstractors and Relational Cross-Attention\" method, as proposed in the paper at improves relation reasoning in Transformers by introducing abstractor modules to separate object features from relations and relational cross-attention to explicitl\u2026"
     },
     {
       "id": "GANs",
@@ -2918,7 +3207,8 @@
       "color": "#a01a1a",
       "sx": 251.65,
       "sy": 280.3,
-      "sz": 337.17
+      "sz": 337.17,
+      "summary": "Richard Martin Gans (7 March 1880 \u2013 27 June 1954), a German-Jewish theoretical physicist born in Hamburg, was a pioneering figure who made foundational contributions to early quantum theory and electromagnetic scattering, notably through his devel\u2026"
     },
     {
       "id": "VAE",
@@ -2928,7 +3218,8 @@
       "color": "#a01a1a",
       "sx": 302.47,
       "sy": 218.23,
-      "sz": 429.14
+      "sz": 429.14,
+      "summary": "Vae victis Brennus adding his sword to the scales during the ransom weighing Vae victis, Latin for \"woe to the vanquished,\" is a phrase attributed to"
     },
     {
       "id": "Diffusion Models",
@@ -2938,7 +3229,8 @@
       "color": "#a01a1a",
       "sx": -31.75,
       "sy": -6.11,
-      "sz": 127.73
+      "sz": 127.73,
+      "summary": "A technique for diffusion image generation that explores scaling compute not by more denoising steps, but by searching for better noises using verifiers and search algorithms."
     },
     {
       "id": "Score Matching",
@@ -2948,7 +3240,8 @@
       "color": "#a01a1a",
       "sx": 284.31,
       "sy": 163.83,
-      "sz": 85.98
+      "sz": 85.98,
+      "summary": "Propensity score matching Propensity score matching (PSM) is a statistical technique employed in observational studies to estimate causal effects of treatments"
     },
     {
       "id": "Flow Models",
@@ -2958,7 +3251,8 @@
       "color": "#a01a1a",
       "sx": -0.74,
       "sy": 51.27,
-      "sz": 196.46
+      "sz": 196.46,
+      "summary": "/BottleRocket/airplane/bern.html) Inviscid flow models are widely applied in aerodynamics to compute inviscid pressure loads on aircraft components, rotor"
     },
     {
       "id": "Energy-Based Models",
@@ -2968,7 +3262,8 @@
       "color": "#a01a1a",
       "sx": -55.28,
       "sy": 17.66,
-      "sz": 228.8
+      "sz": 228.8,
+      "summary": "Cell-based models are a class of computational frameworks in biology that simulate complex biological systems by representing individual cells as discrete, autonomous entities governed by local rules for behavior, movement, and interaction, thereby\u2026"
     },
     {
       "id": "DALL-E / Stable Diffusion",
@@ -2978,7 +3273,8 @@
       "color": "#a01a1a",
       "sx": -29.88,
       "sy": -2.95,
-      "sz": 124.56
+      "sz": 124.56,
+      "summary": "Stable Diffusion Stable Diffusion architecture Stable Diffusion is a family of open-source latent diffusion models developed by Stability AI for generating"
     },
     {
       "id": "VideoGen",
@@ -2988,7 +3284,8 @@
       "color": "#a01a1a",
       "sx": 305.92,
       "sy": 204.06,
-      "sz": 354.54
+      "sz": 354.54,
+      "summary": "Envato is an Australian technology company founded in 2006 by Collis Ta'eed, Cyan Ta'eed, and Jun Rung in a Bondi garage. It operates a network of digital asset marketplaces and a creative subscription platform, serving over 10 million community mem\u2026"
     },
     {
       "id": "Text-to-Speech",
@@ -2998,7 +3295,8 @@
       "color": "#a01a1a",
       "sx": 442.85,
       "sy": 202.0,
-      "sz": 58.69
+      "sz": 58.69,
+      "summary": "Several free online text-to-speech (TTS) tools meet the criteria of requiring no signup, adding no watermark, and supporting unlimited or long audio up to 20 minutes or more (equivalent to roughly 15,000\u201320,000 characters or higher at typical spee\u2026"
     },
     {
       "id": "Speech Recognition",
@@ -3008,7 +3306,8 @@
       "color": "#a01a1a",
       "sx": 384.31,
       "sy": 115.0,
-      "sz": 113.88
+      "sz": 113.88,
+      "summary": "Speech recognition Speech recognition, also known as automatic speech recognition (ASR), is a technology that enables computers to identify and transcribe"
     },
     {
       "id": "StyleGAN",
@@ -3018,7 +3317,8 @@
       "color": "#a01a1a",
       "sx": 276.3,
       "sy": 263.16,
-      "sz": 341.16
+      "sz": 341.16,
+      "summary": "StyleGAN A photorealistic face generated by StyleGAN StyleGAN is a family of generative adversarial network (GAN) architectures developed by NVIDIA researchers"
     },
     {
       "id": "CycleGAN",
@@ -3028,7 +3328,8 @@
       "color": "#a01a1a",
       "sx": 250.05,
       "sy": 284.64,
-      "sz": 347.93
+      "sz": 347.93,
+      "summary": "data: ||y - G(x)||1, weighted to prioritize structural fidelity (\u03bb=100 empirically). Unsupervised models like CycleGAN"
     },
     {
       "id": "Pix2Pix",
@@ -3038,7 +3339,8 @@
       "color": "#a01a1a",
       "sx": 185.83,
       "sy": 134.85,
-      "sz": 278.47
+      "sz": 278.47,
+      "summary": "Pix2PixHD is a high-resolution extension of pix2pix. It incorporates multi-scale discriminators, perceptual losses, and feature matching to enable photorealistic image synthesis from semantic label maps. It is suitable for applications such as video\u2026"
     },
     {
       "id": "ControlNet",
@@ -3048,7 +3350,8 @@
       "color": "#a01a1a",
       "sx": -354.57,
       "sy": 326.9,
-      "sz": -19.09
+      "sz": -19.09,
+      "summary": "ControlNet ControlNet is a neural network architecture that adds spatial conditioning controls to large, pretrained text-to-image diffusion models, allowing"
     },
     {
       "id": "DDPM",
@@ -3058,7 +3361,8 @@
       "color": "#a01a1a",
       "sx": 390.82,
       "sy": -82.93,
-      "sz": 302.8
+      "sz": 302.8,
+      "summary": "Dell Display and Peripheral Manager (DDPM) is a free utility software developed by Dell Technologies for Windows and macOS. It allows users to manage and customize Dell monitors and peripherals\u2014including keyboards, mice, webcams, and headsets\u2014fr\u2026"
     },
     {
       "id": "DDIM",
@@ -3068,7 +3372,8 @@
       "color": "#a01a1a",
       "sx": 393.97,
       "sy": -83.62,
-      "sz": 338.72
+      "sz": 338.72,
+      "summary": "Diffusion Posterior Sampling (DPS) is a technique for solving inverse problems by sampling from the posterior distribution using diffusion models. It has been extended with DDIM (Denoising Diffusion Implicit Models) to enable deterministic and effic\u2026"
     },
     {
       "id": "Latent Diffusion",
@@ -3078,7 +3383,8 @@
       "color": "#a01a1a",
       "sx": -25.57,
       "sy": -9.66,
-      "sz": 98.17
+      "sz": 98.17,
+      "summary": "A latent diffusion model (LDM) is a type of generative model in machine learning that performs the diffusion process\u2014iteratively adding and removing noise to generate data\u2014within the compressed latent space of a pretrained autoencoder, rather th\u2026"
     },
     {
       "id": "Consistency Models",
@@ -3088,7 +3394,8 @@
       "color": "#a01a1a",
       "sx": 129.19,
       "sy": -182.75,
-      "sz": 197.33
+      "sz": 197.33,
+      "summary": "Consistency Models are a 2023 distillation technique in generative machine learning that trains a single-step generator to map noise directly to data by enforcing self-consistency across time steps, enabling ultra-fast sampling (1\u20132 steps) while p\u2026"
     },
     {
       "id": "Flow Matching",
@@ -3098,7 +3405,8 @@
       "color": "#a01a1a",
       "sx": 71.89,
       "sy": 122.5,
-      "sz": 173.59
+      "sz": 173.59,
+      "summary": "Flow-GRPO (Group Relative Policy Optimization) is a reinforcement learning method that integrates online policy gradient optimization into flow matching models for training generative flow-based models. It represents the first approach to apply onli\u2026"
     },
     {
       "id": "Rectified Flow",
@@ -3108,7 +3416,8 @@
       "color": "#a01a1a",
       "sx": 35.77,
       "sy": 134.53,
-      "sz": 163.96
+      "sz": 163.96,
+      "summary": "Rectified spirit Bottle of Spirytus Rektyfikowany, a commercial example of rectified spirit Rectified spirit is a highly concentrated form of ethanol,"
     },
     {
       "id": "VQ-VAE",
@@ -3118,7 +3427,8 @@
       "color": "#a01a1a",
       "sx": 290.13,
       "sy": 238.22,
-      "sz": 429.5
+      "sz": 429.5,
+      "summary": "Brennus adding his sword to the scales during the ransom weighing Vae victis, Latin for \"woe to the vanquished,\" is a phrase attributed to Brennus, the chieftain of the Senones Gauls,..."
     },
     {
       "id": "VQGAN",
@@ -3128,7 +3438,8 @@
       "color": "#a01a1a",
       "sx": 262.51,
       "sy": 268.83,
-      "sz": 377.02
+      "sz": 377.02,
+      "summary": "VQGAN is a 2021 vector-quantized generative adversarial network (GAN) that combines VQ-VAE's discrete codebook with adversarial losses to achieve improved perceptual quality in image reconstruction. It served as a key component in early text-to-imag\u2026"
     },
     {
       "id": "Tokenization (Images)",
@@ -3138,7 +3449,8 @@
       "color": "#a01a1a",
       "sx": 283.58,
       "sy": 158.81,
-      "sz": 210.65
+      "sz": 210.65,
+      "summary": "Music tokenization is the process of converting musical information\u2014such as symbolic data (e.g., MIDI notes, chords, rhythms) or audio features\u2014into discrete tokens that machine learning models, particularly transformer-based architectures, can\u2026"
     },
     {
       "id": "Audio Generation",
@@ -3148,7 +3460,8 @@
       "color": "#a01a1a",
       "sx": 440.05,
       "sy": 184.98,
-      "sz": 158.53
+      "sz": 158.53,
+      "summary": "Video-to-audio generation (V2A or VTA) is an AI technique that synthesizes synchronized audio\u2014such as sound effects, ambient noise, background music, or dialogue\u2014from silent or partially silent video inputs. Modern systems use generative models,\u2026"
     },
     {
       "id": "Music Generation",
@@ -3158,7 +3471,8 @@
       "color": "#a01a1a",
       "sx": 433.3,
       "sy": 181.47,
-      "sz": 181.0
+      "sz": 181.0,
+      "summary": "Lyria is a family of advanced generative AI music models developed by Google DeepMind. It enables users to create high-fidelity music tracks from text prompts, with later versions supporting image-to-music generation, vocal styles, lyrics creation,\u2026"
     },
     {
       "id": "Self-Supervised Learning",
@@ -3168,7 +3482,8 @@
       "color": "#a01a1a",
       "sx": -162.78,
       "sy": -215.26,
-      "sz": 54.27
+      "sz": 54.27,
+      "summary": "Self-supervised learning Self-supervised learning (SSL) is a paradigm within machine learning, specifically a subset of unsupervised learning, that trains"
     },
     {
       "id": "Contrastive Learning",
@@ -3178,7 +3493,8 @@
       "color": "#a01a1a",
       "sx": 356.5,
       "sy": 62.66,
-      "sz": 77.67
+      "sz": 77.67,
+      "summary": "Contrastive learning is a machine learning approach that learns representations by distinguishing positive pairs (similar items) from negative pairs (dissimilar items). The technique underlies most modern text embedding model training. In embedding\u2026"
     },
     {
       "id": "SimCLR",
@@ -3188,7 +3504,8 @@
       "color": "#a01a1a",
       "sx": 204.04,
       "sy": 104.91,
-      "sz": 422.69
+      "sz": 422.69,
+      "summary": "SimCLR is a 2020 simple contrastive learning framework for visual representations that relies on strong data augmentation, a large batch size, and a projection head to learn robust features by maximizing agreement between different views of the same\u2026"
     },
     {
       "id": "MoCo",
@@ -3198,7 +3515,8 @@
       "color": "#a01a1a",
       "sx": 396.28,
       "sy": 30.6,
-      "sz": 488.56
+      "sz": 488.56,
+      "summary": "Moco moco striped pajamas, known in Japanese as \"\u3082\u3053\u3082\u3053 \u30b9\u30c8\u30e9\u30a4\u30d7 \u30d1\u30b8\u30e3\u30de,\" refer to fluffy (moco moco) striped pajamas, a popular category of winter roomwear in Japan. These are widely sold on sites like Rakuten with various design\u2026"
     },
     {
       "id": "DINO",
@@ -3208,7 +3526,8 @@
       "color": "#a01a1a",
       "sx": 394.36,
       "sy": 89.69,
-      "sz": 446.82
+      "sz": 446.82,
+      "summary": "Dino is the stage name of Eugenio Zambelli (born May 3, 1948), an Italian singer and actor known primarily for his work as a pop and y\u00e9-y\u00e9 singer in the 1960s, when he was a popular teen idol. He also appeared in several films during that period,\u2026"
     },
     {
       "id": "MAE",
@@ -3218,7 +3537,8 @@
       "color": "#a01a1a",
       "sx": 364.12,
       "sy": 3.36,
-      "sz": 387.87
+      "sz": 387.87,
+      "summary": "Mae Mae is an American rock band from Norfolk, Virginia, formed in early 2001."
     },
     {
       "id": "Word Embeddings",
@@ -3228,7 +3548,8 @@
       "color": "#a01a1a",
       "sx": 402.71,
       "sy": 248.75,
-      "sz": -8.82
+      "sz": -8.82,
+      "summary": "Locality-Sensitive Hashing (LSH) is a probabilistic technique applied to word embeddings in training and classification pipelines to improve computational efficiency. In training contexts, LSH-MoE employs LSH to cluster similar token embeddings (der\u2026"
     },
     {
       "id": "Sentence Embeddings",
@@ -3238,7 +3559,8 @@
       "color": "#a01a1a",
       "sx": 415.97,
       "sy": 241.96,
-      "sz": 0.47
+      "sz": 0.47,
+      "summary": "Shift to deep learning The transition to deep learning for sentence embeddings occurred in the mid-2010s, particularly from 2015 to 2018, as recurrent"
     },
     {
       "id": "Multimodal Models",
@@ -3248,7 +3570,8 @@
       "color": "#a01a1a",
       "sx": -18.69,
       "sy": 13.05,
-      "sz": 196.98
+      "sz": 196.98,
+      "summary": "Google's Gemini 2.0 (2024), a family of multimodal models, further advances this by natively processing image, audio, video, and text, with capabilities"
     },
     {
       "id": "BYOL",
@@ -3258,7 +3581,8 @@
       "color": "#a01a1a",
       "sx": 407.18,
       "sy": 21.87,
-      "sz": 472.4
+      "sz": 472.4,
+      "summary": "Ho Un-byol (born 19 January 1992) is a North Korean professional footballer who plays primarily as a defender for the North Korea women's national football team and April 25 Sports Club. Standing at 165 cm (5 ft 5 in), she has been a consistent pres\u2026"
     },
     {
       "id": "VICReg",
@@ -3268,7 +3592,8 @@
       "color": "#a01a1a",
       "sx": 318.59,
       "sy": 159.68,
-      "sz": 378.5
+      "sz": 378.5,
+      "summary": "VICReg (Variance-Invariance-Covariance Regularization) is a self-supervised learning framework introduced in 2022. It explicitly regularizes the embedding space to enforce high variance, invariance to data augmentations, and decorrelated dimensions.\u2026"
     },
     {
       "id": "Barlow Twins",
@@ -3278,7 +3603,8 @@
       "color": "#a01a1a",
       "sx": 218.63,
       "sy": -20.07,
-      "sz": 278.06
+      "sz": 278.06,
+      "summary": "Barlow Twins is a 2021 non-contrastive self-supervised learning method that learns representations by making the cross-correlation matrix of embeddings from two augmented views of the same sample as close as possible to the identity matrix, achievin\u2026"
     },
     {
       "id": "I-JEPA",
@@ -3288,7 +3614,8 @@
       "color": "#a01a1a",
       "sx": 327.07,
       "sy": 117.12,
-      "sz": 453.37
+      "sz": 453.37,
+      "summary": "I-JEPA works by masking large portions of an image and training a model (typically a Vision Transformer) to predict abstract representations (embeddings) of the masked \"target\" regions based on the visible \"context\" regions. Unlike generative models\u2026"
     },
     {
       "id": "V-JEPA",
@@ -3298,7 +3625,8 @@
       "color": "#a01a1a",
       "sx": 309.47,
       "sy": 216.59,
-      "sz": 436.35
+      "sz": 436.35,
+      "summary": "V-JEPA 2 is Meta AI's Video Joint Embedding Predictive Architecture 2, a self-supervised world model for video data. Applications include robot control for tasks like grasping and placing objects on mechanical arms; physical reasoning to predict wor\u2026"
     },
     {
       "id": "BEiT",
@@ -3308,7 +3636,8 @@
       "color": "#a01a1a",
       "sx": 311.95,
       "sy": 7.04,
-      "sz": 318.55
+      "sz": 318.55,
+      "summary": "Beit Hanina Beit Hanina al-Jadid and behind it Beit Hanina al-Balad Beit Hanina is a predominantly Arab neighborhood in northern East Jerusalem, located"
     },
     {
       "id": "DINOv2",
@@ -3318,7 +3647,8 @@
       "color": "#a01a1a",
       "sx": 354.79,
       "sy": 112.81,
-      "sz": 455.02
+      "sz": 455.02,
+      "summary": "DINOv2 is a self-supervised vision foundation model developed by Meta AI in 2023. It is trained using knowledge distillation without requiring any labels and achieves state-of-the-art performance on multiple computer vision tasks, including image cl\u2026"
     },
     {
       "id": "SigLIP",
@@ -3328,7 +3658,8 @@
       "color": "#a01a1a",
       "sx": 357.64,
       "sy": 33.56,
-      "sz": 486.66
+      "sz": 486.66,
+      "summary": "smartphones for contactless entry. Another key case study is the use of vision-language model embeddings such as SigLIP"
     },
     {
       "id": "LLaVA",
@@ -3338,7 +3669,8 @@
       "color": "#a01a1a",
       "sx": 353.52,
       "sy": -11.38,
-      "sz": 441.7
+      "sz": 441.7,
+      "summary": "LLaVA (Large Language and Vision Assistant) is a pioneering 2023 open-source multimodal model that connects a frozen CLIP vision encoder to a Vicuna LLM via a simple linear projection layer, enabling strong zero-shot visual instruction-following, re\u2026"
     },
     {
       "id": "Flamingo",
@@ -3348,7 +3680,8 @@
       "color": "#a01a1a",
       "sx": 371.19,
       "sy": 70.1,
-      "sz": 382.11
+      "sz": 382.11,
+      "summary": "flamingo (Phoeniconaias minor), Andean flamingo (Phoenicoparrus andinus), and James's flamingo (Phoenicoparrus jamesi)."
     },
     {
       "id": "ImageBind",
@@ -3358,7 +3691,8 @@
       "color": "#a01a1a",
       "sx": 217.79,
       "sy": 237.27,
-      "sz": 225.95
+      "sz": 225.95,
+      "summary": "include Microsoft's Kosmos-2, released in 2023, which grounds language in visual perception for tasks like object detection via text prompts, and ImageBind"
     },
     {
       "id": "Reinforcement Learning",
@@ -3368,7 +3702,8 @@
       "color": "#a01a1a",
       "sx": 44.8,
       "sy": -45.21,
-      "sz": 410.65
+      "sz": 410.65,
+      "summary": "Reinforcement learning Reinforcement learning (RL) is a paradigm in machine learning where an intelligent agent learns optimal behavior through trial-and-error"
     },
     {
       "id": "Policy Gradient",
@@ -3378,7 +3713,8 @@
       "color": "#a01a1a",
       "sx": 21.56,
       "sy": -5.31,
-      "sz": 427.1
+      "sz": 427.1,
+      "summary": "\"Delightful Policy Gradient\" (arXiv:2603.14608) is a research paper by Ian Osband submitted on March 15, 2026. It introduces the Delightful Policy Gradient (DG), a novel method that gates policy gradient terms using a sigmoid of \"delight\" (advantage\u2026"
     },
     {
       "id": "Q-Learning",
@@ -3388,7 +3724,8 @@
       "color": "#a01a1a",
       "sx": 103.26,
       "sy": 12.84,
-      "sz": 377.07
+      "sz": 377.07,
+      "summary": "Q-learning Q-learning is a foundational model-free reinforcement learning algorithm that enables an intelligent agent to learn an optimal policy for selecting"
     },
     {
       "id": "DQN",
@@ -3398,7 +3735,8 @@
       "color": "#a01a1a",
       "sx": 109.75,
       "sy": 49.86,
-      "sz": 412.74
+      "sz": 412.74,
+      "summary": "Du Quoin station is an unstaffed Amtrak intercity train station located at 20 North Chestnut Street in Du Quoin, Illinois, serving the Illini and Saluki routes that connect Chicago to Carbondale."
     },
     {
       "id": "PPO",
@@ -3408,7 +3746,8 @@
       "color": "#a01a1a",
       "sx": 412.37,
       "sy": -62.31,
-      "sz": 358.74
+      "sz": 358.74,
+      "summary": "PPO Rotterdam is the abbreviation for \"Samenwerkingsverband Passend Primair Onderwijs Rotterdam,\" the regional collaborative partnership responsible for implementing Passend Onderwijs (appropriate education) in primary education in Rotterdam. It sup\u2026"
     },
     {
       "id": "SAC",
@@ -3418,7 +3757,8 @@
       "color": "#a01a1a",
       "sx": 318.38,
       "sy": 148.91,
-      "sz": 411.64
+      "sz": 411.64,
+      "summary": "SAC (Single Assignment C) is a strict purely functional programming language first proposed in 1994 by Sven-Bodo Scholz. It is designed primarily for numerical applications, emphasizing efficient array processing through high-level abstractions and\u2026"
     },
     {
       "id": "A3C",
@@ -3428,7 +3768,8 @@
       "color": "#a01a1a",
       "sx": 300.06,
       "sy": 69.45,
-      "sz": 450.16
+      "sz": 450.16,
+      "summary": "The Air Copter A3C is a two-seat, side-by-side, kit-built autogyro ultralight aircraft designed and manufactured by Air Copter Sarl, based at the A\u00e9rodrome de Muret-Lherm in Lherm, Haute-Garonne, France. Introduced with its first flight in 2011, th\u2026"
     },
     {
       "id": "Model-Based RL",
@@ -3438,7 +3779,8 @@
       "color": "#a01a1a",
       "sx": -134.05,
       "sy": 18.82,
-      "sz": 385.15
+      "sz": 385.15,
+      "summary": "Energy-based model An energy-based model (EBM) is a class of probabilistic models in machine learning that define an unnormalized probability density"
     },
     {
       "id": "Offline RL",
@@ -3448,7 +3790,8 @@
       "color": "#a01a1a",
       "sx": -154.79,
       "sy": 9.34,
-      "sz": 411.84
+      "sz": 411.84,
+      "summary": "Offline reinforcement learning (often abbreviated as offline RL) is a subfield of reinforcement learning in which an agent learns a policy or value function from a fixed, static dataset of previously collected transitions and experiences, without an\u2026"
     },
     {
       "id": "Multi-Agent RL",
@@ -3458,7 +3801,8 @@
       "color": "#a01a1a",
       "sx": -105.95,
       "sy": -56.34,
-      "sz": 424.26
+      "sz": 424.26,
+      "summary": "Multi-agent pathfinding Multi-agent pathfinding (MAPF) is the combinatorial problem of computing collision-free paths for a team of cooperative agents"
     },
     {
       "id": "Imitation Learning",
@@ -3468,7 +3812,8 @@
       "color": "#a01a1a",
       "sx": 17.45,
       "sy": -77.11,
-      "sz": 395.57
+      "sz": 395.57,
+      "summary": "Imitation learning (IL), also known as learning from demonstration, is a machine learning paradigm in which an agent acquires complex behaviors by observing and replicating the actions of one or more expert demonstrators, typically through provided\u2026"
     },
     {
       "id": "Inverse RL",
@@ -3478,7 +3823,8 @@
       "color": "#a01a1a",
       "sx": -140.47,
       "sy": 30.42,
-      "sz": 421.66
+      "sz": 421.66,
+      "summary": "RL circuit An RL circuit is an electrical circuit composed of a resistor and an inductor connected in series or parallel, driven by a voltage or current"
     },
     {
       "id": "TD3",
@@ -3488,7 +3834,8 @@
       "color": "#a01a1a",
       "sx": 254.58,
       "sy": 78.53,
-      "sz": 443.29
+      "sz": 443.29,
+      "summary": "The Taiwan Dancer TD-3, also known as the Alluvion Legend, is a Taiwanese amateur-built light fixed-wing aircraft equipped with a single piston engine. Developed in 2007 by Taiwan Dancer Technology Company Ltd., located in Taoyuan City, Taiwan, it f\u2026"
     },
     {
       "id": "DDPG",
@@ -3498,7 +3845,8 @@
       "color": "#a01a1a",
       "sx": 365.57,
       "sy": -87.49,
-      "sz": 304.77
+      "sz": 304.77,
+      "summary": "The rlOptimizerOptions object in MATLAB's Reinforcement Learning Toolbox configures optimization settings for actors and critics during reinforcement learning training. It supports parameters such as LearnRate, GradientThreshold, and Algorithm (with\u2026"
     },
     {
       "id": "Rainbow DQN",
@@ -3508,7 +3856,8 @@
       "color": "#a01a1a",
       "sx": 169.64,
       "sy": 58.29,
-      "sz": 407.66
+      "sz": 407.66,
+      "summary": "Raindrop optics diagram A rainbow is an optical phenomenon observed as a multicolored arc in the sky, formed by the refraction, internal reflection, and dispersion of sunlight within..."
     },
     {
       "id": "MuZero",
@@ -3518,7 +3867,8 @@
       "color": "#a01a1a",
       "sx": 387.27,
       "sy": 14.88,
-      "sz": 463.1
+      "sz": 463.1,
+      "summary": "MuZero MuZero is a model-based reinforcement learning algorithm developed by researchers at DeepMind that achieves superhuman performance in a variety"
     },
     {
       "id": "AlphaZero",
@@ -3528,7 +3878,8 @@
       "color": "#a01a1a",
       "sx": 398.61,
       "sy": 38.62,
-      "sz": 411.47
+      "sz": 411.47,
+      "summary": "AlphaZero AlphaZero is a general-purpose reinforcement learning algorithm developed by DeepMind, a subsidiary of Alphabet Inc., that achieves superhuman"
     },
     {
       "id": "Dreamer",
@@ -3538,7 +3889,8 @@
       "color": "#a01a1a",
       "sx": 351.26,
       "sy": 45.29,
-      "sz": 320.68
+      "sz": 320.68,
+      "summary": "Dreamer is a 1979 American sports drama film directed by Noel Nosseck and written by James Proctor and Larry Bischof, focusing on the world of professional bowling. Released on April 27, 1979, the story centers on Harold \"Dreamer\" Nuttingham (played\u2026"
     },
     {
       "id": "World Models RL",
@@ -3548,7 +3900,8 @@
       "color": "#a01a1a",
       "sx": -128.09,
       "sy": 16.51,
-      "sz": 364.51
+      "sz": 364.51,
+      "summary": "A world model is an internal predictive model that allows agents to simulate future states of the environment, enabling planning, imagination, and sample-efficient reinforcement learning in complex domains."
     },
     {
       "id": "Reward Shaping",
@@ -3558,7 +3911,8 @@
       "color": "#a01a1a",
       "sx": 23.6,
       "sy": -26.12,
-      "sz": 396.92
+      "sz": 396.92,
+      "summary": "Bounty (reward) 20 Pounds reward A bounty is a monetary reward or premium offered, typically by governments or authorities, to incentivize individuals"
     },
     {
       "id": "Curiosity-Driven Exploration",
@@ -3568,7 +3922,8 @@
       "color": "#a01a1a",
       "sx": 79.41,
       "sy": -32.71,
-      "sz": 399.04
+      "sz": 399.04,
+      "summary": "Curiosity-driven exploration is an intrinsic motivation mechanism in reinforcement learning where agents are rewarded for seeking novel states or reducing prediction errors, improving exploration in sparse-reward settings."
     },
     {
       "id": "Hierarchical RL",
@@ -3578,7 +3933,8 @@
       "color": "#a01a1a",
       "sx": -133.08,
       "sy": 26.15,
-      "sz": 414.29
+      "sz": 414.29,
+      "summary": "Hotel RL is an upscale lifestyle hotel brand that emphasizes authentic, creative, and curious experiences for open-minded travelers, offering laid-back environments infused with local scenes to inspire work, play, and personal passions under the mot\u2026"
     },
     {
       "id": "Option Framework",
@@ -3588,7 +3944,8 @@
       "color": "#a01a1a",
       "sx": 217.65,
       "sy": -414.29,
-      "sz": -133.5
+      "sz": -133.5,
+      "summary": "/article27abf166-5c60-5128-a785-d30923566dc5.html) Modern Variations Run-Pass Options In run-pass options (RPOs) adapted to the triple option framework"
     },
     {
       "id": "Multi-Task RL",
@@ -3598,7 +3955,8 @@
       "color": "#a01a1a",
       "sx": -150.05,
       "sy": -24.97,
-      "sz": 387.92
+      "sz": 387.92,
+      "summary": "Multi-task learning (MTL) is a machine learning paradigm in which multiple related tasks are trained simultaneously using a shared model, leveraging commonalities such as shared..."
     },
     {
       "id": "Transfer in RL",
@@ -3608,7 +3966,8 @@
       "color": "#a01a1a",
       "sx": -121.74,
       "sy": 45.9,
-      "sz": 388.87
+      "sz": 388.87,
+      "summary": "Transfer Function and Poles The transfer function of a series RL circuit in the Laplace domain is derived by applying the Laplace transform to the circuit"
     },
     {
       "id": "Named Entity Recognition",
@@ -3618,7 +3977,8 @@
       "color": "#a01a1a",
       "sx": 499.64,
       "sy": 242.06,
-      "sz": 17.66
+      "sz": 17.66,
+      "summary": "Named-entity recognition Named-entity recognition (NER), also referred to as entity identification or entity extraction, is a core subtask of information"
     },
     {
       "id": "Question Answering",
@@ -3628,7 +3988,8 @@
       "color": "#a01a1a",
       "sx": 452.54,
       "sy": 245.72,
-      "sz": -21.77
+      "sz": -21.77,
+      "summary": "Specialized Question Answering Specialized question answering encompasses variants of question answering (QA) systems that extend beyond textual inputs"
     },
     {
       "id": "Machine Translation",
@@ -3638,7 +3999,8 @@
       "color": "#a01a1a",
       "sx": 425.85,
       "sy": 229.27,
-      "sz": 21.0
+      "sz": 21.0,
+      "summary": "Machine translation Machine translation is the automated process of using artificial intelligence and computational algorithms to convert text or speech"
     },
     {
       "id": "Summarization",
@@ -3648,7 +4010,8 @@
       "color": "#a01a1a",
       "sx": 434.7,
       "sy": 212.32,
-      "sz": 15.11
+      "sz": 15.11,
+      "summary": "Question: How to get a summary from transcribed audio text? Answer: After obtaining the transcription text, paste it into ChatGPT or Grok and request a summary of the text."
     },
     {
       "id": "Code Generation",
@@ -3658,7 +4021,8 @@
       "color": "#a01a1a",
       "sx": 433.92,
       "sy": 147.24,
-      "sz": 148.81
+      "sz": 148.81,
+      "summary": "Code generation (compiler) Code generation is the concluding phase of a compiler's backend, responsible for translating an intermediate representation"
     },
     {
       "id": "Information Extraction",
@@ -3668,7 +4032,8 @@
       "color": "#a01a1a",
       "sx": 502.05,
       "sy": 204.04,
-      "sz": 14.15
+      "sz": 14.15,
+      "summary": "Information extraction Information extraction (IE) is a subfield of natural language processing that focuses on automatically identifying and extracting"
     },
     {
       "id": "Sentiment Analysis",
@@ -3678,7 +4043,8 @@
       "color": "#a01a1a",
       "sx": 450.02,
       "sy": 181.43,
-      "sz": 14.99
+      "sz": 14.99,
+      "summary": "Sentiment analysis Sentiment analysis, also known as opinion mining, is a subfield of natural language processing that applies computational methods to"
     },
     {
       "id": "Text Classification",
@@ -3688,7 +4054,8 @@
       "color": "#a01a1a",
       "sx": 466.87,
       "sy": 191.86,
-      "sz": 26.64
+      "sz": 26.64,
+      "summary": "Naive Bayes excels in high-dimensional settings, such as text classification, and remains competitive even when independence does not hold perfectly.[]"
     },
     {
       "id": "Coreference Resolution",
@@ -3698,7 +4065,8 @@
       "color": "#a01a1a",
       "sx": 495.69,
       "sy": 241.29,
-      "sz": -0.0
+      "sz": -0.0,
+      "summary": "-e-636) Computational Approaches Coreference Resolution Task Coreference resolution is a fundamental task in natural language processing (NLP) that"
     },
     {
       "id": "Relation Extraction",
@@ -3708,7 +4076,8 @@
       "color": "#a01a1a",
       "sx": 516.76,
       "sy": 233.23,
-      "sz": 9.37
+      "sz": 9.37,
+      "summary": "\"Attention as Relation: Learning Supervised Multi-head Self-Attention for Relation Extraction\" is a 2020 paper published in the Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence (IJCAI) by Jie Liu et al. The p\u2026"
     },
     {
       "id": "Dependency Parsing",
@@ -3718,7 +4087,8 @@
       "color": "#a01a1a",
       "sx": 516.41,
       "sy": 246.74,
-      "sz": 12.05
+      "sz": 12.05,
+      "summary": "www.cs.utexas.edu/~mooney/cs343/slide-handouts/nlp.pdf) Two primary paradigms define syntactic structures in parsing: constituency parsing and dependency"
     },
     {
       "id": "POS Tagging",
@@ -3728,7 +4098,8 @@
       "color": "#a01a1a",
       "sx": 523.9,
       "sy": 209.09,
-      "sz": 55.18
+      "sz": 55.18,
+      "summary": "Part-of-speech tagging Part-of-speech tagging (POS tagging) is the process of assigning a syntactic category, such as noun, verb, adjective, adverb, or"
     },
     {
       "id": "Text Generation",
@@ -3738,7 +4109,8 @@
       "color": "#a01a1a",
       "sx": 452.94,
       "sy": 190.82,
-      "sz": 106.5
+      "sz": 106.5,
+      "summary": "Text Generation WebUI (also known as oobabooga) is an open-source tool with a web GUI for easy LoRA fine-tuning of LLMs on text data for offline operation. Users add .txt files to the datasets folder and use the Training tab to start the process. It\u2026"
     },
     {
       "id": "Dialogue Systems",
@@ -3748,7 +4120,8 @@
       "color": "#a01a1a",
       "sx": 424.15,
       "sy": 228.82,
-      "sz": 62.25
+      "sz": 62.25,
+      "summary": "In task-oriented dialogue systems, heuristic rules support intent understanding and slot inference (also known as slot filling or state tracking) within hybrid approaches. These rules refine slot values, transform text summaries into structured dial\u2026"
     },
     {
       "id": "Reading Comprehension",
@@ -3758,7 +4131,8 @@
       "color": "#a01a1a",
       "sx": 468.95,
       "sy": 234.12,
-      "sz": -42.55
+      "sz": -42.55,
+      "summary": "Reading comprehension Reading comprehension is the process of simultaneously extracting and constructing meaning through interaction and involvement with"
     },
     {
       "id": "Open Domain QA",
@@ -3768,7 +4142,8 @@
       "color": "#a01a1a",
       "sx": 153.29,
       "sy": 38.61,
-      "sz": 411.02
+      "sz": 411.02,
+      "summary": ".qa .qa is the country code top-level domain (ccTLD) for the State of Qatar, serving as the official internet domain extension for entities associated"
     },
     {
       "id": "Semantic Parsing",
@@ -3778,7 +4153,8 @@
       "color": "#a01a1a",
       "sx": 519.46,
       "sy": 231.04,
-      "sz": 22.59
+      "sz": 22.59,
+      "summary": "Parsing Approaches Shallow Semantic Parsing Shallow semantic parsing, also known as semantic role labeling (SRL), involves identifying and classifying"
     },
     {
       "id": "Cross-Lingual Transfer",
@@ -3788,7 +4164,8 @@
       "color": "#a01a1a",
       "sx": 359.08,
       "sy": 199.44,
-      "sz": -102.87
+      "sz": -102.87,
+      "summary": "Cross-embodiment transfer is an area of robotics research focused on enabling the transfer of learned skills, policies, and demonstrations across robots with different embodiments (e.g., varying morphologies or hardware), particularly in mobile mani\u2026"
     },
     {
       "id": "Slot Filling",
@@ -3798,7 +4175,8 @@
       "color": "#a01a1a",
       "sx": 229.48,
       "sy": 153.46,
-      "sz": 191.72
+      "sz": 191.72,
+      "summary": ") Challenges in slot filling arise from the need to accommodate divergent taken and not-taken paths, often requiring separate instruction selection for"
     },
     {
       "id": "Intent Detection",
@@ -3808,7 +4186,8 @@
       "color": "#a01a1a",
       "sx": 494.75,
       "sy": 155.51,
-      "sz": 17.9
+      "sz": 17.9,
+      "summary": ") Detection of navigational intent relies on methods like exact matching of brand or entity names in queries, analysis"
     },
     {
       "id": "LLM Fine-tuning",
@@ -3818,7 +4197,8 @@
       "color": "#a01a1a",
       "sx": 427.74,
       "sy": -113.74,
-      "sz": 139.48
+      "sz": 139.48,
+      "summary": "AutoTrain supports LLM fine-tuning on custom datasets via an intuitive interface, handling tasks from classification to generation and integrating LoRA"
     },
     {
       "id": "LoRA",
@@ -3828,7 +4208,8 @@
       "color": "#a01a1a",
       "sx": 398.47,
       "sy": 10.8,
-      "sz": 453.87
+      "sz": 453.87,
+      "summary": ", mutual authentication, and integrity checks. Additionally, LoRa enables geolocation without GPS and maintains"
     },
     {
       "id": "QLoRA",
@@ -3838,7 +4219,8 @@
       "color": "#a01a1a",
       "sx": 189.33,
       "sy": 34.44,
-      "sz": 432.93
+      "sz": 432.93,
+      "summary": "QLoRA is LoRA with 4-bit quantization for memory efficiency; for 30B-32B models, it fits in ~20-24 GB VRAM with batch_size=1-2 and gradient accumulation, allowing fine-tuning on single GPUs like RTX 3090."
     },
     {
       "id": "Prefix Tuning",
@@ -3848,7 +4230,8 @@
       "color": "#a01a1a",
       "sx": 413.77,
       "sy": -130.33,
-      "sz": 63.56
+      "sz": 63.56,
+      "summary": "Prefix-Tuning is a prompt-based PEFT method proposed in 2021 for natural language generation tasks, extended to large language model domain adaptation. It adds trainable continuous prefix vectors to the key and value sequences in each Transformer la\u2026"
     },
     {
       "id": "Prompt Engineering",
@@ -3858,7 +4241,8 @@
       "color": "#a01a1a",
       "sx": 356.32,
       "sy": 75.47,
-      "sz": 227.35
+      "sz": 227.35,
+      "summary": "Prompt engineering Prompt engineering is the process of crafting and refining natural language instructions, known as prompts, to guide large language"
     },
     {
       "id": "RLHF",
@@ -3868,7 +4252,8 @@
       "color": "#a01a1a",
       "sx": -100.61,
       "sy": 38.64,
-      "sz": 416.02
+      "sz": 416.02,
+      "summary": "An RLHF annotator (also known as an RLHF data annotator) is a professional who provides human feedback to train and align large language models (LLMs) and other AI systems using Reinforcement Learning from Human Feedback (RLHF). This technique invol\u2026"
     },
     {
       "id": "Constitutional AI",
@@ -3878,7 +4263,8 @@
       "color": "#a01a1a",
       "sx": 68.18,
       "sy": -189.33,
-      "sz": 433.49
+      "sz": 433.49,
+      "summary": "debate to verify outputs, and debate over constitutional AI principles to embed robustness, though each faces theoretical hurdles such as the unavailability"
     },
     {
       "id": "Chain-of-Thought",
@@ -3888,7 +4274,8 @@
       "color": "#a01a1a",
       "sx": 267.26,
       "sy": -34.11,
-      "sz": 289.38
+      "sz": 289.38,
+      "summary": "Chain of Thought is defined as a family of practices and representations in which a reasoning process is expressed, externalized, or simulated in language-like steps, distinguishing three layers frequently conflated: the human tradition of method (h\u2026"
     },
     {
       "id": "ReAct",
@@ -3898,7 +4285,8 @@
       "color": "#a01a1a",
       "sx": 92.06,
       "sy": 14.91,
-      "sz": 449.09
+      "sz": 449.09,
+      "summary": "React is a concept extended play (EP) by the Japanese rock band Wagakki Band, released on December 4, 2019, through Universal Music LLC. As their first studio release under the label following a global partnership agreement, the EP features four ori\u2026"
     },
     {
       "id": "Tool Use",
@@ -3908,7 +4296,8 @@
       "color": "#a01a1a",
       "sx": 238.51,
       "sy": 82.29,
-      "sz": 202.1
+      "sz": 202.1,
+      "summary": "Create a new page on Tool use in the context of generative AI and AI agents. Tool use is a core public term referring to a model\u2019s ability to invoke external functions, APIs, or instruments to obtain information, execute actions, and integrate res\u2026"
     },
     {
       "id": "AI Agents",
@@ -3918,7 +4307,8 @@
       "color": "#a01a1a",
       "sx": 19.99,
       "sy": -143.4,
-      "sz": 429.16
+      "sz": 429.16,
+      "summary": "How AI agents transform enterprise workflows: AI agents automate coding, security triage, customer operations, and analytics; they handle complex workflows, drive productivity gains in knowledge work, and enable agent-driven companies or one-person\u2026"
     },
     {
       "id": "RAG",
@@ -3928,7 +4318,8 @@
       "color": "#a01a1a",
       "sx": 337.92,
       "sy": 9.04,
-      "sz": 471.23
+      "sz": 471.23,
+      "summary": "Rag-stone, also known as rag, refers to any of various hard rocks, such as sandstone or limestone, that are quarried in thin, irregular slabs and used primarily for building purposes due to their durability and ease of working into rubble or random\u2026"
     },
     {
       "id": "Memory Systems",
@@ -3938,7 +4329,8 @@
       "color": "#a01a1a",
       "sx": 219.71,
       "sy": 85.34,
-      "sz": 95.57
+      "sz": 95.57,
+      "summary": "Colorado Memory Systems, Inc. (CMS) was an American technology company founded in 1985 and headquartered in Loveland, Colorado. Initially established as a division of Colorado Time Systems, it became independent in 1990 and specialized in designing\u2026"
     },
     {
       "id": "Multi-Agent Systems",
@@ -3948,7 +4340,8 @@
       "color": "#a01a1a",
       "sx": -57.53,
       "sy": -106.37,
-      "sz": 425.62
+      "sz": 425.62,
+      "summary": "Autonomous agents and multi-agent systems (MAS) constitute a foundational subfield of artificial intelligence dedicated to the development of intelligent entities that perceive, decide, and act independently within dynamic environments, often in coo\u2026"
     },
     {
       "id": "Meta-Learning",
@@ -3958,7 +4351,8 @@
       "color": "#a01a1a",
       "sx": 290.47,
       "sy": -79.79,
-      "sz": 200.19
+      "sz": 200.19,
+      "summary": "Meta-learning Meta-learning, also known as \"learning to learn,\" is a branch of metacognition concerned with the processes by which individuals become"
     },
     {
       "id": "Few-Shot Learning",
@@ -3968,7 +4362,8 @@
       "color": "#a01a1a",
       "sx": 275.16,
       "sy": -115.24,
-      "sz": 105.23
+      "sz": 105.23,
+      "summary": "Few-shot learning is a machine learning paradigm that enables models to learn and generalize to new tasks from only a small number of training examples (typically a few to a few dozen), in contrast to traditional methods requiring large datasets. It\u2026"
     },
     {
       "id": "Zero-Shot Learning",
@@ -3978,7 +4373,8 @@
       "color": "#a01a1a",
       "sx": 261.17,
       "sy": -158.24,
-      "sz": 59.1
+      "sz": 59.1,
+      "summary": "Zero-shot learning Zero-shot learning (ZSL) is a machine learning paradigm that enables predictive models to recognize, classify, or perform tasks on"
     },
     {
       "id": "Neural Architecture Search",
@@ -3988,7 +4384,8 @@
       "color": "#a01a1a",
       "sx": -100.52,
       "sy": 274.0,
-      "sz": -10.01
+      "sz": -10.01,
+      "summary": "Neural architecture search Neural architecture search (NAS) is a subfield of automated machine learning (AutoML) that automates the design of artificial"
     },
     {
       "id": "AutoML",
@@ -3998,7 +4395,8 @@
       "color": "#a01a1a",
       "sx": 332.1,
       "sy": 155.66,
-      "sz": 120.25
+      "sz": 120.25,
+      "summary": "Azure AutoML is an automated machine learning service provided by Microsoft Azure, enabling users to build ML models quickly using no-code UI, SDKs, or customized approaches without extensive coding expertise."
     },
     {
       "id": "Federated Learning",
@@ -4008,7 +4406,8 @@
       "color": "#a01a1a",
       "sx": 262.12,
       "sy": -155.94,
-      "sz": 299.67
+      "sz": 299.67,
+      "summary": "Federated learning Federated learning is a distributed machine learning approach that enables collaborative training of models across multiple decentralized"
     },
     {
       "id": "Differential Privacy",
@@ -4018,7 +4417,8 @@
       "color": "#a01a1a",
       "sx": 195.84,
       "sy": -199.99,
-      "sz": 283.47
+      "sz": 283.47,
+      "summary": "/~aaroth/Papers/privacybook.pdf) Definition and Variants Pure \u03b5-Differential Privacy Differential privacy formal definition Pure \u03b5-differential privacy"
     },
     {
       "id": "Quantization & Pruning",
@@ -4028,7 +4428,8 @@
       "color": "#a01a1a",
       "sx": 22.01,
       "sy": -199.36,
-      "sz": 155.08
+      "sz": 155.08,
+      "summary": "Color quantization Color quantization is a fundamental technique in computer graphics and image processing that reduces the number of distinct colors"
     },
     {
       "id": "Knowledge Distillation",
@@ -4038,7 +4439,8 @@
       "color": "#a01a1a",
       "sx": 238.01,
       "sy": 8.29,
-      "sz": 262.24
+      "sz": 262.24,
+      "summary": "Knowledge distillation Knowledge distillation is a model compression technique in machine learning where a compact \"student\" model is trained to replicate"
     },
     {
       "id": "Sparse Models",
@@ -4048,7 +4450,8 @@
       "color": "#a01a1a",
       "sx": 69.67,
       "sy": -91.71,
-      "sz": 1.33
+      "sz": 1.33,
+      "summary": "Additionally, in feature selection, sparse models identify the most relevant atoms or variables, aiding tasks such as pattern recognition by focusing on"
     },
     {
       "id": "NeRF",
@@ -4058,7 +4461,8 @@
       "color": "#a01a1a",
       "sx": 47.73,
       "sy": 64.77,
-      "sz": 12.3
+      "sz": 12.3,
+      "summary": "Nerf NERF is a globally recognized toy brand owned by Hasbro, specializing in safe, foam-based active play products such as projectile blasters, balls"
     },
     {
       "id": "3D Gaussian Splatting",
@@ -4068,7 +4472,8 @@
       "color": "#a01a1a",
       "sx": -228.61,
       "sy": -215.26,
-      "sz": -147.89
+      "sz": -147.89,
+      "summary": "3D Gaussian Splatting is a state-of-the-art technique for generating high-quality, compact, and fast-rendering 3D models from scans in the context of 3D reconstruction; it supports dynamic lighting and reflections, outperforming methods like NeRF in\u2026"
     },
     {
       "id": "AlphaFold",
@@ -4078,7 +4483,8 @@
       "color": "#a01a1a",
       "sx": 369.97,
       "sy": 86.28,
-      "sz": 401.89
+      "sz": 401.89,
+      "summary": "/alphafold-3-and-alphafold-server/introducing-alphafold-3/what-alphafold-3-struggles-with/) In edge cases, AlphaFold exhibits poor performance on intrinsically"
     },
     {
       "id": "World Models",
@@ -4088,7 +4494,8 @@
       "color": "#a01a1a",
       "sx": -64.91,
       "sy": 0.2,
-      "sz": 249.88
+      "sz": 249.88,
+      "summary": "A world model is an internal predictive model that allows agents to simulate future states of the environment, enabling planning, imagination, and sample-efficient reinforcement learning in complex domains."
     },
     {
       "id": "Causal ML",
@@ -4098,7 +4505,8 @@
       "color": "#a01a1a",
       "sx": 148.81,
       "sy": -228.42,
-      "sz": 378.18
+      "sz": 378.18,
+      "summary": "The leading Python libraries for causal inference on observational data are DoWhy (under the PyWhy ecosystem) and causal-learn. DoWhy provides an end-to-end framework for causal reasoning, encompassing modeling assumptions, identification, estimatio\u2026"
     },
     {
       "id": "Interpretability",
@@ -4108,7 +4516,8 @@
       "color": "#a01a1a",
       "sx": 330.76,
       "sy": 9.15,
-      "sz": 117.11
+      "sz": 117.11,
+      "summary": "As of February 2026, mechanistic interpretability is recognized as a major breakthrough technology for understanding the inner workings of large language models (LLMs). Named by MIT Technology Review as one of the 10 Breakthrough Technologies of 202\u2026"
     },
     {
       "id": "SHAP",
@@ -4118,7 +4527,8 @@
       "color": "#a01a1a",
       "sx": 264.94,
       "sy": 93.79,
-      "sz": 302.14
+      "sz": 302.14,
+      "summary": "Shap Shap is a village and civil parish in Westmorland and Furness, Cumbria, England."
     },
     {
       "id": "LIME",
@@ -4128,7 +4538,8 @@
       "color": "#a01a1a",
       "sx": 208.0,
       "sy": 64.57,
-      "sz": 376.08
+      "sz": 376.08,
+      "summary": "Lime Cookie is an Epic Cookie of the Support type in Cookie Run: Kingdom, positioned in the Rear, and a member of the Citrus Squad."
     },
     {
       "id": "Conformal Prediction",
@@ -4138,7 +4549,8 @@
       "color": "#a01a1a",
       "sx": 19.78,
       "sy": -70.56,
-      "sz": 303.28
+      "sz": 303.28,
+      "summary": "Conformal prediction Conformal prediction is a distribution-free machine learning technique that generates prediction sets or intervals for new data points"
     },
     {
       "id": "AI Safety",
@@ -4148,7 +4560,8 @@
       "color": "#a01a1a",
       "sx": 123.92,
       "sy": -203.67,
-      "sz": 327.19
+      "sz": 327.19,
+      "summary": "://eto.tech/blog/still-drop-bucket-ai-safety-research/) Organizations focused on AI safety"
     },
     {
       "id": "Alignment",
@@ -4158,7 +4571,8 @@
       "color": "#a01a1a",
       "sx": 336.68,
       "sy": 177.0,
-      "sz": 57.17
+      "sz": 57.17,
+      "summary": "Polar alignment Polar alignment is the process of aligning the polar axis of an equatorial telescope mount parallel to Earth's rotational axis, directing"
     },
     {
       "id": "MLOps",
@@ -4168,7 +4582,8 @@
       "color": "#a01a1a",
       "sx": 274.21,
       "sy": 80.34,
-      "sz": 227.09
+      "sz": 227.09,
+      "summary": "MLOps MLOps, short for Machine Learning Operations, is a paradigm that integrates machine learning development with operational practices, drawing from"
     },
     {
       "id": "Model Monitoring",
@@ -4178,7 +4593,8 @@
       "color": "#a01a1a",
       "sx": 71.35,
       "sy": -55.92,
-      "sz": 147.39
+      "sz": 147.39,
+      "summary": "Machine learning model monitoring refers to the continuous observation and analysis of deployed machine learning models in production to ensure their ongoing performance, detect issues such as data drift or concept drift, and maintain overall reliab\u2026"
     },
     {
       "id": "Feature Stores",
@@ -4188,7 +4604,8 @@
       "color": "#a01a1a",
       "sx": 113.62,
       "sy": -161.02,
-      "sz": -90.0
+      "sz": -90.0,
+      "summary": "STORES \u6c7a\u6e08 is a payment service integrated with the STORES online shop platform, primarily serving small businesses in Japan. No specific market share data for STORES \u6c7a\u6e08 in Japan for 2025 or 2026 was found in major reports. The overall Japane\u2026"
     },
     {
       "id": "Experiment Tracking",
@@ -4198,7 +4615,8 @@
       "color": "#a01a1a",
       "sx": 36.81,
       "sy": -46.25,
-      "sz": 405.19
+      "sz": 405.19,
+      "summary": "Machine learning experiment tracking, also known as ML metadata tracking, involves logging, storing, versioning, and querying metadata from machine learning experiments. This includes parameters, metrics, artifacts (such as models and datasets), cod\u2026"
     },
     {
       "id": "Edge AI",
@@ -4208,7 +4626,8 @@
       "color": "#a01a1a",
       "sx": 58.28,
       "sy": -92.44,
-      "sz": 408.78
+      "sz": 408.78,
+      "summary": "Edge and on-device AI models are smaller, fine-tuned models that run locally for privacy and speed, such as distilled small language models (SLMs) for enterprise use."
     },
     {
       "id": "TensorRT / ONNX",
@@ -4218,7 +4637,8 @@
       "color": "#a01a1a",
       "sx": -372.16,
       "sy": 329.82,
-      "sz": -88.32
+      "sz": -88.32,
+      "summary": "TensorRT is NVIDIA's high-performance deep learning inference optimizer and runtime. It converts trained neural network models into optimized inference engines through advanced techniques including layer fusion, precision calibration (quantization),\u2026"
     },
     {
       "id": "Adapter Layers",
@@ -4228,7 +4648,8 @@
       "color": "#a01a1a",
       "sx": -47.4,
       "sy": 361.67,
-      "sz": -212.5
+      "sz": -212.5,
+      "summary": "An adapter or adaptor is a device, component, or mechanism that converts the attributes, interfaces, or forms of one system or part to match those of an otherwise incompatible system or..."
     },
     {
       "id": "P-Tuning",
@@ -4238,7 +4659,8 @@
       "color": "#a01a1a",
       "sx": 414.53,
       "sy": -131.43,
-      "sz": 75.9
+      "sz": 75.9,
+      "summary": "P-Tuning is a 2021 parameter-efficient prompt tuning method that prepends learnable continuous prompt embeddings to the input and optimizes them via backpropagation, achieving strong performance on natural language understanding (NLU) tasks with far\u2026"
     },
     {
       "id": "Instruction Tuning",
@@ -4248,7 +4670,8 @@
       "color": "#a01a1a",
       "sx": 431.33,
       "sy": -114.17,
-      "sz": 86.01
+      "sz": 86.01,
+      "summary": "://steelguitaracademy.com/instruction/tuning/)"
     },
     {
       "id": "DPO",
@@ -4258,7 +4681,8 @@
       "color": "#a01a1a",
       "sx": 398.32,
       "sy": -80.73,
-      "sz": 348.15
+      "sz": 348.15,
+      "summary": "Step-DPO, or Step-wise Preference Optimization, is a data-efficient preference optimization method designed to enhance the long-chain reasoning capabilities of large language models (LLMs), particularly for mathematical reasoning tasks. It extends D\u2026"
     },
     {
       "id": "PPO for LLMs",
@@ -4268,7 +4692,8 @@
       "color": "#a01a1a",
       "sx": 438.39,
       "sy": -68.41,
-      "sz": 325.78
+      "sz": 325.78,
+      "summary": "A silent PPO (Preferred Provider Organization) refers to a deceptive practice in the U.S. healthcare insurance system where unauthorized third-party entities, often rental or lease networks, access discounted reimbursement rates that providers have\u2026"
     },
     {
       "id": "Reward Modeling",
@@ -4278,7 +4703,8 @@
       "color": "#a01a1a",
       "sx": 33.67,
       "sy": -18.54,
-      "sz": 429.16
+      "sz": 429.16,
+      "summary": "Human studies using electroencephalography (EEG) and computational modeling provide evidence for these processes in reward prediction during gambling tasks"
     },
     {
       "id": "Speculative Decoding",
@@ -4288,7 +4714,8 @@
       "color": "#a01a1a",
       "sx": 303.76,
       "sy": 0.56,
-      "sz": 269.26
+      "sz": 269.26,
+      "summary": "Newer strategies in speculative decoding include Medusa, which adds lightweight decoding heads to the target model for multi-token predictions; EAGLE and EAGLE-3, which use extrapolative draft heads attached to the target model's layers (adding 2\u2013\u2026"
     },
     {
       "id": "FlashAttention-2",
@@ -4298,7 +4725,8 @@
       "color": "#a01a1a",
       "sx": 422.81,
       "sy": 89.71,
-      "sz": 315.95
+      "sz": 315.95,
+      "summary": "FlashAttention-2 is an algorithm for accelerating attention computations in transformer-based neural networks, introduced in a 2023 paper by Tri Dao of Stanford University. As the successor to the original FlashAttention, it introduces improvements\u2026"
     },
     {
       "id": "Continuous Batching",
@@ -4308,7 +4736,8 @@
       "color": "#a01a1a",
       "sx": 62.1,
       "sy": 98.9,
-      "sz": -98.89
+      "sz": -98.89,
+      "summary": "/whitepapers/latest/practicing-continuous-integration-continuous-delivery/testing-stages-in-continuous-integration-and-continuous-delivery.html) Automation"
     },
     {
       "id": "vLLM",
@@ -4318,7 +4747,8 @@
       "color": "#a01a1a",
       "sx": 310.52,
       "sy": 224.98,
-      "sz": 401.46
+      "sz": 401.46,
+      "summary": "vLLM is an open-source library for efficient serving of large language models. UPDATE: To set up multi-node distributed inference using vLLM on NVIDIA DGX Sparks, install the NVIDIA AI stack and vLLM on Ubuntu; run vllm serve --tensor-parallel-size\u2026"
     },
     {
       "id": "LLM Serving",
@@ -4328,7 +4758,8 @@
       "color": "#a01a1a",
       "sx": 437.46,
       "sy": -87.19,
-      "sz": 248.07
+      "sz": 248.07,
+      "summary": "LLM inference is the process of generating outputs from large language models given input prompts, representing the primary operational cost in RAG systems. Inference optimization impacts response latency, throughput, and cost. Inference approaches\u2026"
     },
     {
       "id": "Model Parallelism",
@@ -4338,7 +4769,8 @@
       "color": "#a01a1a",
       "sx": 101.83,
       "sy": 23.98,
-      "sz": 110.64
+      "sz": 110.64,
+      "summary": "Versus Model Parallelism Model parallelism refers to a distributed training strategy where a single large model is partitioned across multiple computational"
     },
     {
       "id": "Pipeline Parallelism",
@@ -4348,7 +4780,8 @@
       "color": "#a01a1a",
       "sx": 125.05,
       "sy": 53.71,
-      "sz": 118.07
+      "sz": 118.07,
+      "summary": "Pipeline Parallelism (PP) is a distributed training technique in deep learning and machine learning, used to scale large neural network models across multiple devices such as GPUs. It partitions the model into sequential stages (or segments) of laye\u2026"
     },
     {
       "id": "Tensor Parallelism",
@@ -4358,7 +4791,8 @@
       "color": "#a01a1a",
       "sx": 92.92,
       "sy": 39.49,
-      "sz": 101.1
+      "sz": 101.1,
+      "summary": "Tensor parallelism with an RTX 4080 (Ada architecture) and RTX 3060 (Ampere architecture) is not supported in major local LLM frameworks like vLLM, which requires identical GPU types and architectures for tensor parallelism to avoid errors (e.g., NC\u2026"
     },
     {
       "id": "ZeRO Optimization",
@@ -4368,7 +4802,8 @@
       "color": "#a01a1a",
       "sx": 252.07,
       "sy": -204.69,
-      "sz": 4.57
+      "sz": 4.57,
+      "summary": "Portfolio optimization Portfolio optimization is the process of selecting a portfolio of investments that achieves an effective balance between risk and"
     },
     {
       "id": "Mixed Precision Training",
@@ -4378,7 +4813,8 @@
       "color": "#a01a1a",
       "sx": 336.87,
       "sy": -95.83,
-      "sz": 118.78
+      "sz": 118.78,
+      "summary": "Mixed-precision arithmetic is a numerical computing technique that integrates multiple floating-point precision formats\u2014such as FP64 (double precision), FP32 (single precision), FP16 (half precision), BF16 (bfloat16), and emerging FP8 variants\u2014w\u2026"
     },
     {
       "id": "Gradient Checkpointing",
@@ -4388,7 +4824,8 @@
       "color": "#a01a1a",
       "sx": 33.46,
       "sy": 44.03,
-      "sz": -25.84
+      "sz": -25.84,
+      "summary": "torch.utils.checkpoint is PyTorch's official module for gradient checkpointing. UPDATE: As an alternative to a custom 'checkpoint' module, use torch.utils.checkpoint by replacing the import and function calls in the code; it provides similar memory-\u2026"
     },
     {
       "id": "DeepSpeed",
@@ -4398,7 +4835,8 @@
       "color": "#a01a1a",
       "sx": 92.72,
       "sy": 172.77,
-      "sz": 72.94
+      "sz": 72.94,
+      "summary": "DeepSpeed DeepSpeed is an open-source deep learning optimization library developed by Microsoft that enables efficient, scalable distributed training"
     },
     {
       "id": "FSDP",
@@ -4408,7 +4846,8 @@
       "color": "#a01a1a",
       "sx": 314.13,
       "sy": -85.81,
-      "sz": 295.92
+      "sz": 295.92,
+      "summary": "Accelerate is a library from Hugging Face that simplifies distributed training across multi-GPU and multi-node setups with minimal code changes. It supports DeepSpeed, FSDP (Fully Sharded Data Parallel), and mixed precision training while automatica\u2026"
     },
     {
       "id": "Mixture of Agents",
@@ -4418,7 +4857,8 @@
       "color": "#a01a1a",
       "sx": -30.91,
       "sy": -126.1,
-      "sz": 448.72
+      "sz": 448.72,
+      "summary": "/) Common examples include air, which is a gaseous mixture of nitrogen, oxygen, and other gases, and saltwater, a liquid solution of sodium chloride dissolved"
     },
     {
       "id": "Agentic Workflows",
@@ -4428,7 +4868,8 @@
       "color": "#a01a1a",
       "sx": -20.39,
       "sy": -116.42,
-      "sz": 431.21
+      "sz": 431.21,
+      "summary": "GitHub Agentic Workflows are automated, intent-driven repository workflows introduced by GitHub on February 13, 2026, and currently available in technical preview. They run within GitHub Actions and utilize AI coding agents (such as Copilot CLI, Cla\u2026"
     },
     {
       "id": "Long Context LLMs",
@@ -4438,7 +4879,8 @@
       "color": "#a01a1a",
       "sx": 437.68,
       "sy": -64.58,
-      "sz": 227.7
+      "sz": 227.7,
+      "summary": "Long context retention measures a model's ability to maintain performance with large contexts, up to 2M tokens."
     },
     {
       "id": "Retrieval Augmented Training",
@@ -4448,7 +4890,8 @@
       "color": "#a01a1a",
       "sx": 134.06,
       "sy": -182.89,
-      "sz": -58.57
+      "sz": -58.57,
+      "summary": "Standard RAG struggles with multiple retrieved text chunks because fusing/synthesizing them efficiently often requires heavy transformer-based processing, which is memory-intensive and slow\u2014especially on edge devices with limited power and RAM."
     },
     {
       "id": "Grounded Generation",
@@ -4458,7 +4901,8 @@
       "color": "#a01a1a",
       "sx": 427.1,
       "sy": 143.75,
-      "sz": 183.33
+      "sz": 183.33,
+      "summary": "Grounded is a 1993 science fiction novel by David Bischoff, published by Pocket Books as the twenty-fifth installment in the numbered series of Star Trek: The Next Generation tie-in books. While responding to a distress call from a scientific statio\u2026"
     },
     {
       "id": "Hallucination Detection",
@@ -4468,7 +4912,8 @@
       "color": "#a01a1a",
       "sx": 149.92,
       "sy": 274.08,
-      "sz": 184.6
+      "sz": 184.6,
+      "summary": "Methods proposed for detecting hallucinations in long contexts for large language models (LLMs) include techniques tailored for long inputs to identify contextual hallucinations, defined as outputs that contradict the provided context. The proposals\u2026"
     },
     {
       "id": "Uncertainty Quantification",
@@ -4478,7 +4923,8 @@
       "color": "#a01a1a",
       "sx": 113.87,
       "sy": -202.77,
-      "sz": 199.21
+      "sz": 199.21,
+      "summary": "Uncertainty quantification Uncertainty quantification (UQ) is the science of systematically identifying, characterizing, quantifying, and managing uncertainties"
     },
     {
       "id": "Bayesian Deep Learning",
@@ -4488,7 +4934,8 @@
       "color": "#a01a1a",
       "sx": -52.3,
       "sy": -411.36,
-      "sz": -15.13
+      "sz": -15.13,
+      "summary": "Probabilistic deep learning integrates probabilistic modeling techniques with deep neural networks to explicitly account for uncertainty in both model parameters and predictions. This approach contrasts with traditional deterministic deep learning b\u2026"
     },
     {
       "id": "Neural Scaling Laws",
@@ -4498,7 +4945,8 @@
       "color": "#a01a1a",
       "sx": -44.32,
       "sy": 187.46,
-      "sz": -203.06
+      "sz": -203.06,
+      "summary": "Key limitations of Transformer-based scaling in AI development, including challenges related to computational efficiency, data requirements, and architectural constraints. Provide a fully answered, evergreen overview in a dense, concise format, avoi\u2026"
     },
     {
       "id": "Emergent Abilities",
@@ -4508,7 +4956,8 @@
       "color": "#a01a1a",
       "sx": 316.13,
       "sy": 3.05,
-      "sz": 372.91
+      "sz": 372.91,
+      "summary": "Emergent gameplay Emergent gameplay is a core concept in video game design where complex, unanticipated player experiences, strategies, and narratives"
     },
     {
       "id": "In-Context Learning",
@@ -4518,7 +4967,8 @@
       "color": "#a01a1a",
       "sx": 364.17,
       "sy": -29.9,
-      "sz": 141.94
+      "sz": 141.94,
+      "summary": "In-Context Learning (ICL) Theory: Gradient Descent as Inference. This theoretical framework interprets in-context learning in large language models\u2014where models adapt to new tasks via prompt examples without weight updates\u2014as performing gradient\u2026"
     },
     {
       "id": "Mechanistic Interpretability",
@@ -4528,7 +4978,8 @@
       "color": "#a01a1a",
       "sx": 308.33,
       "sy": -16.22,
-      "sz": 158.25
+      "sz": 158.25,
+      "summary": "As of February 2026, mechanistic interpretability is recognized as a major breakthrough technology for understanding the inner workings of large language models (LLMs). Named by MIT Technology Review as one of the 10 Breakthrough Technologies of 202\u2026"
     },
     {
       "id": "Superposition (AI)",
@@ -4538,7 +4989,8 @@
       "color": "#a01a1a",
       "sx": 53.1,
       "sy": -127.27,
-      "sz": 439.32
+      "sz": 439.32,
+      "summary": "Quantum superposition Quantum superposition is a core principle of quantum mechanics in which a quantum system, such as an electron or photon, can exist"
     },
     {
       "id": "Sparse Features",
@@ -4548,7 +5000,8 @@
       "color": "#a01a1a",
       "sx": 79.72,
       "sy": -150.9,
-      "sz": -77.25
+      "sz": -77.25,
+      "summary": "Sparse approximation Sparse approximation is a fundamental problem in applied mathematics and signal processing that involves representing a given signal"
     },
     {
       "id": "Model Editing",
@@ -4558,7 +5011,8 @@
       "color": "#a01a1a",
       "sx": 83.77,
       "sy": -0.54,
-      "sz": 170.63
+      "sz": 170.63,
+      "summary": "Wikis, exemplified by Wikipedia's launch on January 15, 2001, as an open-editing encyclopedia, demonstrated a model of decentralized content creation where"
     },
     {
       "id": "Unlearning",
@@ -4568,7 +5022,8 @@
       "color": "#a01a1a",
       "sx": 227.52,
       "sy": -50.76,
-      "sz": 232.03
+      "sz": 232.03,
+      "summary": "Machine unlearning, also referred to as selective forgetting in AI contexts, is a technique in machine learning that enables the selective removal of the influence of specific training data points\u2014or subsets thereof\u2014from a pre-trained model, app\u2026"
     },
     {
       "id": "Watermarking AI",
@@ -4578,7 +5033,8 @@
       "color": "#a01a1a",
       "sx": 122.47,
       "sy": -177.99,
-      "sz": 344.2
+      "sz": 344.2,
+      "summary": "/science/synthid/) OpenAI employs watermarking in DALL-E"
     },
     {
       "id": "AI Governance",
@@ -4588,7 +5044,8 @@
       "color": "#a01a1a",
       "sx": 93.24,
       "sy": -217.53,
-      "sz": 400.15
+      "sz": 400.15,
+      "summary": "AI governance refers to the policies, processes, frameworks, and standards that ensure the responsible development, deployment, and use of artificial intelligence systems, addressing issues such as accountability, lifecycle oversight, ethical consid\u2026"
     },
     {
       "id": "Responsible AI",
@@ -4598,7 +5055,8 @@
       "color": "#a01a1a",
       "sx": 89.3,
       "sy": -193.84,
-      "sz": 410.89
+      "sz": 410.89,
+      "summary": "Microsoft Responsible AI refers to the company's comprehensive framework and practices for developing, deploying, and using artificial intelligence ethically, safely, and responsibly. It is anchored in six core principles: fairness, reliability and\u2026"
     },
     {
       "id": "Bias in ML",
@@ -4608,7 +5066,8 @@
       "color": "#a01a1a",
       "sx": 161.93,
       "sy": -237.04,
-      "sz": 349.91
+      "sz": 349.91,
+      "summary": "Flag of Mali .ml is the country code top-level domain (ccTLD) for the Republic of Mali, a landlocked nation in West Africa. It is delegated to and..."
     },
     {
       "id": "Fairness in ML",
@@ -4618,7 +5077,8 @@
       "color": "#a01a1a",
       "sx": 158.29,
       "sy": -239.46,
-      "sz": 358.43
+      "sz": 358.43,
+      "summary": "A 2023 survey on intersectional fairness in ML outlines metrics that extend traditional group fairness to multi-attribute scenarios, addressing how overlapping"
     },
     {
       "id": "Robustness",
@@ -4628,7 +5088,8 @@
       "color": "#a01a1a",
       "sx": 152.71,
       "sy": -194.87,
-      "sz": 230.99
+      "sz": 230.99,
+      "summary": "Robustness Robustness is a core principle across multiple fields, denoting the ability of a system, method, or design to maintain its intended performance"
     },
     {
       "id": "Adversarial Attacks",
@@ -4638,7 +5099,8 @@
       "color": "#a01a1a",
       "sx": 152.6,
       "sy": -186.16,
-      "sz": 298.59
+      "sz": 298.59,
+      "summary": "Adversarial Cybernetics is the field examining intentional manipulation or destabilization within complex socio-technical systems, particularly those involving ecological stability, resource allocation, and critical infrastructure such as smart grid\u2026"
     },
     {
       "id": "Adversarial Training",
@@ -4648,7 +5110,8 @@
       "color": "#a01a1a",
       "sx": 170.4,
       "sy": -163.42,
-      "sz": 281.63
+      "sz": 281.63,
+      "summary": "Adversarial training is a robust training method in machine learning where models are trained on adversarially perturbed examples to increase resilience against input perturbations and improve generalization."
     },
     {
       "id": "Certified Robustness",
@@ -4658,7 +5121,8 @@
       "color": "#a01a1a",
       "sx": 158.15,
       "sy": -184.07,
-      "sz": 214.56
+      "sz": 214.56,
+      "summary": "Robustness Robustness is a core principle across multiple fields, denoting the ability of a system, method, or design to maintain its intended performance"
     },
     {
       "id": "Data-Centric AI",
@@ -4668,7 +5132,8 @@
       "color": "#a01a1a",
       "sx": 36.62,
       "sy": -178.26,
-      "sz": 387.17
+      "sz": 387.17,
+      "summary": "Data-centric security is a cybersecurity paradigm that emphasizes protecting the data itself\u2014regardless of its location, format, or the systems it traverses\u2014rather than relying on traditional perimeter defenses like firewalls or network boundari\u2026"
     },
     {
       "id": "Synthetic Data",
@@ -4678,7 +5143,8 @@
       "color": "#a01a1a",
       "sx": 4.15,
       "sy": -168.02,
-      "sz": 363.86
+      "sz": 363.86,
+      "summary": "Synthetic data Synthetic data refers to artificially generated information that mimics the statistical properties and distributions of real-world data"
     },
     {
       "id": "Active Data Collection",
@@ -4688,7 +5154,8 @@
       "color": "#a01a1a",
       "sx": 51.96,
       "sy": -168.43,
-      "sz": -8.14
+      "sz": -8.14,
+      "summary": "Data collection Data collection is the systematic process of gathering and measuring information on variables of interest, in an established fashion that"
     },
     {
       "id": "Foundation Models",
@@ -4698,7 +5165,8 @@
       "color": "#a01a1a",
       "sx": 217.03,
       "sy": -456.86,
-      "sz": -167.46
+      "sz": -167.46,
+      "summary": "The Foundation Models framework is a Swift API introduced by Apple at WWDC 2025, providing third-party developers with direct access to the on-device ~3 billion parameter large language model that powers Apple Intelligence features. It became availa\u2026"
     },
     {
       "id": "Generalist Agents",
@@ -4708,7 +5176,8 @@
       "color": "#a01a1a",
       "sx": -1.03,
       "sy": -149.04,
-      "sz": 453.04
+      "sz": 453.04,
+      "summary": "Generalists with broad knowledge and high adaptability are particularly in demand in dynamic environments, small companies, startups, and roles with varied tasks, where versatility, cost-efficiency, and flexibility are key."
     },
     {
       "id": "Embodied AI",
@@ -4718,7 +5187,8 @@
       "color": "#a01a1a",
       "sx": 28.37,
       "sy": -126.23,
-      "sz": 411.57
+      "sz": 411.57,
+      "summary": "Technologies to improve memory in physical AI (also known as embodied AI or robotics) include brain-inspired multi-memory frameworks like RoboMemory, which unifies spatial, temporal, episodic, and semantic memory in a parallel architecture for lifel\u2026"
     },
     {
       "id": "Robotics Learning",
@@ -4728,7 +5198,8 @@
       "color": "#a01a1a",
       "sx": 4.17,
       "sy": -63.69,
-      "sz": 341.85
+      "sz": 341.85,
+      "summary": "Robot learning is a subfield at the intersection of machine learning and robotics that has developed since the late 1990s, enabling algorithms, methods, and methodologies for robots to acquire new skills and behaviors for tasks such as navigation, m\u2026"
     },
     {
       "id": "Sim-to-Real Transfer",
@@ -4738,7 +5209,8 @@
       "color": "#a01a1a",
       "sx": 55.21,
       "sy": 98.72,
-      "sz": 361.55
+      "sz": 361.55,
+      "summary": "The sim-to-real gap refers to the challenge in transferring models trained on simulated data to real-world astronomical image detection, particularly in generating synthetic streaks. Methods to address it include using Denoising Diffusion Probabilis\u2026"
     },
     {
       "id": "Continual Learning",
@@ -4748,7 +5220,8 @@
       "color": "#a01a1a",
       "sx": 30.99,
       "sy": 127.07,
-      "sz": -47.1
+      "sz": -47.1,
+      "summary": "Incremental learning Incremental learning, also known as continual learning or lifelong learning, is a paradigm in machine learning that enables models"
     },
     {
       "id": "Catastrophic Forgetting",
@@ -4758,7 +5231,8 @@
       "color": "#a01a1a",
       "sx": 62.66,
       "sy": 74.15,
-      "sz": -63.92
+      "sz": -63.92,
+      "summary": "Catastrophic interference Catastrophic interference, also known as catastrophic forgetting, is a fundamental challenge in artificial neural networks where"
     },
     {
       "id": "Elastic Weight Consolidation",
@@ -4768,7 +5242,8 @@
       "color": "#a01a1a",
       "sx": -45.88,
       "sy": 134.2,
-      "sz": -162.2
+      "sz": -162.2,
+      "summary": "principles are applied to assess the stability of municipal solid waste (MSW) fills, where primary consolidation from self-weight and secondary creep"
     },
     {
       "id": "Progressive Neural Networks",
@@ -4778,7 +5253,8 @@
       "color": "#a01a1a",
       "sx": -30.7,
       "sy": 203.76,
-      "sz": -41.49
+      "sz": -41.49,
+      "summary": "Progressive Neural Networks is a 2016 continual-learning architecture that adds new columns of neurons for each task while freezing previous columns and using lateral connections, preventing catastrophic forgetting without task boundaries. This appr\u2026"
     },
     {
       "id": "Hyperparameter-Free Methods",
@@ -4788,7 +5264,8 @@
       "color": "#a01a1a",
       "sx": 360.25,
       "sy": -148.5,
-      "sz": 43.46
+      "sz": 43.46,
+      "summary": "Matrix-free methods are iterative numerical techniques used to solve large-scale linear systems \\(Ax = b\\) without explicitly forming or storing the coefficient matrix \\(A\\), instead relying on the computation of matrix-vector products \\(Av\\) (and s\u2026"
     },
     {
       "id": "Neural Tangent Kernel",
@@ -4798,7 +5275,8 @@
       "color": "#a01a1a",
       "sx": -88.44,
       "sy": -147.08,
-      "sz": -21.4
+      "sz": -21.4,
+      "summary": "Neural tangent kernel The Neural Tangent Kernel (NTK) is a kernel function that characterizes the training dynamics of overparameterized neural networks"
     },
     {
       "id": "Double Descent",
@@ -4808,7 +5286,8 @@
       "color": "#a01a1a",
       "sx": 131.55,
       "sy": -51.43,
-      "sz": -4.27
+      "sz": -4.27,
+      "summary": "Double descent Double descent is a phenomenon observed in machine learning models where the test error initially decreases as model complexity increases"
     },
     {
       "id": "Grokking",
@@ -4818,7 +5297,8 @@
       "color": "#a01a1a",
       "sx": 288.05,
       "sy": 118.98,
-      "sz": 276.05
+      "sz": 276.05,
+      "summary": "In machine learning, grokking refers to the phenomenon where an overparameterized neural network, after initially overfitting its training data and achieving near-perfect memorization, suddenly transitions to strong generalization on unseen test dat\u2026"
     },
     {
       "id": "Scaling Laws",
@@ -4828,7 +5308,8 @@
       "color": "#a01a1a",
       "sx": -0.93,
       "sy": 72.8,
-      "sz": -40.06
+      "sz": -40.06,
+      "summary": "Sloth, officially known as Skills Scaling Laws (SSLaws), is a scaling framework for large language models (LLMs) that predicts performance across multiple benchmarks and diverse model families. It leverages publicly available benchmark data and mode\u2026"
     },
     {
       "id": "MCTS",
@@ -4838,7 +5319,8 @@
       "color": "#a01a1a",
       "sx": 261.54,
       "sy": 85.25,
-      "sz": 372.58
+      "sz": 372.58,
+      "summary": "MCTS Self-Paced Training Kit (Exam 70-667): Configuring Microsoft SharePoint 2010 is an official Microsoft Press self-paced training resource published on September 21, 2011, designed to prepare IT professionals for the Microsoft Certified Technolog\u2026"
     }
   ],
   "edges": [
