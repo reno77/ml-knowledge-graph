@@ -228,10 +228,10 @@
         <span style="font-size:11px;color:#556;font-weight:600;">Timeline scale</span>
         <span id="timeline-gamma-label" style="font-size:11px;color:#1a4da0;font-weight:700;">Linear</span>
       </div>
-      <input id="timeline-gamma-slider" type="range" min="0.2" max="10" step="0.1" value="1"
+      <input id="timeline-gamma-slider" type="range" min="0.2" max="50" step="0.5" value="1"
         style="width:100%;accent-color:#1a4da0;cursor:pointer;">
       <div style="display:flex;justify-content:space-between;font-size:10px;color:#aab;margin-top:2px;">
-        <span>Log</span><span>Linear</span><span>Power ×10</span>
+        <span>Log</span><span>Linear</span><span>Power ×50</span>
       </div>
     </div>
 
@@ -1468,8 +1468,9 @@ fetch('graph.json').then(r => r.json()).then(data => {
     if (g <= 0.85) return 'Log';
     if (g <= 1.15) return 'Linear';
     if (g <= 2.5)  return 'Power ×' + g.toFixed(1);
-    if (g <= 6)    return 'Strong power ×' + g.toFixed(1);
-    return 'Max power ×' + g.toFixed(1);
+    if (g <= 15)   return 'Strong power ×' + g.toFixed(1);
+    if (g <= 35)   return 'Max power ×' + g.toFixed(1);
+    return 'Extreme power ×' + g.toFixed(1);
   }
 
   const gammaSlider = document.getElementById('timeline-gamma-slider');
