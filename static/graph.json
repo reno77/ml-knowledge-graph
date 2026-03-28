@@ -31,7 +31,7 @@
       "sx": 159.08,
       "sy": -571.86,
       "sz": -121.21,
-      "summary": "Stats Perform Stats Perform is a global sports technology company specializing in artificial intelligence (AI), data analytics, and content solutions"
+      "summary": "Probability and statistics form the mathematical foundation of machine learning, providing tools for quantifying uncertainty, modeling random phenomena, and drawing inferences from data. Probability theory defines distributions, expectations, and conditional relationships between random variables, while statistics offers methods for parameter estimation, hypothesis testing, and characterizing data through descriptive and inferential techniques. Together they underpin nearly every ML algorithm, from Bayesian inference and maximum likelihood estimation to stochastic gradient descent and generalization bounds."
     },
     {
       "id": "Python",
@@ -64,7 +64,7 @@
       "sx": 283.07,
       "sy": -532.38,
       "sz": -112.96,
-      "summary": "Optimization Theory for Large Systems is a foundational textbook in mathematical optimization authored by Leon S. Lasdon, first published in 1970 by the Macmillan Company. The book provides a comprehensive examination of the most significant algorit\u2026"
+      "summary": "Optimization theory is the branch of applied mathematics concerned with finding the best element from a set of feasible alternatives by minimizing or maximizing an objective function subject to constraints. It encompasses convex optimization, non-convex optimization, combinatorial optimization, and stochastic methods, providing convergence guarantees and complexity analysis for algorithms such as gradient descent, Newton's method, and interior-point methods. In machine learning, optimization theory is fundamental to training models by minimizing loss functions over parameter spaces."
     },
     {
       "id": "Numerical Methods",
@@ -75,7 +75,7 @@
       "sx": 223.22,
       "sy": -513.79,
       "sz": -77.47,
-      "summary": "Sinc numerical methods are a family of numerical approximation techniques rooted in the cardinal sinc function, \\(\\operatorname{sinc}(z) = \\sin(\\pi z)/(\\pi z)\\), which enable highly accurate solutions to problems in function approximation, interpola\u2026"
+      "summary": "Numerical methods are computational algorithms for solving mathematical problems that lack closed-form analytical solutions, including systems of linear equations, differential equations, integration, and function approximation. Key techniques include iterative solvers, finite difference and finite element methods, numerical quadrature, and root-finding algorithms. In machine learning, numerical methods underpin gradient computation, matrix factorization, eigenvalue decomposition, and the efficient implementation of optimization routines used in model training."
     },
     {
       "id": "Set Theory",
@@ -218,7 +218,7 @@
       "sx": 332.38,
       "sy": -551.36,
       "sz": -122.46,
-      "summary": ", integrated in psychological game theory."
+      "summary": "Game theory is the mathematical study of strategic interactions among rational decision-makers, where each agent's outcome depends on the actions of all participants. Founded by John von Neumann and Oskar Morgenstern, it introduces concepts such as Nash equilibrium, dominant strategies, and minimax solutions. In machine learning, game theory provides the theoretical framework for adversarial training (GANs), multi-agent reinforcement learning, mechanism design, and strategic classification."
     },
     {
       "id": "Complex Analysis",
@@ -1252,7 +1252,7 @@
       "sx": -133.29,
       "sy": -227.1,
       "sz": 142.72,
-      "summary": "QDA Miner is a computer-assisted qualitative data analysis (CAQDAS) software package developed by Provalis Research, first released in 2004 as a pioneering mixed-methods tool for organizing, coding, annotating, retrieving, and analyzing collections\u2026"
+      "summary": "Quadratic Discriminant Analysis (QDA) is a generative classification algorithm that models each class as a multivariate Gaussian distribution with its own mean vector and covariance matrix. Unlike Linear Discriminant Analysis, QDA allows each class to have a distinct covariance structure, producing quadratic decision boundaries in feature space. Classification assigns a new observation to the class with the highest posterior probability computed via Bayes' theorem."
     },
     {
       "id": "RBF Networks",
@@ -1571,7 +1571,7 @@
       "sx": -438.48,
       "sy": -272.76,
       "sz": -443.21,
-      "summary": "/) The bark of birch trees, particularly paper birch"
+      "summary": "BIRCH (Balanced Iterative Reducing and Clustering using Hierarchies) is a scalable hierarchical clustering algorithm designed for large datasets. It incrementally builds a compact summary of the data called a Clustering Feature (CF) tree, which stores sufficient statistics for each cluster. BIRCH operates in a single pass over the data with optional refinement steps, making it memory-efficient and suitable for streaming or out-of-core clustering scenarios."
     },
     {
       "id": "Mini-Batch k-Means",
@@ -1626,7 +1626,7 @@
       "sx": -1089.76,
       "sy": -103.76,
       "sz": -174.25,
-      "summary": "Worm bagging is a reproductive phenomenon primarily observed in the nematode model organism Caenorhabditis elegans, in which hermaphroditic adults retain eggs internally rather than laying them externally, leading to the hatching of larvae within th\u2026"
+      "summary": "Bagging (Bootstrap Aggregating) is an ensemble learning method proposed by Leo Breiman in 1996 that improves the stability and accuracy of machine learning algorithms. It works by generating multiple bootstrap samples from the training set, training a separate base learner on each sample, and combining their predictions through averaging (regression) or majority voting (classification). Bagging reduces variance without substantially increasing bias and forms the basis for Random Forests."
     },
     {
       "id": "Boosting",
@@ -1637,7 +1637,7 @@
       "sx": -1052.91,
       "sy": -96.08,
       "sz": -185.29,
-      "summary": "Boosting in Brawl Stars refers to account sharing or using third-party services to artificially improve ranks. This practice violates Supercell's Terms of Service, which prohibit account sharing, ranking manipulation, win trading, and unauthorized t\u2026"
+      "summary": "Boosting is a family of ensemble learning methods that sequentially train weak learners, each focusing on the mistakes of its predecessors, to produce a strong combined classifier or regressor. Pioneering algorithms include AdaBoost, which reweights misclassified examples, and gradient boosting, which fits new learners to the residual errors. Boosting reduces both bias and variance and underpins high-performance implementations such as XGBoost, LightGBM, and CatBoost."
     },
     {
       "id": "Random Forest",
@@ -1703,7 +1703,7 @@
       "sx": -1059.29,
       "sy": -112.8,
       "sz": -151.91,
-      "summary": "Player stacking is a strategy in NBA Daily Fantasy Sports (DFS) where multiple players from the same team or game are selected in a lineup to exploit correlations in scoring, such as increased playing time in competitive, high-pace games. The concep\u2026"
+      "summary": "Stacking (stacked generalization) is an ensemble learning technique introduced by David Wolpert in 1992 that combines multiple base models by training a meta-learner on their outputs. Base learners are trained on the original dataset and their out-of-fold predictions serve as input features to a higher-level model that learns the optimal combination. Stacking can blend heterogeneous model families and often achieves superior predictive performance compared to individual models or simple averaging."
     },
     {
       "id": "Blending",
@@ -1769,7 +1769,7 @@
       "sx": -1098.63,
       "sy": -77.46,
       "sz": -165.42,
-      "summary": "Minecraft Snapshot 26.1-snapshot-2 is a development version released by Mojang featuring revamped baby mob models, including updates to farm animals, rabbits, Toast, and the Killer Bunny. This snapshot generated trending topic buzz with 19 posts and\u2026"
+      "summary": "Snapshot Ensembles is a training technique proposed by Huang et al. (2017) that obtains multiple diverse neural network models from a single training run by using cyclic learning rate schedules. At each cycle minimum, a snapshot of the model weights is saved. The final ensemble averages predictions from these snapshots, achieving ensemble-level accuracy at the computational cost of training a single network."
     },
     {
       "id": "Dropout Ensembles",
@@ -1857,7 +1857,7 @@
       "sx": -178.13,
       "sy": 423.15,
       "sz": -235.34,
-      "summary": "/neural-networks/activation-functions) Chemistry Activation"
+      "summary": "Activation functions are nonlinear transformations applied to the output of each neuron in a neural network, enabling the network to learn complex, non-linear mappings from inputs to outputs. Common choices include sigmoid, tanh, ReLU, Leaky ReLU, GELU, and Swish. The choice of activation function affects gradient flow, training speed, and the network's ability to approximate arbitrary functions."
     },
     {
       "id": "Weight Initialization",
@@ -2121,7 +2121,7 @@
       "sx": -323.27,
       "sy": 462.05,
       "sz": -136.89,
-      "summary": "SWiSH Max is a Windows-based multimedia software tool for creating vector-based animations, interactive presentations, and web content in the Adobe Flash SWF format. Developed as an accessible alternative to Adobe Flash, it emphasizes ease of use th\u2026"
+      "summary": "Swish is a self-gated activation function defined as f(x) = x * sigmoid(beta * x), discovered through automated search by Ramachandran et al. (2017) at Google Brain. When beta=1, it simplifies to f(x) = x * sigmoid(x). Swish consistently matches or outperforms ReLU on deep networks across tasks including image classification, machine translation, and object detection, providing smoother gradients and allowing small negative values to propagate."
     },
     {
       "id": "Mish",
@@ -2374,7 +2374,7 @@
       "sx": -353.77,
       "sy": 502.85,
       "sz": -175.21,
-      "summary": "Bayou Segnette State Park is a 580-acre state park in Westwego, Jefferson Parish, Louisiana, at 7777 Westbank Expressway, situated along the west bank of the Mississippi River about 15 minutes' drive from downtown New Orleans. Established in the 198\u2026"
+      "summary": "SegNet is a deep convolutional encoder-decoder architecture for pixel-wise semantic segmentation, developed by Badrinarayanan et al. at the University of Cambridge. Its key innovation is the use of pooling indices from the encoder's max-pooling layers to perform non-linear upsampling in the decoder, eliminating the need for learning upsampling filters. This design produces sharp boundary delineation while being memory-efficient compared to approaches that store full encoder feature maps."
     },
     {
       "id": "DeepLab",
@@ -2803,7 +2803,7 @@
       "sx": -308.21,
       "sy": 495.54,
       "sz": -174.48,
-      "summary": "Transe is a 2006 Portuguese-French-Italian drama film directed and written by Teresa Villaverde. Starring Ana Moreira as a young woman from St. Petersburg migrating to Europe in search of a better life, the film explores themes of exploitation and h\u2026"
+      "summary": "TransE (Translating Embeddings) is a knowledge graph embedding model proposed by Bordes et al. (2013) that represents entities and relations as vectors in a low-dimensional continuous space. It models each relation as a translation operation: for a correct triple (head, relation, tail), the embedding of the head entity plus the relation vector should approximate the tail entity embedding, i.e., h + r \u2248 t. TransE is simple, scalable, and effective for link prediction tasks on knowledge graphs."
     },
     {
       "id": "LLM",
@@ -2935,7 +2935,7 @@
       "sx": -10.54,
       "sy": 189.08,
       "sz": 34.48,
-      "summary": "Forward Networks is an American software company founded in 2013 and headquartered in Santa Clara, California, that develops network assurance and modeling solutions using mathematically precise digital twin technology to provide visibility, verific\u2026"
+      "summary": "A feed-forward neural network (FFNN) is the simplest type of artificial neural network architecture, in which information flows in one direction from input nodes through hidden layers to output nodes, with no cycles or feedback connections. Each layer applies a linear transformation followed by a nonlinear activation function. Feed-forward networks form the building blocks of deep learning and appear as components within transformers, CNNs, and other architectures."
     },
     {
       "id": "Mixture of Experts (MoE)",
@@ -2979,7 +2979,7 @@
       "sx": 275.77,
       "sy": -34.78,
       "sz": 386.5,
-      "summary": "Albert Tatlock Albert Tatlock is a fictional character from the long-running British soap opera Coronation Street, portrayed by actor Jack Howarth from"
+      "summary": "ALBERT (A Lite BERT) is a parameter-efficient variant of BERT introduced by Lan et al. (2020) at Google Research. It reduces model size through two techniques: factorized embedding parameterization, which decomposes the large vocabulary embedding matrix into two smaller matrices, and cross-layer parameter sharing, where transformer layer weights are shared across all layers. ALBERT achieves competitive or superior performance to BERT with significantly fewer parameters."
     },
     {
       "id": "DistilBERT",
@@ -3188,7 +3188,7 @@
       "sx": 443.4,
       "sy": 228.48,
       "sz": -187.06,
-      "summary": "The Sliding window protocol is a bidirectional protocol used in computer networking to enable reliable, ordered, and flow-controlled data transmission over unreliable..."
+      "summary": "Sliding Window Attention is an efficient attention mechanism that restricts each token's attention to a fixed-size local window of neighboring tokens rather than attending to the entire sequence. This reduces the computational complexity of self-attention from O(n^2) to O(n * w) where w is the window size. Used in architectures like Longformer and Mistral, it enables processing of long sequences while preserving local context, and can be combined with global attention tokens for tasks requiring long-range dependencies."
     },
     {
       "id": "Cross-Attention",
@@ -3243,7 +3243,7 @@
       "sx": 284.31,
       "sy": 163.83,
       "sz": 85.98,
-      "summary": "Propensity score matching Propensity score matching (PSM) is a statistical technique employed in observational studies to estimate causal effects of treatments"
+      "summary": "Score matching is a method for estimating the parameters of unnormalized statistical models by matching the gradient (score function) of the model's log-density to that of the data distribution, avoiding the need to compute intractable normalizing constants. Introduced by Hyvarinen (2005), it minimizes the Fisher divergence between model and data scores. Score matching is foundational to score-based generative models and diffusion models, where a neural network learns to estimate the score function for iterative denoising and sample generation."
     },
     {
       "id": "Flow Models",
@@ -3254,7 +3254,7 @@
       "sx": -0.74,
       "sy": 51.27,
       "sz": 196.46,
-      "summary": "/BottleRocket/airplane/bern.html) Inviscid flow models are widely applied in aerodynamics to compute inviscid pressure loads on aircraft components, rotor"
+      "summary": "Flow models (normalizing flows) are a family of generative models that transform a simple base distribution (e.g., Gaussian) into a complex target distribution through a sequence of invertible, differentiable transformations. Because each transformation has a tractable Jacobian determinant, flow models allow exact likelihood computation and efficient sampling. Notable architectures include RealNVP, Glow, and Neural Spline Flows."
     },
     {
       "id": "Energy-Based Models",
@@ -3287,7 +3287,7 @@
       "sx": 305.92,
       "sy": 204.06,
       "sz": 354.54,
-      "summary": "Envato is an Australian technology company founded in 2006 by Collis Ta'eed, Cyan Ta'eed, and Jun Rung in a Bondi garage. It operates a network of digital asset marketplaces and a creative subscription platform, serving over 10 million community mem\u2026"
+      "summary": "Video generation (VideoGen) encompasses deep learning methods for synthesizing realistic video sequences from various conditioning inputs such as text descriptions, images, or other videos. Key approaches include extending diffusion models to the temporal domain, autoregressive transformers operating on video tokens, and GAN-based methods. Prominent models include Sora, Runway Gen-2, and Stable Video Diffusion."
     },
     {
       "id": "Text-to-Speech",
@@ -3364,7 +3364,7 @@
       "sx": 390.82,
       "sy": -82.93,
       "sz": 302.8,
-      "summary": "Dell Display and Peripheral Manager (DDPM) is a free utility software developed by Dell Technologies for Windows and macOS. It allows users to manage and customize Dell monitors and peripherals\u2014including keyboards, mice, webcams, and headsets\u2014fr\u2026"
+      "summary": "Denoising Diffusion Probabilistic Models (DDPM) are a class of generative models introduced by Ho et al. (2020) that learn to reverse a gradual noising process. The forward process incrementally adds Gaussian noise to data over T timesteps until it becomes pure noise, while the reverse process trains a neural network to predict and remove the noise at each step. DDPMs generate high-quality samples and form the foundation of modern diffusion-based generative AI systems."
     },
     {
       "id": "DDIM",
@@ -3782,7 +3782,7 @@
       "sx": -134.05,
       "sy": 18.82,
       "sz": 385.15,
-      "summary": "Energy-based model An energy-based model (EBM) is a class of probabilistic models in machine learning that define an unnormalized probability density"
+      "summary": "Model-based reinforcement learning is an approach to RL in which the agent learns an explicit model of the environment's dynamics (transition and reward functions) and uses this model to plan, simulate, or augment data for policy optimization. By leveraging the learned model for look-ahead planning or generating synthetic trajectories, model-based methods can achieve higher sample efficiency than model-free approaches. Notable examples include Dyna, MBPO, MuZero, and Dreamer."
     },
     {
       "id": "Offline RL",
@@ -3914,7 +3914,7 @@
       "sx": 23.6,
       "sy": -26.12,
       "sz": 396.92,
-      "summary": "Bounty (reward) 20 Pounds reward A bounty is a monetary reward or premium offered, typically by governments or authorities, to incentivize individuals"
+      "summary": "Reward shaping is a technique in reinforcement learning that supplements the environment's sparse or delayed reward signal with additional intermediate rewards to guide the agent toward desired behavior more efficiently. Introduced formally by Ng et al. (1999), potential-based reward shaping preserves the optimal policy while accelerating learning. It addresses the exploration challenge in tasks where the natural reward signal provides insufficient feedback for effective credit assignment."
     },
     {
       "id": "Curiosity-Driven Exploration",
@@ -4420,7 +4420,7 @@
       "sx": 195.84,
       "sy": -199.99,
       "sz": 283.47,
-      "summary": "on leakage. In machine learning applications, companies often misuse differential privacy by selecting loose privacy"
+      "summary": "Differential privacy is a rigorous mathematical definition of privacy for algorithms that process potentially sensitive data, ensuring that the inclusion or exclusion of any single individual's record in a dataset has at most a small, quantifiable effect on the probability distribution of the algorithm's output. Formally introduced in 2006 by Cynthia Dwork, Frank McSherry, Kobbi Nissim, and Adam Smith, it addresses the challenge of enabling aggregate statistical analysis while bounding the risk of inferring private information about individuals. The privacy guarantee is parameterized by \u03b5 (epsilon), which measures the maximum privacy loss, with smaller values providing stronger protection at the cost of increased noise addition to outputs; a relaxation involving \u03b4 (delta) allows for approximate differential privacy in practical implementations."
     },
     {
       "id": "Quantization & Pruning",
@@ -5025,7 +5025,7 @@
       "sx": 316.13,
       "sy": 3.05,
       "sz": 372.91,
-      "summary": "Emergent gameplay Emergent gameplay is a core concept in video game design where complex, unanticipated player experiences, strategies, and narratives"
+      "summary": "Emergent abilities in large language models refer to capabilities that are absent in smaller models but appear suddenly as model scale (parameters, training data, or compute) increases past certain thresholds. Examples include few-shot chain-of-thought reasoning, multi-step arithmetic, and word unscrambling. First characterized by Wei et al. (2022), the phenomenon suggests that some complex behaviors arise unpredictably with scale, though subsequent work debates whether emergence is a property of the models or of the evaluation metrics used."
     },
     {
       "id": "In-Context Learning",
