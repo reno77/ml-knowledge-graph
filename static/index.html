@@ -1098,16 +1098,21 @@ fetch('graph.json').then(r => r.json()).then(data => {
     't-SNE':'t-SNE', 'vLLM':'vLLM',
   };
 
+  // URL overrides for nodes where an external article is better than Grokipedia
+  const LINK_OVERRIDES = {
+    'Class Weights': 'https://medium.com/@ravi.abhinav4/improving-class-imbalance-with-class-weights-in-machine-learning-af072fdd4aa4',
+  };
+
   function fetchWikiSummary(label) {
     const wikiEl    = document.getElementById('ni-wiki');
     const summaryEl = document.getElementById('ni-wiki-summary');
     const linkEl    = document.getElementById('ni-wiki-link');
     wikiEl.style.display = 'block';
 
+    const override = LINK_OVERRIDES[label];
     const slug = GROK_SLUGS[label];
-    const pageUrl = slug
-      ? `https://grokipedia.com/page/${slug}`
-      : `https://grokipedia.com/search?q=${encodeURIComponent(label)}`;
+    const pageUrl = override
+      || (slug ? `https://grokipedia.com/page/${slug}` : `https://grokipedia.com/search?q=${encodeURIComponent(label)}`);
 
     const node = nodeMap[label] || allNodes.find(n => n.label === label);
     const summary = node ? node.summary : '';
@@ -1115,7 +1120,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     summaryEl.className = '';
     summaryEl.textContent = summary || 'No summary available.';
     linkEl.href = pageUrl;
-    linkEl.querySelector('span').textContent = slug ? 'Read on Grokipedia' : 'Search Grokipedia';
+    linkEl.querySelector('span').textContent = override ? 'Read article' : (slug ? 'Read on Grokipedia' : 'Search Grokipedia');
   }
 
   function showNodeInfo(node, fd) {

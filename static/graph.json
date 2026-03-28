@@ -680,7 +680,7 @@
       "sx": 43.2,
       "sy": 50.79,
       "sz": -212.85,
-      "summary": "Calibration weights are standardized masses used to calibrate precision scales, including digital gold and jewelry scales that require high accuracy for reliable measurements. Popular and highly rated calibration weights for gold/jewelry scales on A\u2026"
+      "summary": "Class weights are a technique used in machine learning to address class imbalance by assigning higher importance to the minority class and lower importance to the majority class during model training. This approach modifies the loss function so that misclassifying a minority class sample incurs a higher penalty, forcing the model to pay more attention to under-represented patterns without generating synthetic data or removing samples. The most common method is Inverse Class Frequency, where the weight for each class is inversely proportional to its frequency in the dataset. Implementing class weights allows models to achieve better recall and AUC scores for the minority class, though this often comes at the cost of reduced precision and overall accuracy."
     },
     {
       "id": "Bootstrapping",
