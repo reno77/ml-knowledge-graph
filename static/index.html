@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML Knowledge Graph</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0d0d1a; color: #e0e0e0; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
+
+    #header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(13,13,26,0.95); border-bottom: 1px solid #2a2a4a;
+      padding: 12px 24px; display: flex; align-items: center; gap: 16px;
+    }
+    #header h1 { font-size: 20px; font-weight: 700; color: #7ecfff; }
+    #header p  { font-size: 13px; color: #888; }
+
+    #controls {
+      position: fixed; top: 60px; right: 16px; z-index: 100;
+      background: rgba(20,20,40,0.95); border: 1px solid #2a2a4a;
+      border-radius: 10px; padding: 14px; min-width: 180px;
+    }
+    #controls h3 { font-size: 12px; color: #7ecfff; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+    .legend-item { display: flex; align-items: center; gap: 8px; margin: 5px 0; cursor: pointer; }
+    .legend-dot  { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+    .legend-label{ font-size: 12px; color: #ccc; }
+
+    #tooltip {
+      position: fixed; pointer-events: none;
+      background: rgba(20,20,40,0.97); border: 1px solid #445;
+      border-radius: 8px; padding: 10px 14px; font-size: 13px;
+      max-width: 260px; display: none; z-index: 200;
+    }
+    #tooltip .t-name  { font-weight: 700; color: #7ecfff; margin-bottom: 4px; }
+    #tooltip .t-cat   { color: #aaa; font-size: 12px; }
+    #tooltip .t-level { color: #888; font-size: 11px; margin-top: 4px; }
+
+    #info {
+      position: fixed; bottom: 16px; left: 16px; z-index: 100;
+      font-size: 11px; color: #555;
+    }
+
+    svg { display: block; }
+
+    .node circle { stroke: #fff; stroke-width: 1.5px; cursor: pointer; transition: r 0.2s; }
+    .node circle:hover { stroke-width: 3px; }
+    .node text { pointer-events: none; font-size: 11px; fill: white; font-weight: 600;
+                 text-anchor: middle; dominant-baseline: middle; }
+    .link { stroke: #445566; stroke-opacity: 0.6; fill: none; }
+    .link.highlighted { stroke: #7ecfff; stroke-opacity: 1; stroke-width: 2px; }
+    .node.dimmed circle { opacity: 0.2; }
+    .node.dimmed text   { opacity: 0.2; }
+    .link.dimmed { stroke-opacity: 0.05; }
+  </style>
+</head>
+<body>
+
+<div id="header">
+  <div>
+    <h1>🧠 ML Knowledge Graph</h1>
+    <p>31 concepts · 30 prerequisites · Click a node to explore</p>
+  </div>
+</div>
+
+<div id="controls">
+  <h3>Categories</h3>
+  <div id="legend"></div>
+</div>
+
+<div id="tooltip">
+  <div class="t-name" id="tt-name"></div>
+  <div class="t-cat"  id="tt-cat"></div>
+  <div class="t-level" id="tt-level"></div>
+</div>
+
+<svg id="graph"></svg>
+
+<div id="info">Scroll to zoom · Drag to pan · Click node to highlight path</div>
+
+<script>
+const LEVEL_LABELS = ["Foundations","Core Concepts","Classical ML","Intermediate","Deep Learning","Advanced","Expert"];
+
+fetch('graph.json').then(r => r.json()).then(data => {
+  const w = window.innerWidth, h = window.innerHeight;
+  const svg = d3.select('#graph').attr('width', w).attr('height', h);
+
+  // Defs: arrowhead
+  const defs = svg.append('defs');
+  defs.append('marker').attr('id','arrow').attr('viewBox','0 -5 10 10')
+    .attr('refX',22).attr('refY',0).attr('markerWidth',6).attr('markerHeight',6)
+    .attr('orient','auto')
+    .append('path').attr('d','M0,-5L10,0L0,5').attr('fill','#445566');
+
+  const g = svg.append('g');
+
+  // Zoom
+  svg.call(d3.zoom().scaleExtent([0.3, 3]).on('zoom', e => g.attr('transform', e.transform)));
+
+  // Layout: hierarchical by level
+  const levelGroups = {};
+  data.nodes.forEach(n => { (levelGroups[n.level] = levelGroups[n.level]||[]).push(n); });
+  const levels = Object.keys(levelGroups).map(Number).sort();
+  const yStep = (h - 120) / (levels.length - 1 || 1);
+
+  data.nodes.forEach(n => {
+    const group = levelGroups[n.level];
+    const idx = group.indexOf(n);
+    const cols = group.length;
+    const xStep = Math.min(200, (w - 200) / cols);
+    n.x = (w/2) + (idx - (cols-1)/2) * xStep;
+    n.y = 80 + n.level * yStep;
+  });
+
+  const nodeMap = {};
+  data.nodes.forEach(n => nodeMap[n.id] = n);
+
+  // Links
+  const link = g.append('g').selectAll('.link')
+    .data(data.edges).join('line')
+    .attr('class','link')
+    .attr('marker-end','url(#arrow)')
+    .attr('x1', d => nodeMap[d.from].x)
+    .attr('y1', d => nodeMap[d.from].y)
+    .attr('x2', d => nodeMap[d.to].x)
+    .attr('y2', d => nodeMap[d.to].y);
+
+  // Nodes
+  const node = g.append('g').selectAll('.node')
+    .data(data.nodes).join('g')
+    .attr('class','node')
+    .attr('transform', d => `translate(${d.x},${d.y})`);
+
+  // Glow layers
+  [2.5, 1.6, 1.0].forEach((mult, i) => {
+    node.append('circle')
+      .attr('r', d => (d.level <= 1 ? 28 : 22) * mult)
+      .attr('fill', d => d.color)
+      .attr('opacity', [0.12, 0.25, 1][i]);
+  });
+
+  node.append('text').text(d => d.label)
+    .call(wrap, 90);
+
+  // Legend
+  const cats = Object.entries(data.categories);
+  const legend = document.getElementById('legend');
+  cats.forEach(([cat, color]) => {
+    const div = document.createElement('div');
+    div.className = 'legend-item';
+    div.innerHTML = `<div class="legend-dot" style="background:${color}"></div>
+                     <span class="legend-label">${cat.charAt(0).toUpperCase()+cat.slice(1)}</span>`;
+    div.addEventListener('click', () => highlightCategory(cat));
+    legend.appendChild(div);
+  });
+
+  // Tooltip
+  const tt = document.getElementById('tooltip');
+  node.on('mousemove', (e, d) => {
+    tt.style.display = 'block';
+    tt.style.left = (e.clientX + 14) + 'px';
+    tt.style.top  = (e.clientY - 10) + 'px';
+    document.getElementById('tt-name').textContent = d.label;
+    document.getElementById('tt-cat').textContent  = d.category.charAt(0).toUpperCase()+d.category.slice(1);
+    document.getElementById('tt-level').textContent= `Level ${d.level}: ${LEVEL_LABELS[d.level]||''}`;
+  }).on('mouseleave', () => tt.style.display = 'none');
+
+  // Click: highlight connected
+  let selected = null;
+  node.on('click', (e, d) => {
+    if (selected === d.id) { clearHighlight(); selected = null; return; }
+    selected = d.id;
+    const connected = new Set([d.id]);
+    data.edges.forEach(edge => {
+      if (edge.from === d.id) connected.add(edge.to);
+      if (edge.to   === d.id) connected.add(edge.from);
+    });
+    node.classed('dimmed', n => !connected.has(n.id));
+    link.classed('dimmed', l => l.from !== d.id && l.to !== d.id);
+    link.classed('highlighted', l => l.from === d.id || l.to === d.id);
+  });
+
+  function clearHighlight() {
+    node.classed('dimmed', false);
+    link.classed('dimmed', false).classed('highlighted', false);
+  }
+
+  function highlightCategory(cat) {
+    const inCat = new Set(data.nodes.filter(n => n.category===cat).map(n=>n.id));
+    node.classed('dimmed', n => !inCat.has(n.id));
+    link.classed('dimmed', true).classed('highlighted', false);
+  }
+
+  svg.on('click', (e) => {
+    if (e.target === svg.node()) { clearHighlight(); selected = null; }
+  });
+
+  function wrap(text, width) {
+    text.each(function() {
+      const t = d3.select(this);
+      const words = t.text().split(/\s+/);
+      if (words.length <= 1) { t.attr('dy','0.35em'); return; }
+      t.text(null);
+      const lh = 13;
+      const offset = -(words.length - 1) * lh / 2;
+      words.forEach((w, i) => {
+        t.append('tspan').attr('x',0).attr('dy', i===0 ? offset : lh).text(w);
+      });
+    });
+  }
+});
+</script>
+</body>
+</html>

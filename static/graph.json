@@ -1,0 +1,352 @@
+{
+  "nodes": [
+    {
+      "id": "Linear Algebra",
+      "label": "Linear Algebra",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Calculus",
+      "label": "Calculus",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Probability & Stats",
+      "label": "Probability & Stats",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Python",
+      "label": "Python",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Loss Functions",
+      "label": "Loss Functions",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Gradient Descent",
+      "label": "Gradient Descent",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Backpropagation",
+      "label": "Backpropagation",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Regularization",
+      "label": "Regularization",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Feature Engineering",
+      "label": "Feature Engineering",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Linear Regression",
+      "label": "Linear Regression",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Logistic Regression",
+      "label": "Logistic Regression",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Decision Trees",
+      "label": "Decision Trees",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "SVM",
+      "label": "SVM",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "k-NN",
+      "label": "k-NN",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "k-Means",
+      "label": "k-Means",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "PCA",
+      "label": "PCA",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Autoencoders",
+      "label": "Autoencoders",
+      "level": 3,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Random Forest",
+      "label": "Random Forest",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "Gradient Boosting",
+      "label": "Gradient Boosting",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "XGBoost",
+      "label": "XGBoost",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "Neural Networks",
+      "label": "Neural Networks",
+      "level": 3,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "CNNs",
+      "label": "CNNs",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "RNNs",
+      "label": "RNNs",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "LSTMs",
+      "label": "LSTMs",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Attention Mechanism",
+      "label": "Attention Mechanism",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Transformers",
+      "label": "Transformers",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "BERT / GPT",
+      "label": "BERT / GPT",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Diffusion Models",
+      "label": "Diffusion Models",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Reinforcement Learning",
+      "label": "Reinforcement Learning",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "LLM Fine-tuning",
+      "label": "LLM Fine-tuning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Meta-Learning",
+      "label": "Meta-Learning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Linear Algebra",
+      "to": "Gradient Descent"
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "PCA"
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "SVM"
+    },
+    {
+      "from": "Calculus",
+      "to": "Gradient Descent"
+    },
+    {
+      "from": "Calculus",
+      "to": "Backpropagation"
+    },
+    {
+      "from": "Probability & Stats",
+      "to": "Loss Functions"
+    },
+    {
+      "from": "Probability & Stats",
+      "to": "Logistic Regression"
+    },
+    {
+      "from": "Python",
+      "to": "Feature Engineering"
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Linear Regression"
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Logistic Regression"
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Neural Networks"
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Linear Regression"
+    },
+    {
+      "from": "Backpropagation",
+      "to": "Neural Networks"
+    },
+    {
+      "from": "Regularization",
+      "to": "Linear Regression"
+    },
+    {
+      "from": "Regularization",
+      "to": "Neural Networks"
+    },
+    {
+      "from": "Decision Trees",
+      "to": "Random Forest"
+    },
+    {
+      "from": "Decision Trees",
+      "to": "Gradient Boosting"
+    },
+    {
+      "from": "Gradient Boosting",
+      "to": "XGBoost"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "CNNs"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "RNNs"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Autoencoders"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Reinforcement Learning"
+    },
+    {
+      "from": "RNNs",
+      "to": "LSTMs"
+    },
+    {
+      "from": "LSTMs",
+      "to": "Attention Mechanism"
+    },
+    {
+      "from": "Attention Mechanism",
+      "to": "Transformers"
+    },
+    {
+      "from": "Transformers",
+      "to": "BERT / GPT"
+    },
+    {
+      "from": "Transformers",
+      "to": "Diffusion Models"
+    },
+    {
+      "from": "Transformers",
+      "to": "LLM Fine-tuning"
+    },
+    {
+      "from": "BERT / GPT",
+      "to": "LLM Fine-tuning"
+    },
+    {
+      "from": "Reinforcement Learning",
+      "to": "Meta-Learning"
+    }
+  ],
+  "categories": {
+    "foundation": "#1a6985",
+    "core": "#c17d1a",
+    "supervised": "#2d8a4e",
+    "unsupervised": "#7b3fa0",
+    "ensemble": "#1a7a6b",
+    "neural": "#1a4da0",
+    "advanced": "#a01a1a"
+  }
+}
