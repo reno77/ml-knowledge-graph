@@ -3155,7 +3155,7 @@
       "sx": 321.15,
       "sy": 259.1,
       "sz": 4.92,
-      "summary": "mlx-embeddings is a Python package created by GitHub user Blaizzy (Prince Canuma) and hosted at It enables running vision and language embedding models locally on Mac computers using Apple's MLX framework. Key features include support for models suc\u2026"
+      "summary": "Sinusoidal embeddings are a deterministic, parameter-free method for encoding token positions in sequences using sine and cosine functions of varying frequencies, originally introduced in the \"Attention Is All You Need\" Transformer architecture. Instead of learning position vectors, the model calculates a fixed vector for each position: $PE_{(pos,2i)} = \\sin\\left(\\frac{pos}{10000^{2i/d_{model}}}\\right)$ for even dimensions and $PE_{(pos,2i+1)} = \\cos\\left(\\frac{pos}{10000^{2i/d_{model}}}\\right)$ for odd dimensions, where $pos$ is the position index, $i$ is the dimension index, and $d_{model}$ is the embedding dimension."
     },
     {
       "id": "Grouped Query Attention",
