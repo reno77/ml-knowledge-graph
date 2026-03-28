@@ -4779,6 +4779,16 @@
       "sx": 261.54,
       "sy": 85.25,
       "sz": 372.58
+    },
+    {
+      "id": "LLM",
+      "label": "LLM",
+      "level": 5,
+      "category": "advanced",
+      "color": "#1a3a6b",
+      "sx": 290.64,
+      "sy": -84.9,
+      "sz": 223.57
     }
   ],
   "edges": [
@@ -6997,6 +7007,58 @@
     {
       "from": "Scaling Laws",
       "to": "Emergent Abilities"
+    },
+    {
+      "from": "Transformers",
+      "to": "LLM"
+    },
+    {
+      "from": "Self-Supervised Learning",
+      "to": "LLM"
+    },
+    {
+      "from": "Transfer Learning",
+      "to": "LLM"
+    },
+    {
+      "from": "Neural Scaling Laws",
+      "to": "LLM"
+    },
+    {
+      "from": "LLM",
+      "to": "RLHF"
+    },
+    {
+      "from": "LLM",
+      "to": "LLM Fine-tuning"
+    },
+    {
+      "from": "LLM",
+      "to": "RAG"
+    },
+    {
+      "from": "LLM",
+      "to": "Chain-of-Thought"
+    },
+    {
+      "from": "LLM",
+      "to": "In-Context Learning"
+    },
+    {
+      "from": "LLM",
+      "to": "Foundation Models"
+    },
+    {
+      "from": "LLM",
+      "to": "Instruction Tuning"
+    },
+    {
+      "from": "LLM",
+      "to": "LoRA"
+    },
+    {
+      "from": "LLM",
+      "to": "Prompt Engineering"
     }
   ],
   "categories": {

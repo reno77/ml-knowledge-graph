@@ -270,6 +270,7 @@ NODES = {
     "TransE":                      (4, "neural"),
 
     # ── Level 5: Transformers & LLMs ─────────────────────────────────────
+    "LLM":                         (5, "advanced"),
     "Transformers":                (5, "advanced"),
     "BERT":                        (5, "advanced"),
     "GPT":                         (5, "advanced"),
@@ -510,6 +511,13 @@ NODES = {
 }
 
 EDGES = [
+    # LLM
+    ("Transformers", "LLM"), ("Self-Supervised Learning", "LLM"),
+    ("Transfer Learning", "LLM"), ("Neural Scaling Laws", "LLM"),
+    ("LLM", "RLHF"), ("LLM", "LLM Fine-tuning"), ("LLM", "RAG"),
+    ("LLM", "Chain-of-Thought"), ("LLM", "In-Context Learning"),
+    ("LLM", "Foundation Models"), ("LLM", "Instruction Tuning"),
+    ("LLM", "LoRA"), ("LLM", "Prompt Engineering"),
     # Foundations → Core
     ("Linear Algebra", "Gradient Descent"), ("Linear Algebra", "PCA"),
     ("Linear Algebra", "SVM"), ("Linear Algebra", "Neural Networks"),
