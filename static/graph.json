@@ -4649,7 +4649,7 @@
       "sx": -47.4,
       "sy": 361.67,
       "sz": -212.5,
-      "summary": "An adapter or adaptor is a device, component, or mechanism that converts the attributes, interfaces, or forms of one system or part to match those of an otherwise incompatible system or..."
+      "summary": "Adapter layers are small bottleneck modules inserted between existing layers of a pre-trained model, typically after multi-head attention and feed-forward sublayers in transformer architectures. These adapters project hidden representations to a lower-dimensional space, apply a non-linearity, and project back, adding minimal parameters\u2014often less than 1% of the original model size\u2014while allowing task-specific adaptations without altering the core model."
     },
     {
       "id": "P-Tuning",
