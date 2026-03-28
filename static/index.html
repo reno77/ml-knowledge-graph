@@ -211,6 +211,14 @@
       <span class="toggle-label">Level same</span>
       <label class="toggle-switch"><input type="checkbox" id="linkSame" checked><span class="toggle-slider"></span></label>
     </div>
+    <div class="toggle-row">
+      <span class="toggle-label">Incoming (requires)</span>
+      <label class="toggle-switch"><input type="checkbox" id="linkIncoming" checked><span class="toggle-slider"></span></label>
+    </div>
+    <div class="toggle-row">
+      <span class="toggle-label">Outgoing (enables)</span>
+      <label class="toggle-switch"><input type="checkbox" id="linkOutgoing" checked><span class="toggle-slider"></span></label>
+    </div>
 
     <div class="section-title" style="margin-top:14px">Quick Categories</div>
     <div id="cat-quick"></div>
@@ -310,7 +318,7 @@ const LEVEL_LABELS = ["Foundations","Core Concepts","Classical ML","Intermediate
 // ── State ────────────────────────────────────────────────────────────────
 const state = {
   labels: true, links: true, arrows: true, particles: true, glow: false,
-  linkSameCat: true, linkCrossCat: true, linkUp: true, linkSame: true,
+  linkSameCat: true, linkCrossCat: true, linkUp: true, linkSame: true, linkIncoming: true, linkOutgoing: true,
   hiddenCats: new Set(), hiddenLevels: new Set(),
   highlighted: null, highlightNodes: new Set(), highlightLinks: new Set(),
 };
@@ -355,6 +363,14 @@ fetch('graph.json').then(r => r.json()).then(data => {
       if (!sameCat && !state.linkCrossCat) return false;
       if (lvlDiff > 0 && !state.linkUp) return false;
       if (lvlDiff === 0 && !state.linkSame) return false;
+      // Incoming/outgoing direction filter (relative to highlighted node)
+      if (state.highlighted && (!state.linkIncoming || !state.linkOutgoing)) {
+        const hid = state.highlighted;
+        const isIncoming = tid === hid;  // edge points TO highlighted
+        const isOutgoing = sid === hid;  // edge comes FROM highlighted
+        if (isIncoming && !state.linkIncoming) return false;
+        if (isOutgoing && !state.linkOutgoing) return false;
+      }
       return true;
     });
 
@@ -1129,6 +1145,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
     linkCrossCat:  v => { state.linkCrossCat = v; refreshGraph(); },
     linkUp:        v => { state.linkUp = v; refreshGraph(); },
     linkSame:      v => { state.linkSame = v; refreshGraph(); },
+    linkIncoming:  v => { state.linkIncoming = v; refreshGraph(); },
+    linkOutgoing:  v => { state.linkOutgoing = v; refreshGraph(); },
   };
   Object.entries(toggles).forEach(([id, fn]) => {
     const el = document.getElementById(id);
@@ -1210,12 +1228,12 @@ fetch('graph.json').then(r => r.json()).then(data => {
     document.querySelectorAll('[data-cat],[data-level]').forEach(el => el.checked=true);
     // Reset all display toggles too
     ['showLabels','showLinks','showArrows','showParticles','showGlow',
-     'linkSameCat','linkCrossCat','linkUp','linkSame'].forEach(id => {
+     'linkSameCat','linkCrossCat','linkUp','linkSame','linkIncoming','linkOutgoing'].forEach(id => {
       const el = document.getElementById(id);
       if (el) { el.checked=true; }
     });
     Object.assign(state, {labels:true,links:true,arrows:true,particles:true,glow:true,
-      linkSameCat:true,linkCrossCat:true,linkUp:true,linkSame:true});
+      linkSameCat:true,linkCrossCat:true,linkUp:true,linkSame:true,linkIncoming:true,linkOutgoing:true});
     refreshGraph();
     Graph.zoomToFit(400, 80);
   };
