@@ -292,7 +292,10 @@
     </div>
 
     <div class="section-title" style="margin-top:6px">Actions</div>
-    <button id="btn-reset" style="width:100%;padding:6px;background:#dde3f5;border:1px solid #b0bcd8;color:#1a4da0;border-radius:6px;cursor:pointer;font-size:12px;">Reset All Filters</button>
+    <div style="display:flex;gap:4px;">
+      <button id="btn-reset" style="flex:1;padding:6px;background:#dde3f5;border:1px solid #b0bcd8;color:#1a4da0;border-radius:6px;cursor:pointer;font-size:12px;">Reset All Filters</button>
+      <button id="btn-reset-view" title="Reset camera to fit all nodes" style="padding:6px 10px;background:#dde3f5;border:1px solid #b0bcd8;color:#1a4da0;border-radius:6px;cursor:pointer;font-size:12px;">🎯 View</button>
+    </div>
   </div>
 
   <!-- Categories tab -->
@@ -1890,6 +1893,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
   document.getElementById('btn-semantic').addEventListener('click', () => setLayout('semantic'));
   document.getElementById('btn-time').addEventListener('click',     () => setLayout('time'));
   document.getElementById('btn-reset').addEventListener('click', resetAll);
+  document.getElementById('btn-reset-view').addEventListener('click', () => Graph.zoomToFit(400, 80));
 
   // ── Panel show/hide ───────────────────────────────────────────────────
   let panelVisible = true;
