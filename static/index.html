@@ -1501,7 +1501,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
       const h = strHash(n.id);
       const catIdx = CAT_ORDER.indexOf(n.category);
       n.fx = yearToX(year);
-      n.fy = (catIdx - 3) * 160 + (((h & 0xff) / 255) - 0.5) * 200;
+      n.fy = (catIdx - 3) * 160 + (((h & 0xff) / 255) - 0.5) * 200 + 300;
       n.fz = (n.level - 3) * 100 + ((((h >> 8) & 0xff) / 255) - 0.5) * 180;
     });
   }
