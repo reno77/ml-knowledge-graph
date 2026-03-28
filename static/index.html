@@ -183,7 +183,7 @@
       <label class="toggle-switch"><input type="checkbox" id="showParticles" checked><span class="toggle-slider"></span></label>
     </div>
     <div class="toggle-row">
-      <span class="toggle-label">Glow Effect</span>
+      <span class="toggle-label">Translucent</span>
       <label class="toggle-switch"><input type="checkbox" id="showGlow"><span class="toggle-slider"></span></label>
     </div>
 
@@ -210,12 +210,12 @@
 
     <div class="section-title" style="margin-top:14px">Layout</div>
     <div style="display:flex;gap:4px;margin-bottom:8px;">
-      <button id="btn-spiral"
-        style="flex:1;padding:6px 2px;background:#1a4da0;border:1px solid #1a4da0;color:#fff;border-radius:6px;cursor:pointer;font-size:11px;font-weight:600;">🌀 Spiral</button>
       <button id="btn-semantic"
-        style="flex:1;padding:6px 2px;background:#dde3f5;border:1px solid #b0bcd8;color:#334;border-radius:6px;cursor:pointer;font-size:11px;">🧠 Semantic</button>
+        style="flex:1;padding:6px 2px;background:#1a4da0;border:1px solid #1a4da0;color:#fff;border-radius:6px;cursor:pointer;font-size:11px;font-weight:600;">🧠 Semantic</button>
+      <button id="btn-time"
+        style="flex:1;padding:6px 2px;background:#dde3f5;border:1px solid #b0bcd8;color:#334;border-radius:6px;cursor:pointer;font-size:11px;">🕐 Timeline</button>
     </div>
-    <div id="layout-hint" style="font-size:10px;color:#889;margin-bottom:8px;">Spiral: level-based · Semantic: cosine similarity</div>
+    <div id="layout-hint" style="font-size:10px;color:#889;margin-bottom:8px;">Semantic: cosine similarity · Timeline: by year</div>
 
     <div class="section-title" style="margin-top:6px">Actions</div>
     <button id="btn-reset" style="width:100%;padding:6px;background:#dde3f5;border:1px solid #b0bcd8;color:#1a4da0;border-radius:6px;cursor:pointer;font-size:12px;margin-bottom:6px;">Reset All Filters</button>
@@ -333,29 +333,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     .linkDirectionalParticleSpeed(0.005)
     .linkDirectionalParticleWidth(2)
     .linkDirectionalParticleColor(() => '#7ecfff')
-    .d3Force('spiral', (() => {
-      let nodes = [];
-      const force = alpha => {
-        const byLevel = {};
-        nodes.forEach(n => (byLevel[n.level]=byLevel[n.level]||[]).push(n));
-        nodes.forEach(n => {
-          const group = byLevel[n.level];
-          const idx   = group.indexOf(n);
-          const total = group.length;
-          const arms  = 3;
-          const armIdx  = idx % arms;
-          const posInArm = Math.floor(idx / arms);
-          const t = posInArm / Math.max(1, Math.ceil(total / arms));
-          const angle = (armIdx/arms)*Math.PI*2 + t*Math.PI*2*2.5;
-          const r = 60 + n.level*55 + t*40;
-          n.vx = (n.vx||0) + (r*Math.cos(angle) - (n.x||0))*alpha*0.08;
-          n.vy = (n.vy||0) + (r*Math.sin(angle) - (n.y||0))*alpha*0.08;
-          n.vz = (n.vz||0) + ((n.level-3)*70+(idx%3-1)*15 - (n.z||0))*alpha*0.08;
-        });
-      };
-      force.initialize = ns => { nodes = ns; };
-      return force;
-    })());
+    .d3Force('center', null);
 
   function refreshGraph() {
     const fd = getFilteredData();
@@ -378,15 +356,6 @@ fetch('graph.json').then(r => r.json()).then(data => {
     const isDimmed = state.highlighted && !state.highlightNodes.has(n.id);
     const group = new THREE.Group();
 
-    // Glow spheres
-    if (state.glow && !isDimmed) {
-      [[2.6, 0.10], [1.7, 0.20]].forEach(([sm, op]) => {
-        group.add(new THREE.Mesh(
-          new THREE.SphereGeometry(n.val*1.5*sm, 12, 12),
-          new THREE.MeshLambertMaterial({ color: n.color, transparent: true, opacity: op })
-        ));
-      });
-    }
     // Solid black ring for locked node
     if (isLocked) {
       const ring = new THREE.Mesh(
@@ -396,17 +365,18 @@ fetch('graph.json').then(r => r.json()).then(data => {
       group.add(ring);
     }
 
-    // Main sphere
+    // Main sphere (translucent mode drops opacity to 0.2 so labels show through)
+    const mainOpacity = isDimmed ? 0.08 : (state.glow ? 0.2 : 0.92);
     group.add(new THREE.Mesh(
       new THREE.SphereGeometry(n.val * 1.5, 16, 16),
       new THREE.MeshLambertMaterial({
         color: n.color,
         transparent: true,
-        opacity: isDimmed ? 0.08 : 0.92,
+        opacity: mainOpacity,
       })
     ));
 
-    // Label
+    // Label — rendered in front of all geometry
     if (state.labels && !isDimmed) {
       const sp = new SpriteText(n.label);
       sp.color = '#111133';
@@ -417,6 +387,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
       sp.padding = 1.5;
       sp.borderRadius = 3;
       sp.position.y = n.val * 1.5 + 5;
+      sp.material.depthTest = false;
+      sp.renderOrder = 999;
       group.add(sp);
     }
     return group;
@@ -1229,21 +1201,247 @@ fetch('graph.json').then(r => r.json()).then(data => {
   searchClear.addEventListener('click', () => { searchBox.value=''; doSearch(''); searchBox.focus(); });
 
 
+  // ── Node years (for timeline layout) ─────────────────────────────────
+  const NODE_YEARS = {
+    // Foundations
+    'Linear Algebra': 1850, 'Calculus': 1687, 'Probability & Stats': 1654,
+    'Python': 1991, 'Information Theory': 1948, 'Optimization Theory': 1947,
+    'Numerical Methods': 1800, 'Set Theory': 1874, 'Graph Theory': 1736,
+    'Linear Programming': 1947, 'Dynamic Programming': 1953,
+    'Matrix Decomposition': 1880, 'Fourier Analysis': 1822,
+    'Stochastic Processes': 1905, 'Bayesian Statistics': 1763,
+    'Hypothesis Testing': 1925, 'Convex Optimization': 1960,
+    'SQL & Databases': 1974, 'Data Structures': 1968, 'Game Theory': 1944,
+    'Complex Analysis': 1821, 'Real Analysis': 1870, 'Topology': 1895,
+    'Measure Theory': 1902, 'Monte Carlo Methods': 1949, 'Markov Chains': 1906,
+    'Signal Processing': 1965, 'Control Theory': 1948,
+    'Information Retrieval': 1960, 'Combinatorics': 1700, 'Algorithms': 1968,
+    'Complexity Theory': 1965, 'Statistics (Frequentist)': 1925,
+    'Multivariate Calculus': 1800, 'Differential Equations': 1700,
+    // Core
+    'Loss Functions': 1805, 'Gradient Descent': 1847, 'Backpropagation': 1986,
+    'Regularization': 1963, 'Feature Engineering': 1990,
+    'Cross-Validation': 1974, 'Bias-Variance Tradeoff': 1992,
+    'Hyperparameter Tuning': 1990, 'Data Preprocessing': 1990,
+    'Evaluation Metrics': 1990, 'Overfitting': 1992, 'Underfitting': 1992,
+    'Learning Rate Scheduling': 1986, 'Early Stopping': 1990,
+    'Data Augmentation': 1989, 'Transfer Learning': 1993,
+    'Imbalanced Data': 1997, 'Missing Data Imputation': 1987,
+    'Feature Selection': 1994, 'Model Selection': 1974,
+    'Pipeline Design': 1995, 'Normalization': 1998,
+    'Cross-Entropy Loss': 1948, 'KL Divergence': 1951,
+    'Contrastive Loss': 2006, 'Stratified Sampling': 1934,
+    'Class Weights': 1990, 'Bootstrapping': 1979,
+    'Dimensionality Reduction': 1901, 'Curse of Dimensionality': 1957,
+    'No Free Lunch Theorem': 1997, 'Maximum Likelihood': 1922,
+    'MAP Estimation': 1940, 'EM Algorithm': 1977,
+    'Expectation Maximization': 1977, 'Covariate Shift': 2000,
+    'Distribution Shift': 2004, 'Label Smoothing': 2016,
+    'Mixup Augmentation': 2018, 'CutMix': 2019, 'Focal Loss': 2017,
+    'Triplet Loss': 2015, 'Huber Loss': 1964, 'Cosine Similarity': 1998,
+    // Supervised
+    'Linear Regression': 1805, 'Logistic Regression': 1958,
+    'Decision Trees': 1984, 'SVM': 1995, 'k-NN': 1967, 'Naive Bayes': 1960,
+    'Ridge & Lasso': 1996, 'Polynomial Regression': 1805, 'Elastic Net': 2005,
+    'Perceptron': 1957, 'Gaussian Process': 1998, 'Kernel Methods': 1992,
+    'Bayesian Linear Regression': 1970, 'AdaBoost': 1995,
+    'Multi-task Learning': 1997, 'Semi-supervised Learning': 1999,
+    'Active Learning': 1994, 'Online Learning': 1989,
+    'Label Propagation': 2002, 'Isotonic Regression': 1955,
+    'Quantile Regression': 1978, 'Survival Analysis': 1958,
+    'Poisson Regression': 1972, 'Ordinal Regression': 1980,
+    'Zero-Inflated Models': 1992, 'Regression Trees': 1984,
+    'Prototype Methods': 1967, 'Fisher Discriminant': 1936,
+    'LDA (Linear Discriminant)': 1936, 'QDA': 1960,
+    'RBF Networks': 1988, 'Learning Vector Quantization': 1982,
+    // Unsupervised
+    'k-Means': 1957, 'PCA': 1901, 'DBSCAN': 1996,
+    'Gaussian Mixture Models': 1977, 't-SNE': 2008, 'UMAP': 2018,
+    'ICA': 1994, 'NMF': 1999, 'Spectral Clustering': 2001,
+    'Hierarchical Clustering': 1963, 'OPTICS': 1999,
+    'Isolation Forest': 2008, 'One-Class SVM': 2001, 'LOF': 2000,
+    'Self-Organizing Maps': 1982, 'Word2Vec': 2013, 'GloVe': 2014,
+    'FastText': 2016, 'Topic Modeling (LDA)': 2003,
+    'Matrix Factorization': 1966, 'Collaborative Filtering': 1992,
+    'HDBSCAN': 2013, 'Agglomerative Clustering': 1963, 'Mean Shift': 1975,
+    'Affinity Propagation': 2007, 'k-Medoids': 1987, 'BIRCH': 1996,
+    'Mini-Batch k-Means': 2010, 'Sparse PCA': 2006,
+    'Kernel PCA': 1998, 'Robust PCA': 2011,
+    // Ensemble
+    'Bagging': 1996, 'Boosting': 1990, 'Random Forest': 2001,
+    'Gradient Boosting': 2001, 'XGBoost': 2016, 'LightGBM': 2017,
+    'CatBoost': 2017, 'Stacking': 1992, 'Blending': 2007,
+    'Voting Classifier': 1990, 'ExtraTrees': 2006, 'TabNet': 2021,
+    'DART': 2015, 'Snapshot Ensembles': 2017, 'Dropout Ensembles': 2014,
+    'Deep Ensembles': 2017, 'Bayesian Model Averaging': 1995,
+    'AdaBoost.R2': 1999, 'HistGradientBoosting': 2019, 'NGBoost': 2020,
+    'Forest of Random Patches': 2014,
+    // Neural foundations
+    'Activation Functions': 1958, 'Weight Initialization': 2010,
+    'Vanishing Gradient': 1991, 'Exploding Gradient': 1994,
+    'Neural Networks': 1943, 'Batch Normalization': 2015,
+    'Layer Normalization': 2016, 'Group Normalization': 2018,
+    'Instance Normalization': 2016, 'Dropout': 2012,
+    'Optimizers (Adam/SGD)': 2014, 'Weight Decay': 1991,
+    'Gradient Clipping': 2013, 'Residual Connections': 2015,
+    'Skip Connections': 2015, 'Dense Connections': 2017,
+    'Depthwise Convolution': 2017, 'Dilated Convolution': 2016,
+    'Transposed Convolution': 2014, 'Pooling Layers': 1989,
+    'Embedding Layers': 1986, 'Softmax': 1989,
+    'ReLU & Variants': 2011, 'GELU': 2016, 'Swish': 2017, 'Mish': 2019,
+    // CNNs & Vision
+    'CNNs': 1989, 'Residual Networks': 2015, 'DenseNet': 2017,
+    'MobileNet': 2017, 'EfficientNet': 2019, 'Inception': 2014,
+    'U-Net': 2015, 'YOLO': 2016, 'R-CNN': 2014,
+    'Feature Pyramid Networks': 2017, 'Capsule Networks': 2017,
+    'Deformable Conv': 2017, 'VGG': 2014, 'AlexNet': 2012,
+    'SqueezeNet': 2016, 'ShuffleNet': 2018, 'NASNet': 2018,
+    'RegNet': 2020, 'ConvNeXt': 2022, 'MaxViT': 2022,
+    'Swin Transformer': 2021, 'SegNet': 2015, 'DeepLab': 2015,
+    'Mask R-CNN': 2017, 'Panoptic Segmentation': 2019,
+    'Keypoint Detection': 2017, 'Optical Flow': 2015,
+    'Depth Estimation': 2014, 'Stereo Vision': 2005,
+    'Point Cloud Networks': 2017, '3D CNNs': 2013,
+    // RNNs & Sequence
+    'RNNs': 1990, 'LSTMs': 1997, 'GRUs': 2014, 'Bidirectional RNN': 1997,
+    'Seq2Seq': 2014, 'Attention Mechanism': 2015, 'Multi-Head Attention': 2017,
+    'Positional Encoding': 2017, 'Temporal Convolutional Net': 2018,
+    'WaveNet': 2016, 'Neural Machine Translation': 2014, 'CTC Loss': 2006,
+    'Connectionist Models': 1986, 'Echo State Networks': 2001,
+    // Graph & Other NNs
+    'Graph Neural Networks': 2017, 'Graph Attention Networks': 2018,
+    'Message Passing': 2017, 'Siamese Networks': 1994,
+    'Hypernetworks': 2017, 'Neural ODEs': 2018,
+    'Mixture of Experts': 1991, 'Autoencoders': 1986,
+    'Sparse Autoencoders': 2008, 'Denoising Autoencoders': 2008,
+    'Graph Convolutional Networks': 2017, 'GraphSAGE': 2017,
+    'Node2Vec': 2016, 'DeepWalk': 2014, 'Knowledge Graphs': 2012,
+    'TransE': 2013,
+    // Transformers & LLMs
+    'Transformers': 2017, 'BERT': 2018, 'GPT': 2018, 'T5': 2020,
+    'Vision Transformers': 2021, 'CLIP': 2021, 'BPE Tokenization': 2016,
+    'Flash Attention': 2022, 'Rotary Embeddings': 2021,
+    'Sparse Attention': 2019, 'Feed-Forward Networks': 1989,
+    'Mixture of Experts (MoE)': 2017, 'RoBERTa': 2019, 'XLNet': 2019,
+    'ALBERT': 2020, 'DistilBERT': 2019, 'DeBERTa': 2021,
+    'ELECTRA': 2020, 'Longformer': 2020, 'BigBird': 2020,
+    'Reformer': 2020, 'Perceiver': 2021, 'Mamba': 2023,
+    'RetNet': 2023, 'RWKV': 2023, 'Hyena': 2023,
+    'State Space Models': 2021, 'Linear Attention': 2020, 'ALiBi': 2022,
+    'RoPE': 2021, 'Sinusoidal Embeddings': 2017,
+    'Grouped Query Attention': 2023, 'Multi-Query Attention': 2019,
+    'Sliding Window Attention': 2020, 'Cross-Attention': 2017,
+    // Generative
+    'GANs': 2014, 'VAE': 2014, 'Diffusion Models': 2020,
+    'Score Matching': 2020, 'Flow Models': 2015, 'Energy-Based Models': 2002,
+    'DALL-E / Stable Diffusion': 2022, 'VideoGen': 2022,
+    'Text-to-Speech': 2016, 'Speech Recognition': 2012,
+    'StyleGAN': 2019, 'CycleGAN': 2017, 'Pix2Pix': 2017,
+    'ControlNet': 2023, 'DDPM': 2020, 'DDIM': 2021,
+    'Latent Diffusion': 2022, 'Consistency Models': 2023,
+    'Flow Matching': 2022, 'Rectified Flow': 2022,
+    'VQ-VAE': 2017, 'VQGAN': 2021, 'Tokenization (Images)': 2021,
+    'Audio Generation': 2023, 'Music Generation': 2023,
+    // Representation learning
+    'Self-Supervised Learning': 2019, 'Contrastive Learning': 2020,
+    'SimCLR': 2020, 'MoCo': 2020, 'DINO': 2021, 'MAE': 2022,
+    'Word Embeddings': 2013, 'Sentence Embeddings': 2018,
+    'Multimodal Models': 2021, 'BYOL': 2020, 'VICReg': 2022,
+    'Barlow Twins': 2021, 'I-JEPA': 2023, 'V-JEPA': 2024,
+    'BEiT': 2021, 'DINOv2': 2023, 'SigLIP': 2023,
+    'LLaVA': 2023, 'Flamingo': 2022, 'ImageBind': 2023,
+    // RL
+    'Reinforcement Learning': 1992, 'Policy Gradient': 1992,
+    'Q-Learning': 1989, 'DQN': 2013, 'PPO': 2017, 'SAC': 2018,
+    'A3C': 2016, 'Model-Based RL': 1990, 'Offline RL': 2020,
+    'Multi-Agent RL': 1994, 'Imitation Learning': 1991,
+    'Inverse RL': 2000, 'TD3': 2018, 'DDPG': 2016,
+    'Rainbow DQN': 2018, 'MuZero': 2020, 'AlphaZero': 2018,
+    'Dreamer': 2020, 'World Models RL': 2018, 'Reward Shaping': 1999,
+    'Curiosity-Driven Exploration': 2017, 'Hierarchical RL': 1999,
+    'Option Framework': 1999, 'Multi-Task RL': 2017,
+    'Transfer in RL': 2005, 'MCTS': 2006,
+    // NLP Applications
+    'Named Entity Recognition': 1996, 'Question Answering': 2016,
+    'Machine Translation': 2014, 'Summarization': 2015,
+    'Code Generation': 2021, 'Information Extraction': 1995,
+    'Sentiment Analysis': 2002, 'Text Classification': 1998,
+    'Coreference Resolution': 2010, 'Relation Extraction': 1999,
+    'Dependency Parsing': 1996, 'POS Tagging': 1988,
+    'Text Generation': 2015, 'Dialogue Systems': 2016,
+    'Reading Comprehension': 2016, 'Open Domain QA': 2017,
+    'Semantic Parsing': 2013, 'Cross-Lingual Transfer': 2019,
+    'Slot Filling': 2010, 'Intent Detection': 2010,
+    // Level 6 Expert
+    'LLM Fine-tuning': 2019, 'LoRA': 2022, 'QLoRA': 2023,
+    'Prefix Tuning': 2021, 'Prompt Engineering': 2021, 'RLHF': 2022,
+    'Constitutional AI': 2022, 'Chain-of-Thought': 2022, 'ReAct': 2022,
+    'Tool Use': 2022, 'AI Agents': 2023, 'RAG': 2020,
+    'Memory Systems': 2022, 'Multi-Agent Systems': 1994,
+    'Meta-Learning': 2017, 'Few-Shot Learning': 2016,
+    'Zero-Shot Learning': 2013, 'Neural Architecture Search': 2017,
+    'AutoML': 2019, 'Federated Learning': 2017,
+    'Differential Privacy': 2006, 'Quantization & Pruning': 2016,
+    'Knowledge Distillation': 2015, 'Sparse Models': 2019,
+    'NeRF': 2020, '3D Gaussian Splatting': 2023, 'AlphaFold': 2021,
+    'World Models': 2018, 'Causal ML': 2009, 'Interpretability': 2015,
+    'SHAP': 2017, 'LIME': 2016, 'Conformal Prediction': 2005,
+    'AI Safety': 2014, 'Alignment': 2014, 'MLOps': 2019,
+    'Model Monitoring': 2020, 'Feature Stores': 2019,
+    'Experiment Tracking': 2018, 'Edge AI': 2019,
+    'TensorRT / ONNX': 2017, 'Adapter Layers': 2019, 'P-Tuning': 2021,
+    'Instruction Tuning': 2022, 'DPO': 2023, 'PPO for LLMs': 2022,
+    'Reward Modeling': 2020, 'Speculative Decoding': 2023,
+    'FlashAttention-2': 2023, 'Continuous Batching': 2023,
+    'vLLM': 2023, 'LLM Serving': 2023, 'Model Parallelism': 2019,
+    'Pipeline Parallelism': 2019, 'Tensor Parallelism': 2019,
+    'ZeRO Optimization': 2020, 'Mixed Precision Training': 2018,
+    'Gradient Checkpointing': 2016, 'DeepSpeed': 2020, 'FSDP': 2022,
+    'Mixture of Agents': 2024, 'Agentic Workflows': 2023,
+    'Long Context LLMs': 2023, 'Retrieval Augmented Training': 2023,
+    'Grounded Generation': 2023, 'Hallucination Detection': 2023,
+    'Uncertainty Quantification': 2017, 'Bayesian Deep Learning': 2015,
+    'Neural Scaling Laws': 2020, 'Emergent Abilities': 2022,
+    'In-Context Learning': 2020, 'Mechanistic Interpretability': 2022,
+    'Superposition (AI)': 2022, 'Sparse Features': 2023,
+    'Model Editing': 2021, 'Unlearning': 2019, 'Watermarking AI': 2023,
+    'AI Governance': 2016, 'Responsible AI': 2018, 'Bias in ML': 2016,
+    'Fairness in ML': 2016, 'Robustness': 2013, 'Adversarial Attacks': 2014,
+    'Adversarial Training': 2015, 'Certified Robustness': 2018,
+    'Data-Centric AI': 2021, 'Synthetic Data': 2017,
+    'Active Data Collection': 2020, 'Foundation Models': 2021,
+    'Generalist Agents': 2022, 'Embodied AI': 2020,
+    'Robotics Learning': 2016, 'Sim-to-Real Transfer': 2017,
+    'Continual Learning': 1999, 'Catastrophic Forgetting': 1989,
+    'Elastic Weight Consolidation': 2017, 'Progressive Neural Networks': 2016,
+    'Hyperparameter-Free Methods': 2020, 'Neural Tangent Kernel': 2018,
+    'Double Descent': 2019, 'Grokking': 2022, 'Scaling Laws': 2020,
+  };
+
+  // Simple deterministic hash for jitter
+  function strHash(s) {
+    let h = 0;
+    for (let i = 0; i < s.length; i++) { h = Math.imul(31, h) + s.charCodeAt(i) | 0; }
+    return h;
+  }
+
   // ── Layout switching ─────────────────────────────────────────────────
-  let currentLayout = 'spiral';
+  let currentLayout = 'semantic';
 
   function setLayout(mode) {
     currentLayout = mode;
-    document.getElementById('btn-spiral').style.background   = mode==='spiral'  ? '#1a4da0' : '#dde3f5';
-    document.getElementById('btn-spiral').style.color        = mode==='spiral'  ? '#fff' : '#334';
     document.getElementById('btn-semantic').style.background = mode==='semantic'? '#1a4da0' : '#dde3f5';
     document.getElementById('btn-semantic').style.color      = mode==='semantic'? '#fff' : '#334';
+    document.getElementById('btn-semantic').style.fontWeight = mode==='semantic'? '600' : 'normal';
+    document.getElementById('btn-time').style.background     = mode==='time'     ? '#1a4da0' : '#dde3f5';
+    document.getElementById('btn-time').style.color          = mode==='time'     ? '#fff' : '#334';
+    document.getElementById('btn-time').style.fontWeight     = mode==='time'     ? '600' : 'normal';
     document.getElementById('layout-hint').textContent       =
-      mode==='spiral' ? 'Spiral: level-based hierarchy' : 'Semantic: cosine similarity (UMAP 3D)';
+      mode==='time' ? 'Timeline: x-axis = year concept originated'
+                    : 'Semantic: cosine similarity (UMAP 3D)';
 
     const fd = Graph.graphData();
     if (mode === 'semantic') {
-      // Pin each node to its semantic coords
       fd.nodes.forEach(n => {
         const orig = allNodes.find(x=>x.id===n.id);
         if (orig && orig.sx != null) {
@@ -1251,16 +1449,22 @@ fetch('graph.json').then(r => r.json()).then(data => {
         }
       });
     } else {
-      // Unpin — let spiral force take over
-      fd.nodes.forEach(n => { delete n.fx; delete n.fy; delete n.fz; });
+      // time layout: x = year, y/z = jitter by category + hash
+      const CAT_ORDER = ['foundation','core','supervised','unsupervised','ensemble','neural','advanced'];
+      fd.nodes.forEach(n => {
+        const year = NODE_YEARS[n.label] ?? NODE_YEARS[n.id] ?? 2000;
+        const h = strHash(n.id);
+        const catIdx = CAT_ORDER.indexOf(n.category);
+        n.fx = (year - 1990) * 5;
+        n.fy = (catIdx - 3) * 80 + (((h & 0xff) / 255) - 0.5) * 120;
+        n.fz = (n.level - 3) * 50 + (((( h >> 8) & 0xff) / 255) - 0.5) * 100;
+      });
     }
-    // Reheat so force sim moves nodes to pinned positions
     Graph.d3ReheatSimulation();
   }
 
-
-  document.getElementById('btn-spiral').addEventListener('click', () => setLayout('spiral'));
   document.getElementById('btn-semantic').addEventListener('click', () => setLayout('semantic'));
+  document.getElementById('btn-time').addEventListener('click',     () => setLayout('time'));
   document.getElementById('btn-reset').addEventListener('click', resetAll);
   document.getElementById('btn-clear').addEventListener('click', selectAll);
 
@@ -1280,6 +1484,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
 
   // ── Initial render ────────────────────────────────────────────────────
   refreshGraph();
+  // Default to semantic layout after graph is ready
+  setTimeout(() => setLayout('semantic'), 50);
 });
 </script>
 </body>
