@@ -269,6 +269,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     id: n.id, label: n.label, level: n.level,
     category: n.category, color: n.color,
     val: n.level <= 1 ? 6 : n.level >= 5 ? 5 : 3,
+    sx: n.sx || 0, sy: n.sy || 0, sz: n.sz || 0,
   }));
   const allLinks = data.edges.map(e => ({ source: e.from, target: e.to }));
 
@@ -818,8 +819,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
       // Unpin — let spiral force take over
       fd.nodes.forEach(n => { delete n.fx; delete n.fy; delete n.fz; });
     }
-    Graph.graphData(fd);
-    // Reheat simulation briefly
+    // Reheat so force sim moves nodes to pinned positions
     Graph.d3ReheatSimulation();
   }
 
