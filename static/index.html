@@ -282,7 +282,7 @@
          max-height:100px;overflow-y:auto;"></div>
     <a id="ni-wiki-link" href="#" target="_blank" rel="noopener"
        style="font-size:11px;color:#1a4da0;text-decoration:none;display:inline-flex;align-items:center;gap:4px;">
-      📖 <span>Read on Wikipedia</span> ↗
+      📖 <span>Read on Grokipedia</span> ↗
     </a>
   </div>
   <div id="depth-wrap" style="margin-top:10px;border-top:1px solid #e0e4f0;padding-top:10px;display:none;">
@@ -549,90 +549,6 @@ fetch('graph.json').then(r => r.json()).then(data => {
     refreshVisuals();
   }
 
-  // Wikipedia title overrides for concepts with non-obvious article names
-  const WIKI_OVERRIDES = {
-    'BERT': 'BERT_(language_model)',
-    'GPT': 'GPT_(language_model)',
-    'T5': 'T5_(language_model)',
-    'SVM': 'Support_vector_machine',
-    'CNNs': 'Convolutional_neural_network',
-    'RNNs': 'Recurrent_neural_network',
-    'LSTMs': 'Long_short-term_memory',
-    'GRUs': 'Gated_recurrent_unit',
-    'PCA': 'Principal_component_analysis',
-    'ICA': 'Independent_component_analysis',
-    'NMF': 'Non-negative_matrix_factorization',
-    'GloVe': 'GloVe_(machine_learning)',
-    'Mamba': 'Mamba_(deep_learning)',
-    'GANs': 'Generative_adversarial_network',
-    'VAE': 'Variational_autoencoder',
-    'CLIP': 'CLIP_(machine_learning)',
-    'DALL-E / Stable Diffusion': 'Stable_Diffusion',
-    'Optimizers (Adam/SGD)': 'Stochastic_gradient_descent',
-    'XGBoost': 'XGBoost',
-    'LOF': 'Local_outlier_factor',
-    'DBSCAN': 'DBSCAN',
-    'HDBSCAN': 'HDBSCAN',
-    'UMAP': 'Nonlinear_dimensionality_reduction',
-    't-SNE': 't-distributed_stochastic_neighbor_embedding',
-    'k-NN': 'K-nearest_neighbors_algorithm',
-    'k-Means': 'K-means_clustering',
-    'k-Medoids': 'K-medoids',
-    'PPO': 'Proximal_policy_optimization',
-    'DQN': 'Deep_Q-network',
-    'DDPG': 'Deep_deterministic_policy_gradient',
-    'SAC': 'Soft_actor-critic',
-    'A3C': 'Asynchronous_advantage_actor-critic',
-    'TD3': 'Twin_delayed_deep_deterministic_policy_gradient',
-    'RLHF': 'Reinforcement_learning_from_human_feedback',
-    'LoRA': 'Low-rank_adaptation',
-    'RAG': 'Retrieval-augmented_generation',
-    'MAE': 'Masked_autoencoder',
-    'DINO': 'DINO_(self-supervised_learning)',
-    'BPE Tokenization': 'Byte_pair_encoding',
-    'AlphaFold': 'AlphaFold',
-    'AlphaZero': 'AlphaZero',
-    'MuZero': 'MuZero',
-    'NeRF': 'Neural_radiance_field',
-    '3D Gaussian Splatting': '3D_Gaussian_splatting',
-    'LDA (Linear Discriminant)': 'Linear_discriminant_analysis',
-    'Topic Modeling (LDA)': 'Latent_Dirichlet_allocation',
-    'ReLU & Variants': 'Rectifier_(neural_networks)',
-    'Bias-Variance Tradeoff': 'Bias%E2%80%93variance_tradeoff',
-    'Cross-Entropy Loss': 'Cross-entropy',
-    'KL Divergence': 'Kullback%E2%80%93Leibler_divergence',
-    'Fourier Analysis': 'Fourier_analysis',
-    'Monte Carlo Methods': 'Monte_Carlo_method',
-    'Markov Chains': 'Markov_chain',
-    'No Free Lunch Theorem': 'No_free_lunch_theorem',
-    'EM Algorithm': 'Expectation%E2%80%93maximization_algorithm',
-    'SHAP': 'Shapley_additive_explanations',
-    'LIME': 'Local_interpretable_model-agnostic_explanations',
-    'MoCo': 'Momentum_contrast',
-    'SimCLR': 'SimCLR',
-    'BYOL': 'Bootstrap_your_own_latent',
-    'Sentence Embeddings': 'Sentence_embedding',
-    'Word Embeddings': 'Word_embedding',
-    'Multimodal Models': 'Multimodal_learning',
-    'Constitutional AI': 'Constitutional_AI',
-    'Chain-of-Thought': 'Chain-of-thought_prompting',
-    'Adversarial Attacks': 'Adversarial_machine_learning',
-    'Causal ML': 'Causal_inference',
-    'Federated Learning': 'Federated_learning',
-    'Continual Learning': 'Continual_learning',
-    'Catastrophic Forgetting': 'Catastrophic_interference',
-    'Knowledge Distillation': 'Knowledge_distillation',
-    'Conformal Prediction': 'Conformal_prediction',
-    'Grokking': 'Grokking_(machine_learning)',
-    'Double Descent': 'Double_descent',
-    'Mixture of Experts': 'Mixture_of_experts',
-    'Mixture of Experts (MoE)': 'Mixture_of_experts',
-    'Neural Architecture Search': 'Neural_architecture_search',
-    'Physics-Informed Neural Networks': 'Physics-informed_neural_networks',
-    'Graph Neural Networks': 'Graph_neural_network',
-    'Graph Attention Networks': 'Graph_attention_network',
-  };
-
   // arxiv ID and/or GitHub repo for key concepts
   // arxiv links resolve to https://arxiv.org/abs/<id>
   // github links resolve to https://github.com/<owner/repo>
@@ -886,23 +802,23 @@ fetch('graph.json').then(r => r.json()).then(data => {
     summaryEl.className = 'wiki-loading';
     summaryEl.textContent = 'Loading summary…';
 
-    const title = WIKI_OVERRIDES[label] || label.replace(/ /g, '_').replace(/&/g,'%26');
-    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
-    const pageUrl = `https://en.wikipedia.org/wiki/${title}`;
+    const searchUrl = `https://grokipedia.com/api/full-text-search?query=${encodeURIComponent(label)}&limit=1`;
 
     try {
-      const resp = await fetch(url, {headers: {'Accept': 'application/json'}});
+      const resp = await fetch(searchUrl, {headers: {'Accept': 'application/json'}});
       if (!resp.ok) throw new Error('Not found');
       const data = await resp.json();
+      const top = data.results && data.results[0];
+      if (!top) throw new Error('No results');
       summaryEl.className = '';
-      summaryEl.textContent = data.extract || 'No summary available.';
-      linkEl.href = data.content_urls?.desktop?.page || pageUrl;
-      linkEl.querySelector('span').textContent = 'Read on Wikipedia';
+      summaryEl.textContent = top.snippet || 'No summary available.';
+      linkEl.href = `https://grokipedia.com/page/${top.slug}`;
+      linkEl.querySelector('span').textContent = 'Read on Grokipedia';
     } catch(e) {
       summaryEl.className = '';
-      summaryEl.textContent = 'No Wikipedia article found.';
-      linkEl.href = `https://en.wikipedia.org/w/index.php?search=${encodeURIComponent(label)}`;
-      linkEl.querySelector('span').textContent = 'Search Wikipedia';
+      summaryEl.textContent = 'No Grokipedia article found.';
+      linkEl.href = `https://grokipedia.com/search?q=${encodeURIComponent(label)}`;
+      linkEl.querySelector('span').textContent = 'Search Grokipedia';
     }
   }
 
@@ -925,7 +841,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     document.getElementById('node-info').style.display = 'block';
     // Show paper / repo links
     showPaperLinks(node.label);
-    // Fetch Wikipedia summary
+    // Fetch Grokipedia summary
     fetchWikiSummary(node.label);
     // Reset slider to 1
     const slider = document.getElementById('depth-slider');
