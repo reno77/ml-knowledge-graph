@@ -3265,7 +3265,7 @@
       "sx": -55.28,
       "sy": 17.66,
       "sz": 228.8,
-      "summary": "Cell-based models are a class of computational frameworks in biology that simulate complex biological systems by representing individual cells as discrete, autonomous entities governed by local rules for behavior, movement, and interaction, thereby\u2026"
+      "summary": "An energy-based model (EBM) is a class of probabilistic models in machine learning that define an unnormalized probability density function over data through a parametric energy function U\u03b8(x), where the density is given by \u03c1\u03b8(x) = (1/Z\u03b8) e^(-U\u03b8(x)), with Z\u03b8 as the partition function, such that lower energy values correspond to higher probability configurations, drawing from the Boltzmann-Gibbs distribution in statistical mechanics."
     },
     {
       "id": "DALL-E / Stable Diffusion",
