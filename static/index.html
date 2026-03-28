@@ -137,6 +137,13 @@
         <span id="search-clear" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);
               cursor:pointer;color:#aab;font-size:13px;display:none;">✕</span>
       </div>
+      <button id="lock-toggle" title="Toggle auto-lock on search select" style="
+          display:flex;align-items:center;gap:4px;padding:4px 10px;font-size:12px;
+          border-radius:20px;border:1px solid #b0bcd8;cursor:pointer;white-space:nowrap;
+          background:rgba(240,242,255,0.97);color:#445;
+          box-shadow:0 1px 4px rgba(0,0,100,0.08);transition:background 0.15s,color 0.15s;">
+        🔒 Lock
+      </button>
       <span id="search-count" style="font-size:11px;color:#889;white-space:nowrap;"></span>
     </div>
     <div id="search-dropdown" style="
@@ -230,11 +237,12 @@
 
 <!-- Node info -->
 <div id="node-info">
-  <span class="ni-close" onclick="this.parentElement.style.display='none';document.getElementById('depth-wrap').style.display='none';document.getElementById('ni-wiki').style.display='none';">✕</span>
+  <span class="ni-close" onclick="this.parentElement.style.display='none';document.getElementById('depth-wrap').style.display='none';document.getElementById('ni-wiki').style.display='none';document.getElementById('ni-papers').style.display='none';">✕</span>
   <div class="ni-name"  id="ni-name"></div>
   <div class="ni-cat"   id="ni-cat"></div>
   <div class="ni-level" id="ni-level"></div>
   <div class="ni-links" id="ni-links"></div>
+  <div id="ni-papers" style="margin-top:10px;border-top:1px solid #e0e4f0;padding-top:8px;display:none;gap:6px;flex-direction:column;"></div>
   <div id="ni-wiki" style="margin-top:10px;border-top:1px solid #e0e4f0;padding-top:8px;display:none;">
     <div id="ni-wiki-summary" style="font-size:11px;color:#334;line-height:1.6;margin-bottom:6px;
          max-height:100px;overflow-y:auto;"></div>
@@ -379,16 +387,13 @@ fetch('graph.json').then(r => r.json()).then(data => {
         ));
       });
     }
-    // Blinking ring for locked node
+    // Solid black ring for locked node
     if (isLocked) {
       const ring = new THREE.Mesh(
         new THREE.SphereGeometry(n.val * 1.5 * 3.2, 16, 16),
-        new THREE.MeshLambertMaterial({ color: '#1a4da0', transparent: true, opacity: 0.0, wireframe: false })
+        new THREE.MeshLambertMaterial({ color: '#000000', transparent: true, opacity: 0.35, wireframe: false })
       );
       group.add(ring);
-      // Animate via userData update in tick
-      ring.userData.isBlink = true;
-      ring.userData.phase = Math.random() * Math.PI * 2;
     }
 
     // Main sphere
@@ -475,6 +480,28 @@ fetch('graph.json').then(r => r.json()).then(data => {
   let currentInfoNode = null;
   let lockedNode = null;       // node locked after search-click
   let blinkInterval = null;    // THREE interval for blinking
+  let lockEnabled = true;      // whether search-select auto-locks the node
+
+  const lockToggleBtn = document.getElementById('lock-toggle');
+  function updateLockToggleStyle() {
+    if (lockEnabled) {
+      lockToggleBtn.style.background = 'rgba(30,80,200,0.12)';
+      lockToggleBtn.style.color = '#1a4da0';
+      lockToggleBtn.style.borderColor = '#7090d0';
+      lockToggleBtn.textContent = '🔒 Lock';
+    } else {
+      lockToggleBtn.style.background = 'rgba(240,242,255,0.97)';
+      lockToggleBtn.style.color = '#aab';
+      lockToggleBtn.style.borderColor = '#b0bcd8';
+      lockToggleBtn.textContent = '🔓 Lock';
+    }
+  }
+  updateLockToggleStyle();
+  lockToggleBtn.addEventListener('click', () => {
+    lockEnabled = !lockEnabled;
+    if (!lockEnabled && lockedNode) unlock();
+    updateLockToggleStyle();
+  });
 
   function getNeighborsAtDepth(nodeId, depth, fd) {
     const visited = new Set([nodeId]);
@@ -591,6 +618,249 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Graph Attention Networks': 'Graph_attention_network',
   };
 
+  // arxiv ID and/or GitHub repo for key concepts
+  // arxiv links resolve to https://arxiv.org/abs/<id>
+  // github links resolve to https://github.com/<owner/repo>
+  const PAPER_LINKS = {
+    // ── Foundations & core ───────────────────────────────────────────────
+    'Dropout':                      { arxiv: '1207.0580' },
+    'Batch Normalization':          { arxiv: '1502.03167' },
+    'Layer Normalization':          { arxiv: '1607.06450' },
+    'GELU':                         { arxiv: '1606.08415' },
+    'Focal Loss':                   { arxiv: '1708.02002' },
+    'Mixup Augmentation':           { arxiv: '1710.09412' },
+    'Label Smoothing':              { arxiv: '1512.00567' },
+    'Gradient Clipping':            { arxiv: '1211.5063' },
+    'Adam (Optimizers)':            { arxiv: '1412.6980' },
+    'Optimizers (Adam/SGD)':        { arxiv: '1412.6980' },
+
+    // ── Supervised / Classical ───────────────────────────────────────────
+    'AdaBoost':                     { arxiv: 'cs/9812011' },
+    'SVM':                          { arxiv: 'cs/9809066' },
+    'Gaussian Process':             { github: 'GPflow/GPflow' },
+
+    // ── Unsupervised ─────────────────────────────────────────────────────
+    't-SNE':                        { arxiv: '2407.01590', github: 'lvdmaaten/bhtsne' },
+    'UMAP':                         { arxiv: '1802.03426', github: 'lmcinnes/umap' },
+    'Word2Vec':                     { arxiv: '1301.3781' },
+    'GloVe':                        { github: 'stanfordnlp/GloVe' },
+    'FastText':                     { arxiv: '1607.04606', github: 'facebookresearch/fastText' },
+    'HDBSCAN':                      { arxiv: '1911.02282', github: 'scikit-learn-contrib/hdbscan' },
+
+    // ── Ensemble ─────────────────────────────────────────────────────────
+    'XGBoost':                      { arxiv: '1603.02754', github: 'dmlc/xgboost' },
+    'LightGBM':                     { arxiv: '1803.02042', github: 'microsoft/LightGBM' },
+    'CatBoost':                     { arxiv: '1706.09516', github: 'catboost/catboost' },
+    'TabNet':                       { arxiv: '1908.07442', github: 'google-research/google-research' },
+    'NGBoost':                      { arxiv: '1910.03225', github: 'stanfordmlgroup/ngboost' },
+    'Deep Ensembles':               { arxiv: '1612.01474' },
+
+    // ── CNNs & Vision ─────────────────────────────────────────────────────
+    'CNNs':                         { arxiv: '1512.03385' },
+    'Residual Networks':            { arxiv: '1512.03385', github: 'KaimingHe/deep-residual-networks' },
+    'DenseNet':                     { arxiv: '1608.06993', github: 'liuzhuang13/DenseNets' },
+    'MobileNet':                    { arxiv: '1704.04861' },
+    'EfficientNet':                 { arxiv: '1905.11946', github: 'google/automl' },
+    'Inception':                    { arxiv: '1409.4842' },
+    'U-Net':                        { arxiv: '1505.04597' },
+    'YOLO':                         { arxiv: '1506.02640', github: 'ultralytics/ultralytics' },
+    'R-CNN':                        { arxiv: '1311.2524' },
+    'Feature Pyramid Networks':     { arxiv: '1612.03144' },
+    'Capsule Networks':             { arxiv: '1710.09829' },
+    'VGG':                          { arxiv: '1409.1556' },
+    'SqueezeNet':                   { arxiv: '1602.07360', github: 'forresti/SqueezeNet' },
+    'ShuffleNet':                   { arxiv: '1707.01083' },
+    'NASNet':                       { arxiv: '1707.07012' },
+    'RegNet':                       { arxiv: '2003.13678' },
+    'ConvNeXt':                     { arxiv: '2201.03545', github: 'facebookresearch/ConvNeXt' },
+    'MaxViT':                       { arxiv: '2204.01697' },
+    'Swin Transformer':             { arxiv: '2103.14030', github: 'microsoft/Swin-Transformer' },
+    'DeepLab':                      { arxiv: '1606.00915', github: 'google-deepmind/deeplab2' },
+    'Mask R-CNN':                   { arxiv: '1703.06870', github: 'facebookresearch/detectron2' },
+    'SegNet':                       { arxiv: '1511.00561' },
+    'Deformable Conv':              { arxiv: '1703.06211', github: 'msracver/Deformable-ConvNets' },
+    'Point Cloud Networks':         { arxiv: '1612.00593', github: 'charlesq34/pointnet' },
+    '3D CNNs':                      { arxiv: '1412.0767' },
+    'Depth Estimation':             { arxiv: '2302.12288' },
+    'Optical Flow':                 { arxiv: '1504.06852' },
+
+    // ── RNNs & Sequence ──────────────────────────────────────────────────
+    'GRUs':                         { arxiv: '1406.1078' },
+    'Seq2Seq':                      { arxiv: '1409.3215' },
+    'Attention Mechanism':          { arxiv: '1409.0473' },
+    'Multi-Head Attention':         { arxiv: '1706.03762' },
+    'WaveNet':                      { arxiv: '1609.03499', github: 'ibab/tensorflow-wavenet' },
+    'Temporal Convolutional Net':   { arxiv: '1803.01271', github: 'locuslab/TCN' },
+
+    // ── Graph NNs ────────────────────────────────────────────────────────
+    'Graph Neural Networks':        { arxiv: '1901.00596' },
+    'Graph Convolutional Networks': { arxiv: '1609.02907', github: 'tkipf/gcn' },
+    'Graph Attention Networks':     { arxiv: '1710.10903', github: 'PetarV-/GAT' },
+    'GraphSAGE':                    { arxiv: '1706.02216', github: 'williamleif/GraphSAGE' },
+    'Node2Vec':                     { arxiv: '1607.00653', github: 'aditya-grover/node2vec' },
+    'DeepWalk':                     { arxiv: '1403.6652' },
+    'Neural ODEs':                  { arxiv: '1806.07366', github: 'rtqichen/torchdiffeq' },
+
+    // ── Autoencoders & Generative ─────────────────────────────────────────
+    'VAE':                          { arxiv: '1312.6114' },
+    'VQ-VAE':                       { arxiv: '1711.00937' },
+    'GANs':                         { arxiv: '1406.2661' },
+    'StyleGAN':                     { arxiv: '1812.04948', github: 'NVlabs/stylegan3' },
+    'CycleGAN':                     { arxiv: '1703.10593', github: 'junyanz/pytorch-CycleGAN-and-pix2pix' },
+    'Pix2Pix':                      { arxiv: '1611.07004', github: 'junyanz/pytorch-CycleGAN-and-pix2pix' },
+    'ControlNet':                   { arxiv: '2302.05543', github: 'lllyasviel/ControlNet' },
+    'DDPM':                         { arxiv: '2006.11239', github: 'hojonathanho/diffusion' },
+    'DDIM':                         { arxiv: '2010.02502' },
+    'Diffusion Models':             { arxiv: '2006.11239' },
+    'Latent Diffusion':             { arxiv: '2112.10752', github: 'CompVis/latent-diffusion' },
+    'DALL-E / Stable Diffusion':    { arxiv: '2112.10752', github: 'CompVis/stable-diffusion' },
+    'Score Matching':               { arxiv: '2011.13456' },
+    'Flow Matching':                { arxiv: '2210.02747' },
+    'Flow Models':                  { arxiv: '1505.05770' },
+    'Consistency Models':           { arxiv: '2303.01469', github: 'openai/consistency_models' },
+    'Rectified Flow':               { arxiv: '2209.03003' },
+    'Energy-Based Models':          { arxiv: '1912.03263' },
+    'VQGAN':                        { arxiv: '2012.09841', github: 'CompVis/taming-transformers' },
+
+    // ── Transformers & LLMs ───────────────────────────────────────────────
+    'Transformers':                 { arxiv: '1706.03762', github: 'huggingface/transformers' },
+    'BERT':                         { arxiv: '1810.04805', github: 'google-research/bert' },
+    'GPT':                          { arxiv: '2005.14165', github: 'openai/gpt-2' },
+    'T5':                           { arxiv: '1910.10683', github: 'google-research/text-to-text-transfer-transformer' },
+    'Vision Transformers':          { arxiv: '2010.11929', github: 'google-research/vision_transformer' },
+    'CLIP':                         { arxiv: '2103.00020', github: 'openai/CLIP' },
+    'Flash Attention':              { arxiv: '2205.14135', github: 'Dao-AILab/flash-attention' },
+    'FlashAttention-2':             { arxiv: '2307.08691', github: 'Dao-AILab/flash-attention' },
+    'Rotary Embeddings':            { arxiv: '2104.09864' },
+    'RoPE':                         { arxiv: '2104.09864' },
+    'RoBERTa':                      { arxiv: '1907.11692', github: 'facebookresearch/fairseq' },
+    'XLNet':                        { arxiv: '1906.08237', github: 'zihangdai/xlnet' },
+    'ALBERT':                       { arxiv: '1909.11942', github: 'google-research/albert' },
+    'DistilBERT':                   { arxiv: '1910.01108', github: 'huggingface/transformers' },
+    'DeBERTa':                      { arxiv: '2006.03654', github: 'microsoft/DeBERTa' },
+    'ELECTRA':                      { arxiv: '2003.10555', github: 'google-research/electra' },
+    'Longformer':                   { arxiv: '2004.05150', github: 'allenai/longformer' },
+    'BigBird':                      { arxiv: '2007.14062' },
+    'Reformer':                     { arxiv: '2001.04451', github: 'google/trax' },
+    'Perceiver':                    { arxiv: '2103.03206' },
+    'Mamba':                        { arxiv: '2312.00752', github: 'state-spaces/mamba' },
+    'RetNet':                       { arxiv: '2307.08621' },
+    'RWKV':                         { arxiv: '2305.13048', github: 'BlinkDL/RWKV-LM' },
+    'State Space Models':           { arxiv: '2111.00396', github: 'HazyResearch/state-spaces' },
+    'Hyena':                        { arxiv: '2302.10866', github: 'HazyResearch/hyena-dna' },
+    'ALiBi':                        { arxiv: '2108.12409' },
+    'Grouped Query Attention':      { arxiv: '2305.13245' },
+    'Multi-Query Attention':        { arxiv: '1911.02150' },
+    'Mixture of Experts (MoE)':     { arxiv: '2101.03961' },
+    'Mixture of Experts':           { arxiv: '2101.03961' },
+    'BPE Tokenization':             { arxiv: '1508.07909' },
+
+    // ── Self-Supervised / Contrastive ─────────────────────────────────────
+    'SimCLR':                       { arxiv: '2002.05709', github: 'google-research/simclr' },
+    'MoCo':                         { arxiv: '1911.05722', github: 'facebookresearch/moco' },
+    'DINO':                         { arxiv: '2104.14294', github: 'facebookresearch/dino' },
+    'DINOv2':                       { arxiv: '2304.07193', github: 'facebookresearch/dinov2' },
+    'MAE':                          { arxiv: '2111.06377', github: 'facebookresearch/mae' },
+    'BYOL':                         { arxiv: '2006.07733' },
+    'VICReg':                       { arxiv: '2105.04906', github: 'facebookresearch/vicreg' },
+    'Barlow Twins':                 { arxiv: '2103.03230', github: 'facebookresearch/barlowtwins' },
+    'I-JEPA':                       { arxiv: '2301.08243', github: 'facebookresearch/ijepa' },
+    'V-JEPA':                       { arxiv: '2404.08471', github: 'facebookresearch/jepa' },
+    'BEiT':                         { arxiv: '2106.08254', github: 'microsoft/unilm' },
+    'SigLIP':                       { arxiv: '2303.15343' },
+    'LLaVA':                        { arxiv: '2304.08485', github: 'haotian-liu/LLaVA' },
+    'Flamingo':                     { arxiv: '2204.14198' },
+    'ImageBind':                    { arxiv: '2305.05665', github: 'facebookresearch/ImageBind' },
+
+    // ── Reinforcement Learning ────────────────────────────────────────────
+    'DQN':                          { arxiv: '1312.5602' },
+    'PPO':                          { arxiv: '1707.06347', github: 'openai/baselines' },
+    'SAC':                          { arxiv: '1801.01290', github: 'haarnoja/sac' },
+    'A3C':                          { arxiv: '1602.01783' },
+    'TD3':                          { arxiv: '1802.09477', github: 'sfujim/TD3' },
+    'DDPG':                         { arxiv: '1509.02971' },
+    'Rainbow DQN':                  { arxiv: '1710.02298' },
+    'MuZero':                       { arxiv: '1911.08265' },
+    'AlphaZero':                    { arxiv: '1712.01815' },
+    'Dreamer':                      { arxiv: '1912.01603', github: 'danijar/dreamer' },
+    'Curiosity-Driven Exploration': { arxiv: '1705.05363', github: 'pathak22/noreward-rl' },
+    'MCTS':                         { arxiv: '1208.1784' },
+
+    // ── LLM Fine-tuning / Alignment ──────────────────────────────────────
+    'LoRA':                         { arxiv: '2106.09685', github: 'microsoft/LoRA' },
+    'QLoRA':                        { arxiv: '2305.14314', github: 'artidoro/qlora' },
+    'Prefix Tuning':                { arxiv: '2101.00190', github: 'XiangLi1999/PrefixTuning' },
+    'RLHF':                         { arxiv: '2203.02155' },
+    'Constitutional AI':            { arxiv: '2212.08073' },
+    'Chain-of-Thought':             { arxiv: '2201.11903' },
+    'ReAct':                        { arxiv: '2210.03629', github: 'ysymyth/ReAct' },
+    'DPO':                          { arxiv: '2305.18290', github: 'eric-mitchell/direct-preference-optimization' },
+    'Instruction Tuning':           { arxiv: '2109.01652' },
+    'Adapter Layers':               { arxiv: '1902.00751' },
+    'Speculative Decoding':         { arxiv: '2211.17192' },
+    'RAG':                          { arxiv: '2005.11401', github: 'facebookresearch/faiss' },
+    'vLLM':                         { arxiv: '2309.06180', github: 'vllm-project/vllm' },
+    'DeepSpeed':                    { arxiv: '2007.00325', github: 'microsoft/DeepSpeed' },
+    'ZeRO Optimization':            { arxiv: '1910.02054', github: 'microsoft/DeepSpeed' },
+    'Mixed Precision Training':     { arxiv: '1710.03740' },
+    'Gradient Checkpointing':       { arxiv: '1604.06174' },
+    'Neural Scaling Laws':          { arxiv: '2001.08361' },
+    'Scaling Laws':                 { arxiv: '2001.08361' },
+    'Emergent Abilities':           { arxiv: '2206.07682' },
+    'In-Context Learning':          { arxiv: '2301.00234' },
+    'Grokking':                     { arxiv: '2201.02177' },
+    'Double Descent':               { arxiv: '1912.02292' },
+    'Mechanistic Interpretability': { arxiv: '2211.00593' },
+
+    // ── Interpretability / Safety ─────────────────────────────────────────
+    'SHAP':                         { arxiv: '1705.07874', github: 'shap/shap' },
+    'LIME':                         { arxiv: '1602.04938', github: 'marcotcr/lime' },
+    'Conformal Prediction':         { arxiv: '2107.07511' },
+    'Adversarial Attacks':          { arxiv: '1412.6572' },
+    'Adversarial Training':         { arxiv: '1706.06083' },
+
+    // ── Efficiency / Compression ──────────────────────────────────────────
+    'Knowledge Distillation':       { arxiv: '1503.02531' },
+    'Federated Learning':           { arxiv: '1602.05629', github: 'google-research/federated' },
+    'Differential Privacy':         { arxiv: '1607.00133' },
+    'Neural Architecture Search':   { arxiv: '1611.01578' },
+    'Meta-Learning':                { arxiv: '1703.03400', github: 'cbfinn/maml' },
+    'Few-Shot Learning':            { arxiv: '1703.05175' },
+    'Contrastive Learning':         { arxiv: '2005.04966' },
+
+    // ── 3D / Science ──────────────────────────────────────────────────────
+    'NeRF':                         { arxiv: '2003.08934', github: 'bmild/nerf' },
+    '3D Gaussian Splatting':        { arxiv: '2308.04079', github: 'graphdeco-inria/gaussian-splatting' },
+    'AlphaFold':                    { arxiv: '2102.10360', github: 'google-deepmind/alphafold' },
+
+    // ── Continual Learning ─────────────────────────────────────────────────
+    'Elastic Weight Consolidation': { arxiv: '1612.00796' },
+    'Progressive Neural Networks':  { arxiv: '1606.04671' },
+  };
+
+  function showPaperLinks(label) {
+    const el = document.getElementById('ni-papers');
+    const entry = PAPER_LINKS[label];
+    if (!entry) { el.style.display = 'none'; return; }
+    const links = [];
+    if (entry.arxiv) links.push(
+      `<a href="https://arxiv.org/abs/${entry.arxiv}" target="_blank" rel="noopener"
+         style="font-size:11px;color:#c0392b;text-decoration:none;display:inline-flex;align-items:center;gap:4px;
+                background:rgba(192,57,43,0.07);border-radius:6px;padding:3px 8px;border:1px solid rgba(192,57,43,0.2);">
+         📄 arXiv paper ↗
+       </a>`
+    );
+    if (entry.github) links.push(
+      `<a href="https://github.com/${entry.github}" target="_blank" rel="noopener"
+         style="font-size:11px;color:#24292f;text-decoration:none;display:inline-flex;align-items:center;gap:4px;
+                background:rgba(36,41,47,0.07);border-radius:6px;padding:3px 8px;border:1px solid rgba(36,41,47,0.2);">
+         ⌥ GitHub repo ↗
+       </a>`
+    );
+    el.innerHTML = links.join('');
+    el.style.display = 'flex';
+  }
+
   async function fetchWikiSummary(label) {
     const wikiEl    = document.getElementById('ni-wiki');
     const summaryEl = document.getElementById('ni-wiki-summary');
@@ -633,6 +903,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
       (prereqs.length ? `<b>Requires (${prereqs.length}):</b> ${prereqs.join(', ')}<br>` : '') +
       (enables.length ? `<b>Enables (${enables.length}):</b> ${enables.join(', ')}` : '');
     document.getElementById('node-info').style.display = 'block';
+    // Show paper / repo links
+    showPaperLinks(node.label);
     // Fetch Wikipedia summary
     fetchWikiSummary(node.label);
     // Reset slider to 1
@@ -861,8 +1133,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
     searchBox.value = n.label;
     searchDropdown.style.display = 'none';
     searchClear.style.display = 'inline';
-    // Set lock
-    setLockedNode(n);
+    // Set lock only when lock mode is enabled
+    if (lockEnabled) setLockedNode(n);
     // Highlight this node + neighbors
     state.highlighted = n.id;
     state.highlightNodes.clear(); state.highlightLinks.clear();
@@ -986,19 +1258,6 @@ fetch('graph.json').then(r => r.json()).then(data => {
     Graph.d3ReheatSimulation();
   }
 
-  // ── Wire button clicks (must be inside fetch callback for scope access) ──
-  // ── Blink animation via engine tick ─────────────────────────────────
-  Graph.onEngineTick(() => {
-    if (!lockedNode) return;
-    const t = Date.now() / 600; // ~1.2s period
-    const alpha = (Math.sin(t) + 1) / 2 * 0.45; // 0..0.45
-    Graph.scene().traverse(obj => {
-      if (obj.userData && obj.userData.isBlink && obj.material) {
-        obj.material.opacity = alpha;
-        obj.material.needsUpdate = true;
-      }
-    });
-  });
 
   document.getElementById('btn-spiral').addEventListener('click', () => setLayout('spiral'));
   document.getElementById('btn-semantic').addEventListener('click', () => setLayout('semantic'));
