@@ -84,6 +84,13 @@ NODES = {
     "Huber Loss":                  (1, "core"),
     "Cosine Similarity":           (1, "core"),
 
+    # Gradient Descent variants (level 2)
+    "Batch Gradient Descent":      (2, "core"),
+    "Stochastic Gradient Descent": (2, "core"),
+    "Mini-batch Gradient Descent": (2, "core"),
+    "Momentum (SGD)":              (2, "core"),
+    "Nesterov Accelerated Gradient": (2, "core"),
+
     # ── Level 2: Classical Supervised ─────────────────────────────────────
     "Linear Regression":           (2, "supervised"),
     "Logistic Regression":         (2, "supervised"),
@@ -555,6 +562,13 @@ EDGES = [
     ("Loss Functions", "Focal Loss"), ("Loss Functions", "Triplet Loss"),
     ("Gradient Descent", "Linear Regression"), ("Gradient Descent", "Neural Networks"),
     ("Gradient Descent", "Gradient Boosting"), ("Gradient Descent", "Learning Rate Scheduling"),
+    ("Gradient Descent", "Batch Gradient Descent"), ("Gradient Descent", "Stochastic Gradient Descent"),
+    ("Gradient Descent", "Mini-batch Gradient Descent"),
+    ("Stochastic Gradient Descent", "Momentum (SGD)"),
+    ("Momentum (SGD)", "Nesterov Accelerated Gradient"),
+    ("Stochastic Gradient Descent", "Optimizers (Adam/SGD)"),
+    ("Momentum (SGD)", "Optimizers (Adam/SGD)"),
+    ("Nesterov Accelerated Gradient", "Optimizers (Adam/SGD)"),
     ("Backpropagation", "Neural Networks"), ("Backpropagation", "Vanishing Gradient"),
     ("Backpropagation", "Exploding Gradient"),
     ("Regularization", "Ridge & Lasso"), ("Regularization", "Dropout"),

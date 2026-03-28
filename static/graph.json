@@ -791,6 +791,56 @@
       "sz": -212.06
     },
     {
+      "id": "Batch Gradient Descent",
+      "label": "Batch Gradient Descent",
+      "level": 2,
+      "category": "core",
+      "color": "#c17d1a",
+      "sx": 66.09,
+      "sy": -32.96,
+      "sz": -168.45
+    },
+    {
+      "id": "Stochastic Gradient Descent",
+      "label": "Stochastic Gradient Descent",
+      "level": 2,
+      "category": "core",
+      "color": "#c17d1a",
+      "sx": 31.09,
+      "sy": 22.04,
+      "sz": -193.45
+    },
+    {
+      "id": "Mini-batch Gradient Descent",
+      "label": "Mini-batch Gradient Descent",
+      "level": 2,
+      "category": "core",
+      "color": "#c17d1a",
+      "sx": 86.09,
+      "sy": 7.04,
+      "sz": -153.45
+    },
+    {
+      "id": "Momentum (SGD)",
+      "label": "Momentum (SGD)",
+      "level": 2,
+      "category": "core",
+      "color": "#c17d1a",
+      "sx": -108.21,
+      "sy": 162.34,
+      "sz": -146.12
+    },
+    {
+      "id": "Nesterov Accelerated Gradient",
+      "label": "Nesterov Accelerated Gradient",
+      "level": 2,
+      "category": "core",
+      "color": "#c17d1a",
+      "sx": -143.21,
+      "sy": 197.34,
+      "sz": -181.12
+    },
+    {
       "id": "Linear Regression",
       "label": "Linear Regression",
       "level": 2,
@@ -2499,6 +2549,16 @@
       "sx": -308.21,
       "sy": 495.54,
       "sz": -174.48
+    },
+    {
+      "id": "LLM",
+      "label": "LLM",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 290.64,
+      "sy": -84.9,
+      "sz": 223.57
     },
     {
       "id": "Transformers",
@@ -4779,16 +4839,6 @@
       "sx": 261.54,
       "sy": 85.25,
       "sz": 372.58
-    },
-    {
-      "id": "LLM",
-      "label": "LLM",
-      "level": 5,
-      "category": "advanced",
-      "color": "#1a3a6b",
-      "sx": 290.64,
-      "sy": -84.9,
-      "sz": 223.57
     }
   ],
   "edges": [
@@ -5033,6 +5083,18 @@
       "to": "Learning Rate Scheduling"
     },
     {
+      "from": "Gradient Descent",
+      "to": "Batch Gradient Descent"
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Stochastic Gradient Descent"
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Mini-batch Gradient Descent"
+    },
+    {
       "from": "Backpropagation",
       "to": "Neural Networks"
     },
@@ -5130,6 +5192,10 @@
     },
     {
       "from": "Transfer Learning",
+      "to": "LLM"
+    },
+    {
+      "from": "Transfer Learning",
       "to": "LLM Fine-tuning"
     },
     {
@@ -5219,6 +5285,26 @@
     {
       "from": "Triplet Loss",
       "to": "Contrastive Learning"
+    },
+    {
+      "from": "Stochastic Gradient Descent",
+      "to": "Momentum (SGD)"
+    },
+    {
+      "from": "Stochastic Gradient Descent",
+      "to": "Optimizers (Adam/SGD)"
+    },
+    {
+      "from": "Momentum (SGD)",
+      "to": "Nesterov Accelerated Gradient"
+    },
+    {
+      "from": "Momentum (SGD)",
+      "to": "Optimizers (Adam/SGD)"
+    },
+    {
+      "from": "Nesterov Accelerated Gradient",
+      "to": "Optimizers (Adam/SGD)"
     },
     {
       "from": "Linear Regression",
@@ -5981,6 +6067,46 @@
       "to": "TransE"
     },
     {
+      "from": "LLM",
+      "to": "RLHF"
+    },
+    {
+      "from": "LLM",
+      "to": "LLM Fine-tuning"
+    },
+    {
+      "from": "LLM",
+      "to": "RAG"
+    },
+    {
+      "from": "LLM",
+      "to": "Chain-of-Thought"
+    },
+    {
+      "from": "LLM",
+      "to": "In-Context Learning"
+    },
+    {
+      "from": "LLM",
+      "to": "Foundation Models"
+    },
+    {
+      "from": "LLM",
+      "to": "Instruction Tuning"
+    },
+    {
+      "from": "LLM",
+      "to": "LoRA"
+    },
+    {
+      "from": "LLM",
+      "to": "Prompt Engineering"
+    },
+    {
+      "from": "Transformers",
+      "to": "LLM"
+    },
+    {
       "from": "Transformers",
       "to": "BERT"
     },
@@ -6359,6 +6485,10 @@
     {
       "from": "Audio Generation",
       "to": "Music Generation"
+    },
+    {
+      "from": "Self-Supervised Learning",
+      "to": "LLM"
     },
     {
       "from": "Self-Supervised Learning",
@@ -6902,6 +7032,10 @@
     },
     {
       "from": "Neural Scaling Laws",
+      "to": "LLM"
+    },
+    {
+      "from": "Neural Scaling Laws",
       "to": "Scaling Laws"
     },
     {
@@ -7007,58 +7141,6 @@
     {
       "from": "Scaling Laws",
       "to": "Emergent Abilities"
-    },
-    {
-      "from": "Transformers",
-      "to": "LLM"
-    },
-    {
-      "from": "Self-Supervised Learning",
-      "to": "LLM"
-    },
-    {
-      "from": "Transfer Learning",
-      "to": "LLM"
-    },
-    {
-      "from": "Neural Scaling Laws",
-      "to": "LLM"
-    },
-    {
-      "from": "LLM",
-      "to": "RLHF"
-    },
-    {
-      "from": "LLM",
-      "to": "LLM Fine-tuning"
-    },
-    {
-      "from": "LLM",
-      "to": "RAG"
-    },
-    {
-      "from": "LLM",
-      "to": "Chain-of-Thought"
-    },
-    {
-      "from": "LLM",
-      "to": "In-Context Learning"
-    },
-    {
-      "from": "LLM",
-      "to": "Foundation Models"
-    },
-    {
-      "from": "LLM",
-      "to": "Instruction Tuning"
-    },
-    {
-      "from": "LLM",
-      "to": "LoRA"
-    },
-    {
-      "from": "LLM",
-      "to": "Prompt Engineering"
     }
   ],
   "categories": {
