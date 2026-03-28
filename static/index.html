@@ -1893,7 +1893,17 @@ fetch('graph.json').then(r => r.json()).then(data => {
   document.getElementById('btn-semantic').addEventListener('click', () => setLayout('semantic'));
   document.getElementById('btn-time').addEventListener('click',     () => setLayout('time'));
   document.getElementById('btn-reset').addEventListener('click', resetAll);
-  document.getElementById('btn-reset-view').addEventListener('click', () => Graph.zoomToFit(400, 80));
+  document.getElementById('btn-reset-view').addEventListener('click', () => {
+    if (currentLayout === 'time') {
+      // Position camera facing timeline head-on: looking from +Z toward origin
+      // Center on the midpoint of the timeline, slightly above the axis
+      const midX = yearToX((tlStartYear + tlEndYear) / 2);
+      const midY = 200;  // above axis line at AY=-420
+      Graph.cameraPosition({ x: midX, y: midY, z: 2000 }, { x: midX, y: midY, z: 0 }, 800);
+    } else {
+      Graph.zoomToFit(400, 80);
+    }
+  });
 
   // ── Panel show/hide ───────────────────────────────────────────────────
   let panelVisible = true;
