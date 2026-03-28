@@ -217,6 +217,17 @@
         style="flex:1;padding:6px 2px;background:#dde3f5;border:1px solid #b0bcd8;color:#334;border-radius:6px;cursor:pointer;font-size:11px;">🕐 Timeline</button>
     </div>
     <div id="layout-hint" style="font-size:10px;color:#889;margin-bottom:8px;">Semantic: cosine similarity · Timeline: by year</div>
+    <div id="timeline-scale-wrap" style="display:none;margin-bottom:8px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px;">
+        <span style="font-size:11px;color:#556;font-weight:600;">Timeline scale</span>
+        <span id="timeline-gamma-label" style="font-size:11px;color:#1a4da0;font-weight:700;">Linear</span>
+      </div>
+      <input id="timeline-gamma-slider" type="range" min="0.2" max="3" step="0.05" value="1"
+        style="width:100%;accent-color:#1a4da0;cursor:pointer;">
+      <div style="display:flex;justify-content:space-between;font-size:10px;color:#aab;margin-top:2px;">
+        <span>Log (spread old)</span><span>Linear</span><span>Power (spread new)</span>
+      </div>
+    </div>
 
     <div class="section-title" style="margin-top:6px">Actions</div>
     <button id="btn-reset" style="width:100%;padding:6px;background:#dde3f5;border:1px solid #b0bcd8;color:#1a4da0;border-radius:6px;cursor:pointer;font-size:12px;margin-bottom:6px;">Reset All Filters</button>
@@ -1431,12 +1442,55 @@ fetch('graph.json').then(r => r.json()).then(data => {
     return h;
   }
 
+  // ── Timeline scale ────────────────────────────────────────────────────
+  let timelineGamma = 1.0;
+  const TL_MIN = 1640, TL_MAX = 2030, TL_DISPLAY = (TL_MAX - TL_MIN) * 5;
+
+  // Power-law mapping: gamma=1 → linear, <1 → spreads old history, >1 → spreads recent
+  function yearToX(year) {
+    const t = (year - TL_MIN) / (TL_MAX - TL_MIN);        // [0, 1]
+    return Math.pow(Math.max(t, 0), timelineGamma) * TL_DISPLAY + (TL_MIN - 1990) * 5;
+  }
+
+  function gammaLabel(g) {
+    if (g <= 0.35) return 'Max log';
+    if (g <= 0.65) return 'Strong log';
+    if (g <= 0.85) return 'Log';
+    if (g <= 1.15) return 'Linear';
+    if (g <= 1.6)  return 'Power ×' + g.toFixed(1);
+    return 'Strong power ×' + g.toFixed(1);
+  }
+
+  const gammaSlider = document.getElementById('timeline-gamma-slider');
+  const gammaLabelEl = document.getElementById('timeline-gamma-label');
+  gammaSlider.addEventListener('input', () => {
+    timelineGamma = parseFloat(gammaSlider.value);
+    gammaLabelEl.textContent = gammaLabel(timelineGamma);
+    if (currentLayout === 'time') {
+      // Repin nodes
+      const fd = Graph.graphData();
+      const CAT_ORDER = ['foundation','core','supervised','unsupervised','ensemble','neural','advanced'];
+      fd.nodes.forEach(n => {
+        const year = NODE_YEARS[n.label] ?? NODE_YEARS[n.id] ?? 2000;
+        const h = strHash(n.id);
+        const catIdx = CAT_ORDER.indexOf(n.category);
+        n.fx = yearToX(year);
+        n.fy = (catIdx - 3) * 80 + (((h & 0xff) / 255) - 0.5) * 120;
+        n.fz = (n.level - 3) * 50 + ((((h >> 8) & 0xff) / 255) - 0.5) * 100;
+      });
+      // Rebuild axis
+      hideTimelineAxis();
+      showTimelineAxis();
+      Graph.d3ReheatSimulation();
+    }
+  });
+
   // ── Timeline axis ─────────────────────────────────────────────────────
   let timelineAxisGroup = null;
 
   function buildTimelineAxis() {
     const group = new THREE.Group();
-    const toX   = y => (y - 1990) * 5;
+    const toX   = yearToX;
     const AY    = -420;   // y position of the axis line (below node scatter)
     const AZ    = 0;
 
@@ -1525,6 +1579,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     document.getElementById('layout-hint').textContent       =
       mode==='time' ? 'Timeline: x-axis = year concept originated'
                     : 'Semantic: cosine similarity (UMAP 3D)';
+    document.getElementById('timeline-scale-wrap').style.display = mode === 'time' ? 'block' : 'none';
 
     const fd = Graph.graphData();
     if (mode === 'semantic') {
@@ -1541,7 +1596,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
         const year = NODE_YEARS[n.label] ?? NODE_YEARS[n.id] ?? 2000;
         const h = strHash(n.id);
         const catIdx = CAT_ORDER.indexOf(n.category);
-        n.fx = (year - 1990) * 5;
+        n.fx = yearToX(year);
         n.fy = (catIdx - 3) * 80 + (((h & 0xff) / 255) - 0.5) * 120;
         n.fz = (n.level - 3) * 50 + (((( h >> 8) & 0xff) / 255) - 0.5) * 100;
       });
