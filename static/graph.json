@@ -1417,7 +1417,7 @@
       "sx": -348.4,
       "sy": -337.55,
       "sz": -385.41,
-      "summary": "classifiers trained on healthy lung images identified infected cases as deviations, with methods like one-class SVM achieving up to 95% sensitivity on"
+      "summary": "One-class classification (OCC), also known as unary classification, is a machine learning paradigm in which a model is trained exclusively on examples from a single target class to distinguish those instances from outliers, anomalies, or data from other unseen classes during inference. This approach addresses scenarios where negative or counterexamples are unavailable, scarce, or prohibitively expensive to obtain, making it a specialized case of supervised learning distinct from traditional binary or multi-class classification. The core objective is to learn a decision boundary or representation that encapsulates the target class\u2019s characteristics, enabling the rejection of non-conforming inputs without prior knowledge of alternative classes."
     },
     {
       "id": "LOF",
