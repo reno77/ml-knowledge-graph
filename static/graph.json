@@ -53,7 +53,7 @@
       "sx": 287.23,
       "sy": -576.78,
       "sz": -136.56,
-      "summary": "Information theory Information theory is a mathematical discipline that quantifies, stores, and communicates information, focusing on the fundamental"
+      "summary": "Information theory, founded by Claude Shannon in 1948, studies the quantification, storage, and communication of information. Key quantities include entropy $H(X) = -\\sum_x p(x) \\log p(x)$ (uncertainty of a random variable), mutual information $I(X;Y) = H(X) - H(X|Y)$ (shared information between variables), and KL divergence. These concepts underpin cross-entropy loss, VAEs, and information bottleneck methods in ML."
     },
     {
       "id": "Optimization Theory",
@@ -163,7 +163,7 @@
       "sx": 107.59,
       "sy": -555.06,
       "sz": -88.41,
-      "summary": "Bayesian statistics Bayesian statistics is a paradigm in statistical inference that applies Bayes' theorem to update the probability of a hypothesis as"
+      "summary": "Bayesian statistics is a framework for statistical inference based on Bayes' theorem: $P(\\theta | D) = \\frac{P(D | \\theta) P(\\theta)}{P(D)}$, where the posterior $P(\\theta|D)$ is proportional to the likelihood $P(D|\\theta)$ times the prior $P(\\theta)$. Unlike frequentist methods, Bayesian inference treats parameters as random variables and quantifies uncertainty through posterior distributions."
     },
     {
       "id": "Hypothesis Testing",
@@ -460,7 +460,7 @@
       "sx": 135.29,
       "sy": -85.76,
       "sz": -180.29,
-      "summary": "Bias\u2013variance tradeoff The bias\u2013variance tradeoff is a foundational concept in statistics and machine learning that describes the decomposition of a model's"
+      "summary": "The bias-variance tradeoff describes the fundamental tension in model complexity. The expected error decomposes as: $E[(y - \\hat{f}(x))^2] = \\text{Bias}^2 + \\text{Variance} + \\text{Noise}$. High bias (underfitting) means the model is too simple; high variance (overfitting) means it is too sensitive to training data. The optimal model minimizes total error by balancing both."
     },
     {
       "id": "Hyperparameter Tuning",
@@ -636,7 +636,7 @@
       "sx": 123.7,
       "sy": -41.22,
       "sz": -299.76,
-      "summary": "Variants Amended Cross-entropy The amended cross-entropy, also known as the amended cross-entropy cost (ACE), is a modified loss function that extends"
+      "summary": "Cross-entropy loss measures the difference between two probability distributions for a classification task. For binary classification: $L = -[y \\log(p) + (1-y) \\log(1-p)]$. For multi-class: $L = -\\sum_{c=1}^{C} y_c \\log(p_c)$. It is the standard loss function for training neural network classifiers, directly related to KL divergence and maximum likelihood estimation."
     },
     {
       "id": "KL Divergence",
@@ -647,7 +647,7 @@
       "sx": 49.24,
       "sy": -92.99,
       "sz": -266.88,
-      "summary": "K2 is a low-variance approximation to the Kullback-Leibler (KL) divergence. Formula: \u2248 1/2 (log_ratio)^2 or similar quadratic form. Properties: low variance, but biased (slightly underestimates KL), always non-negative. Usage: less common as prima\u2026"
+      "summary": "The Kullback-Leibler divergence (KL divergence) is a measure of how one probability distribution $P$ differs from a reference distribution $Q$. Defined as $D_{KL}(P \\| Q) = \\sum_x P(x) \\log \\frac{P(x)}{Q(x)}$, it quantifies the expected extra bits needed to encode samples from $P$ using a code optimized for $Q$. KL divergence is asymmetric, non-negative, and zero only when the two distributions are identical. It is widely used in variational inference, VAEs, and information theory."
     },
     {
       "id": "Contrastive Loss",
@@ -735,7 +735,7 @@
       "sx": 175.0,
       "sy": -161.8,
       "sz": -207.55,
-      "summary": "Restricted maximum likelihood Restricted maximum likelihood (REML) is a likelihood-based technique for estimating variance components in linear mixed"
+      "summary": "Maximum likelihood estimation (MLE) finds the parameter values $\\hat{\\theta}$ that maximize the likelihood function $L(\\theta) = \\prod_{i=1}^{n} p(x_i | \\theta)$, or equivalently minimize the negative log-likelihood $-\\sum_{i=1}^{n} \\log p(x_i | \\theta)$. MLE is the theoretical foundation for training most machine learning models, including neural networks (via cross-entropy loss) and probabilistic models."
     },
     {
       "id": "MAP Estimation",
@@ -746,7 +746,7 @@
       "sx": 151.26,
       "sy": -202.08,
       "sz": -204.15,
-      "summary": "Maximum a posteriori estimation Maximum a posteriori (MAP) estimation is a Bayesian statistical method for obtaining a point estimate of an unknown parameter"
+      "summary": "Maximum a posteriori (MAP) estimation finds the parameter values that maximize the posterior distribution $\\hat{\\theta}_{MAP} = \\arg\\max_\\theta P(\\theta | X) = \\arg\\max_\\theta P(X | \\theta) P(\\theta)$. It extends maximum likelihood by incorporating a prior distribution $P(\\theta)$, which acts as regularization. L2 regularization corresponds to a Gaussian prior, and L1 to a Laplace prior."
     },
     {
       "id": "EM Algorithm",
@@ -856,7 +856,7 @@
       "sx": 92.05,
       "sy": -34.61,
       "sz": -344.53,
-      "summary": "Huber loss The Huber loss, also known as the Huber function or \u03c1-function in the context of M-estimators, is a robust loss function introduced by Swiss"
+      "summary": "The Huber loss is a robust loss function that is quadratic for small errors and linear for large ones: $L_\\delta(a) = \\begin{cases} \\frac{1}{2}a^2 & |a| \\leq \\delta \\\\ \\delta(|a| - \\frac{1}{2}\\delta) & |a| > \\delta \\end{cases}$. It combines the best properties of MSE (sensitivity to small errors) and MAE (robustness to outliers), controlled by the threshold parameter $\\delta$."
     },
     {
       "id": "Cosine Similarity",
@@ -867,7 +867,7 @@
       "sx": 85.98,
       "sy": -142.94,
       "sz": -212.06,
-      "summary": "Cosine similarity Cosine similarity is a metric that measures the similarity between two non-zero vectors in an inner product space by calculating the"
+      "summary": "Cosine similarity measures the cosine of the angle between two vectors: $\\text{sim}(a, b) = \\frac{a \\cdot b}{\\|a\\| \\|b\\|}$, ranging from -1 (opposite) to 1 (identical direction). It is widely used for comparing embeddings in NLP (word2vec, sentence transformers), information retrieval, and recommendation systems, where magnitude is less important than direction."
     },
     {
       "id": "Batch Gradient Descent",
@@ -933,7 +933,7 @@
       "sx": -242.99,
       "sy": -386.54,
       "sz": 0.85,
-      "summary": "Extensions and Variants Multiple Linear Regression Multiple linear regression extends the simple linear regression framework to incorporate multiple"
+      "summary": "Linear regression models the relationship between input features and a continuous target as $y = w^T x + b$, minimizing the mean squared error $\\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2$. The closed-form solution is $\\hat{w} = (X^T X)^{-1} X^T y$. It is the foundational supervised learning algorithm and the basis for understanding regularization, gradient descent, and generalized linear models."
     },
     {
       "id": "Logistic Regression",
@@ -944,7 +944,7 @@
       "sx": -239.7,
       "sy": -345.84,
       "sz": 6.48,
-      "summary": "Specification Binary Logistic Regression Binary logistic regression, introduced by statistician David R."
+      "summary": "Logistic regression models the probability of a binary outcome using the sigmoid function: $P(y=1|x) = \\sigma(w^T x + b) = \\frac{1}{1 + e^{-(w^T x + b)}}$. Despite its name, it is a classification algorithm, trained by minimizing cross-entropy loss. It is one of the most fundamental and interpretable classifiers in machine learning."
     },
     {
       "id": "Decision Trees",
@@ -1043,7 +1043,7 @@
       "sx": -233.95,
       "sy": -278.77,
       "sz": -114.96,
-      "summary": "Gaussian process A Gaussian process (GP) is a stochastic process in which every finite collection of random variables from the process has a multivariate"
+      "summary": "A Gaussian process (GP) is a collection of random variables, any finite number of which have a joint Gaussian distribution. Defined by a mean function $m(x)$ and covariance (kernel) function $k(x, x')$, GPs provide a flexible nonparametric Bayesian approach to regression and classification with built-in uncertainty quantification. The posterior predictive distribution is $f_* | X_*, X, y \\sim \\mathcal{N}(\\mu_*, \\Sigma_*)$."
     },
     {
       "id": "Kernel Methods",
@@ -1318,7 +1318,7 @@
       "sx": -365.16,
       "sy": -324.77,
       "sz": -385.81,
-      "summary": "Gaussian World Models introduce innovations for 3D dynamics in AI by providing explicit 3D representations for forecasting and integrating easily into reinforcement learning (RL) and imitation learning."
+      "summary": "A Gaussian Mixture Model (GMM) models data as a weighted sum of $K$ Gaussian components: $p(x) = \\sum_{k=1}^{K} \\pi_k \\mathcal{N}(x | \\mu_k, \\Sigma_k)$, where $\\pi_k$ are mixing weights. Parameters are learned via the EM algorithm. GMMs are used for clustering, density estimation, and as building blocks in speech recognition and generative models."
     },
     {
       "id": "t-SNE",
@@ -2088,7 +2088,7 @@
       "sx": -228.19,
       "sy": 419.32,
       "sz": -180.04,
-      "summary": "Softmax function The softmax function, also known as softargmax, is a normalized exponential function that transforms a finite-dimensional vector of real"
+      "summary": "The softmax function converts a vector of real numbers into a probability distribution. Given logits $z_i$, it computes $\\sigma(z_i) = \\frac{e^{z_i}}{\\sum_{j=1}^{K} e^{z_j}}$, ensuring all outputs are positive and sum to 1. Softmax is the standard output activation for multi-class classification and is a core component of the attention mechanism in transformers."
     },
     {
       "id": "ReLU & Variants",
@@ -2110,7 +2110,7 @@
       "sx": -346.18,
       "sy": 425.13,
       "sz": -157.19,
-      "summary": "The Gaussian Error Linear Unit (GELU) is an activation function defined as x * \u03a6(x), where \u03a6 is the standard Gaussian cumulative distribution function. It smoothly blends the identity and zero functions based on the input value, providing a stochastic regularization effect. GELU is the default activation in modern transformer architectures including BERT, GPT, and Vision Transformers, where it consistently outperforms ReLU."
+      "summary": "The Gaussian Error Linear Unit (GELU) is an activation function defined as $\\text{GELU}(x) = x \\cdot \\Phi(x)$, where $\\Phi$ is the standard Gaussian cumulative distribution function. It smoothly blends the identity and zero functions based on the input value, providing a stochastic regularization effect. GELU is the default activation in modern transformer architectures including BERT, GPT, and Vision Transformers."
     },
     {
       "id": "Swish",
@@ -3265,7 +3265,7 @@
       "sx": -55.28,
       "sy": 17.66,
       "sz": 228.8,
-      "summary": "An energy-based model (EBM) is a class of probabilistic models in machine learning that define an unnormalized probability density function over data through a parametric energy function U\u03b8(x), where the density is given by \u03c1\u03b8(x) = (1/Z\u03b8) e^(-U\u03b8(x)), with Z\u03b8 as the partition function, such that lower energy values correspond to higher probability configurations, drawing from the Boltzmann-Gibbs distribution in statistical mechanics."
+      "summary": "An energy-based model (EBM) is a class of probabilistic models in machine learning that define an unnormalized probability density function over data through a parametric energy function $U_\\theta(x)$, where the density is given by $\\rho_\\theta(x) = \\frac{1}{Z_\\theta} e^{-U_\\theta(x)}$, with $Z_\\theta$ as the partition function, such that lower energy values correspond to higher probability configurations, drawing from the Boltzmann-Gibbs distribution in statistical mechanics."
     },
     {
       "id": "DALL-E / Stable Diffusion",
