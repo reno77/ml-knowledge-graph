@@ -1478,11 +1478,12 @@ fetch('graph.json').then(r => r.json()).then(data => {
   let tlStartYear = 1640, tlEndYear = 2030;
 
   // Power-law mapping: gamma=1 → linear, <1 → spreads old history, >1 → spreads recent
-  // Range is driven by tlStartYear/tlEndYear so the scale slider and range slider compose.
+  // TL_DISPLAY is fixed so the physical timeline length never changes when the range is adjusted.
+  const TL_DISPLAY = 1950; // (2030-1640)*5 — matches the full default span
   function yearToX(year) {
     const range = tlEndYear - tlStartYear;
     const t = (year - tlStartYear) / range;
-    return Math.pow(Math.max(t, 0), timelineGamma) * range * 5 + (tlStartYear - 1990) * 5;
+    return Math.pow(Math.max(t, 0), timelineGamma) * TL_DISPLAY + (tlStartYear - 1990) * 5;
   }
 
   function applyTimelineRange() {
