@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ML Knowledge Graph — 3D</title>
   <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
+  <script src="https://unpkg.com/three@0.155.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three-spritetext@1.8.1/dist/three-spritetext.min.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: #050510; color: #e0e0e0; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
@@ -18,6 +20,9 @@
     }
     #header h1 { font-size: 22px; font-weight: 700; color: #7ecfff; letter-spacing: 0.5px; }
     #header p  { font-size: 12px; color: #556; margin-top: 2px; }
+    #label-toggle { margin-top: 10px; }
+    #label-toggle label { font-size: 12px; color: #aac; display: flex; align-items: center; gap: 8px; cursor: pointer; }
+    #label-toggle input { cursor: pointer; }
 
     #controls {
       position: fixed; top: 72px; right: 16px; z-index: 100;
@@ -58,7 +63,7 @@
 
 <div id="header">
   <h1>🧠 ML Knowledge Graph</h1>
-  <p>31 concepts · 30 prerequisites · Interactive 3D</p>
+  <p>68 concepts · 94 prerequisites · Interactive 3D</p>
 </div>
 
 <div id="controls">
@@ -71,6 +76,11 @@
   <div class="ni-cat"   id="ni-cat"></div>
   <div class="ni-level" id="ni-level"></div>
   <div class="ni-links" id="ni-links"></div>
+</div>
+
+<div id="label-toggle" style="position:fixed;top:72px;left:16px;z-index:100;background:rgba(10,10,28,0.92);border:1px solid #1a1a3a;border-radius:10px;padding:10px 14px;backdrop-filter:blur(8px);">
+  <label style="font-size:12px;color:#aac;display:flex;align-items:center;gap:8px;cursor:pointer;"><input type="checkbox" id="showLabels" checked> Show Labels</label>
+  <div style="margin-top:6px;"><label style="font-size:12px;color:#aac;display:flex;align-items:center;gap:8px;cursor:pointer;"><input type="checkbox" id="showParticles" checked> Particles</label></div>
 </div>
 
 <div id="hint">
@@ -116,6 +126,18 @@ fetch('graph.json').then(r => r.json()).then(data => {
   let highlightLinks = new Set();
   let selectedNode   = null;
 
+  let labelsVisible = true;
+  let particlesOn   = true;
+
+  document.getElementById('showLabels').addEventListener('change', e => {
+    labelsVisible = e.target.checked;
+    Graph.nodeThreeObject(Graph.nodeThreeObject()); // force refresh
+  });
+  document.getElementById('showParticles').addEventListener('change', e => {
+    particlesOn = e.target.checked;
+    Graph.linkDirectionalParticles(Graph.linkDirectionalParticles());
+  });
+
   const Graph = ForceGraph3D()
     (document.getElementById('graph'))
     .backgroundColor('#050510')
@@ -123,38 +145,70 @@ fetch('graph.json').then(r => r.json()).then(data => {
     .nodeLabel('')
     .nodeColor(n => {
       if (!highlightNodes.size) return n.color;
-      return highlightNodes.has(n.id) ? n.color : '#111122';
+      return highlightNodes.has(n.id) ? n.color : '#0a0a1a';
     })
     .nodeVal(n => n.val)
     .nodeOpacity(0.92)
     .nodeResolution(16)
+
+    // Sprite text labels
+    .nodeThreeObject(n => {
+      const group = new THREE.Group();
+      // Sphere
+      const sphere = new THREE.Mesh(
+        new THREE.SphereGeometry(n.val * 1.5, 16, 16),
+        new THREE.MeshLambertMaterial({
+          color: (!highlightNodes.size || highlightNodes.has(n.id)) ? n.color : '#0a0a1a',
+          transparent: true,
+          opacity: (!highlightNodes.size || highlightNodes.has(n.id)) ? 0.92 : 0.15,
+        })
+      );
+      group.add(sphere);
+      // Label sprite
+      if (labelsVisible) {
+        const sprite = new SpriteText(n.label);
+        sprite.color = '#ffffff';
+        sprite.textHeight = n.level <= 1 ? 4.5 : 3.5;
+        sprite.fontFace = 'Segoe UI, sans-serif';
+        sprite.fontWeight = '600';
+        sprite.backgroundColor = 'rgba(5,5,16,0.7)';
+        sprite.padding = 1.5;
+        sprite.borderRadius = 3;
+        sprite.position.y = n.val * 1.5 + 5;
+        group.add(sprite);
+      }
+      return group;
+    })
+    .nodeThreeObjectExtend(false)
 
     // Glowing particles on links
     .linkColor(l => {
       const s = typeof l.source === 'object' ? l.source.id : l.source;
       const t = typeof l.target === 'object' ? l.target.id : l.target;
       if (!highlightLinks.size) return 'rgba(100,130,170,0.35)';
-      return highlightLinks.has(`${s}-${t}`) ? '#7ecfff' : 'rgba(20,20,40,0.15)';
+      return highlightLinks.has(`${s}-${t}`) ? '#7ecfff' : 'rgba(20,20,40,0.1)';
     })
     .linkWidth(l => {
       const s = typeof l.source === 'object' ? l.source.id : l.source;
       const t = typeof l.target === 'object' ? l.target.id : l.target;
-      return highlightLinks.has(`${s}-${t}`) ? 2 : 0.6;
+      return highlightLinks.has(`${s}-${t}`) ? 2.5 : 0.5;
     })
-    .linkDirectionalArrowLength(4)
+    .linkDirectionalArrowLength(5)
     .linkDirectionalArrowRelPos(1)
     .linkDirectionalParticles(l => {
+      if (!particlesOn) return 0;
       const s = typeof l.source === 'object' ? l.source.id : l.source;
       const t = typeof l.target === 'object' ? l.target.id : l.target;
-      return highlightLinks.has(`${s}-${t}`) ? 4 : 0;
+      return highlightLinks.has(`${s}-${t}`) ? 5 : 0;
     })
     .linkDirectionalParticleSpeed(0.005)
+    .linkDirectionalParticleWidth(2)
     .linkDirectionalParticleColor(() => '#7ecfff')
 
     // Level-based z positioning (hierarchy feel)
     .d3Force('z', (() => {
       let nodes = [];
-      const force = () => nodes.forEach(n => { n.fz = (n.level - 3) * 60; });
+      const force = () => nodes.forEach(n => { n.fz = (n.level - 3) * 80; });
       force.initialize = ns => { nodes = ns; };
       return force;
     })())

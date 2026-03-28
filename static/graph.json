@@ -29,6 +29,27 @@
       "color": "#1a6985"
     },
     {
+      "id": "Information Theory",
+      "label": "Information Theory",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Optimization Theory",
+      "label": "Optimization Theory",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Numerical Methods",
+      "label": "Numerical Methods",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
       "id": "Loss Functions",
       "label": "Loss Functions",
       "level": 1,
@@ -59,6 +80,41 @@
     {
       "id": "Feature Engineering",
       "label": "Feature Engineering",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Cross-Validation",
+      "label": "Cross-Validation",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Bias-Variance Tradeoff",
+      "label": "Bias-Variance Tradeoff",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Hyperparameter Tuning",
+      "label": "Hyperparameter Tuning",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Data Preprocessing",
+      "label": "Data Preprocessing",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Evaluation Metrics",
+      "label": "Evaluation Metrics",
       "level": 1,
       "category": "core",
       "color": "#c17d1a"
@@ -99,6 +155,20 @@
       "color": "#2d8a4e"
     },
     {
+      "id": "Naive Bayes",
+      "label": "Naive Bayes",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Ridge & Lasso",
+      "label": "Ridge & Lasso",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
       "id": "k-Means",
       "label": "k-Means",
       "level": 2,
@@ -113,11 +183,53 @@
       "color": "#7b3fa0"
     },
     {
+      "id": "DBSCAN",
+      "label": "DBSCAN",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Gaussian Mixture Models",
+      "label": "Gaussian Mixture Models",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Anomaly Detection",
+      "label": "Anomaly Detection",
+      "level": 3,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
       "id": "Autoencoders",
       "label": "Autoencoders",
       "level": 3,
       "category": "unsupervised",
       "color": "#7b3fa0"
+    },
+    {
+      "id": "Variational Autoencoders",
+      "label": "Variational Autoencoders",
+      "level": 4,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Bagging",
+      "label": "Bagging",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "Boosting",
+      "label": "Boosting",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
     },
     {
       "id": "Random Forest",
@@ -141,8 +253,50 @@
       "color": "#1a7a6b"
     },
     {
+      "id": "LightGBM",
+      "label": "LightGBM",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "Stacking",
+      "label": "Stacking",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "Activation Functions",
+      "label": "Activation Functions",
+      "level": 2,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
       "id": "Neural Networks",
       "label": "Neural Networks",
+      "level": 3,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Batch Normalization",
+      "label": "Batch Normalization",
+      "level": 3,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Dropout",
+      "label": "Dropout",
+      "level": 3,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Optimizers (Adam/SGD)",
+      "label": "Optimizers (Adam/SGD)",
       "level": 3,
       "category": "neural",
       "color": "#1a4da0"
@@ -169,8 +323,29 @@
       "color": "#1a4da0"
     },
     {
+      "id": "GRUs",
+      "label": "GRUs",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
       "id": "Attention Mechanism",
       "label": "Attention Mechanism",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Residual Networks",
+      "label": "Residual Networks",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Graph Neural Networks",
+      "label": "Graph Neural Networks",
       "level": 4,
       "category": "neural",
       "color": "#1a4da0"
@@ -197,8 +372,50 @@
       "color": "#a01a1a"
     },
     {
+      "id": "GANs",
+      "label": "GANs",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
       "id": "Reinforcement Learning",
       "label": "Reinforcement Learning",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Policy Gradient",
+      "label": "Policy Gradient",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Self-Supervised Learning",
+      "label": "Self-Supervised Learning",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Contrastive Learning",
+      "label": "Contrastive Learning",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Vision Transformers",
+      "label": "Vision Transformers",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Multimodal Models",
+      "label": "Multimodal Models",
       "level": 5,
       "category": "advanced",
       "color": "#a01a1a"
@@ -211,8 +428,50 @@
       "color": "#a01a1a"
     },
     {
+      "id": "RLHF",
+      "label": "RLHF",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
       "id": "Meta-Learning",
       "label": "Meta-Learning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Neural Architecture Search",
+      "label": "Neural Architecture Search",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Federated Learning",
+      "label": "Federated Learning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Quantization & Pruning",
+      "label": "Quantization & Pruning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "AI Agents",
+      "label": "AI Agents",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "RAG",
+      "label": "RAG",
       "level": 6,
       "category": "advanced",
       "color": "#a01a1a"
@@ -232,12 +491,20 @@
       "to": "SVM"
     },
     {
+      "from": "Linear Algebra",
+      "to": "Neural Networks"
+    },
+    {
       "from": "Calculus",
       "to": "Gradient Descent"
     },
     {
       "from": "Calculus",
       "to": "Backpropagation"
+    },
+    {
+      "from": "Calculus",
+      "to": "Optimization Theory"
     },
     {
       "from": "Probability & Stats",
@@ -248,8 +515,40 @@
       "to": "Logistic Regression"
     },
     {
+      "from": "Probability & Stats",
+      "to": "Naive Bayes"
+    },
+    {
+      "from": "Probability & Stats",
+      "to": "Gaussian Mixture Models"
+    },
+    {
       "from": "Python",
       "to": "Feature Engineering"
+    },
+    {
+      "from": "Python",
+      "to": "Data Preprocessing"
+    },
+    {
+      "from": "Information Theory",
+      "to": "Loss Functions"
+    },
+    {
+      "from": "Information Theory",
+      "to": "Evaluation Metrics"
+    },
+    {
+      "from": "Optimization Theory",
+      "to": "Gradient Descent"
+    },
+    {
+      "from": "Optimization Theory",
+      "to": "Optimizers (Adam/SGD)"
+    },
+    {
+      "from": "Numerical Methods",
+      "to": "Gradient Descent"
     },
     {
       "from": "Loss Functions",
@@ -260,12 +559,20 @@
       "to": "Logistic Regression"
     },
     {
-      "from": "Gradient Descent",
+      "from": "Loss Functions",
       "to": "Neural Networks"
     },
     {
       "from": "Gradient Descent",
       "to": "Linear Regression"
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Neural Networks"
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Gradient Boosting"
     },
     {
       "from": "Backpropagation",
@@ -277,7 +584,43 @@
     },
     {
       "from": "Regularization",
-      "to": "Neural Networks"
+      "to": "Ridge & Lasso"
+    },
+    {
+      "from": "Regularization",
+      "to": "Dropout"
+    },
+    {
+      "from": "Regularization",
+      "to": "Batch Normalization"
+    },
+    {
+      "from": "Feature Engineering",
+      "to": "Linear Regression"
+    },
+    {
+      "from": "Cross-Validation",
+      "to": "Hyperparameter Tuning"
+    },
+    {
+      "from": "Bias-Variance Tradeoff",
+      "to": "Regularization"
+    },
+    {
+      "from": "Bias-Variance Tradeoff",
+      "to": "Cross-Validation"
+    },
+    {
+      "from": "Data Preprocessing",
+      "to": "Feature Engineering"
+    },
+    {
+      "from": "Evaluation Metrics",
+      "to": "Cross-Validation"
+    },
+    {
+      "from": "Linear Regression",
+      "to": "Ridge & Lasso"
     },
     {
       "from": "Decision Trees",
@@ -288,8 +631,72 @@
       "to": "Gradient Boosting"
     },
     {
+      "from": "Decision Trees",
+      "to": "Bagging"
+    },
+    {
+      "from": "Decision Trees",
+      "to": "Boosting"
+    },
+    {
+      "from": "k-Means",
+      "to": "DBSCAN"
+    },
+    {
+      "from": "PCA",
+      "to": "Anomaly Detection"
+    },
+    {
+      "from": "Gaussian Mixture Models",
+      "to": "Anomaly Detection"
+    },
+    {
+      "from": "Autoencoders",
+      "to": "Variational Autoencoders"
+    },
+    {
+      "from": "Autoencoders",
+      "to": "Self-Supervised Learning"
+    },
+    {
+      "from": "Variational Autoencoders",
+      "to": "GANs"
+    },
+    {
+      "from": "Variational Autoencoders",
+      "to": "Diffusion Models"
+    },
+    {
+      "from": "Bagging",
+      "to": "Random Forest"
+    },
+    {
+      "from": "Boosting",
+      "to": "Gradient Boosting"
+    },
+    {
+      "from": "Random Forest",
+      "to": "Stacking"
+    },
+    {
       "from": "Gradient Boosting",
       "to": "XGBoost"
+    },
+    {
+      "from": "Gradient Boosting",
+      "to": "LightGBM"
+    },
+    {
+      "from": "XGBoost",
+      "to": "Stacking"
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Neural Networks"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Autoencoders"
     },
     {
       "from": "Neural Networks",
@@ -301,23 +708,71 @@
     },
     {
       "from": "Neural Networks",
-      "to": "Autoencoders"
+      "to": "Batch Normalization"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Dropout"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Optimizers (Adam/SGD)"
     },
     {
       "from": "Neural Networks",
       "to": "Reinforcement Learning"
     },
     {
+      "from": "Neural Networks",
+      "to": "Graph Neural Networks"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Self-Supervised Learning"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Neural Architecture Search"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Federated Learning"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Quantization & Pruning"
+    },
+    {
+      "from": "CNNs",
+      "to": "Residual Networks"
+    },
+    {
+      "from": "CNNs",
+      "to": "Vision Transformers"
+    },
+    {
       "from": "RNNs",
       "to": "LSTMs"
+    },
+    {
+      "from": "RNNs",
+      "to": "GRUs"
     },
     {
       "from": "LSTMs",
       "to": "Attention Mechanism"
     },
     {
+      "from": "GRUs",
+      "to": "Attention Mechanism"
+    },
+    {
       "from": "Attention Mechanism",
       "to": "Transformers"
+    },
+    {
+      "from": "Residual Networks",
+      "to": "Vision Transformers"
     },
     {
       "from": "Transformers",
@@ -332,12 +787,72 @@
       "to": "LLM Fine-tuning"
     },
     {
+      "from": "Transformers",
+      "to": "Multimodal Models"
+    },
+    {
       "from": "BERT / GPT",
       "to": "LLM Fine-tuning"
     },
     {
+      "from": "BERT / GPT",
+      "to": "RLHF"
+    },
+    {
+      "from": "BERT / GPT",
+      "to": "RAG"
+    },
+    {
+      "from": "Reinforcement Learning",
+      "to": "Policy Gradient"
+    },
+    {
+      "from": "Reinforcement Learning",
+      "to": "RLHF"
+    },
+    {
       "from": "Reinforcement Learning",
       "to": "Meta-Learning"
+    },
+    {
+      "from": "Policy Gradient",
+      "to": "RLHF"
+    },
+    {
+      "from": "Self-Supervised Learning",
+      "to": "Contrastive Learning"
+    },
+    {
+      "from": "Self-Supervised Learning",
+      "to": "BERT / GPT"
+    },
+    {
+      "from": "Contrastive Learning",
+      "to": "Multimodal Models"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "Multimodal Models"
+    },
+    {
+      "from": "LLM Fine-tuning",
+      "to": "RLHF"
+    },
+    {
+      "from": "LLM Fine-tuning",
+      "to": "AI Agents"
+    },
+    {
+      "from": "RLHF",
+      "to": "AI Agents"
+    },
+    {
+      "from": "Meta-Learning",
+      "to": "Neural Architecture Search"
+    },
+    {
+      "from": "RAG",
+      "to": "AI Agents"
     }
   ],
   "categories": {
