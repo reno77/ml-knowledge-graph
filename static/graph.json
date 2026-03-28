@@ -50,6 +50,97 @@
       "color": "#1a6985"
     },
     {
+      "id": "Set Theory",
+      "label": "Set Theory",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Graph Theory",
+      "label": "Graph Theory",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Linear Programming",
+      "label": "Linear Programming",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Dynamic Programming",
+      "label": "Dynamic Programming",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Matrix Decomposition",
+      "label": "Matrix Decomposition",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Fourier Analysis",
+      "label": "Fourier Analysis",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Stochastic Processes",
+      "label": "Stochastic Processes",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Bayesian Statistics",
+      "label": "Bayesian Statistics",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Hypothesis Testing",
+      "label": "Hypothesis Testing",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Convex Optimization",
+      "label": "Convex Optimization",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "SQL & Databases",
+      "label": "SQL & Databases",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Data Structures",
+      "label": "Data Structures",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
+      "id": "Game Theory",
+      "label": "Game Theory",
+      "level": 0,
+      "category": "foundation",
+      "color": "#1a6985"
+    },
+    {
       "id": "Loss Functions",
       "label": "Loss Functions",
       "level": 1,
@@ -120,6 +211,125 @@
       "color": "#c17d1a"
     },
     {
+      "id": "Overfitting",
+      "label": "Overfitting",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Underfitting",
+      "label": "Underfitting",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Learning Rate Scheduling",
+      "label": "Learning Rate Scheduling",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Early Stopping",
+      "label": "Early Stopping",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Data Augmentation",
+      "label": "Data Augmentation",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Transfer Learning",
+      "label": "Transfer Learning",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Imbalanced Data",
+      "label": "Imbalanced Data",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Missing Data Imputation",
+      "label": "Missing Data Imputation",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Feature Selection",
+      "label": "Feature Selection",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Model Selection",
+      "label": "Model Selection",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Pipeline Design",
+      "label": "Pipeline Design",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Normalization",
+      "label": "Normalization",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Cross-Entropy Loss",
+      "label": "Cross-Entropy Loss",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "KL Divergence",
+      "label": "KL Divergence",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Contrastive Loss",
+      "label": "Contrastive Loss",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Stratified Sampling",
+      "label": "Stratified Sampling",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Class Weights",
+      "label": "Class Weights",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
       "id": "Linear Regression",
       "label": "Linear Regression",
       "level": 2,
@@ -169,6 +379,97 @@
       "color": "#2d8a4e"
     },
     {
+      "id": "Polynomial Regression",
+      "label": "Polynomial Regression",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Elastic Net",
+      "label": "Elastic Net",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Perceptron",
+      "label": "Perceptron",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Gaussian Process",
+      "label": "Gaussian Process",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Kernel Methods",
+      "label": "Kernel Methods",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Bayesian Linear Regression",
+      "label": "Bayesian Linear Regression",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "AdaBoost",
+      "label": "AdaBoost",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Multi-task Learning",
+      "label": "Multi-task Learning",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Semi-supervised Learning",
+      "label": "Semi-supervised Learning",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Active Learning",
+      "label": "Active Learning",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Online Learning",
+      "label": "Online Learning",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Label Propagation",
+      "label": "Label Propagation",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
+      "id": "Isotonic Regression",
+      "label": "Isotonic Regression",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e"
+    },
+    {
       "id": "k-Means",
       "label": "k-Means",
       "level": 2,
@@ -197,23 +498,121 @@
       "color": "#7b3fa0"
     },
     {
-      "id": "Anomaly Detection",
-      "label": "Anomaly Detection",
-      "level": 3,
+      "id": "t-SNE",
+      "label": "t-SNE",
+      "level": 2,
       "category": "unsupervised",
       "color": "#7b3fa0"
     },
     {
-      "id": "Autoencoders",
-      "label": "Autoencoders",
-      "level": 3,
+      "id": "UMAP",
+      "label": "UMAP",
+      "level": 2,
       "category": "unsupervised",
       "color": "#7b3fa0"
     },
     {
-      "id": "Variational Autoencoders",
-      "label": "Variational Autoencoders",
-      "level": 4,
+      "id": "ICA",
+      "label": "ICA",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "NMF",
+      "label": "NMF",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Spectral Clustering",
+      "label": "Spectral Clustering",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Hierarchical Clustering",
+      "label": "Hierarchical Clustering",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "OPTICS",
+      "label": "OPTICS",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Isolation Forest",
+      "label": "Isolation Forest",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "One-Class SVM",
+      "label": "One-Class SVM",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "LOF",
+      "label": "LOF",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Self-Organizing Maps",
+      "label": "Self-Organizing Maps",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Word2Vec",
+      "label": "Word2Vec",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "GloVe",
+      "label": "GloVe",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "FastText",
+      "label": "FastText",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Topic Modeling (LDA)",
+      "label": "Topic Modeling (LDA)",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Matrix Factorization",
+      "label": "Matrix Factorization",
+      "level": 2,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "Collaborative Filtering",
+      "label": "Collaborative Filtering",
+      "level": 2,
       "category": "unsupervised",
       "color": "#7b3fa0"
     },
@@ -260,6 +659,13 @@
       "color": "#1a7a6b"
     },
     {
+      "id": "CatBoost",
+      "label": "CatBoost",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
       "id": "Stacking",
       "label": "Stacking",
       "level": 3,
@@ -267,8 +673,71 @@
       "color": "#1a7a6b"
     },
     {
+      "id": "Blending",
+      "label": "Blending",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "Voting Classifier",
+      "label": "Voting Classifier",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "ExtraTrees",
+      "label": "ExtraTrees",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "TabNet",
+      "label": "TabNet",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "DART",
+      "label": "DART",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
+      "id": "Snapshot Ensembles",
+      "label": "Snapshot Ensembles",
+      "level": 3,
+      "category": "ensemble",
+      "color": "#1a7a6b"
+    },
+    {
       "id": "Activation Functions",
       "label": "Activation Functions",
+      "level": 2,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Weight Initialization",
+      "label": "Weight Initialization",
+      "level": 2,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Vanishing Gradient",
+      "label": "Vanishing Gradient",
+      "level": 2,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Exploding Gradient",
+      "label": "Exploding Gradient",
       "level": 2,
       "category": "neural",
       "color": "#1a4da0"
@@ -288,6 +757,13 @@
       "color": "#1a4da0"
     },
     {
+      "id": "Layer Normalization",
+      "label": "Layer Normalization",
+      "level": 3,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
       "id": "Dropout",
       "label": "Dropout",
       "level": 3,
@@ -302,8 +778,106 @@
       "color": "#1a4da0"
     },
     {
+      "id": "Weight Decay",
+      "label": "Weight Decay",
+      "level": 3,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Gradient Clipping",
+      "label": "Gradient Clipping",
+      "level": 3,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Residual Connections",
+      "label": "Residual Connections",
+      "level": 3,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
       "id": "CNNs",
       "label": "CNNs",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Residual Networks",
+      "label": "Residual Networks",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "DenseNet",
+      "label": "DenseNet",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "MobileNet",
+      "label": "MobileNet",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "EfficientNet",
+      "label": "EfficientNet",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Inception",
+      "label": "Inception",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "U-Net",
+      "label": "U-Net",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "YOLO",
+      "label": "YOLO",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "R-CNN",
+      "label": "R-CNN",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Feature Pyramid Networks",
+      "label": "Feature Pyramid Networks",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Capsule Networks",
+      "label": "Capsule Networks",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Deformable Conv",
+      "label": "Deformable Conv",
       "level": 4,
       "category": "neural",
       "color": "#1a4da0"
@@ -330,6 +904,20 @@
       "color": "#1a4da0"
     },
     {
+      "id": "Bidirectional RNN",
+      "label": "Bidirectional RNN",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Seq2Seq",
+      "label": "Seq2Seq",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
       "id": "Attention Mechanism",
       "label": "Attention Mechanism",
       "level": 4,
@@ -337,8 +925,15 @@
       "color": "#1a4da0"
     },
     {
-      "id": "Residual Networks",
-      "label": "Residual Networks",
+      "id": "Multi-Head Attention",
+      "label": "Multi-Head Attention",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Positional Encoding",
+      "label": "Positional Encoding",
       "level": 4,
       "category": "neural",
       "color": "#1a4da0"
@@ -351,6 +946,48 @@
       "color": "#1a4da0"
     },
     {
+      "id": "Graph Attention Networks",
+      "label": "Graph Attention Networks",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Message Passing",
+      "label": "Message Passing",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Siamese Networks",
+      "label": "Siamese Networks",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Hypernetworks",
+      "label": "Hypernetworks",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Neural ODEs",
+      "label": "Neural ODEs",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
+      "id": "Mixture of Experts",
+      "label": "Mixture of Experts",
+      "level": 4,
+      "category": "neural",
+      "color": "#1a4da0"
+    },
+    {
       "id": "Transformers",
       "label": "Transformers",
       "level": 5,
@@ -358,15 +995,78 @@
       "color": "#a01a1a"
     },
     {
-      "id": "BERT / GPT",
-      "label": "BERT / GPT",
+      "id": "BERT",
+      "label": "BERT",
       "level": 5,
       "category": "advanced",
       "color": "#a01a1a"
     },
     {
-      "id": "Diffusion Models",
-      "label": "Diffusion Models",
+      "id": "GPT",
+      "label": "GPT",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "T5",
+      "label": "T5",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Vision Transformers",
+      "label": "Vision Transformers",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "CLIP",
+      "label": "CLIP",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "BPE Tokenization",
+      "label": "BPE Tokenization",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Flash Attention",
+      "label": "Flash Attention",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Rotary Embeddings",
+      "label": "Rotary Embeddings",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Sparse Attention",
+      "label": "Sparse Attention",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Feed-Forward Networks",
+      "label": "Feed-Forward Networks",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Mixture of Experts (MoE)",
+      "label": "Mixture of Experts (MoE)",
       "level": 5,
       "category": "advanced",
       "color": "#a01a1a"
@@ -379,15 +1079,71 @@
       "color": "#a01a1a"
     },
     {
-      "id": "Reinforcement Learning",
-      "label": "Reinforcement Learning",
+      "id": "Autoencoders",
+      "label": "Autoencoders",
+      "level": 3,
+      "category": "unsupervised",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "VAE",
+      "label": "VAE",
       "level": 5,
       "category": "advanced",
       "color": "#a01a1a"
     },
     {
-      "id": "Policy Gradient",
-      "label": "Policy Gradient",
+      "id": "Diffusion Models",
+      "label": "Diffusion Models",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Score Matching",
+      "label": "Score Matching",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Flow Models",
+      "label": "Flow Models",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Energy-Based Models",
+      "label": "Energy-Based Models",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "DALL-E / Stable Diffusion",
+      "label": "DALL-E / Stable Diffusion",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "VideoGen",
+      "label": "VideoGen",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Text-to-Speech",
+      "label": "Text-to-Speech",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Speech Recognition",
+      "label": "Speech Recognition",
       "level": 5,
       "category": "advanced",
       "color": "#a01a1a"
@@ -407,8 +1163,43 @@
       "color": "#a01a1a"
     },
     {
-      "id": "Vision Transformers",
-      "label": "Vision Transformers",
+      "id": "SimCLR",
+      "label": "SimCLR",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "MoCo",
+      "label": "MoCo",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "DINO",
+      "label": "DINO",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "MAE",
+      "label": "MAE",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Word Embeddings",
+      "label": "Word Embeddings",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Sentence Embeddings",
+      "label": "Sentence Embeddings",
       "level": 5,
       "category": "advanced",
       "color": "#a01a1a"
@@ -421,8 +1212,176 @@
       "color": "#a01a1a"
     },
     {
+      "id": "Reinforcement Learning",
+      "label": "Reinforcement Learning",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Policy Gradient",
+      "label": "Policy Gradient",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Q-Learning",
+      "label": "Q-Learning",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "DQN",
+      "label": "DQN",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "PPO",
+      "label": "PPO",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "SAC",
+      "label": "SAC",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "A3C",
+      "label": "A3C",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Model-Based RL",
+      "label": "Model-Based RL",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Offline RL",
+      "label": "Offline RL",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Multi-Agent RL",
+      "label": "Multi-Agent RL",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Imitation Learning",
+      "label": "Imitation Learning",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Inverse RL",
+      "label": "Inverse RL",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Named Entity Recognition",
+      "label": "Named Entity Recognition",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Question Answering",
+      "label": "Question Answering",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Machine Translation",
+      "label": "Machine Translation",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Summarization",
+      "label": "Summarization",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Code Generation",
+      "label": "Code Generation",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Information Extraction",
+      "label": "Information Extraction",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Sentiment Analysis",
+      "label": "Sentiment Analysis",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Text Classification",
+      "label": "Text Classification",
+      "level": 5,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
       "id": "LLM Fine-tuning",
       "label": "LLM Fine-tuning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "LoRA",
+      "label": "LoRA",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "QLoRA",
+      "label": "QLoRA",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Prefix Tuning",
+      "label": "Prefix Tuning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Prompt Engineering",
+      "label": "Prompt Engineering",
       "level": 6,
       "category": "advanced",
       "color": "#a01a1a"
@@ -435,29 +1394,29 @@
       "color": "#a01a1a"
     },
     {
-      "id": "Meta-Learning",
-      "label": "Meta-Learning",
+      "id": "Constitutional AI",
+      "label": "Constitutional AI",
       "level": 6,
       "category": "advanced",
       "color": "#a01a1a"
     },
     {
-      "id": "Neural Architecture Search",
-      "label": "Neural Architecture Search",
+      "id": "Chain-of-Thought",
+      "label": "Chain-of-Thought",
       "level": 6,
       "category": "advanced",
       "color": "#a01a1a"
     },
     {
-      "id": "Federated Learning",
-      "label": "Federated Learning",
+      "id": "ReAct",
+      "label": "ReAct",
       "level": 6,
       "category": "advanced",
       "color": "#a01a1a"
     },
     {
-      "id": "Quantization & Pruning",
-      "label": "Quantization & Pruning",
+      "id": "Tool Use",
+      "label": "Tool Use",
       "level": 6,
       "category": "advanced",
       "color": "#a01a1a"
@@ -472,6 +1431,209 @@
     {
       "id": "RAG",
       "label": "RAG",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Memory Systems",
+      "label": "Memory Systems",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Multi-Agent Systems",
+      "label": "Multi-Agent Systems",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Meta-Learning",
+      "label": "Meta-Learning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Few-Shot Learning",
+      "label": "Few-Shot Learning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Zero-Shot Learning",
+      "label": "Zero-Shot Learning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Neural Architecture Search",
+      "label": "Neural Architecture Search",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "AutoML",
+      "label": "AutoML",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Federated Learning",
+      "label": "Federated Learning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Differential Privacy",
+      "label": "Differential Privacy",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Quantization & Pruning",
+      "label": "Quantization & Pruning",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Knowledge Distillation",
+      "label": "Knowledge Distillation",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Sparse Models",
+      "label": "Sparse Models",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "NeRF",
+      "label": "NeRF",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "3D Gaussian Splatting",
+      "label": "3D Gaussian Splatting",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "AlphaFold",
+      "label": "AlphaFold",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "World Models",
+      "label": "World Models",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Causal ML",
+      "label": "Causal ML",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Interpretability",
+      "label": "Interpretability",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "SHAP",
+      "label": "SHAP",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "LIME",
+      "label": "LIME",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Conformal Prediction",
+      "label": "Conformal Prediction",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "AI Safety",
+      "label": "AI Safety",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Alignment",
+      "label": "Alignment",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "MLOps",
+      "label": "MLOps",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Model Monitoring",
+      "label": "Model Monitoring",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Feature Stores",
+      "label": "Feature Stores",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Experiment Tracking",
+      "label": "Experiment Tracking",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "Edge AI",
+      "label": "Edge AI",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
+      "id": "TensorRT / ONNX",
+      "label": "TensorRT / ONNX",
       "level": 6,
       "category": "advanced",
       "color": "#a01a1a"
@@ -495,6 +1657,10 @@
       "to": "Neural Networks"
     },
     {
+      "from": "Linear Algebra",
+      "to": "Matrix Decomposition"
+    },
+    {
       "from": "Calculus",
       "to": "Gradient Descent"
     },
@@ -507,12 +1673,12 @@
       "to": "Optimization Theory"
     },
     {
-      "from": "Probability & Stats",
-      "to": "Loss Functions"
+      "from": "Calculus",
+      "to": "Neural ODEs"
     },
     {
       "from": "Probability & Stats",
-      "to": "Logistic Regression"
+      "to": "Loss Functions"
     },
     {
       "from": "Probability & Stats",
@@ -523,6 +1689,18 @@
       "to": "Gaussian Mixture Models"
     },
     {
+      "from": "Probability & Stats",
+      "to": "Bayesian Statistics"
+    },
+    {
+      "from": "Probability & Stats",
+      "to": "Hypothesis Testing"
+    },
+    {
+      "from": "Probability & Stats",
+      "to": "Gaussian Process"
+    },
+    {
       "from": "Python",
       "to": "Feature Engineering"
     },
@@ -531,8 +1709,20 @@
       "to": "Data Preprocessing"
     },
     {
+      "from": "Python",
+      "to": "Pipeline Design"
+    },
+    {
       "from": "Information Theory",
       "to": "Loss Functions"
+    },
+    {
+      "from": "Information Theory",
+      "to": "Cross-Entropy Loss"
+    },
+    {
+      "from": "Information Theory",
+      "to": "KL Divergence"
     },
     {
       "from": "Information Theory",
@@ -544,11 +1734,55 @@
     },
     {
       "from": "Optimization Theory",
+      "to": "Convex Optimization"
+    },
+    {
+      "from": "Optimization Theory",
       "to": "Optimizers (Adam/SGD)"
     },
     {
       "from": "Numerical Methods",
       "to": "Gradient Descent"
+    },
+    {
+      "from": "Numerical Methods",
+      "to": "Neural Networks"
+    },
+    {
+      "from": "Graph Theory",
+      "to": "Graph Neural Networks"
+    },
+    {
+      "from": "Graph Theory",
+      "to": "Message Passing"
+    },
+    {
+      "from": "Matrix Decomposition",
+      "to": "PCA"
+    },
+    {
+      "from": "Matrix Decomposition",
+      "to": "NMF"
+    },
+    {
+      "from": "Stochastic Processes",
+      "to": "Reinforcement Learning"
+    },
+    {
+      "from": "Stochastic Processes",
+      "to": "Diffusion Models"
+    },
+    {
+      "from": "Bayesian Statistics",
+      "to": "Bayesian Linear Regression"
+    },
+    {
+      "from": "Bayesian Statistics",
+      "to": "Gaussian Process"
+    },
+    {
+      "from": "Convex Optimization",
+      "to": "SVM"
     },
     {
       "from": "Loss Functions",
@@ -561,6 +1795,10 @@
     {
       "from": "Loss Functions",
       "to": "Neural Networks"
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Cross-Entropy Loss"
     },
     {
       "from": "Gradient Descent",
@@ -575,12 +1813,20 @@
       "to": "Gradient Boosting"
     },
     {
+      "from": "Gradient Descent",
+      "to": "Learning Rate Scheduling"
+    },
+    {
       "from": "Backpropagation",
       "to": "Neural Networks"
     },
     {
-      "from": "Regularization",
-      "to": "Linear Regression"
+      "from": "Backpropagation",
+      "to": "Vanishing Gradient"
+    },
+    {
+      "from": "Backpropagation",
+      "to": "Exploding Gradient"
     },
     {
       "from": "Regularization",
@@ -595,12 +1841,24 @@
       "to": "Batch Normalization"
     },
     {
+      "from": "Regularization",
+      "to": "Weight Decay"
+    },
+    {
       "from": "Feature Engineering",
       "to": "Linear Regression"
     },
     {
+      "from": "Feature Engineering",
+      "to": "Feature Selection"
+    },
+    {
       "from": "Cross-Validation",
       "to": "Hyperparameter Tuning"
+    },
+    {
+      "from": "Cross-Validation",
+      "to": "Model Selection"
     },
     {
       "from": "Bias-Variance Tradeoff",
@@ -611,16 +1869,84 @@
       "to": "Cross-Validation"
     },
     {
+      "from": "Bias-Variance Tradeoff",
+      "to": "Overfitting"
+    },
+    {
+      "from": "Bias-Variance Tradeoff",
+      "to": "Underfitting"
+    },
+    {
       "from": "Data Preprocessing",
       "to": "Feature Engineering"
+    },
+    {
+      "from": "Data Preprocessing",
+      "to": "Normalization"
+    },
+    {
+      "from": "Data Preprocessing",
+      "to": "Missing Data Imputation"
     },
     {
       "from": "Evaluation Metrics",
       "to": "Cross-Validation"
     },
     {
+      "from": "Evaluation Metrics",
+      "to": "Model Selection"
+    },
+    {
+      "from": "Transfer Learning",
+      "to": "LLM Fine-tuning"
+    },
+    {
+      "from": "Transfer Learning",
+      "to": "BERT"
+    },
+    {
+      "from": "Cross-Entropy Loss",
+      "to": "Logistic Regression"
+    },
+    {
+      "from": "Cross-Entropy Loss",
+      "to": "Neural Networks"
+    },
+    {
+      "from": "KL Divergence",
+      "to": "VAE"
+    },
+    {
+      "from": "KL Divergence",
+      "to": "Diffusion Models"
+    },
+    {
+      "from": "Contrastive Loss",
+      "to": "Contrastive Learning"
+    },
+    {
+      "from": "Contrastive Loss",
+      "to": "SimCLR"
+    },
+    {
       "from": "Linear Regression",
       "to": "Ridge & Lasso"
+    },
+    {
+      "from": "Linear Regression",
+      "to": "Polynomial Regression"
+    },
+    {
+      "from": "Linear Regression",
+      "to": "Bayesian Linear Regression"
+    },
+    {
+      "from": "Linear Regression",
+      "to": "Elastic Net"
+    },
+    {
+      "from": "Logistic Regression",
+      "to": "Multi-task Learning"
     },
     {
       "from": "Decision Trees",
@@ -639,32 +1965,88 @@
       "to": "Boosting"
     },
     {
+      "from": "Decision Trees",
+      "to": "ExtraTrees"
+    },
+    {
+      "from": "Perceptron",
+      "to": "Neural Networks"
+    },
+    {
+      "from": "Kernel Methods",
+      "to": "SVM"
+    },
+    {
+      "from": "Kernel Methods",
+      "to": "Gaussian Process"
+    },
+    {
+      "from": "AdaBoost",
+      "to": "Gradient Boosting"
+    },
+    {
+      "from": "Semi-supervised Learning",
+      "to": "Self-Supervised Learning"
+    },
+    {
+      "from": "Active Learning",
+      "to": "Semi-supervised Learning"
+    },
+    {
       "from": "k-Means",
       "to": "DBSCAN"
     },
     {
+      "from": "k-Means",
+      "to": "OPTICS"
+    },
+    {
+      "from": "k-Means",
+      "to": "Spectral Clustering"
+    },
+    {
       "from": "PCA",
-      "to": "Anomaly Detection"
+      "to": "t-SNE"
+    },
+    {
+      "from": "PCA",
+      "to": "UMAP"
+    },
+    {
+      "from": "PCA",
+      "to": "ICA"
+    },
+    {
+      "from": "PCA",
+      "to": "NMF"
     },
     {
       "from": "Gaussian Mixture Models",
-      "to": "Anomaly Detection"
+      "to": "Isolation Forest"
     },
     {
-      "from": "Autoencoders",
-      "to": "Variational Autoencoders"
+      "from": "Word2Vec",
+      "to": "GloVe"
     },
     {
-      "from": "Autoencoders",
-      "to": "Self-Supervised Learning"
+      "from": "Word2Vec",
+      "to": "FastText"
     },
     {
-      "from": "Variational Autoencoders",
-      "to": "GANs"
+      "from": "Word2Vec",
+      "to": "Word Embeddings"
     },
     {
-      "from": "Variational Autoencoders",
-      "to": "Diffusion Models"
+      "from": "Word2Vec",
+      "to": "Sentence Embeddings"
+    },
+    {
+      "from": "Topic Modeling (LDA)",
+      "to": "NMF"
+    },
+    {
+      "from": "Matrix Factorization",
+      "to": "Collaborative Filtering"
     },
     {
       "from": "Bagging",
@@ -673,6 +2055,10 @@
     {
       "from": "Boosting",
       "to": "Gradient Boosting"
+    },
+    {
+      "from": "Boosting",
+      "to": "AdaBoost"
     },
     {
       "from": "Random Forest",
@@ -687,16 +2073,52 @@
       "to": "LightGBM"
     },
     {
+      "from": "Gradient Boosting",
+      "to": "CatBoost"
+    },
+    {
+      "from": "Gradient Boosting",
+      "to": "DART"
+    },
+    {
       "from": "XGBoost",
       "to": "Stacking"
+    },
+    {
+      "from": "XGBoost",
+      "to": "TabNet"
+    },
+    {
+      "from": "Stacking",
+      "to": "Blending"
+    },
+    {
+      "from": "Stacking",
+      "to": "Voting Classifier"
     },
     {
       "from": "Activation Functions",
       "to": "Neural Networks"
     },
     {
-      "from": "Neural Networks",
-      "to": "Autoencoders"
+      "from": "Activation Functions",
+      "to": "Vanishing Gradient"
+    },
+    {
+      "from": "Weight Initialization",
+      "to": "Vanishing Gradient"
+    },
+    {
+      "from": "Vanishing Gradient",
+      "to": "LSTMs"
+    },
+    {
+      "from": "Vanishing Gradient",
+      "to": "Residual Connections"
+    },
+    {
+      "from": "Exploding Gradient",
+      "to": "Gradient Clipping"
     },
     {
       "from": "Neural Networks",
@@ -709,6 +2131,10 @@
     {
       "from": "Neural Networks",
       "to": "Batch Normalization"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Layer Normalization"
     },
     {
       "from": "Neural Networks",
@@ -728,7 +2154,27 @@
     },
     {
       "from": "Neural Networks",
+      "to": "Autoencoders"
+    },
+    {
+      "from": "Neural Networks",
       "to": "Self-Supervised Learning"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Siamese Networks"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Hypernetworks"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Neural ODEs"
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Mixture of Experts"
     },
     {
       "from": "Neural Networks",
@@ -743,12 +2189,84 @@
       "to": "Quantization & Pruning"
     },
     {
+      "from": "Batch Normalization",
+      "to": "Residual Networks"
+    },
+    {
+      "from": "Optimizers (Adam/SGD)",
+      "to": "Learning Rate Scheduling"
+    },
+    {
+      "from": "Residual Connections",
+      "to": "Residual Networks"
+    },
+    {
+      "from": "Residual Connections",
+      "to": "DenseNet"
+    },
+    {
       "from": "CNNs",
       "to": "Residual Networks"
     },
     {
       "from": "CNNs",
+      "to": "DenseNet"
+    },
+    {
+      "from": "CNNs",
+      "to": "MobileNet"
+    },
+    {
+      "from": "CNNs",
+      "to": "EfficientNet"
+    },
+    {
+      "from": "CNNs",
+      "to": "Inception"
+    },
+    {
+      "from": "CNNs",
+      "to": "U-Net"
+    },
+    {
+      "from": "CNNs",
+      "to": "YOLO"
+    },
+    {
+      "from": "CNNs",
+      "to": "R-CNN"
+    },
+    {
+      "from": "CNNs",
+      "to": "Feature Pyramid Networks"
+    },
+    {
+      "from": "CNNs",
+      "to": "Capsule Networks"
+    },
+    {
+      "from": "CNNs",
+      "to": "Deformable Conv"
+    },
+    {
+      "from": "CNNs",
       "to": "Vision Transformers"
+    },
+    {
+      "from": "Residual Networks",
+      "to": "Vision Transformers"
+    },
+    {
+      "from": "Residual Networks",
+      "to": "EfficientNet"
+    },
+    {
+      "from": "Feature Pyramid Networks",
+      "to": "YOLO"
+    },
+    {
+      "from": "Feature Pyramid Networks",
+      "to": "R-CNN"
     },
     {
       "from": "RNNs",
@@ -759,6 +2277,14 @@
       "to": "GRUs"
     },
     {
+      "from": "RNNs",
+      "to": "Bidirectional RNN"
+    },
+    {
+      "from": "RNNs",
+      "to": "Seq2Seq"
+    },
+    {
       "from": "LSTMs",
       "to": "Attention Mechanism"
     },
@@ -767,16 +2293,56 @@
       "to": "Attention Mechanism"
     },
     {
+      "from": "Seq2Seq",
+      "to": "Attention Mechanism"
+    },
+    {
+      "from": "Seq2Seq",
+      "to": "Machine Translation"
+    },
+    {
+      "from": "Attention Mechanism",
+      "to": "Multi-Head Attention"
+    },
+    {
       "from": "Attention Mechanism",
       "to": "Transformers"
     },
     {
-      "from": "Residual Networks",
-      "to": "Vision Transformers"
+      "from": "Multi-Head Attention",
+      "to": "Transformers"
+    },
+    {
+      "from": "Multi-Head Attention",
+      "to": "Flash Attention"
+    },
+    {
+      "from": "Positional Encoding",
+      "to": "Transformers"
+    },
+    {
+      "from": "Positional Encoding",
+      "to": "Rotary Embeddings"
+    },
+    {
+      "from": "Graph Neural Networks",
+      "to": "Graph Attention Networks"
+    },
+    {
+      "from": "Graph Neural Networks",
+      "to": "Message Passing"
     },
     {
       "from": "Transformers",
-      "to": "BERT / GPT"
+      "to": "BERT"
+    },
+    {
+      "from": "Transformers",
+      "to": "GPT"
+    },
+    {
+      "from": "Transformers",
+      "to": "T5"
     },
     {
       "from": "Transformers",
@@ -791,20 +2357,196 @@
       "to": "Multimodal Models"
     },
     {
-      "from": "BERT / GPT",
+      "from": "Transformers",
+      "to": "Mixture of Experts (MoE)"
+    },
+    {
+      "from": "Transformers",
+      "to": "Sparse Attention"
+    },
+    {
+      "from": "Transformers",
+      "to": "Flash Attention"
+    },
+    {
+      "from": "Transformers",
+      "to": "Feed-Forward Networks"
+    },
+    {
+      "from": "BERT",
       "to": "LLM Fine-tuning"
     },
     {
-      "from": "BERT / GPT",
+      "from": "BERT",
       "to": "RLHF"
     },
     {
-      "from": "BERT / GPT",
+      "from": "BERT",
+      "to": "Question Answering"
+    },
+    {
+      "from": "BERT",
+      "to": "Named Entity Recognition"
+    },
+    {
+      "from": "BERT",
+      "to": "Text Classification"
+    },
+    {
+      "from": "BERT",
+      "to": "Sentiment Analysis"
+    },
+    {
+      "from": "BERT",
+      "to": "Summarization"
+    },
+    {
+      "from": "GPT",
+      "to": "LLM Fine-tuning"
+    },
+    {
+      "from": "GPT",
+      "to": "Code Generation"
+    },
+    {
+      "from": "GPT",
+      "to": "Chain-of-Thought"
+    },
+    {
+      "from": "GPT",
+      "to": "RLHF"
+    },
+    {
+      "from": "GPT",
       "to": "RAG"
+    },
+    {
+      "from": "T5",
+      "to": "Machine Translation"
+    },
+    {
+      "from": "T5",
+      "to": "Summarization"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "Multimodal Models"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "CLIP"
+    },
+    {
+      "from": "CLIP",
+      "to": "Multimodal Models"
+    },
+    {
+      "from": "CLIP",
+      "to": "DALL-E / Stable Diffusion"
+    },
+    {
+      "from": "GANs",
+      "to": "DALL-E / Stable Diffusion"
+    },
+    {
+      "from": "Autoencoders",
+      "to": "VAE"
+    },
+    {
+      "from": "Autoencoders",
+      "to": "Self-Supervised Learning"
+    },
+    {
+      "from": "VAE",
+      "to": "GANs"
+    },
+    {
+      "from": "VAE",
+      "to": "Diffusion Models"
+    },
+    {
+      "from": "VAE",
+      "to": "Flow Models"
+    },
+    {
+      "from": "Diffusion Models",
+      "to": "DALL-E / Stable Diffusion"
+    },
+    {
+      "from": "Diffusion Models",
+      "to": "VideoGen"
+    },
+    {
+      "from": "Diffusion Models",
+      "to": "Score Matching"
+    },
+    {
+      "from": "Score Matching",
+      "to": "Flow Models"
+    },
+    {
+      "from": "Self-Supervised Learning",
+      "to": "Contrastive Learning"
+    },
+    {
+      "from": "Self-Supervised Learning",
+      "to": "MAE"
+    },
+    {
+      "from": "Self-Supervised Learning",
+      "to": "DINO"
+    },
+    {
+      "from": "Self-Supervised Learning",
+      "to": "BERT"
+    },
+    {
+      "from": "Contrastive Learning",
+      "to": "SimCLR"
+    },
+    {
+      "from": "Contrastive Learning",
+      "to": "MoCo"
+    },
+    {
+      "from": "Contrastive Learning",
+      "to": "Multimodal Models"
+    },
+    {
+      "from": "SimCLR",
+      "to": "DINO"
+    },
+    {
+      "from": "MoCo",
+      "to": "DINO"
+    },
+    {
+      "from": "Word Embeddings",
+      "to": "Sentence Embeddings"
     },
     {
       "from": "Reinforcement Learning",
       "to": "Policy Gradient"
+    },
+    {
+      "from": "Reinforcement Learning",
+      "to": "Q-Learning"
+    },
+    {
+      "from": "Reinforcement Learning",
+      "to": "Model-Based RL"
+    },
+    {
+      "from": "Reinforcement Learning",
+      "to": "Offline RL"
+    },
+    {
+      "from": "Reinforcement Learning",
+      "to": "Multi-Agent RL"
+    },
+    {
+      "from": "Reinforcement Learning",
+      "to": "Imitation Learning"
     },
     {
       "from": "Reinforcement Learning",
@@ -816,23 +2558,43 @@
     },
     {
       "from": "Policy Gradient",
+      "to": "PPO"
+    },
+    {
+      "from": "Policy Gradient",
+      "to": "A3C"
+    },
+    {
+      "from": "Policy Gradient",
+      "to": "SAC"
+    },
+    {
+      "from": "Q-Learning",
+      "to": "DQN"
+    },
+    {
+      "from": "PPO",
       "to": "RLHF"
     },
     {
-      "from": "Self-Supervised Learning",
-      "to": "Contrastive Learning"
+      "from": "Model-Based RL",
+      "to": "World Models"
     },
     {
-      "from": "Self-Supervised Learning",
-      "to": "BERT / GPT"
+      "from": "Imitation Learning",
+      "to": "Inverse RL"
     },
     {
-      "from": "Contrastive Learning",
-      "to": "Multimodal Models"
+      "from": "LLM Fine-tuning",
+      "to": "LoRA"
     },
     {
-      "from": "Vision Transformers",
-      "to": "Multimodal Models"
+      "from": "LLM Fine-tuning",
+      "to": "QLoRA"
+    },
+    {
+      "from": "LLM Fine-tuning",
+      "to": "Prefix Tuning"
     },
     {
       "from": "LLM Fine-tuning",
@@ -841,18 +2603,158 @@
     {
       "from": "LLM Fine-tuning",
       "to": "AI Agents"
+    },
+    {
+      "from": "LLM Fine-tuning",
+      "to": "MLOps"
+    },
+    {
+      "from": "LoRA",
+      "to": "QLoRA"
+    },
+    {
+      "from": "Prompt Engineering",
+      "to": "Chain-of-Thought"
+    },
+    {
+      "from": "Prompt Engineering",
+      "to": "Few-Shot Learning"
+    },
+    {
+      "from": "RLHF",
+      "to": "Constitutional AI"
     },
     {
       "from": "RLHF",
       "to": "AI Agents"
     },
     {
-      "from": "Meta-Learning",
-      "to": "Neural Architecture Search"
+      "from": "RLHF",
+      "to": "Alignment"
+    },
+    {
+      "from": "Chain-of-Thought",
+      "to": "ReAct"
+    },
+    {
+      "from": "Chain-of-Thought",
+      "to": "AI Agents"
+    },
+    {
+      "from": "ReAct",
+      "to": "Tool Use"
+    },
+    {
+      "from": "ReAct",
+      "to": "AI Agents"
+    },
+    {
+      "from": "Tool Use",
+      "to": "AI Agents"
+    },
+    {
+      "from": "AI Agents",
+      "to": "Multi-Agent Systems"
+    },
+    {
+      "from": "AI Agents",
+      "to": "Memory Systems"
     },
     {
       "from": "RAG",
       "to": "AI Agents"
+    },
+    {
+      "from": "Meta-Learning",
+      "to": "Few-Shot Learning"
+    },
+    {
+      "from": "Meta-Learning",
+      "to": "Zero-Shot Learning"
+    },
+    {
+      "from": "Meta-Learning",
+      "to": "Neural Architecture Search"
+    },
+    {
+      "from": "Meta-Learning",
+      "to": "AutoML"
+    },
+    {
+      "from": "Few-Shot Learning",
+      "to": "Zero-Shot Learning"
+    },
+    {
+      "from": "Federated Learning",
+      "to": "Differential Privacy"
+    },
+    {
+      "from": "Quantization & Pruning",
+      "to": "Knowledge Distillation"
+    },
+    {
+      "from": "Quantization & Pruning",
+      "to": "Sparse Models"
+    },
+    {
+      "from": "Quantization & Pruning",
+      "to": "TensorRT / ONNX"
+    },
+    {
+      "from": "Knowledge Distillation",
+      "to": "Edge AI"
+    },
+    {
+      "from": "NeRF",
+      "to": "3D Gaussian Splatting"
+    },
+    {
+      "from": "AlphaFold",
+      "to": "World Models"
+    },
+    {
+      "from": "Causal ML",
+      "to": "Interpretability"
+    },
+    {
+      "from": "Interpretability",
+      "to": "SHAP"
+    },
+    {
+      "from": "Interpretability",
+      "to": "LIME"
+    },
+    {
+      "from": "Interpretability",
+      "to": "AI Safety"
+    },
+    {
+      "from": "AI Safety",
+      "to": "Alignment"
+    },
+    {
+      "from": "AI Safety",
+      "to": "Constitutional AI"
+    },
+    {
+      "from": "MLOps",
+      "to": "Model Monitoring"
+    },
+    {
+      "from": "MLOps",
+      "to": "Feature Stores"
+    },
+    {
+      "from": "MLOps",
+      "to": "Experiment Tracking"
+    },
+    {
+      "from": "MLOps",
+      "to": "Edge AI"
+    },
+    {
+      "from": "TensorRT / ONNX",
+      "to": "Edge AI"
     }
   ],
   "categories": {

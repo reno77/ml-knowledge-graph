@@ -63,7 +63,7 @@
 
 <div id="header">
   <h1>🧠 ML Knowledge Graph</h1>
-  <p>68 concepts · 94 prerequisites · Interactive 3D</p>
+  <p>234 concepts · 279 prerequisites · Interactive 3D</p>
 </div>
 
 <div id="controls">
@@ -205,10 +205,32 @@ fetch('graph.json').then(r => r.json()).then(data => {
     .linkDirectionalParticleWidth(2)
     .linkDirectionalParticleColor(() => '#7ecfff')
 
-    // Level-based z positioning (hierarchy feel)
-    .d3Force('z', (() => {
+    // Spiral galaxy layout: nodes arranged in spiral arms by level
+    .d3Force('spiral', (() => {
       let nodes = [];
-      const force = () => nodes.forEach(n => { n.fz = (n.level - 3) * 80; });
+      const force = alpha => {
+        nodes.forEach((n, i) => {
+          // Spiral: angle based on index within level group, radius based on level
+          const levelNodes = nodes.filter(x => x.level === n.level);
+          const idxInLevel = levelNodes.indexOf(n);
+          const totalInLevel = levelNodes.length;
+          const arms = 3;
+          const armIdx = idxInLevel % arms;
+          const posInArm = Math.floor(idxInLevel / arms);
+          const armOffset = (armIdx / arms) * Math.PI * 2;
+          const t = posInArm / Math.max(1, Math.ceil(totalInLevel / arms));
+          const spiralTurns = 2.5;
+          const angle = armOffset + t * Math.PI * 2 * spiralTurns;
+          const baseRadius = 60 + n.level * 55;
+          const r = baseRadius + t * 40;
+          const targetX = r * Math.cos(angle);
+          const targetY = r * Math.sin(angle);
+          const targetZ = (n.level - 3) * 70 + (idxInLevel % 3 - 1) * 15;
+          n.vx = (n.vx || 0) + (targetX - (n.x||0)) * alpha * 0.08;
+          n.vy = (n.vy || 0) + (targetY - (n.y||0)) * alpha * 0.08;
+          n.vz = (n.vz || 0) + (targetZ - (n.z||0)) * alpha * 0.08;
+        });
+      };
       force.initialize = ns => { nodes = ns; };
       return force;
     })())
