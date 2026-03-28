@@ -101,7 +101,21 @@
     #node-info .ni-close { float: right; cursor: pointer; color: #446; font-size: 14px; }
 
     #hint { position: fixed; bottom: 16px; right: 230px; z-index: 100;
-            font-size: 10px; color: #224; text-align: right; line-height: 2; }
+            font-size: 10px; color: #224; text-align: right; line-height: 2; transition: right 0.3s; }
+    #hint.panel-hidden { right: 16px; }
+
+    #panel-toggle {
+      position: fixed; top: 50%; right: 220px; transform: translateY(-50%);
+      z-index: 101; width: 20px; height: 48px;
+      background: rgba(10,10,28,0.97); border: 1px solid #1a1a3a;
+      border-right: none; border-radius: 8px 0 0 8px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; color: #7ecfff; font-size: 12px;
+      transition: right 0.3s; user-select: none;
+    }
+    #panel-toggle.panel-hidden { right: 0; border-radius: 8px 0 0 8px; }
+    #panel.hidden { transform: translateX(100%); }
+    #panel { transition: transform 0.3s ease; }
 
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: #0a0a1a; }
@@ -195,6 +209,7 @@
   <div class="ni-links" id="ni-links"></div>
 </div>
 
+<div id="panel-toggle" title="Toggle panel">◀</div>
 <div id="hint">Left drag · Scroll zoom<br>Right drag · Click node</div>
 
 <div id="graph"></div>
@@ -532,6 +547,20 @@ fetch('graph.json').then(r => r.json()).then(data => {
       document.getElementById('node-info').style.display='none';
       refreshVisuals();
     }
+  });
+
+  // ── Panel show/hide ───────────────────────────────────────────────────
+  let panelVisible = true;
+  const panelEl   = document.getElementById('panel');
+  const toggleBtn = document.getElementById('panel-toggle');
+  const hintEl    = document.getElementById('hint');
+  toggleBtn.addEventListener('click', () => {
+    panelVisible = !panelVisible;
+    panelEl.classList.toggle('hidden', !panelVisible);
+    toggleBtn.textContent = panelVisible ? '◀' : '▶';
+    toggleBtn.style.right = panelVisible ? '220px' : '0';
+    toggleBtn.style.borderRadius = panelVisible ? '8px 0 0 8px' : '8px 0 0 8px';
+    hintEl.classList.toggle('panel-hidden', !panelVisible);
   });
 
   // ── Initial render ────────────────────────────────────────────────────
