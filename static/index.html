@@ -95,6 +95,7 @@
     #node-info .ni-name  { font-size: 15px; font-weight: 700; color: #1a4da0; }
     #node-info .ni-cat   { font-size: 11px; color: #778; margin-top: 3px; }
     #node-info .ni-level { font-size: 11px; color: #334; margin-top: 2px; }
+    #node-info .ni-year  { font-size: 11px; color: #779; margin-top: 2px; }
     #node-info .ni-links { font-size: 11px; color: #334; margin-top: 8px;
                            border-top: 1px solid #b0bcd8; padding-top: 8px;
                            max-height: 120px; overflow-y: auto; }
@@ -241,6 +242,7 @@
   <div class="ni-name"  id="ni-name"></div>
   <div class="ni-cat"   id="ni-cat"></div>
   <div class="ni-level" id="ni-level"></div>
+  <div class="ni-year"  id="ni-year" style="display:none;"></div>
   <div class="ni-links" id="ni-links"></div>
   <div id="ni-papers" style="margin-top:10px;border-top:1px solid #e0e4f0;padding-top:8px;display:none;gap:6px;flex-direction:column;"></div>
   <div id="ni-wiki" style="margin-top:10px;border-top:1px solid #e0e4f0;padding-top:8px;display:none;">
@@ -871,6 +873,10 @@ fetch('graph.json').then(r => r.json()).then(data => {
     document.getElementById('ni-name').textContent = node.label;
     document.getElementById('ni-cat').textContent  = '📁 '+node.category.charAt(0).toUpperCase()+node.category.slice(1);
     document.getElementById('ni-level').textContent= '📊 Level '+node.level+': '+(LEVEL_LABELS[node.level]||'');
+    const yr = NODE_YEARS[node.label] ?? NODE_YEARS[node.id];
+    const yrEl = document.getElementById('ni-year');
+    if (yr) { yrEl.textContent = '📅 First proposed: ' + yr; yrEl.style.display = 'block'; }
+    else     { yrEl.style.display = 'none'; }
     document.getElementById('ni-links').innerHTML  =
       (prereqs.length ? `<b>Requires (${prereqs.length}):</b> ${prereqs.join(', ')}<br>` : '') +
       (enables.length ? `<b>Enables (${enables.length}):</b> ${enables.join(', ')}` : '');
@@ -1425,6 +1431,86 @@ fetch('graph.json').then(r => r.json()).then(data => {
     return h;
   }
 
+  // ── Timeline axis ─────────────────────────────────────────────────────
+  let timelineAxisGroup = null;
+
+  function buildTimelineAxis() {
+    const group = new THREE.Group();
+    const toX   = y => (y - 1990) * 5;
+    const AY    = -420;   // y position of the axis line (below node scatter)
+    const AZ    = 0;
+
+    // Axis line from ~1640 to ~2030
+    const x0 = toX(1640), x1 = toX(2030);
+    const axisGeo = new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(x0, AY, AZ),
+      new THREE.Vector3(x1, AY, AZ),
+    ]);
+    group.add(new THREE.Line(axisGeo,
+      new THREE.LineBasicMaterial({ color: 0x8899cc, opacity: 0.7, transparent: true })));
+
+    // Arrow head at right end
+    const arrowGeo = new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(x1 - 12, AY + 6, AZ),
+      new THREE.Vector3(x1,      AY,     AZ),
+      new THREE.Vector3(x1 - 12, AY - 6, AZ),
+    ]);
+    group.add(new THREE.Line(arrowGeo,
+      new THREE.LineBasicMaterial({ color: 0x8899cc, opacity: 0.7, transparent: true })));
+
+    // Determine which years to tick
+    const tickYears = [];
+    for (let y = 1650; y <= 2025; y += 10) tickYears.push(y);
+
+    tickYears.forEach(year => {
+      const x       = toX(year);
+      const isCent  = year % 100 === 0;
+      const isFifty = year % 50  === 0;
+      const tickH   = isCent ? 24 : isFifty ? 16 : 8;
+      const col     = isCent ? 0x5566aa : 0x99aacc;
+
+      // Tick mark
+      const tGeo = new THREE.BufferGeometry().setFromPoints([
+        new THREE.Vector3(x, AY,         AZ),
+        new THREE.Vector3(x, AY + tickH, AZ),
+      ]);
+      group.add(new THREE.Line(tGeo,
+        new THREE.LineBasicMaterial({ color: col, opacity: 0.8, transparent: true })));
+
+      // Label — century marks always, post-1950 every decade
+      const showLabel = isCent || (year >= 1950 && year % 10 === 0);
+      if (showLabel) {
+        const sp = new SpriteText(String(year));
+        sp.color          = isCent ? '#445588' : '#778899';
+        sp.textHeight     = isCent ? 7 : 5.5;
+        sp.fontFace        = 'Segoe UI, sans-serif';
+        sp.fontWeight      = isCent ? '700' : '400';
+        sp.position.set(x, AY + tickH + 9, AZ);
+        sp.material.depthTest = false;
+        sp.renderOrder    = 100;
+        group.add(sp);
+      }
+    });
+
+    return group;
+  }
+
+  function showTimelineAxis() {
+    if (timelineAxisGroup) return;
+    timelineAxisGroup = buildTimelineAxis();
+    Graph.scene().add(timelineAxisGroup);
+  }
+
+  function hideTimelineAxis() {
+    if (!timelineAxisGroup) return;
+    Graph.scene().remove(timelineAxisGroup);
+    timelineAxisGroup.traverse(o => {
+      if (o.geometry) o.geometry.dispose();
+      if (o.material) o.material.dispose();
+    });
+    timelineAxisGroup = null;
+  }
+
   // ── Layout switching ─────────────────────────────────────────────────
   let currentLayout = 'semantic';
 
@@ -1460,6 +1546,9 @@ fetch('graph.json').then(r => r.json()).then(data => {
         n.fz = (n.level - 3) * 50 + (((( h >> 8) & 0xff) / 255) - 0.5) * 100;
       });
     }
+    // Show/hide the 3D timeline axis
+    if (mode === 'time') showTimelineAxis();
+    else hideTimelineAxis();
     Graph.d3ReheatSimulation();
   }
 
