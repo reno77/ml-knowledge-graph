@@ -105,6 +105,38 @@
             font-size: 10px; color: #667; text-align: right; line-height: 2; transition: right 0.3s; }
     #hint.panel-hidden { right: 16px; }
 
+    /* ── Rotation gizmo ─────────────────────────────────────── */
+    #rotation-gizmo {
+      position: fixed; bottom: 60px; right: 230px; z-index: 100;
+      transition: right 0.3s;
+    }
+    #rotation-gizmo.panel-hidden { right: 16px; }
+    #rotation-gizmo .gizmo-ring {
+      width: 80px; height: 80px; border-radius: 50%;
+      border: 2px solid #b0bcd8; background: rgba(240,242,255,0.92);
+      position: relative; display: flex; align-items: center; justify-content: center;
+    }
+    #rotation-gizmo .gizmo-btn {
+      position: absolute; width: 22px; height: 22px; border-radius: 50%;
+      border: 2px solid; font-size: 10px; font-weight: 700;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: transform 0.15s, box-shadow 0.15s;
+      background: #fff;
+    }
+    #rotation-gizmo .gizmo-btn:hover { transform: scale(1.2); box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+    #rotation-gizmo .gizmo-btn.active { transform: scale(1.25); box-shadow: 0 0 0 3px rgba(26,77,160,0.3); }
+    #rotation-gizmo .gx { top: -11px; left: 50%; margin-left: -11px; border-color: #e44; color: #e44; }
+    #rotation-gizmo .gy { right: -11px; top: 50%; margin-top: -11px; border-color: #4a4; color: #4a4; }
+    #rotation-gizmo .gz { bottom: -11px; left: 50%; margin-left: -11px; border-color: #46e; color: #46e; }
+    #rotation-gizmo .gfree {
+      position: relative; width: 26px; height: 26px; border-radius: 50%;
+      border: 2px solid #888; color: #555; font-size: 8px; font-weight: 700;
+      cursor: pointer; background: #fff;
+      display: flex; align-items: center; justify-content: center;
+    }
+    #rotation-gizmo .gfree:hover { background: #eee; }
+    #rotation-gizmo .gfree.active { border-color: #1a4da0; color: #1a4da0; background: #e8eeff; }
+
     #panel-toggle {
       position: fixed; top: 50%; right: 220px; transform: translateY(-50%);
       z-index: 101; width: 20px; height: 48px;
@@ -308,6 +340,14 @@
 
 <div id="panel-toggle" title="Toggle panel">◀</div>
 <div id="hint">Left drag · Scroll zoom<br>Right drag · Click node</div>
+<div id="rotation-gizmo">
+  <div class="gizmo-ring">
+    <div class="gizmo-btn gx" data-axis="x" title="Rotate around X axis">X</div>
+    <div class="gizmo-btn gy" data-axis="y" title="Rotate around Y axis">Y</div>
+    <div class="gizmo-btn gz" data-axis="z" title="Rotate around Z axis">Z</div>
+    <div class="gfree active" data-axis="free" title="Free rotation">Free</div>
+  </div>
+</div>
 
 <div id="lock-badge">🔒 <span id="lock-label">Locked</span> — click to unlock</div>
 <div id="graph"></div>
@@ -1863,7 +1903,67 @@ fetch('graph.json').then(r => r.json()).then(data => {
     toggleBtn.style.right = panelVisible ? '220px' : '0';
     toggleBtn.style.borderRadius = panelVisible ? '8px 0 0 8px' : '8px 0 0 8px';
     hintEl.classList.toggle('panel-hidden', !panelVisible);
+    document.getElementById('rotation-gizmo').classList.toggle('panel-hidden', !panelVisible);
   });
+
+  // ── Rotation gizmo (axis-constrained orbit) ───────────────────────────
+  (function initRotationGizmo() {
+    const gizmo = document.getElementById('rotation-gizmo');
+    const btns = gizmo.querySelectorAll('[data-axis]');
+    let activeAxis = 'free';
+    let orbitInterval = null;
+    let orbitAngle = 0;
+
+    function setActive(axis) {
+      activeAxis = axis;
+      btns.forEach(b => b.classList.toggle('active', b.dataset.axis === axis));
+      if (orbitInterval) { clearInterval(orbitInterval); orbitInterval = null; }
+      if (axis === 'free') return;
+
+      // Get current camera distance from center
+      const cam = Graph.camera();
+      const dist = cam.position.length();
+      orbitAngle = Math.atan2(cam.position.z, cam.position.x);
+      const elevAngle = Math.asin(cam.position.y / dist);
+
+      orbitInterval = setInterval(() => {
+        orbitAngle += 0.008;
+        const d = dist;
+        let x, y, z;
+        if (axis === 'y') {
+          // Rotate around Y axis (turntable)
+          x = d * Math.cos(elevAngle) * Math.cos(orbitAngle);
+          z = d * Math.cos(elevAngle) * Math.sin(orbitAngle);
+          y = d * Math.sin(elevAngle);
+        } else if (axis === 'x') {
+          // Rotate around X axis
+          x = cam.position.x;
+          y = d * Math.cos(orbitAngle) * 0.8;
+          z = d * Math.sin(orbitAngle);
+        } else {
+          // Rotate around Z axis
+          x = d * Math.cos(orbitAngle);
+          y = d * Math.sin(orbitAngle) * 0.8;
+          z = cam.position.z;
+        }
+        Graph.cameraPosition({ x, y, z });
+      }, 30);
+    }
+
+    btns.forEach(b => {
+      b.addEventListener('click', () => {
+        setActive(b.dataset.axis === activeAxis ? 'free' : b.dataset.axis);
+      });
+    });
+
+    // Stop orbit on any user interaction with the graph
+    const graphEl = document.getElementById('graph');
+    ['mousedown', 'wheel', 'touchstart'].forEach(ev => {
+      graphEl.addEventListener(ev, () => {
+        if (activeAxis !== 'free') setActive('free');
+      }, { passive: true });
+    });
+  })();
 
   // ── Initial render ────────────────────────────────────────────────────
   refreshGraph();
