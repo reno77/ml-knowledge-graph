@@ -1935,57 +1935,35 @@ fetch('graph.json').then(r => r.json()).then(data => {
     const gizmo = document.getElementById('rotation-gizmo');
     const btns = gizmo.querySelectorAll('[data-axis]');
     let activeAxis = 'free';
-    let orbitInterval = null;
-    let orbitAngle = 0;
 
     function setActive(axis) {
       activeAxis = axis;
       btns.forEach(b => b.classList.toggle('active', b.dataset.axis === axis));
-      if (orbitInterval) { clearInterval(orbitInterval); orbitInterval = null; }
+
       if (axis === 'free') return;
 
-      // Get current camera distance from center
+      // Snap camera to look along the chosen axis
       const cam = Graph.camera();
-      const dist = cam.position.length();
-      orbitAngle = Math.atan2(cam.position.z, cam.position.x);
-      const elevAngle = Math.asin(cam.position.y / dist);
+      const dist = cam.position.length() || 1500;
+      cam.up.set(0, 1, 0);
 
-      orbitInterval = setInterval(() => {
-        orbitAngle += 0.008;
-        const d = dist;
-        let x, y, z;
-        if (axis === 'y') {
-          // Rotate around Y axis (turntable)
-          x = d * Math.cos(elevAngle) * Math.cos(orbitAngle);
-          z = d * Math.cos(elevAngle) * Math.sin(orbitAngle);
-          y = d * Math.sin(elevAngle);
-        } else if (axis === 'x') {
-          // Rotate around X axis
-          x = cam.position.x;
-          y = d * Math.cos(orbitAngle) * 0.8;
-          z = d * Math.sin(orbitAngle);
-        } else {
-          // Rotate around Z axis
-          x = d * Math.cos(orbitAngle);
-          y = d * Math.sin(orbitAngle) * 0.8;
-          z = cam.position.z;
-        }
-        Graph.cameraPosition({ x, y, z });
-      }, 30);
+      if (axis === 'x') {
+        // Look along X axis (from +X)
+        Graph.cameraPosition({ x: dist, y: 0, z: 0 }, { x: 0, y: 0, z: 0 }, 600);
+      } else if (axis === 'y') {
+        // Look along Y axis (from +Y, looking down)
+        cam.up.set(0, 0, -1);
+        Graph.cameraPosition({ x: 0, y: dist, z: 0 }, { x: 0, y: 0, z: 0 }, 600);
+      } else {
+        // Look along Z axis (from +Z, front view)
+        Graph.cameraPosition({ x: 0, y: 0, z: dist }, { x: 0, y: 0, z: 0 }, 600);
+      }
     }
 
     btns.forEach(b => {
       b.addEventListener('click', () => {
         setActive(b.dataset.axis === activeAxis ? 'free' : b.dataset.axis);
       });
-    });
-
-    // Stop orbit on any user interaction with the graph
-    const graphEl = document.getElementById('graph');
-    ['mousedown', 'wheel', 'touchstart'].forEach(ev => {
-      graphEl.addEventListener(ev, () => {
-        if (activeAxis !== 'free') setActive('free');
-      }, { passive: true });
     });
   })();
 
