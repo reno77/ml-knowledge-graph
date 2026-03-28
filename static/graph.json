@@ -4871,7 +4871,7 @@
       "sx": 252.07,
       "sy": -204.69,
       "sz": 4.57,
-      "summary": "Portfolio optimization Portfolio optimization is the process of selecting a portfolio of investments that achieves an effective balance between risk and"
+      "summary": "ZeRO (Zero Redundancy Optimizer) is a memory optimization technique developed by Microsoft's DeepSpeed that eliminates memory redundancies in data-parallel distributed deep learning by partitioning model states (optimizer states, gradients, and parameters) across devices instead of replicating them. This approach enables the training of models with 100\u2013200 billion parameters and potentially trillions of parameters by drastically reducing memory consumption while retaining the computational efficiency of data parallelism."
     },
     {
       "id": "Mixed Precision Training",
