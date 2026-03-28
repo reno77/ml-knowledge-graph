@@ -1051,6 +1051,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     Object.assign(state, {labels:true,links:true,arrows:true,particles:true,glow:true,
       linkSameCat:true,linkCrossCat:true,linkUp:true,linkSame:true});
     refreshGraph();
+    Graph.zoomToFit(400, 80);
   };
   window.selectAll = () => clearHighlight();
 
