@@ -5237,6 +5237,105 @@
       "summary": "The Foundation Models framework is a Swift API introduced by Apple at WWDC 2025, providing third-party developers with direct access to the on-device ~3 billion parameter large language model that powers Apple Intelligence features. It became availa\u2026"
     },
     {
+      "id": "DeepSeek-V3",
+      "label": "DeepSeek-V3",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 330.64,
+      "sy": -54.9,
+      "sz": 203.57,
+      "summary": "DeepSeek-V3 is a 671B-parameter Mixture-of-Experts language model (37B activated per token) combining Multi-head Latent Attention and DeepSeekMoE with auxiliary-loss-free load balancing and Multi-Token Prediction. It pioneered FP8 mixed-precision training at extreme scale, completing pre-training on 14.8T tokens for only 2.788M H800 GPU hours."
+    },
+    {
+      "id": "DeepSeek-R1",
+      "label": "DeepSeek-R1",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 350.64,
+      "sy": -34.9,
+      "sz": 183.57,
+      "summary": "DeepSeek-R1 demonstrates that strong reasoning capabilities (self-verification, reflection, long chain-of-thought) can emerge purely through large-scale reinforcement learning on a base model without supervised fine-tuning. It achieves performance comparable to OpenAI o1 on math, code, and reasoning tasks, and shows that reasoning patterns can be distilled into smaller dense models."
+    },
+    {
+      "id": "DeepSeekMoE",
+      "label": "DeepSeekMoE",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": -313.81,
+      "sy": 215.28,
+      "sz": -148.02,
+      "summary": "DeepSeekMoE introduces fine-grained expert segmentation (splitting experts into smaller, more specialized units) and shared expert isolation (dedicating certain experts to capture common knowledge across all inputs). The 16.4B-parameter model matches dense 7B models while using only 40% of the computation."
+    },
+    {
+      "id": "Multi-head Latent Attention",
+      "label": "Multi-head Latent Attention",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 478.8,
+      "sy": 234.03,
+      "sz": -163.31,
+      "summary": "Multi-head Latent Attention (MLA) compresses key-value pairs into a low-dimensional latent space, dramatically reducing KV cache size during inference compared to standard Multi-Head Attention or Multi-Query Attention. Introduced in DeepSeek-V2, it enables efficient inference for large MoE models."
+    },
+    {
+      "id": "Multi-Token Prediction",
+      "label": "Multi-Token Prediction",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 310.64,
+      "sy": -114.9,
+      "sz": 238.57,
+      "summary": "Multi-Token Prediction (MTP) is a training objective where the model predicts multiple future tokens simultaneously rather than just the next token. It improves training signal density and enables speculative decoding at inference time, contributing to both better performance and faster generation."
+    },
+    {
+      "id": "FP8 Training",
+      "label": "FP8 Training",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 356.87,
+      "sy": -70.83,
+      "sz": 103.78,
+      "summary": "FP8 (8-bit floating point) training uses reduced-precision arithmetic for forward and backward passes, cutting memory usage and compute requirements roughly in half compared to BF16. DeepSeek-V3 demonstrated stable FP8 training at 671B-parameter scale with fine-grained quantization and online calibration."
+    },
+    {
+      "id": "DualPipe",
+      "label": "DualPipe",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 155.05,
+      "sy": 33.71,
+      "sz": 138.07,
+      "summary": "DualPipe is a bidirectional pipeline parallelism algorithm that processes micro-batches from two directions simultaneously, achieving full overlap of forward/backward computation with cross-node communication. It reduces pipeline bubbles compared to 1F1B scheduling at the cost of 2x parameter memory per device."
+    },
+    {
+      "id": "Expert Parallelism",
+      "label": "Expert Parallelism",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": -293.81,
+      "sy": 250.28,
+      "sz": -203.02,
+      "summary": "Expert parallelism distributes different experts of a Mixture-of-Experts model across different GPUs, requiring all-to-all communication to route tokens to their assigned experts. DeepSeek's DeepEP library optimizes this with specialized NVLink and RDMA kernels achieving sub-100 microsecond latency."
+    },
+    {
+      "id": "Aletheia",
+      "label": "Aletheia",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": 173.62,
+      "sy": -108.75,
+      "sz": 384.27,
+      "summary": "Aletheia is a mathematical research agent that iteratively generates, verifies, and revises solutions end-to-end in natural language. It extends inference-time scaling beyond competition-level problems to PhD-level mathematical research, combining advanced reasoning with tool use for navigating mathematical literature."
+    },
+    {
       "id": "Generalist Agents",
       "label": "Generalist Agents",
       "level": 6,
@@ -6526,6 +6625,10 @@
     },
     {
       "from": "Multi-Head Attention",
+      "to": "Multi-head Latent Attention"
+    },
+    {
+      "from": "Multi-Head Attention",
       "to": "Transformers"
     },
     {
@@ -6587,6 +6690,14 @@
     {
       "from": "Graph Neural Networks",
       "to": "Knowledge Graphs"
+    },
+    {
+      "from": "Mixture of Experts",
+      "to": "DeepSeekMoE"
+    },
+    {
+      "from": "Mixture of Experts",
+      "to": "Expert Parallelism"
     },
     {
       "from": "Autoencoders",
@@ -6655,6 +6766,10 @@
     {
       "from": "LLM",
       "to": "Prompt Engineering"
+    },
+    {
+      "from": "LLM",
+      "to": "Multi-Token Prediction"
     },
     {
       "from": "Transformers",
@@ -6898,6 +7013,10 @@
     },
     {
       "from": "Flash Attention",
+      "to": "Multi-head Latent Attention"
+    },
+    {
+      "from": "Flash Attention",
       "to": "FlashAttention-2"
     },
     {
@@ -6919,6 +7038,10 @@
     {
       "from": "State Space Models",
       "to": "RetNet"
+    },
+    {
+      "from": "Grouped Query Attention",
+      "to": "Multi-head Latent Attention"
     },
     {
       "from": "Sliding Window Attention",
@@ -7138,6 +7261,10 @@
     },
     {
       "from": "Reinforcement Learning",
+      "to": "DeepSeek-R1"
+    },
+    {
+      "from": "Reinforcement Learning",
       "to": "Policy Gradient"
     },
     {
@@ -7342,6 +7469,14 @@
     },
     {
       "from": "Chain-of-Thought",
+      "to": "DeepSeek-R1"
+    },
+    {
+      "from": "Chain-of-Thought",
+      "to": "Aletheia"
+    },
+    {
+      "from": "Chain-of-Thought",
       "to": "ReAct"
     },
     {
@@ -7359,6 +7494,10 @@
     {
       "from": "Tool Use",
       "to": "AI Agents"
+    },
+    {
+      "from": "AI Agents",
+      "to": "Aletheia"
     },
     {
       "from": "AI Agents",
@@ -7419,6 +7558,10 @@
     {
       "from": "Federated Learning",
       "to": "Differential Privacy"
+    },
+    {
+      "from": "Quantization & Pruning",
+      "to": "FP8 Training"
     },
     {
       "from": "Quantization & Pruning",
@@ -7491,6 +7634,10 @@
     {
       "from": "Model Inference",
       "to": "Speculative Decoding"
+    },
+    {
+      "from": "Knowledge Distillation",
+      "to": "DeepSeek-R1"
     },
     {
       "from": "Knowledge Distillation",
@@ -7578,6 +7725,10 @@
     },
     {
       "from": "Speculative Decoding",
+      "to": "Multi-Token Prediction"
+    },
+    {
+      "from": "Speculative Decoding",
       "to": "LLM Serving"
     },
     {
@@ -7594,6 +7745,10 @@
     },
     {
       "from": "Model Parallelism",
+      "to": "Expert Parallelism"
+    },
+    {
+      "from": "Model Parallelism",
       "to": "Pipeline Parallelism"
     },
     {
@@ -7605,12 +7760,20 @@
       "to": "ZeRO Optimization"
     },
     {
+      "from": "Pipeline Parallelism",
+      "to": "DualPipe"
+    },
+    {
       "from": "ZeRO Optimization",
       "to": "DeepSpeed"
     },
     {
       "from": "ZeRO Optimization",
       "to": "FSDP"
+    },
+    {
+      "from": "Mixed Precision Training",
+      "to": "FP8 Training"
     },
     {
       "from": "Mixed Precision Training",
@@ -7719,6 +7882,38 @@
     {
       "from": "Foundation Models",
       "to": "Embodied AI"
+    },
+    {
+      "from": "DeepSeek-V3",
+      "to": "DeepSeek-R1"
+    },
+    {
+      "from": "DeepSeek-V3",
+      "to": "DualPipe"
+    },
+    {
+      "from": "DeepSeek-V3",
+      "to": "Expert Parallelism"
+    },
+    {
+      "from": "DeepSeek-R1",
+      "to": "Aletheia"
+    },
+    {
+      "from": "DeepSeekMoE",
+      "to": "DeepSeek-V3"
+    },
+    {
+      "from": "Multi-head Latent Attention",
+      "to": "DeepSeek-V3"
+    },
+    {
+      "from": "Multi-Token Prediction",
+      "to": "DeepSeek-V3"
+    },
+    {
+      "from": "FP8 Training",
+      "to": "DeepSeek-V3"
     },
     {
       "from": "Embodied AI",
