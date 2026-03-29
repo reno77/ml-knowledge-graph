@@ -5344,7 +5344,7 @@
       "sx": -147.22,
       "sy": 199.04,
       "sz": -190.22,
-      "summary": "Autograd (automatic differentiation) is the engine that computes gradients of scalar-valued functions with respect to their inputs by building a computational graph and applying the chain rule in reverse. It is the foundation of backpropagation in neural networks. Karpathy's micrograd demonstrates this in ~100 lines of Python, implementing a scalar-valued autograd engine with a PyTorch-like API."
+      "summary": "Autograd (automatic differentiation) is the engine that computes gradients of scalar-valued functions with respect to their inputs by building a computational graph and applying the chain rule in reverse. It is the foundation of backpropagation in neural networks. Karpathy's micrograd demonstrates this in ~100 lines of Python."
     },
     {
       "id": "Character-level LM",
@@ -5366,7 +5366,7 @@
       "sx": 382.71,
       "sy": 223.75,
       "sz": 6.18,
-      "summary": "A bigram language model predicts the next token based solely on the previous token, using a learned frequency table or lookup matrix. Despite its simplicity (no hidden state or attention), it serves as the baseline starting point for understanding language modeling. It is the first model built in Karpathy's makemore and nanoGPT series."
+      "summary": "A bigram language model predicts the next token based solely on the previous token, using a learned frequency table or lookup matrix. Despite its simplicity (no hidden state or attention), it serves as the baseline starting point for understanding language modeling."
     },
     {
       "id": "Generalist Agents",

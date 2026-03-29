@@ -617,8 +617,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
   // github links resolve to https://github.com/<owner/repo>
   const PAPER_LINKS = {
     // ── Foundations & core ───────────────────────────────────────────────
-    'Dropout':                      { arxiv: '1207.0580' },
-    'Batch Normalization':          { arxiv: '1502.03167' },
+    'Dropout': { arxiv: '1207.0580', youtube: 'iuJgyiS7BKM'},
+    'Batch Normalization': { arxiv: '1502.03167', youtube: 'dXB-KQYkzNU'},
     'Layer Normalization':          { arxiv: '1607.06450' },
     'GELU':                         { arxiv: '1606.08415' },
     'Focal Loss':                   { arxiv: '1708.02002' },
@@ -629,20 +629,20 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Optimizers (Adam/SGD)':        { arxiv: '1412.6980' },
 
     // ── Supervised / Classical ───────────────────────────────────────────
-    'AdaBoost':                     { arxiv: 'cs/9812011' },
-    'SVM':                          { arxiv: '1905.00331' },
+    'AdaBoost': { arxiv: 'cs/9812011', youtube: 'LsK-xG1cLYA'},
+    'SVM': { arxiv: '1905.00331', youtube: 'efR1C6CvhmE'},
     'Gaussian Process':             { github: 'GPflow/GPflow' },
 
     // ── Unsupervised ─────────────────────────────────────────────────────
-    't-SNE':                        { arxiv: '2407.01590', github: 'lvdmaaten/bhtsne' },
+    't-SNE': { arxiv: '2407.01590', github: 'lvdmaaten/bhtsne', youtube: 'NEaUSP4YerM'},
     'UMAP':                         { arxiv: '1802.03426', github: 'lmcinnes/umap' },
-    'Word2Vec':                     { arxiv: '1301.3781' },
+    'Word2Vec': { arxiv: '1301.3781', youtube: 'viZrOnJclY0'},
     'GloVe':                        { github: 'stanfordnlp/GloVe' },
     'FastText':                     { arxiv: '1607.04606', github: 'facebookresearch/fastText' },
     'HDBSCAN':                      { arxiv: '1911.02282', github: 'scikit-learn-contrib/hdbscan' },
 
     // ── Ensemble ─────────────────────────────────────────────────────────
-    'XGBoost':                      { arxiv: '1603.02754', github: 'dmlc/xgboost' },
+    'XGBoost': { arxiv: '1603.02754', github: 'dmlc/xgboost', youtube: 'OtD8wVaFm6E'},
     'LightGBM':                     { arxiv: '1803.02042', github: 'microsoft/LightGBM' },
     'CatBoost':                     { arxiv: '1706.09516', github: 'catboost/catboost' },
     'TabNet':                       { arxiv: '1908.07442', github: 'google-research/google-research' },
@@ -650,8 +650,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Deep Ensembles':               { arxiv: '1612.01474' },
 
     // ── CNNs & Vision ─────────────────────────────────────────────────────
-    'CNNs':                         { arxiv: '1512.03385' },
-    'Residual Networks':            { arxiv: '1512.03385', github: 'KaimingHe/deep-residual-networks' },
+    'CNNs': { arxiv: '1512.03385', youtube: 'HGwBXDKFk9I'},
+    'Residual Networks': { arxiv: '1512.03385', github: 'KaimingHe/deep-residual-networks', youtube: 'GWt6Fu05voI'},
     'DenseNet':                     { arxiv: '1608.06993', github: 'liuzhuang13/DenseNets' },
     'MobileNet':                    { arxiv: '1704.04861' },
     'EfficientNet':                 { arxiv: '1905.11946', github: 'google/automl' },
@@ -680,8 +680,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
 
     // ── RNNs & Sequence ──────────────────────────────────────────────────
     'GRUs':                         { arxiv: '1406.1078' },
-    'Seq2Seq':                      { arxiv: '1409.3215' },
-    'Attention Mechanism':          { arxiv: '1409.0473' },
+    'Seq2Seq': { arxiv: '1409.3215', youtube: 'L8HKweZIOmg'},
+    'Attention Mechanism': { arxiv: '1409.0473', youtube: 'eMlx5fFNoYc'},
     'Multi-Head Attention':         { arxiv: '1706.03762' },
     'WaveNet':                      { arxiv: '1609.03499', github: 'ibab/tensorflow-wavenet' },
     'Temporal Convolutional Net':   { arxiv: '1803.01271', github: 'locuslab/TCN' },
@@ -696,18 +696,18 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Neural ODEs':                  { arxiv: '1806.07366', github: 'rtqichen/torchdiffeq' },
 
     // ── Autoencoders & Generative ─────────────────────────────────────────
-    'VAE':                          { arxiv: '1312.6114' },
+    'VAE': { arxiv: '1312.6114', youtube: 'iwEzwTTalbg'},
     'VQ-VAE':                       { arxiv: '1711.00937' },
-    'GANs':                         { arxiv: '1406.2661' },
+    'GANs': { arxiv: '1406.2661', youtube: 'Sw9r8CL98N0'},
     'StyleGAN':                     { arxiv: '1812.04948', github: 'NVlabs/stylegan3' },
     'CycleGAN':                     { arxiv: '1703.10593', github: 'junyanz/pytorch-CycleGAN-and-pix2pix' },
     'Pix2Pix':                      { arxiv: '1611.07004', github: 'junyanz/pytorch-CycleGAN-and-pix2pix' },
     'ControlNet':                   { arxiv: '2302.05543', github: 'lllyasviel/ControlNet' },
     'DDPM':                         { arxiv: '2006.11239', github: 'hojonathanho/diffusion' },
     'DDIM':                         { arxiv: '2010.02502' },
-    'Diffusion Models':             { arxiv: '2006.11239' },
+    'Diffusion Models': { arxiv: '2006.11239', youtube: 'HoKDTa5jHvg'},
     'Latent Diffusion':             { arxiv: '2112.10752', github: 'CompVis/latent-diffusion' },
-    'DALL-E / Stable Diffusion':    { arxiv: '2112.10752', github: 'CompVis/stable-diffusion' },
+    'DALL-E / Stable Diffusion': { arxiv: '2112.10752', github: 'CompVis/stable-diffusion', youtube: 'J87hffSMB60'},
     'Score Matching':               { arxiv: '2011.13456' },
     'Flow Matching':                { arxiv: '2210.02747' },
     'Flow Models':                  { arxiv: '1505.05770' },
@@ -719,10 +719,10 @@ fetch('graph.json').then(r => r.json()).then(data => {
     // ── Transformers & LLMs ───────────────────────────────────────────────
     'LLM':                          { arxiv: '2005.14165', github: 'huggingface/transformers' },
     'Transformers':                 { arxiv: '1706.03762', github: 'huggingface/transformers' },
-    'BERT':                         { arxiv: '1810.04805', github: 'google-research/bert' },
+    'BERT': { arxiv: '1810.04805', github: 'google-research/bert', youtube: '90mGPxR2GgY'},
     'GPT':                          { arxiv: '2005.14165', github: 'openai/gpt-2', youtube: 'kCc8FmEb1nY' },
     'T5':                           { arxiv: '1910.10683', github: 'google-research/text-to-text-transfer-transformer' },
-    'Vision Transformers':          { arxiv: '2010.11929', github: 'google-research/vision_transformer' },
+    'Vision Transformers': { arxiv: '2010.11929', github: 'google-research/vision_transformer', youtube: 'TrdevFK_am4'},
     'CLIP':                         { arxiv: '2103.00020', github: 'openai/CLIP' },
     'Flash Attention':              { arxiv: '2205.14135', github: 'Dao-AILab/flash-attention' },
     'FlashAttention-2':             { arxiv: '2307.08691', github: 'Dao-AILab/flash-attention' },
@@ -769,20 +769,20 @@ fetch('graph.json').then(r => r.json()).then(data => {
 
     // ── Reinforcement Learning ────────────────────────────────────────────
     'DQN':                          { arxiv: '1312.5602' },
-    'PPO':                          { arxiv: '1707.06347', github: 'openai/baselines' },
+    'PPO': { arxiv: '1707.06347', github: 'openai/baselines', youtube: '5P7I-xPq8u8'},
     'SAC':                          { arxiv: '1801.01290', github: 'haarnoja/sac' },
     'A3C':                          { arxiv: '1602.01783' },
     'TD3':                          { arxiv: '1802.09477', github: 'sfujim/TD3' },
     'DDPG':                         { arxiv: '1509.02971' },
     'Rainbow DQN':                  { arxiv: '1710.02298' },
     'MuZero':                       { arxiv: '1911.08265' },
-    'AlphaZero':                    { arxiv: '1712.01815' },
+    'AlphaZero': { arxiv: '1712.01815', youtube: '2ciR6rA85tg'},
     'Dreamer':                      { arxiv: '1912.01603', github: 'danijar/dreamer' },
     'Curiosity-Driven Exploration': { arxiv: '1705.05363', github: 'pathak22/noreward-rl' },
     'MCTS':                         { arxiv: '1208.1784' },
 
     // ── LLM Fine-tuning / Alignment ──────────────────────────────────────
-    'LoRA':                         { arxiv: '2106.09685', github: 'microsoft/LoRA' },
+    'LoRA': { arxiv: '2106.09685', github: 'microsoft/LoRA', youtube: 'PXWYUTMt-AU'},
     'QLoRA':                        { arxiv: '2305.14314', github: 'artidoro/qlora' },
     'GPTQ':                         { arxiv: '2210.17323', github: 'IST-DASLab/gptq' },
     'AWQ':                          { arxiv: '2306.00978', github: 'mit-han-lab/llm-awq' },
@@ -796,7 +796,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'FP8 Training':                 { github: 'deepseek-ai/DeepGEMM' },
     'Aletheia':                     { arxiv: '2602.10177' },
     'Prefix Tuning':                { arxiv: '2101.00190', github: 'XiangLi1999/PrefixTuning' },
-    'RLHF':                         { arxiv: '2203.02155' },
+    'RLHF': { arxiv: '2203.02155', youtube: '2MBJOuVq380'},
     'Constitutional AI':            { arxiv: '2212.08073' },
     'Chain-of-Thought':             { arxiv: '2201.11903' },
     'ReAct':                        { arxiv: '2210.03629', github: 'ysymyth/ReAct' },
@@ -804,7 +804,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Instruction Tuning':           { arxiv: '2109.01652' },
     'Adapter Layers':               { arxiv: '1902.00751' },
     'Speculative Decoding':         { arxiv: '2211.17192' },
-    'RAG':                          { arxiv: '2005.11401', github: 'facebookresearch/faiss' },
+    'RAG': { arxiv: '2005.11401', github: 'facebookresearch/faiss', youtube: 'T-D1OfcDW1M'},
     'vLLM':                         { arxiv: '2309.06180', github: 'vllm-project/vllm' },
     'DeepSpeed':                    { arxiv: '2007.00325', github: 'microsoft/DeepSpeed' },
     'ZeRO Optimization':            { arxiv: '1910.02054', github: 'microsoft/DeepSpeed' },
@@ -842,6 +842,34 @@ fetch('graph.json').then(r => r.json()).then(data => {
     // ── Continual Learning ─────────────────────────────────────────────────
     'Elastic Weight Consolidation': { arxiv: '1612.00796' },
     'Progressive Neural Networks':  { arxiv: '1606.04671' },
+
+    // ── YouTube educational links ────────────────────────────────────
+    'Linear Regression': { youtube: 'PaFPbb66DxQ' },
+    'Logistic Regression': { youtube: 'yIYKR4sgzI8' },
+    'Decision Trees': { youtube: '_L39rN6gz7Y' },
+    'Random Forest': { youtube: 'J4Wdy0Wc_xQ' },
+    'k-NN': { youtube: 'HVXime0nQeI' },
+    'Naive Bayes': { youtube: 'O2L2Uv9pdDA' },
+    'Gradient Descent': { youtube: 'IHZwWFHWa-w' },
+    'Loss Functions': { youtube: '6ArSys5qHAU' },
+    'Regularization': { youtube: 'Q81RR3yKn30' },
+    'Cross-Validation': { youtube: 'fSytzGwwBVw' },
+    'Overfitting': { youtube: 'EuBBz3bI-aA' },
+    'PCA': { youtube: 'FgakZw6K1QQ' },
+    'k-Means': { youtube: '4b5d3muPQmA' },
+    'DBSCAN': { youtube: 'RDZUdRSDOok' },
+    'Reinforcement Learning': { youtube: 'Z-T0iJEXiwM' },
+    'Q-Learning': { youtube: 'qhRNvCVVJaA' },
+    'Gradient Boosting': { youtube: 'OtD8wVaFm6E' },
+    'Elastic Net': { youtube: '1dKRdX9bfIo' },
+    'Hierarchical Clustering': { youtube: '7xHsRkOdVwo' },
+    'Activation Functions': { youtube: 'aircAruvnKk' },
+    'LSTMs': { youtube: 'YCzL96nL7j0' },
+    'Transfer Learning': { youtube: 'yofjFQddwHE' },
+    'Stochastic Gradient Descent': { youtube: 'vMh0zPT0tLI' },
+    'Information Theory': { youtube: 'YtebGVx-Fho' },
+    'Bayesian Statistics': { youtube: 'HZGCoVF3YvM' },
+    'Markov Chains': { youtube: 'i3AkTO9HLXo' },
 
     // ── Karpathy's teachings (YouTube + GitHub) ─────────────────────────
     'Backpropagation':              { youtube: 'VMj-3S1tku0', github: 'karpathy/micrograd' },
