@@ -913,6 +913,13 @@ fetch('graph.json').then(r => r.json()).then(data => {
          ▶ YouTube lecture ↗
        </a>`
     );
+    if (entry.notebook) links.push(
+      `<a href="https://mybinder.org/v2/gh/Dash10107/learn-ml-by-doing/main?labpath=${encodeURIComponent(entry.notebook)}" target="_blank" rel="noopener"
+         style="font-size:11px;color:#e67e22;text-decoration:none;display:inline-flex;align-items:center;gap:4px;
+                background:rgba(230,126,34,0.07);border-radius:6px;padding:3px 8px;border:1px solid rgba(230,126,34,0.2);">
+         📓 Jupyter notebook ↗
+       </a>`
+    );
     el.innerHTML = links.join('');
     el.style.display = 'flex';
   }
