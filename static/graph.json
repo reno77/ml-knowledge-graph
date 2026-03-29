@@ -4750,7 +4750,7 @@
       "sx": 398.32,
       "sy": -80.73,
       "sz": 348.15,
-      "summary": "Step-DPO, or Step-wise Preference Optimization, is a data-efficient preference optimization method designed to enhance the long-chain reasoning capabilities of large language models (LLMs), particularly for mathematical reasoning tasks. It extends D\u2026"
+      "summary": "Direct Preference Optimization (DPO) is a machine learning alignment technique for large language models that enables direct optimization of the model policy against human preference data, bypassing the explicit reward modeling and reinforcement learning stages of traditional reinforcement learning from human feedback (RLHF). Introduced in the 2023 paper \"Direct Preference Optimization: Your Language Model is Secretly a Reward Model,\" DPO derives a closed-form optimal policy from a reparameterization of the reward model based on the Bradley-Terry preference model, allowing the alignment problem to be solved using a simple binary classification loss. This approach is stable, computationally lightweight, and eliminates the need for sampling from the language model during fine-tuning or significant hyperparameter tuning. Experiments show that DPO aligns models with human preferences as well as or better than existing RLHF methods, outperforming PPO-based RLHF in sentiment control while matching or improving response quality in summarization and single-turn dialogue tasks."
     },
     {
       "id": "PPO for LLMs",
