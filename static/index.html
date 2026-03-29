@@ -579,14 +579,14 @@ fetch('graph.json').then(r => r.json()).then(data => {
   const lockToggleBtn = document.getElementById('lock-toggle');
   function updateLockToggleStyle() {
     if (lockEnabled) {
-      lockToggleBtn.style.background = 'rgba(30,80,200,0.12)';
-      lockToggleBtn.style.color = '#1a4da0';
-      lockToggleBtn.style.borderColor = '#7090d0';
+      lockToggleBtn.style.background = '#fff';
+      lockToggleBtn.style.color = '#334';
+      lockToggleBtn.style.borderColor = '#b0bcd8';
       lockToggleBtn.textContent = '🔒 Lock';
     } else {
-      lockToggleBtn.style.background = 'rgba(240,242,255,0.97)';
+      lockToggleBtn.style.background = 'transparent';
       lockToggleBtn.style.color = '#aab';
-      lockToggleBtn.style.borderColor = '#b0bcd8';
+      lockToggleBtn.style.borderColor = 'rgba(176,188,216,0.5)';
       lockToggleBtn.textContent = '🔓 Lock';
     }
   }
