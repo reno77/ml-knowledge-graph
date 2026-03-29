@@ -923,7 +923,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     el.style.display = 'flex';
   }
 
-  // ── Jupyter Notebook links (mybinder.org, no account needed) ─────────
+  // ── Jupyter Notebook links (Google Colab) ────────────────────────────
   const NOTEBOOK_LINKS = {
     'Decision Trees':           'Classification/decision_tree_classification.ipynb',
     'Hierarchical Clustering':  'Classification/hierarchical_clustering.ipynb',
@@ -951,7 +951,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     const el = document.getElementById('ni-notebook');
     const path = NOTEBOOK_LINKS[label];
     if (!path) { el.style.display = 'none'; return; }
-    const url = `https://mybinder.org/v2/gh/Dash10107/learn-ml-by-doing/main?labpath=${encodeURIComponent(path)}`;
+    const url = `https://colab.research.google.com/github/Dash10107/learn-ml-by-doing/blob/main/${path}`;
     el.innerHTML = `<a href="${url}" target="_blank" rel="noopener"
       style="font-size:11px;color:#e67e22;text-decoration:none;display:inline-flex;align-items:center;gap:4px;
              background:rgba(230,126,34,0.07);border-radius:6px;padding:3px 8px;border:1px solid rgba(230,126,34,0.2);">
