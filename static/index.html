@@ -772,6 +772,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Wan2.1':                       { github: 'Wan-Video/Wan2.1' },
     'ComfyUI':                      { github: 'comfyanonymous/ComfyUI' },
     'Diffusers (HuggingFace)':      { github: 'huggingface/diffusers' },
+    'Z-Image-Turbo':                { hf: 'Tongyi-MAI/Z-Image-Turbo' },
 
     // ── Transformers & LLMs ───────────────────────────────────────────────
     'LLM':                          { arxiv: '2303.18223', github: 'huggingface/transformers', youtube: 'zjkBMFhNj_g' },
@@ -974,6 +975,13 @@ fetch('graph.json').then(r => r.json()).then(data => {
          ▶ YouTube lecture ↗
        </a>`
     );
+    if (entry.hf) links.push(
+      `<a href="https://huggingface.co/${entry.hf}" target="_blank" rel="noopener"
+         style="font-size:11px;color:#ff7a00;text-decoration:none;display:inline-flex;align-items:center;gap:4px;
+                background:rgba(255,122,0,0.07);border-radius:6px;padding:3px 8px;border:1px solid rgba(255,122,0,0.2);">
+         🤗 HuggingFace ↗
+       </a>`
+    );
     el.innerHTML = links.join('');
     el.style.display = 'flex';
   }
@@ -1040,6 +1048,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Stable Video Diffusion':'Stable_Video_Diffusion',
     'T2I-Adapter':'ControlNet', 'Textual Inversion':'Textual_inversion',
     'Wan2.1':'Wan_(video_model)', 'Würstchen':'Wuerstchen',
+    'Z-Image-Turbo':'Diffusion_model',
     'AI Governance':'AI_governance', 'AI Safety':'AI_safety',
     'ALBERT':'Transformer_machine_learning_model', 'ALiBi':'Positional_encoding',
     'Activation Functions':'Activation', 'Active Data Collection':'Data_collection',
@@ -1842,6 +1851,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Stable Video Diffusion': 2023, 'AnimateDiff': 2023,
     'CogVideoX': 2024, 'Wan2.1': 2025,
     'ComfyUI': 2023, 'Diffusers (HuggingFace)': 2022,
+    'Z-Image-Turbo': 2024,
     // Representation learning
     'Self-Supervised Learning': 2019, 'Contrastive Learning': 2020,
     'SimCLR': 2020, 'MoCo': 2020, 'DINO': 2021, 'MAE': 2022,

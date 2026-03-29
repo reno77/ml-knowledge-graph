@@ -3683,6 +3683,13 @@
       "color": "#a01a1a"
     },
     {
+      "id": "Z-Image-Turbo",
+      "label": "Z-Image-Turbo",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
       "id": "SimpleViT",
       "label": "SimpleViT",
       "level": 5,
@@ -6553,6 +6560,10 @@
       "to": "SDXL"
     },
     {
+      "from": "SDXL-Turbo",
+      "to": "Z-Image-Turbo"
+    },
+    {
       "from": "LCM (Latent Consistency)",
       "to": "SDXL-Turbo"
     },
@@ -6587,6 +6598,10 @@
     {
       "from": "FLUX.1",
       "to": "Diffusers (HuggingFace)"
+    },
+    {
+      "from": "FLUX.1",
+      "to": "Z-Image-Turbo"
     },
     {
       "from": "DiT (Diffusion Transformer)",
@@ -6647,6 +6662,10 @@
     {
       "from": "CFG Distillation",
       "to": "SDXL-Lightning"
+    },
+    {
+      "from": "CFG Distillation",
+      "to": "Z-Image-Turbo"
     },
     {
       "from": "Progressive Distillation",

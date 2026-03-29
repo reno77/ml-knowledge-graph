@@ -564,6 +564,7 @@ NODES = {
     "Wan2.1":                      (6, "advanced"),
     "ComfyUI":                     (6, "advanced"),
     "Diffusers (HuggingFace)":     (6, "advanced"),
+    "Z-Image-Turbo":               (6, "advanced"),
 
     # ViT variants (lucidrains/vit-pytorch)
     "SimpleViT":                   (5, "neural"),
@@ -910,6 +911,8 @@ EDGES = [
     ("Quantization & Pruning", "FLUX.1"), ("Quantization & Pruning", "SDXL"),
     ("DALL-E / Stable Diffusion", "SD 1.5"),
     ("Img2Img Diffusion", "IP2P (InstructPix2Pix)"),
+    ("FLUX.1", "Z-Image-Turbo"), ("CFG Distillation", "Z-Image-Turbo"),
+    ("SDXL-Turbo", "Z-Image-Turbo"),
 
     # Self-supervised / contrastive
     ("Self-Supervised Learning", "Contrastive Learning"), ("Self-Supervised Learning", "MAE"),
