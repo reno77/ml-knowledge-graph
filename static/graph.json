@@ -251,7 +251,7 @@
       "sx": 266.18,
       "sy": -528.44,
       "sz": -189.6,
-      "summary": "in general topology, geometric topology, set-theoretic topology, and algebraic topology.[]("
+      "summary": "Topology is the branch of mathematics that studies properties of spaces preserved under continuous deformations such as stretching, bending, and twisting, without tearing or gluing. In machine learning, topological concepts underpin manifold learning, persistent homology for topological data analysis (TDA), and understanding the loss landscape geometry of neural networks."
     },
     {
       "id": "Measure Theory",
@@ -405,7 +405,7 @@
       "sx": 51.09,
       "sy": -7.96,
       "sz": -178.45,
-      "summary": "/~qnie/Publications/NumericalOptimization.pdf) Standard Batch Gradient Descent Algorithm Description Batch gradient descent, also known as vanilla gradient"
+      "summary": "Gradient descent is a first-order iterative optimization algorithm that minimizes a function by repeatedly updating parameters in the direction of the negative gradient: $\\theta_{t+1} = \\theta_t - \\eta \\nabla L(\\theta_t)$. It is the foundational optimization method in machine learning, with variants including batch (full dataset), mini-batch (random subsets), and stochastic (single sample) gradient descent, each trading off between convergence stability and computational cost."
     },
     {
       "id": "Backpropagation",
@@ -471,7 +471,7 @@
       "sx": 388.58,
       "sy": -126.44,
       "sz": 24.01,
-      "summary": "tabular data, vision, and natural language processing, often alongside automated ensembling.[]("
+      "summary": "Hyperparameter tuning is the process of selecting optimal values for model configuration parameters (learning rate, regularization strength, architecture choices, etc.) that are not learned during training. Common methods include grid search, random search, Bayesian optimization (e.g., Optuna, Hyperopt), and bandit-based approaches like Hyperband that combine early stopping with random search to efficiently allocate computational resources."
     },
     {
       "id": "Data Preprocessing",
@@ -625,7 +625,7 @@
       "sx": 62.48,
       "sy": 69.0,
       "sz": -256.4,
-      "summary": "adjust dynamically to the changing distributions during training. Layer Normalization Layer normalization is a normalization"
+      "summary": "Normalization in deep learning refers to a family of techniques that standardize intermediate representations within neural networks to stabilize and accelerate training. Key methods include Batch Normalization (normalizing across the batch dimension), Layer Normalization (across features within each sample), Instance Normalization (per channel per sample, common in style transfer), and Group Normalization (across channel groups)."
     },
     {
       "id": "Cross-Entropy Loss",
@@ -812,7 +812,7 @@
       "sx": 174.2,
       "sy": 7.53,
       "sz": -82.4,
-      "summary": "Data augmentation Data augmentation is a set of techniques in machine learning that generate high-quality synthetic data by applying transformations to"
+      "summary": "Mixup is a data augmentation technique that trains neural networks on convex combinations of pairs of training examples and their labels: $\\tilde{x} = \\lambda x_i + (1-\\lambda) x_j$ and $\\tilde{y} = \\lambda y_i + (1-\\lambda) y_j$, where $\\lambda \\sim \\text{Beta}(\\alpha, \\alpha)$. This regularizes the model by encouraging linear behavior between training examples, reducing overconfident predictions and improving generalization."
     },
     {
       "id": "CutMix",
@@ -823,7 +823,7 @@
       "sx": 159.34,
       "sy": 143.6,
       "sz": 224.56,
-      "summary": "padding images by 4 pixels on each side followed by random 32\u00d732 crops, horizontal flipping, and sometimes color jittering or more advanced methods like CutMix"
+      "summary": "CutMix is a data augmentation technique that generates training samples by cutting a rectangular patch from one image and pasting it onto another, with the label mixed proportionally to the area of the patch. Unlike Cutout (which fills regions with zeros) or Mixup (which blends entire images), CutMix preserves localized visual information while encouraging the model to attend to all parts of the image rather than relying on a single discriminative region."
     },
     {
       "id": "Focal Loss",
@@ -878,7 +878,7 @@
       "sx": 66.09,
       "sy": -32.96,
       "sz": -168.45,
-      "summary": "/~qnie/Publications/NumericalOptimization.pdf) Standard Batch Gradient Descent Algorithm Description Batch gradient descent, also known as vanilla gradient"
+      "summary": "Batch gradient descent (also called vanilla gradient descent) computes the gradient of the loss function using the entire training dataset at each update step, providing the most accurate gradient estimate but at high computational cost for large datasets. It guarantees convergence to a local minimum for convex functions and to a stationary point for non-convex functions, but is impractical for very large datasets where stochastic or mini-batch variants are preferred."
     },
     {
       "id": "Stochastic Gradient Descent",
@@ -977,7 +977,7 @@
       "sx": -351.31,
       "sy": -170.69,
       "sz": -358.28,
-      "summary": "k -nearest neighbors algorithm The k-nearest neighbors (k-NN) algorithm is a non-parametric, instance-based supervised machine learning method used for"
+      "summary": "The k-nearest neighbors (k-NN) algorithm is a non-parametric, instance-based supervised learning method that classifies a query point by majority vote among its k closest training examples (or averages their values for regression), using a distance metric such as Euclidean distance. It requires no explicit training phase but has O(n) prediction cost; efficient variants use KD-trees, ball trees, or approximate nearest neighbor methods for scalability."
     },
     {
       "id": "Naive Bayes",
@@ -1142,7 +1142,7 @@
       "sx": -262.48,
       "sy": -371.18,
       "sz": 26.77,
-      "summary": ") Variants and Extensions Centered Isotonic Regression Centered isotonic regression (CIR) is a refinement of standard isotonic regression designed to"
+      "summary": "Isotonic regression is a non-parametric regression technique that fits a non-decreasing (or non-increasing) piecewise constant function to the data while minimizing the sum of squared errors. It is commonly used for probability calibration of classifier outputs (e.g., after SVM or neural network predictions) and solved efficiently via the pool adjacent violators algorithm (PAVA) in O(n) time."
     },
     {
       "id": "Quantile Regression",
@@ -1175,7 +1175,7 @@
       "sx": -245.6,
       "sy": -372.08,
       "sz": 8.76,
-      "summary": "/poisson-regression-analysis/) Unlike linear regression, which can predict negative values unsuitable for counts, Poisson regression ensures predictions"
+      "summary": "Poisson regression is a generalized linear model (GLM) for count data that models the log of the expected count as a linear function of predictors: $\\log(E[Y|X]) = X\\beta$. Unlike linear regression, it naturally handles non-negative integer outcomes and accounts for the mean-variance relationship inherent in count data. Extensions include negative binomial regression for overdispersed data and zero-inflated models."
     },
     {
       "id": "Ordinal Regression",
@@ -1208,7 +1208,7 @@
       "sx": -260.52,
       "sy": -337.62,
       "sz": 26.33,
-      "summary": "iteratively removing such subtrees until the desired size is reached.[]("
+      "summary": "Regression trees are decision tree models for continuous target variables that recursively partition the feature space into regions and predict the mean (or median) of training targets within each region. Splits are chosen to minimize a criterion such as mean squared error, and pruning techniques (cost-complexity pruning) control tree depth to balance bias and variance. They form the base learners in gradient boosting methods like XGBoost and LightGBM."
     },
     {
       "id": "Prototype Methods",
@@ -1285,7 +1285,7 @@
       "sx": -374.03,
       "sy": -299.36,
       "sz": -416.09,
-      "summary": "k -means++ k-means++ is a seeding algorithm for the k-means clustering method that selects initial cluster centers in a way that improves both the speed"
+      "summary": "k-Means is a partitional clustering algorithm that assigns n data points to k clusters by iteratively (1) assigning each point to the nearest centroid and (2) recomputing centroids as the mean of assigned points, minimizing within-cluster sum of squares. The algorithm converges to a local optimum and is sensitive to initialization; k-means++ provides a principled seeding strategy that guarantees an O(log k) approximation to the optimal solution."
     },
     {
       "id": "PCA",
@@ -1472,7 +1472,7 @@
       "sx": -317.16,
       "sy": -275.81,
       "sz": -428.72,
-      "summary": "fastText fastText is an open-source, free, lightweight library developed by Facebook AI Research (FAIR) for efficient learning of word representations"
+      "summary": "FastText is an open-source library developed by Facebook AI Research for efficient text classification and word representation learning. Unlike Word2Vec, FastText represents each word as a bag of character n-grams, enabling it to generate embeddings for out-of-vocabulary words and capture morphological information. It achieves competitive accuracy with extremely fast training and inference, making it practical for large-scale text classification tasks."
     },
     {
       "id": "Topic Modeling (LDA)",
@@ -1560,7 +1560,7 @@
       "sx": -366.73,
       "sy": -239.89,
       "sz": -409.56,
-      "summary": "k -medoids k-medoids is a partitional clustering algorithm that divides a dataset of n objects into k non-overlapping clusters, where each cluster is"
+      "summary": "k-Medoids is a partitional clustering algorithm that, unlike k-means, selects actual data points (medoids) as cluster centers and minimizes the sum of dissimilarities between each point and its nearest medoid. The PAM (Partitioning Around Medoids) algorithm is the most common implementation. k-Medoids is more robust to outliers and noise than k-means and can work with arbitrary distance metrics beyond Euclidean distance."
     },
     {
       "id": "BIRCH",
@@ -1780,7 +1780,7 @@
       "sx": -1085.71,
       "sy": -61.29,
       "sz": -172.96,
-      "summary": "Dropout is a regularization technique in neural networks that randomly drops units (along with their connections) during training to prevent co-adaptation between neurons and reduce overfitting. This approach improves generalization by forcing the n\u2026"
+      "summary": "Dropout ensembles (MC Dropout) reinterpret dropout at inference time as approximate Bayesian inference by running multiple stochastic forward passes with dropout enabled and aggregating the predictions. This provides both improved accuracy through implicit ensembling and uncertainty estimates from the variance across passes, without requiring multiple separately trained models."
     },
     {
       "id": "Deep Ensembles",
@@ -1813,7 +1813,7 @@
       "sx": -991.0,
       "sy": -128.16,
       "sz": -194.28,
-      "summary": "generalization error via structural risk minimization. An extension to regression tasks, known as AdaBoost.R2"
+      "summary": "AdaBoost.R2 is the regression variant of the AdaBoost boosting algorithm that iteratively trains weak regressors on weighted versions of the training data, increasing weights on samples with large prediction errors. Each regressor's contribution to the final ensemble is weighted by its accuracy, and the algorithm adjusts the sample distribution to focus subsequent learners on the hardest examples, producing a strong regressor from an ensemble of weak ones."
     },
     {
       "id": "HistGradientBoosting",
@@ -1901,7 +1901,7 @@
       "sx": -209.9,
       "sy": 441.57,
       "sz": -231.27,
-      "summary": "Dropout is a regularization technique in neural networks that randomly drops units (along with their connections) during training to prevent co-adaptation between neurons and reduce overfitting. This approach improves generalization by forcing the n\u2026"
+      "summary": "A neural network is a computational model inspired by biological neurons, consisting of layers of interconnected nodes (neurons) that transform inputs through weighted connections and nonlinear activation functions. Neural networks learn hierarchical feature representations through backpropagation-based training, and form the foundation of deep learning approaches used across vision, language, and other domains."
     },
     {
       "id": "Batch Normalization",
@@ -1967,7 +1967,7 @@
       "sx": -307.52,
       "sy": 352.63,
       "sz": -143.8,
-      "summary": "Deep learning Representing images on multiple layers of abstraction in deep learning Deep learning encompasses machine learning methods that employ artificial"
+      "summary": "Optimizers are algorithms that update neural network parameters to minimize the loss function during training. SGD (Stochastic Gradient Descent) updates weights proportional to the gradient, while Adam combines momentum (exponential moving average of gradients) with RMSProp (adaptive per-parameter learning rates) to provide faster convergence and robustness to hyperparameter choices. Variants include AdamW (decoupled weight decay), AdaGrad, and Adafactor."
     },
     {
       "id": "Weight Decay",
@@ -2000,7 +2000,7 @@
       "sx": -274.48,
       "sy": 333.94,
       "sz": -256.57,
-      "summary": "and beyond. Mathematical foundations Residual connections Residual connections, also referred to as skip connections"
+      "summary": "Residual connections (skip connections) add the input of a layer or block directly to its output, enabling the network to learn residual mappings $F(x) = H(x) - x$ rather than the full transformation $H(x)$. Introduced in ResNet, they mitigate the vanishing gradient problem in very deep networks by providing shortcut paths for gradient flow, and are now ubiquitous in transformer architectures, U-Nets, and other deep learning models."
     },
     {
       "id": "Skip Connections",
@@ -2033,7 +2033,7 @@
       "sx": -284.43,
       "sy": 370.05,
       "sz": -368.62,
-      "summary": "Convolution is a fundamental mathematical operation that combines two functions to form a third function expressing the extent to which one function overlaps with the other as it is..."
+      "summary": "Depthwise convolution applies a single filter independently to each input channel, rather than convolving across all channels simultaneously as in standard convolution. This dramatically reduces computation from $O(K^2 \\cdot C_{in} \\cdot C_{out})$ to $O(K^2 \\cdot C_{in})$, and is typically followed by a 1x1 pointwise convolution to mix channel information, forming the depthwise separable convolution used in MobileNet and EfficientNet."
     },
     {
       "id": "Dilated Convolution",
@@ -2055,7 +2055,7 @@
       "sx": -316.15,
       "sy": 371.74,
       "sz": -365.36,
-      "summary": "Convolution is a fundamental mathematical operation that combines two functions to form a third function expressing the extent to which one function overlaps with the other as it is..."
+      "summary": "Transposed convolution (also called deconvolution or fractionally-strided convolution) is an upsampling operation that increases spatial dimensions by inserting zeros between input elements and then applying a standard convolution. It is widely used in decoder networks, generative models, and semantic segmentation architectures (e.g., U-Net, FCN) to map low-resolution feature maps back to high-resolution outputs."
     },
     {
       "id": "Pooling Layers",
@@ -2066,7 +2066,7 @@
       "sx": -114.24,
       "sy": 370.75,
       "sz": -258.94,
-      "summary": "Convolutional neural network A convolutional neural network (CNN) is a deep learning architecture consisting of interconnected layers that process grid-structured"
+      "summary": "Pooling layers reduce the spatial dimensions of feature maps by aggregating values within local regions, providing translation invariance and reducing computational cost in convolutional neural networks. Common variants include max pooling (selecting the maximum value in each window), average pooling (computing the mean), and global average pooling (reducing each feature map to a single value, often used before classification heads)."
     },
     {
       "id": "Embedding Layers",
@@ -2198,7 +2198,7 @@
       "sx": -344.51,
       "sy": 400.41,
       "sz": -237.06,
-      "summary": "Convolutional neural network A convolutional neural network (CNN) is a deep learning architecture consisting of interconnected layers that process grid-structured"
+      "summary": "The Inception architecture (GoogLeNet) introduced inception modules that apply multiple parallel convolution operations (1x1, 3x3, 5x5 filters and max pooling) to the same input and concatenate their outputs, allowing the network to capture features at multiple scales simultaneously. Key innovations include using 1x1 convolutions for dimensionality reduction and the auxiliary classifiers to combat vanishing gradients during training."
     },
     {
       "id": "U-Net",
@@ -2231,7 +2231,7 @@
       "sx": -300.95,
       "sy": 461.32,
       "sz": -301.8,
-      "summary": "Cascade R-CNN is a multi-stage object detection framework introduced in 2018. It builds on previous region-based convolutional neural networks (like Faster R-CNN) by using a sequence of detectors trained with increasing Intersection over Union (IoU)\u2026"
+      "summary": "Region-based Convolutional Neural Network (R-CNN) is a pioneering object detection framework that uses selective search to propose ~2000 candidate regions, extracts CNN features from each warped region, and classifies them with SVMs. Later improvements include Fast R-CNN (shared feature computation with RoI pooling) and Faster R-CNN (replacing selective search with a learned Region Proposal Network), which remain foundational architectures in object detection."
     },
     {
       "id": "Feature Pyramid Networks",
@@ -2308,7 +2308,7 @@
       "sx": -410.73,
       "sy": 378.55,
       "sz": -174.43,
-      "summary": "adaptations, enabled real-time processing with reduced parameters (e.g., 1.53 million in self-attentive ShuffleNet), suitable for edge devices while maintaining"
+      "summary": "ShuffleNet is a lightweight convolutional neural network architecture designed for mobile and edge devices that introduces channel shuffle operations between grouped convolutions to enable cross-group information flow. By combining pointwise group convolutions (to reduce computation) with channel shuffling (to maintain representational capacity), ShuffleNet achieves competitive accuracy with significantly fewer parameters and FLOPs than standard architectures."
     },
     {
       "id": "NASNet",
@@ -2396,7 +2396,7 @@
       "sx": -311.28,
       "sy": 418.16,
       "sz": -337.08,
-      "summary": "Cascade R-CNN is a multi-stage object detection framework introduced in 2018. It builds on previous region-based convolutional neural networks (like Faster R-CNN) by using a sequence of detectors trained with increasing Intersection over Union (IoU)\u2026"
+      "summary": "Mask R-CNN extends Faster R-CNN by adding a parallel branch that predicts a binary segmentation mask for each detected object, enabling simultaneous object detection and instance segmentation. It introduces RoIAlign, which replaces RoI pooling with bilinear interpolation to preserve precise spatial alignment, and can be extended with keypoint detection heads for human pose estimation."
     },
     {
       "id": "Panoptic Segmentation",
@@ -2407,7 +2407,7 @@
       "sx": -237.66,
       "sy": 337.92,
       "sz": -371.66,
-      "summary": "the same class (e.g., individual cars); and panoptic segmentation, which unifies semantic and instance segmentation to provide a complete labeling of"
+      "summary": "Panoptic segmentation unifies semantic segmentation (labeling every pixel with a class) and instance segmentation (distinguishing individual object instances) into a single coherent scene understanding task. Each pixel receives both a semantic class label and an instance ID, providing a complete, non-overlapping labeling where 'stuff' classes (sky, road) get semantic labels and 'thing' classes (people, cars) get both semantic and instance labels."
     },
     {
       "id": "Keypoint Detection",
@@ -2495,7 +2495,7 @@
       "sx": -238.12,
       "sy": 485.35,
       "sz": -206.65,
-      "summary": ") This efficiency makes LSTMs suitable for on-device inference in mobile NLP applications, even as transformers handle large-scale training."
+      "summary": "Long Short-Term Memory (LSTM) networks are a type of recurrent neural network designed to learn long-range dependencies through a gating mechanism consisting of forget, input, and output gates that control information flow through a persistent cell state. The cell state acts as a memory highway that can carry information across many time steps with minimal degradation, solving the vanishing gradient problem that plagues vanilla RNNs. LSTMs are widely used in sequence modeling tasks including language modeling, machine translation, and speech recognition."
     },
     {
       "id": "GRUs",
@@ -2627,7 +2627,7 @@
       "sx": -261.79,
       "sy": 420.16,
       "sz": -203.31,
-      "summary": "theoretical requirement for echo state networks (ESNs), ensuring that the reservoir state at time step \\(n\\), denoted \\(x(n)\\), is solely determined by"
+      "summary": "Echo State Networks (ESNs) are a type of reservoir computing where a large, randomly initialized recurrent neural network (the reservoir) projects inputs into a high-dimensional dynamic feature space, and only the output weights are trained (typically via linear regression). The echo state property requires that the reservoir's spectral radius is tuned so that the effect of initial conditions fades over time, ensuring the network's state depends only on the input history."
     },
     {
       "id": "Graph Neural Networks",
@@ -2682,7 +2682,7 @@
       "sx": -411.19,
       "sy": 371.75,
       "sz": -123.33,
-      "summary": "drift\" without priors, where the model overfits to the identifier at the expense of broader text adherence. Hypernetworks"
+      "summary": "Hypernetworks are neural networks that generate the weights for another neural network (the target network), enabling dynamic and context-dependent parameterization. Instead of learning fixed weights, the target network's parameters are produced by the hypernetwork conditioned on some input (task descriptor, noise vector, or metadata), enabling applications in multi-task learning, neural architecture search, continual learning, and personalized model generation."
     },
     {
       "id": "Neural ODEs",
@@ -2715,7 +2715,7 @@
       "sx": -139.55,
       "sy": 431.33,
       "sz": -186.03,
-      "summary": "Matryoshka SAEs scale sparse autoencoders (SAEs) to large protein models (e.g., ESM2-3B) and use hierarchical (\u201cMatryoshka\u201d) SAEs to obtain multi-scale features and steer structure predictors."
+      "summary": "An autoencoder is an unsupervised neural network that learns compressed representations by encoding inputs into a lower-dimensional latent space and then decoding them back to reconstruct the original input. The bottleneck forces the network to learn salient features, making autoencoders useful for dimensionality reduction, denoising, anomaly detection, and as building blocks for generative models like VAEs."
     },
     {
       "id": "Sparse Autoencoders",
@@ -2726,7 +2726,7 @@
       "sx": -112.61,
       "sy": 388.19,
       "sz": -152.82,
-      "summary": "Matryoshka SAEs scale sparse autoencoders (SAEs) to large protein models (e.g., ESM2-3B) and use hierarchical (\u201cMatryoshka\u201d) SAEs to obtain multi-scale features and steer structure predictors."
+      "summary": "Sparse autoencoders add a sparsity constraint (such as an L1 penalty or KL divergence target on activations) to the standard autoencoder objective, encouraging only a small fraction of hidden units to activate for any given input. In mechanistic interpretability, sparse autoencoders are used to decompose neural network activations into interpretable, monosemantic features that correspond to individual concepts."
     },
     {
       "id": "Denoising Autoencoders",
@@ -2748,7 +2748,7 @@
       "sx": -169.32,
       "sy": 551.81,
       "sz": -335.5,
-      "summary": "Deformable Convolutional Networks (DCN) is a 2017 convolutional neural network architecture extension that learns 2D offsets for sampling locations in convolution kernels, allowing adaptive, geometrically-aware receptive fields that significantly im\u2026"
+      "summary": "Graph Convolutional Networks (GCNs) extend convolution operations to graph-structured data by aggregating feature information from a node's neighbors using the graph adjacency matrix. The spectral formulation by Kipf and Welling (2017) uses a first-order approximation of Chebyshev polynomials on the graph Laplacian, enabling efficient layer-wise propagation: $H^{(l+1)} = \\sigma(\\tilde{D}^{-1/2}\\tilde{A}\\tilde{D}^{-1/2}H^{(l)}W^{(l)})$."
     },
     {
       "id": "GraphSAGE",
@@ -2759,7 +2759,7 @@
       "sx": -164.87,
       "sy": 551.48,
       "sz": -330.59,
-      "summary": "by exchanging information with neighbors, ultimately enabling a holistic graph vector via readout aggregation. GraphSAGE"
+      "summary": "GraphSAGE (Graph SAmple and aggrEgate) is an inductive graph neural network framework that learns node representations by sampling and aggregating features from a node's local neighborhood rather than requiring the full graph Laplacian. Unlike transductive methods like GCN, GraphSAGE can generalize to unseen nodes and graphs by learning an aggregation function (mean, LSTM, or pooling) that combines neighbor features, making it scalable to large, dynamic graphs."
     },
     {
       "id": "Node2Vec",
@@ -2781,7 +2781,7 @@
       "sx": -264.87,
       "sy": 525.02,
       "sz": -283.44,
-      "summary": "challenges in scalability and expressiveness for large-scale graphs. By the mid-2010s, foundational algorithms like DeepWalk"
+      "summary": "DeepWalk learns latent representations of nodes in a graph by performing truncated random walks on the graph and treating the resulting sequences as sentences for Word2Vec's Skip-gram model. By analogizing graph structure to language (nodes as words, random walks as sentences), it captures structural similarity and community membership in low-dimensional embeddings. DeepWalk was one of the first graph embedding methods and inspired subsequent approaches like Node2Vec and LINE."
     },
     {
       "id": "Knowledge Graphs",
@@ -2891,7 +2891,7 @@
       "sx": 323.53,
       "sy": 128.0,
       "sz": 224.31,
-      "summary": "Music tokenization is the process of converting musical information\u2014such as symbolic data (e.g., MIDI notes, chords, rhythms) or audio features\u2014into discrete tokens that machine learning models, particularly transformer-based architectures, can\u2026"
+      "summary": "Byte Pair Encoding (BPE) is a subword tokenization algorithm that iteratively merges the most frequent pair of adjacent tokens in a corpus until a desired vocabulary size is reached. Starting from individual characters, BPE builds a vocabulary of common subword units that balances between character-level and word-level tokenization, handling rare and out-of-vocabulary words while keeping the vocabulary compact. BPE is used in GPT, RoBERTa, and many modern language models."
     },
     {
       "id": "Flash Attention",
@@ -2913,7 +2913,7 @@
       "sx": 318.0,
       "sy": 263.61,
       "sz": 11.25,
-      "summary": "Rotary Positional Embeddings (RoPE) in Large Language Models (LLMs). Replaces absolute embeddings; rotates query/key vectors for better relative position handling and length extrapolation."
+      "summary": "Rotary Position Embedding (RoPE) encodes absolute position information by rotating query and key vectors in the attention mechanism, such that their dot product naturally captures relative positional information. The rotation matrix applies a position-dependent angle to pairs of dimensions: $f(x, m) = x e^{im\\theta}$, enabling efficient length extrapolation and better modeling of relative positions compared to additive positional encodings."
     },
     {
       "id": "Sparse Attention",
@@ -3177,7 +3177,7 @@
       "sx": 454.47,
       "sy": 248.95,
       "sz": -138.25,
-      "summary": "Grouped-Query Attention (GQA) in large language models (LLMs) shares key/value heads across query groups, cutting KV cache memory for faster inference."
+      "summary": "Multi-Query Attention (MQA) uses a single shared key-value head across all query heads, dramatically reducing the KV cache memory footprint and accelerating autoregressive inference in large language models. Compared to standard multi-head attention where each head has its own K and V projections, MQA shares one K and one V across all heads, trading a small quality reduction for significant speedup during decoding."
     },
     {
       "id": "Sliding Window Attention",
@@ -3331,7 +3331,7 @@
       "sx": 250.05,
       "sy": 284.64,
       "sz": 347.93,
-      "summary": "data: ||y - G(x)||1, weighted to prioritize structural fidelity (\u03bb=100 empirically). Unsupervised models like CycleGAN"
+      "summary": "CycleGAN performs unpaired image-to-image translation by training two generators ($G: X \\to Y$ and $F: Y \\to X$) with a cycle consistency loss that enforces $F(G(x)) \\approx x$ and $G(F(y)) \\approx y$, eliminating the need for paired training data. This enables domain transfer tasks like horse-to-zebra, photo-to-painting, and season transfer, where collecting aligned image pairs would be impractical."
     },
     {
       "id": "Pix2Pix",
@@ -3452,7 +3452,7 @@
       "sx": 283.58,
       "sy": 158.81,
       "sz": 210.65,
-      "summary": "Music tokenization is the process of converting musical information\u2014such as symbolic data (e.g., MIDI notes, chords, rhythms) or audio features\u2014into discrete tokens that machine learning models, particularly transformer-based architectures, can\u2026"
+      "summary": "Image tokenization converts continuous visual data into discrete token sequences that can be processed by transformer architectures. Methods include patch-based approaches (dividing images into fixed-size patches as in ViT), learned discrete codebooks (VQ-VAE, VQGAN that map image patches to discrete codes), and hybrid approaches. Image tokenization enables unified vision-language modeling and autoregressive image generation."
     },
     {
       "id": "Audio Generation",
@@ -3518,7 +3518,7 @@
       "sx": 396.28,
       "sy": 30.6,
       "sz": 488.56,
-      "summary": "Self-supervised learning Self-supervised learning (SSL) is a paradigm within machine learning, specifically a subset of unsupervised learning, that trains"
+      "summary": "Momentum Contrast (MoCo) maintains a dynamic dictionary of negative samples using a momentum-updated encoder, enabling large-scale contrastive self-supervised learning without requiring large training batches. The momentum encoder provides slowly evolving, consistent representations that serve as a rich set of negative keys for the contrastive InfoNCE loss."
     },
     {
       "id": "DINO",
@@ -3529,7 +3529,7 @@
       "sx": 394.36,
       "sy": 89.69,
       "sz": 446.82,
-      "summary": "Self-supervised learning Self-supervised learning (SSL) is a paradigm within machine learning, specifically a subset of unsupervised learning, that trains"
+      "summary": "DINO (self-DIstillation with NO labels) trains vision transformers through self-distillation, where a student network learns to match the output distributions of a momentum-updated teacher network without any labeled data. It produces features with strong semantic clustering properties, enabling tasks like unsupervised object segmentation directly from attention maps."
     },
     {
       "id": "MAE",
@@ -3540,7 +3540,7 @@
       "sx": 364.12,
       "sy": 3.36,
       "sz": 387.87,
-      "summary": "Self-supervised learning Self-supervised learning (SSL) is a paradigm within machine learning, specifically a subset of unsupervised learning, that trains"
+      "summary": "Masked Autoencoders (MAE) is a self-supervised learning method that masks a large random subset (e.g., 75%) of image patches and trains a vision transformer encoder-decoder to reconstruct the missing pixels. By forcing the model to infer occluded content, MAE learns rich visual representations that transfer effectively to downstream tasks with minimal fine-tuning."
     },
     {
       "id": "Word Embeddings",
@@ -3584,7 +3584,7 @@
       "sx": 407.18,
       "sy": 21.87,
       "sz": 472.4,
-      "summary": "Self-supervised learning Self-supervised learning (SSL) is a paradigm within machine learning, specifically a subset of unsupervised learning, that trains"
+      "summary": "Bootstrap Your Own Latent (BYOL) is a self-supervised learning method that learns visual representations without negative pairs, using two neural networks (online and target) that interact and learn from each other. The online network predicts the target network's representation of an augmented view, while the target network is updated via an exponential moving average, avoiding the representation collapse typical when no negatives are used."
     },
     {
       "id": "VICReg",
@@ -3661,7 +3661,7 @@
       "sx": 357.64,
       "sy": 33.56,
       "sz": 486.66,
-      "summary": "smartphones for contactless entry. Another key case study is the use of vision-language model embeddings such as SigLIP"
+      "summary": "SigLIP (Sigmoid Loss for Language-Image Pre-training) replaces CLIP's softmax-based contrastive loss with a pairwise sigmoid loss applied independently to each image-text pair, eliminating the need for a global normalization across the batch. This enables more efficient training with larger batch sizes and better scalability, while achieving comparable or superior zero-shot image classification and retrieval performance."
     },
     {
       "id": "LLaVA",
@@ -3694,7 +3694,7 @@
       "sx": 217.79,
       "sy": 237.27,
       "sz": 225.95,
-      "summary": "include Microsoft's Kosmos-2, released in 2023, which grounds language in visual perception for tasks like object detection via text prompts, and ImageBind"
+      "summary": "ImageBind is a multimodal embedding model from Meta AI that learns a joint embedding space across six modalities (images, text, audio, depth, thermal, and IMU data) using image-paired data as a binding modality. By leveraging the natural pairing of images with other modalities, ImageBind achieves emergent zero-shot recognition capabilities across modalities that were never explicitly paired during training, enabling cross-modal retrieval and generation."
     },
     {
       "id": "Reinforcement Learning",
@@ -3738,7 +3738,7 @@
       "sx": 109.75,
       "sy": 49.86,
       "sz": 412.74,
-      "summary": "Deep reinforcement learning Deep reinforcement learning (DRL) is a machine learning paradigm that integrates reinforcement learning principles with deep"
+      "summary": "Deep Q-Network (DQN) combines Q-learning with deep neural networks to learn action-value functions directly from high-dimensional sensory inputs such as raw pixels. Key innovations include experience replay (storing and randomly sampling past transitions) and a target network (a periodically updated copy of the Q-network) to stabilize training, enabling superhuman performance on Atari games."
     },
     {
       "id": "PPO",
@@ -3837,7 +3837,7 @@
       "sx": 254.58,
       "sy": 78.53,
       "sz": 443.29,
-      "summary": "Deep reinforcement learning Deep reinforcement learning (DRL) is a machine learning paradigm that integrates reinforcement learning principles with deep"
+      "summary": "Twin Delayed Deep Deterministic Policy Gradient (TD3) is an actor-critic reinforcement learning algorithm that addresses overestimation bias in continuous action spaces. It introduces three key techniques: clipped double Q-learning (taking the minimum of two critic estimates), delayed policy updates (updating the actor less frequently than the critics), and target policy smoothing (adding noise to target actions)."
     },
     {
       "id": "DDPG",
@@ -3903,7 +3903,7 @@
       "sx": -128.09,
       "sy": 16.51,
       "sz": 364.51,
-      "summary": "A world model is an internal predictive model that allows agents to simulate future states of the environment, enabling planning, imagination, and sample-efficient reinforcement learning in complex domains."
+      "summary": "World Models in reinforcement learning use a learned predictive model of the environment's dynamics to enable planning, imagination, and sample-efficient learning. The agent learns a compact latent representation of states and transitions (often using VAEs and RNNs), then trains a policy entirely within the imagined 'dream' environment, dramatically reducing the number of real-world interactions needed. Key examples include Ha and Schmidhuber's World Models and the Dreamer series."
     },
     {
       "id": "Reward Shaping",
@@ -3936,7 +3936,7 @@
       "sx": -133.08,
       "sy": 26.15,
       "sz": 414.29,
-      "summary": "Reinforcement learning Reinforcement learning (RL) is a paradigm in machine learning where an intelligent agent learns optimal behavior through trial-and-error"
+      "summary": "Hierarchical Reinforcement Learning decomposes complex sequential decision-making problems into hierarchies of subtasks or temporal abstractions, enabling agents to plan and learn at multiple levels of granularity. Frameworks such as options, HAMs, and MAXQ allow agents to reuse learned sub-policies across tasks, improving sample efficiency and enabling transfer in environments with sparse rewards or long horizons."
     },
     {
       "id": "Option Framework",
@@ -3947,7 +3947,7 @@
       "sx": 217.65,
       "sy": -414.29,
       "sz": -133.5,
-      "summary": "Reinforcement learning Reinforcement learning (RL) is a paradigm in machine learning where an intelligent agent learns optimal behavior through trial-and-error"
+      "summary": "The Options Framework formalizes temporal abstraction in reinforcement learning by defining options as generalized actions consisting of three components: an initiation set (states where the option can start), an internal policy (how the option behaves), and a termination condition (when the option ends). This enables hierarchical decision-making through semi-Markov decision processes (SMDPs), allowing agents to reason over extended courses of action rather than individual primitive steps."
     },
     {
       "id": "Multi-Task RL",
@@ -4189,7 +4189,7 @@
       "sx": 494.75,
       "sy": 155.51,
       "sz": 17.9,
-      "summary": ") Detection of navigational intent relies on methods like exact matching of brand or entity names in queries, analysis"
+      "summary": "Intent detection is a natural language understanding task that classifies user utterances into predefined intent categories (e.g., 'book_flight', 'check_weather', 'play_music') in dialogue and virtual assistant systems. Modern approaches use fine-tuned transformer models or few-shot learning to handle the diversity of user expressions, and are typically combined with slot filling to extract structured parameters from the recognized intent."
     },
     {
       "id": "LLM Fine-tuning",
@@ -4585,7 +4585,7 @@
       "sx": 330.76,
       "sy": 9.15,
       "sz": 117.11,
-      "summary": "As of February 2026, mechanistic interpretability is recognized as a major breakthrough technology for understanding the inner workings of large language models (LLMs). Named by MIT Technology Review as one of the 10 Breakthrough Technologies of 202\u2026"
+      "summary": "Interpretability in machine learning refers to the degree to which humans can understand and reason about a model's predictions and internal decision-making processes. Techniques range from post-hoc explanation methods (LIME, SHAP, attention visualization) to inherently interpretable architectures (decision trees, linear models), and are critical for building trust, debugging models, and ensuring compliance in high-stakes applications."
     },
     {
       "id": "SHAP",
@@ -4805,7 +4805,7 @@
       "sx": 62.1,
       "sy": 98.9,
       "sz": -98.89,
-      "summary": "LLM inference is the process of generating outputs from large language models given input prompts, representing the primary operational cost in RAG systems. Inference optimization impacts response latency, throughput, and cost. Inference approaches\u2026"
+      "summary": "Continuous batching (also called iteration-level or in-flight batching) dynamically inserts new requests into a running inference batch as existing sequences complete, rather than waiting for all sequences in a batch to finish before starting new ones. This eliminates GPU idle time caused by variable sequence lengths, significantly improving throughput and latency for LLM serving systems like vLLM and TensorRT-LLM."
     },
     {
       "id": "vLLM",
@@ -4816,7 +4816,7 @@
       "sx": 310.52,
       "sy": 224.98,
       "sz": 401.46,
-      "summary": "vLLM is an open-source library for efficient serving of large language models. UPDATE: To set up multi-node distributed inference using vLLM on NVIDIA DGX Sparks, install the NVIDIA AI stack and vLLM on Ubuntu; run vllm serve --tensor-parallel-size\u2026"
+      "summary": "vLLM is an open-source library for high-throughput serving of large language models, featuring PagedAttention, which manages the KV cache using virtual memory paging to eliminate fragmentation and enable flexible memory sharing. This approach achieves near-optimal memory utilization and supports continuous batching, tensor parallelism, and various quantization formats, delivering significantly higher throughput than naive serving implementations."
     },
     {
       "id": "LLM Serving",
@@ -4882,7 +4882,7 @@
       "sx": 336.87,
       "sy": -95.83,
       "sz": 118.78,
-      "summary": "Deep learning Representing images on multiple layers of abstraction in deep learning Deep learning encompasses machine learning methods that employ artificial"
+      "summary": "Mixed precision training uses lower-precision floating-point formats (typically FP16 or BF16) alongside FP32 for different parts of the training pipeline to reduce memory usage and accelerate computation on modern GPUs with tensor cores. Key techniques include maintaining a master copy of weights in FP32, loss scaling to prevent gradient underflow in FP16, and selectively using FP32 for numerically sensitive operations like softmax and layer normalization."
     },
     {
       "id": "Gradient Checkpointing",
@@ -4893,7 +4893,7 @@
       "sx": 33.46,
       "sy": 44.03,
       "sz": -25.84,
-      "summary": "torch.utils.checkpoint is PyTorch's official module for gradient checkpointing. UPDATE: As an alternative to a custom 'checkpoint' module, use torch.utils.checkpoint by replacing the import and function calls in the code; it provides similar memory-\u2026"
+      "summary": "Gradient checkpointing (activation checkpointing) is a memory optimization technique that trades compute for memory by only storing activations at selected checkpoints during the forward pass and recomputing intermediate activations from the nearest checkpoint during backpropagation. This reduces memory usage from O(n) to O(sqrt(n)) for n layers at the cost of approximately one additional forward pass, enabling training of much deeper or larger models on limited GPU memory."
     },
     {
       "id": "DeepSpeed",
@@ -5058,7 +5058,7 @@
       "sx": 53.1,
       "sy": -127.27,
       "sz": 439.32,
-      "summary": "As of February 2026, mechanistic interpretability is recognized as a major breakthrough technology for understanding the inner workings of large language models (LLMs). Named by MIT Technology Review as one of the 10 Breakthrough Technologies of 202\u2026"
+      "summary": "Superposition is the phenomenon in neural networks where individual neurons or features represent multiple unrelated concepts simultaneously, encoding more features than the network has dimensions. This occurs because neural networks exploit the high-dimensional geometry of activation space to store sparse, linearly separable feature directions, making individual neuron activations polysemantic and complicating mechanistic interpretability."
     },
     {
       "id": "Sparse Features",
