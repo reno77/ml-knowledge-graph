@@ -321,13 +321,14 @@
 
 <!-- Node info -->
 <div id="node-info">
-  <span class="ni-close" onclick="this.parentElement.style.display='none';document.getElementById('depth-wrap').style.display='none';document.getElementById('ni-wiki').style.display='none';document.getElementById('ni-papers').style.display='none';">✕</span>
+  <span class="ni-close" onclick="this.parentElement.style.display='none';document.getElementById('depth-wrap').style.display='none';document.getElementById('ni-wiki').style.display='none';document.getElementById('ni-papers').style.display='none';document.getElementById('ni-notebook').style.display='none';">✕</span>
   <div class="ni-name"  id="ni-name"></div>
   <div class="ni-cat"   id="ni-cat"></div>
   <div class="ni-level" id="ni-level"></div>
   <div class="ni-year"  id="ni-year" style="display:none;"></div>
   <div class="ni-links" id="ni-links"></div>
   <div id="ni-papers" style="margin-top:10px;border-top:1px solid #e0e4f0;padding-top:8px;display:none;gap:6px;flex-direction:column;"></div>
+  <div id="ni-notebook" style="margin-top:8px;display:none;"></div>
   <div id="ni-wiki" style="margin-top:10px;border-top:1px solid #e0e4f0;padding-top:8px;display:none;">
     <div id="ni-wiki-summary" style="font-size:11px;color:#334;line-height:1.6;margin-bottom:6px;
          max-height:100px;overflow-y:auto;"></div>
@@ -913,15 +914,45 @@ fetch('graph.json').then(r => r.json()).then(data => {
          ▶ YouTube lecture ↗
        </a>`
     );
-    if (entry.notebook) links.push(
-      `<a href="https://mybinder.org/v2/gh/Dash10107/learn-ml-by-doing/main?labpath=${encodeURIComponent(entry.notebook)}" target="_blank" rel="noopener"
-         style="font-size:11px;color:#e67e22;text-decoration:none;display:inline-flex;align-items:center;gap:4px;
-                background:rgba(230,126,34,0.07);border-radius:6px;padding:3px 8px;border:1px solid rgba(230,126,34,0.2);">
-         📓 Jupyter notebook ↗
-       </a>`
-    );
     el.innerHTML = links.join('');
     el.style.display = 'flex';
+  }
+
+  // ── Jupyter Notebook links (mybinder.org, no account needed) ─────────
+  const NOTEBOOK_LINKS = {
+    'Decision Trees':           'Classification/decision_tree_classification.ipynb',
+    'Hierarchical Clustering':  'Classification/hierarchical_clustering.ipynb',
+    'k-Means':                  'Classification/k_means_clustering.ipynb',
+    'k-NN':                     'Classification/k_nearest_neighbors.ipynb',
+    'Kernel PCA':               'Classification/kernel_pca.ipynb',
+    'SVM':                      'Classification/kernel_svm.ipynb',
+    'LDA (Linear Discriminant)':'Classification/linear_discriminant_analysis.ipynb',
+    'Logistic Regression':      'Classification/logistic_regression.ipynb',
+    'Naive Bayes':              'Classification/naive_bayes.ipynb',
+    'Random Forest':            'Classification/random_forest_classification.ipynb',
+    'XGBoost':                  'Classification/xg_boost.ipynb',
+    'CNNs':                     'Classification/image_classification.ipynb',
+    'Linear Regression':        'Regression/simple_linear_regression.ipynb',
+    'Polynomial Regression':    'Regression/polynomial_regression.ipynb',
+    'Regression Trees':         'Regression/decision_tree_regression.ipynb',
+    'Data Preprocessing':       'Preprocessing/data_preprocessing_tools.ipynb',
+    'Feature Selection':        'Preprocessing/feature_reduction.ipynb',
+    'PCA':                      'Preprocessing/principal_component_analysis.ipynb',
+    'GANs':                     'Generative_Models/GAN.ipynb',
+    'Sentiment Analysis':       'NLP/natural_language_processing.ipynb',
+  };
+
+  function showNotebookLink(label) {
+    const el = document.getElementById('ni-notebook');
+    const path = NOTEBOOK_LINKS[label];
+    if (!path) { el.style.display = 'none'; return; }
+    const url = `https://mybinder.org/v2/gh/Dash10107/learn-ml-by-doing/main?labpath=${encodeURIComponent(path)}`;
+    el.innerHTML = `<a href="${url}" target="_blank" rel="noopener"
+      style="font-size:11px;color:#e67e22;text-decoration:none;display:inline-flex;align-items:center;gap:4px;
+             background:rgba(230,126,34,0.07);border-radius:6px;padding:3px 8px;border:1px solid rgba(230,126,34,0.2);">
+      📓 Interactive notebook ↗
+    </a>`;
+    el.style.display = 'block';
   }
 
   // Grokipedia page slugs for all nodes (searched via API, curated for ML relevance)
@@ -1227,6 +1258,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
     document.getElementById('node-info').style.display = 'block';
     // Show paper / repo links
     showPaperLinks(node.label);
+    // Show notebook link
+    showNotebookLink(node.label);
     // Fetch Grokipedia summary
     fetchWikiSummary(node.label);
     // Reset slider to 1
