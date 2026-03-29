@@ -229,6 +229,11 @@
       <label class="toggle-switch"><input type="checkbox" id="showGlow"><span class="toggle-slider"></span></label>
     </div>
 
+    <div class="toggle-row" style="margin-top:8px;">
+      <span class="toggle-label">▶ Has YouTube tutorial</span>
+      <label class="toggle-switch"><input type="checkbox" id="filterYouTube"><span class="toggle-slider"></span></label>
+    </div>
+
     <div class="section-title" style="margin-top:14px">Connection Filter</div>
     <div class="toggle-row">
       <span class="toggle-label">Same-category</span>
@@ -364,7 +369,7 @@ const LEVEL_LABELS = ["Foundations","Core Concepts","Classical ML","Intermediate
 // ── State ────────────────────────────────────────────────────────────────
 const state = {
   labels: true, links: true, arrows: true, particles: true, glow: false,
-  linkSameCat: true, linkCrossCat: true, linkUp: true, linkSame: true, linkIncoming: true, linkOutgoing: true,
+  linkSameCat: true, linkCrossCat: true, linkUp: true, linkSame: true, linkIncoming: true, linkOutgoing: true, youtubeOnly: false,
   hiddenCats: new Set(), hiddenLevels: new Set(),
   highlighted: null, highlightNodes: new Set(), highlightLinks: new Set(),
 };
@@ -390,6 +395,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
   function getFilteredData() {
     const visNodes = allNodes.filter(n => {
       if (state.hiddenCats.has(n.category) || state.hiddenLevels.has(n.level)) return false;
+      if (state.youtubeOnly && !(PAPER_LINKS[n.label] && PAPER_LINKS[n.label].youtube)) return false;
       if (currentLayout === 'time') {
         const yr = NODE_YEARS[n.label] ?? NODE_YEARS[n.id] ?? 2000;
         if (yr < tlStartYear || yr > tlEndYear) return false;
@@ -1257,6 +1263,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     linkSame:      v => { state.linkSame = v; refreshGraph(); },
     linkIncoming:  v => { state.linkIncoming = v; refreshGraph(); },
     linkOutgoing:  v => { state.linkOutgoing = v; refreshGraph(); },
+    filterYouTube: v => { state.youtubeOnly = v; refreshGraph(); },
   };
   Object.entries(toggles).forEach(([id, fn]) => {
     const el = document.getElementById(id);
@@ -1342,8 +1349,10 @@ fetch('graph.json').then(r => r.json()).then(data => {
       const el = document.getElementById(id);
       if (el) { el.checked=true; }
     });
+    const ytEl = document.getElementById('filterYouTube');
+    if (ytEl) ytEl.checked = false;
     Object.assign(state, {labels:true,links:true,arrows:true,particles:true,glow:true,
-      linkSameCat:true,linkCrossCat:true,linkUp:true,linkSame:true,linkIncoming:true,linkOutgoing:true});
+      linkSameCat:true,linkCrossCat:true,linkUp:true,linkSame:true,linkIncoming:true,linkOutgoing:true,youtubeOnly:false});
     refreshGraph();
     Graph.zoomToFit(400, 80);
   };
