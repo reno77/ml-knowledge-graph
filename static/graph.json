@@ -2871,6 +2871,13 @@
       "color": "#a01a1a"
     },
     {
+      "id": "TurboQuant",
+      "label": "TurboQuant",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a"
+    },
+    {
       "id": "Model Inference",
       "label": "Model Inference",
       "level": 5,
@@ -6178,6 +6185,10 @@
       "to": "Quantization-Aware Training"
     },
     {
+      "from": "Quantization & Pruning",
+      "to": "TurboQuant"
+    },
+    {
       "from": "Post-Training Quantization",
       "to": "GPTQ"
     },
@@ -6188,6 +6199,10 @@
     {
       "from": "Post-Training Quantization",
       "to": "GGUF"
+    },
+    {
+      "from": "Post-Training Quantization",
+      "to": "TurboQuant"
     },
     {
       "from": "Quantization-Aware Training",
@@ -6203,6 +6218,14 @@
     },
     {
       "from": "GGUF",
+      "to": "Edge AI"
+    },
+    {
+      "from": "TurboQuant",
+      "to": "vLLM"
+    },
+    {
+      "from": "TurboQuant",
       "to": "Edge AI"
     },
     {
