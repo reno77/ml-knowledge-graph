@@ -64,6 +64,20 @@
       "color": "#1a6985"
     },
     {
+      "id": "PageRank",
+      "label": "PageRank",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
+      "id": "Eigenvector Centrality",
+      "label": "Eigenvector Centrality",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a"
+    },
+    {
       "id": "Linear Programming",
       "label": "Linear Programming",
       "level": 0,
@@ -3884,6 +3898,14 @@
       "to": "NMF"
     },
     {
+      "from": "Linear Algebra",
+      "to": "Eigenvector Centrality"
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "PageRank"
+    },
+    {
       "from": "Calculus",
       "to": "Gradient Descent"
     },
@@ -4001,6 +4023,34 @@
     },
     {
       "from": "Graph Theory",
+      "to": "Knowledge Graphs"
+    },
+    {
+      "from": "Graph Theory",
+      "to": "PageRank"
+    },
+    {
+      "from": "Graph Theory",
+      "to": "Eigenvector Centrality"
+    },
+    {
+      "from": "PageRank",
+      "to": "Eigenvector Centrality"
+    },
+    {
+      "from": "PageRank",
+      "to": "Graph Neural Networks"
+    },
+    {
+      "from": "PageRank",
+      "to": "Node2Vec"
+    },
+    {
+      "from": "Eigenvector Centrality",
+      "to": "Graph Neural Networks"
+    },
+    {
+      "from": "Eigenvector Centrality",
       "to": "Knowledge Graphs"
     },
     {

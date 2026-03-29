@@ -11,6 +11,8 @@ NODES = {
     "Numerical Methods":           (0, "foundation"),
     "Set Theory":                  (0, "foundation"),
     "Graph Theory":                (0, "foundation"),
+    "PageRank":                    (1, "core"),
+    "Eigenvector Centrality":      (1, "core"),
     "Linear Programming":          (0, "foundation"),
     "Dynamic Programming":         (0, "foundation"),
     "Matrix Decomposition":        (0, "foundation"),
@@ -620,6 +622,11 @@ EDGES = [
     ("Python", "Feature Engineering"), ("Python", "Data Preprocessing"), ("Python", "Pipeline Design"),
     ("Graph Theory", "Graph Neural Networks"), ("Graph Theory", "Message Passing"),
     ("Graph Theory", "Knowledge Graphs"),
+    ("Graph Theory", "PageRank"), ("Graph Theory", "Eigenvector Centrality"),
+    ("Linear Algebra", "Eigenvector Centrality"), ("Linear Algebra", "PageRank"),
+    ("PageRank", "Eigenvector Centrality"),
+    ("PageRank", "Graph Neural Networks"), ("Eigenvector Centrality", "Graph Neural Networks"),
+    ("PageRank", "Node2Vec"), ("Eigenvector Centrality", "Knowledge Graphs"),
 
     # DeepSeek research edges
     ("Mixture of Experts", "DeepSeekMoE"),
