@@ -5369,6 +5369,116 @@
       "summary": "A bigram language model predicts the next token based solely on the previous token, using a learned frequency table or lookup matrix. Despite its simplicity (no hidden state or attention), it serves as the baseline starting point for understanding language modeling."
     },
     {
+      "id": "SimpleViT",
+      "label": "SimpleViT",
+      "level": 5,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": 161.98,
+      "sy": 234.6,
+      "sz": 180.82,
+      "summary": "SimpleViT is a streamlined Vision Transformer that removes unnecessary complexities from the original ViT (like CLS token pooling) in favor of global average pooling, simpler patch embedding, and modern training recipes. Despite its simplicity, it achieves competitive or superior performance to more complex ViT variants."
+    },
+    {
+      "id": "DeepViT",
+      "label": "DeepViT",
+      "level": 5,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": 126.98,
+      "sy": 289.6,
+      "sz": 145.82,
+      "summary": "DeepViT addresses the attention collapse problem in deep Vision Transformers through a re-attention mechanism that regenerates attention maps by mixing information across heads. This allows training much deeper ViT models (32+ layers) without the performance saturation seen in standard ViT."
+    },
+    {
+      "id": "CaiT",
+      "label": "CaiT",
+      "level": 5,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": 176.98,
+      "sy": 269.6,
+      "sz": 190.82,
+      "summary": "CaiT (Class-Attention in Image Transformers) separates self-attention among patches from class-attention for classification into distinct stages. Patches first interact through self-attention layers, then a separate class token attends to the processed patches, improving training stability and performance in deeper models."
+    },
+    {
+      "id": "CrossViT",
+      "label": "CrossViT",
+      "level": 5,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": 111.98,
+      "sy": 244.6,
+      "sz": 200.82,
+      "summary": "CrossViT processes images at two different scales using dual transformer branches (small-patch and large-patch) and fuses information between them via cross-attention. This multi-scale approach captures both fine-grained and global features more effectively than single-scale Vision Transformers."
+    },
+    {
+      "id": "MobileViT",
+      "label": "MobileViT",
+      "level": 5,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": -137.69,
+      "sy": 332.44,
+      "sz": 8.2,
+      "summary": "MobileViT combines the local spatial modeling of MobileNet-style depthwise convolutions with the global representation learning of transformers. It replaces local processing in MobileNetV2 blocks with transformer layers, achieving strong performance on mobile devices with significantly fewer parameters than standard ViT."
+    },
+    {
+      "id": "CvT",
+      "label": "CvT",
+      "level": 5,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": 151.98,
+      "sy": 299.6,
+      "sz": 135.82,
+      "summary": "CvT (Convolutional Vision Transformer) introduces convolutional token embedding and convolutional projection layers into the transformer architecture, bringing the benefits of CNNs (shift, scale, distortion invariance) to ViT while maintaining the dynamic attention and global context of transformers."
+    },
+    {
+      "id": "CCT",
+      "label": "CCT",
+      "level": 5,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": 116.98,
+      "sy": 279.6,
+      "sz": 175.82,
+      "summary": "CCT (Compact Convolutional Transformer) replaces ViT's linear patch embedding with a convolutional tokenizer, enabling the model to work effectively on smaller datasets without extensive data augmentation or pre-training. It achieves strong accuracy on CIFAR-10/100 with far fewer parameters than standard ViT."
+    },
+    {
+      "id": "NesT",
+      "label": "NesT",
+      "level": 5,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": -309.34,
+      "sy": 451.28,
+      "sz": -122.34,
+      "summary": "NesT (Nested Hierarchical Transformer) organizes image patches into a hierarchy of nested groups, applying local self-attention within groups before progressively merging them. This hierarchical structure captures multi-scale features while maintaining computational efficiency through restricted attention windows."
+    },
+    {
+      "id": "NaViT",
+      "label": "NaViT",
+      "level": 5,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": 186.98,
+      "sy": 249.6,
+      "sz": 150.82,
+      "summary": "NaViT (Native Resolution ViT) processes images at their native resolution by packing variable-length patch sequences from different images into a single batch using sequence packing. This eliminates the need for resizing or padding, improving both training efficiency and performance on diverse image sizes."
+    },
+    {
+      "id": "ViViT",
+      "label": "ViViT",
+      "level": 5,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": 101.98,
+      "sy": 229.6,
+      "sz": 140.82,
+      "summary": "ViViT (Video Vision Transformer) extends ViT to video understanding by extracting spatiotemporal tokens from video clips. It explores multiple factorization strategies for spatial and temporal attention, enabling efficient video classification while capturing both appearance and motion features."
+    },
+    {
       "id": "Generalist Agents",
       "label": "Generalist Agents",
       "level": 6,
@@ -6537,6 +6647,14 @@
       "to": "3D CNNs"
     },
     {
+      "from": "CNNs",
+      "to": "CvT"
+    },
+    {
+      "from": "CNNs",
+      "to": "CCT"
+    },
+    {
       "from": "Residual Networks",
       "to": "Vision Transformers"
     },
@@ -6559,6 +6677,10 @@
     {
       "from": "MobileNet",
       "to": "ShuffleNet"
+    },
+    {
+      "from": "MobileNet",
+      "to": "MobileViT"
     },
     {
       "from": "EfficientNet",
@@ -7039,6 +7161,46 @@
     {
       "from": "Vision Transformers",
       "to": "DINOv2"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "SimpleViT"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "DeepViT"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "CaiT"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "CrossViT"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "NaViT"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "NesT"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "ViViT"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "CvT"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "CCT"
+    },
+    {
+      "from": "Vision Transformers",
+      "to": "MobileViT"
     },
     {
       "from": "CLIP",
