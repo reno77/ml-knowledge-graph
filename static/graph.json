@@ -71,8 +71,8 @@
       "color": "#c17d1a"
     },
     {
-      "id": "Eigenvector Centrality",
-      "label": "Eigenvector Centrality",
+      "id": "Eigenvectors & Eigenvalues",
+      "label": "Eigenvectors & Eigenvalues",
       "level": 1,
       "category": "core",
       "color": "#c17d1a"
@@ -3899,7 +3899,7 @@
     },
     {
       "from": "Linear Algebra",
-      "to": "Eigenvector Centrality"
+      "to": "Eigenvectors & Eigenvalues"
     },
     {
       "from": "Linear Algebra",
@@ -4031,11 +4031,11 @@
     },
     {
       "from": "Graph Theory",
-      "to": "Eigenvector Centrality"
+      "to": "Eigenvectors & Eigenvalues"
     },
     {
       "from": "PageRank",
-      "to": "Eigenvector Centrality"
+      "to": "Eigenvectors & Eigenvalues"
     },
     {
       "from": "PageRank",
@@ -4046,12 +4046,20 @@
       "to": "Node2Vec"
     },
     {
-      "from": "Eigenvector Centrality",
+      "from": "Eigenvectors & Eigenvalues",
       "to": "Graph Neural Networks"
     },
     {
-      "from": "Eigenvector Centrality",
+      "from": "Eigenvectors & Eigenvalues",
       "to": "Knowledge Graphs"
+    },
+    {
+      "from": "Eigenvectors & Eigenvalues",
+      "to": "PCA"
+    },
+    {
+      "from": "Eigenvectors & Eigenvalues",
+      "to": "Matrix Decomposition"
     },
     {
       "from": "Matrix Decomposition",
