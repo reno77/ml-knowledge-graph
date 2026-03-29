@@ -720,7 +720,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'LLM':                          { arxiv: '2005.14165', github: 'huggingface/transformers' },
     'Transformers':                 { arxiv: '1706.03762', github: 'huggingface/transformers' },
     'BERT':                         { arxiv: '1810.04805', github: 'google-research/bert' },
-    'GPT':                          { arxiv: '2005.14165', github: 'openai/gpt-2' },
+    'GPT':                          { arxiv: '2005.14165', github: 'openai/gpt-2', youtube: 'kCc8FmEb1nY' },
     'T5':                           { arxiv: '1910.10683', github: 'google-research/text-to-text-transfer-transformer' },
     'Vision Transformers':          { arxiv: '2010.11929', github: 'google-research/vision_transformer' },
     'CLIP':                         { arxiv: '2103.00020', github: 'openai/CLIP' },
@@ -748,7 +748,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Multi-Query Attention':        { arxiv: '1911.02150' },
     'Mixture of Experts (MoE)':     { arxiv: '2101.03961' },
     'Mixture of Experts':           { arxiv: '2101.03961' },
-    'BPE Tokenization':             { arxiv: '1508.07909' },
+    'BPE Tokenization':             { arxiv: '1508.07909', youtube: 'zduSFxRajkE', github: 'karpathy/minbpe' },
 
     // ── Self-Supervised / Contrastive ─────────────────────────────────────
     'SimCLR':                       { arxiv: '2002.05709', github: 'google-research/simclr' },
@@ -842,6 +842,17 @@ fetch('graph.json').then(r => r.json()).then(data => {
     // ── Continual Learning ─────────────────────────────────────────────────
     'Elastic Weight Consolidation': { arxiv: '1612.00796' },
     'Progressive Neural Networks':  { arxiv: '1606.04671' },
+
+    // ── Karpathy's teachings (YouTube + GitHub) ─────────────────────────
+    'Backpropagation':              { youtube: 'VMj-3S1tku0', github: 'karpathy/micrograd' },
+    'Autograd':                     { youtube: 'VMj-3S1tku0', github: 'karpathy/micrograd' },
+    'Bigram Language Model':        { youtube: 'PaCmpygFfXo', github: 'karpathy/makemore' },
+    'Character-level LM':          { youtube: 'PaCmpygFfXo', github: 'karpathy/makemore' },
+    'Neural Networks':              { youtube: 'VMj-3S1tku0', github: 'karpathy/micrograd' },
+    'LLM':                          { youtube: 'zjkBMFhNj_g' },
+    'Transformers':                 { arxiv: '1706.03762', youtube: 'kCc8FmEb1nY', github: 'karpathy/nanoGPT' },
+    'Word Embeddings':              { youtube: 'TCH_1BHY58I', github: 'karpathy/makemore' },
+    'RNNs':                         { youtube: 'PaCmpygFfXo', github: 'karpathy/char-rnn' },
   };
 
   function showPaperLinks(label) {
@@ -863,6 +874,13 @@ fetch('graph.json').then(r => r.json()).then(data => {
          ⌥ GitHub repo ↗
        </a>`
     );
+    if (entry.youtube) links.push(
+      `<a href="https://www.youtube.com/watch?v=${entry.youtube}" target="_blank" rel="noopener"
+         style="font-size:11px;color:#c00;text-decoration:none;display:inline-flex;align-items:center;gap:4px;
+                background:rgba(204,0,0,0.07);border-radius:6px;padding:3px 8px;border:1px solid rgba(204,0,0,0.2);">
+         ▶ YouTube lecture ↗
+       </a>`
+    );
     el.innerHTML = links.join('');
     el.style.display = 'flex';
   }
@@ -877,6 +895,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Active Learning':'Active_learning', 'AdaBoost':'AdaBoost',
     'AdaBoost.R2':'Boosting_(machine_learning)', 'Adapter Layers':'Adapter',
     'Adversarial Attacks':'Adversarial_Cybernetics', 'Adversarial Training':'Adversarial_Training',
+    'Autograd':'Automatic_differentiation', 'Bigram Language Model':'Bigram', 'Character-level LM':'Language_model',
     'Affinity Propagation':'Affinity_propagation', 'Agentic Workflows':'GitHub_Agentic_Workflows',
     'Agglomerative Clustering':'Hierarchical_clustering', 'AlexNet':'AlexNet',
     'Algorithms':'Speedcubing_Algorithms', 'Alignment':'Polar_alignment',
@@ -1517,7 +1536,8 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Loss Functions': 1805, 'Gradient Descent': 1847, 'Batch Gradient Descent': 1847,
     'Stochastic Gradient Descent': 1951, 'Mini-batch Gradient Descent': 1960,
     'Momentum (SGD)': 1964, 'Nesterov Accelerated Gradient': 1983,
-    'Backpropagation': 1986,
+    'Backpropagation': 1986, 'Autograd': 1970,
+    'Bigram Language Model': 1948, 'Character-level LM': 2015,
     'Regularization': 1963, 'Feature Engineering': 1990,
     'Cross-Validation': 1974, 'Bias-Variance Tradeoff': 1992,
     'Hyperparameter Tuning': 1990, 'Data Preprocessing': 1990,

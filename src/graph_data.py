@@ -520,6 +520,11 @@ NODES = {
     "Expert Parallelism":          (6, "advanced"),
     "Aletheia":                    (6, "advanced"),
 
+    # Karpathy's teachings
+    "Autograd":                    (1, "core"),
+    "Character-level LM":          (3, "neural"),
+    "Bigram Language Model":       (2, "core"),
+
     "Generalist Agents":           (6, "advanced"),
     "Embodied AI":                 (6, "advanced"),
     "Robotics Learning":           (6, "advanced"),
@@ -591,6 +596,13 @@ EDGES = [
     ("Monte Carlo Methods", "MCTS"), ("Monte Carlo Methods", "Offline RL"),
     ("Maximum Likelihood", "EM Algorithm"), ("Maximum Likelihood", "VAE"),
     ("EM Algorithm", "Gaussian Mixture Models"),
+
+    # Karpathy's teachings edges
+    ("Calculus", "Autograd"), ("Autograd", "Backpropagation"),
+    ("Autograd", "Neural Networks"),
+    ("Probability & Stats", "Bigram Language Model"), ("Bigram Language Model", "Character-level LM"),
+    ("Character-level LM", "RNNs"), ("Character-level LM", "LSTMs"),
+    ("Bigram Language Model", "Word Embeddings"),
 
     # Core → supervised/unsupervised
     ("Loss Functions", "Linear Regression"), ("Loss Functions", "Logistic Regression"),

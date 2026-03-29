@@ -5336,6 +5336,39 @@
       "summary": "Aletheia is a mathematical research agent by Google DeepMind that iteratively generates, verifies, and revises solutions end-to-end in natural language. It extends inference-time scaling beyond competition-level problems to PhD-level mathematical research, combining advanced reasoning with tool use for navigating mathematical literature."
     },
     {
+      "id": "Autograd",
+      "label": "Autograd",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a",
+      "sx": -147.22,
+      "sy": 199.04,
+      "sz": -190.22,
+      "summary": "Autograd (automatic differentiation) is the engine that computes gradients of scalar-valued functions with respect to their inputs by building a computational graph and applying the chain rule in reverse. It is the foundation of backpropagation in neural networks. Karpathy's micrograd demonstrates this in ~100 lines of Python, implementing a scalar-valued autograd engine with a PyTorch-like API."
+    },
+    {
+      "id": "Character-level LM",
+      "label": "Character-level LM",
+      "level": 3,
+      "category": "neural",
+      "color": "#1a4da0",
+      "sx": 84.32,
+      "sy": 382.99,
+      "sz": -98.59,
+      "summary": "A character-level language model predicts the next character in a sequence, learning patterns at the individual character level rather than the word level. It can generate text in any style without requiring tokenization. Karpathy's makemore series builds these progressively using bigrams, MLPs, RNNs, GRUs, and transformers."
+    },
+    {
+      "id": "Bigram Language Model",
+      "label": "Bigram Language Model",
+      "level": 2,
+      "category": "core",
+      "color": "#c17d1a",
+      "sx": 382.71,
+      "sy": 223.75,
+      "sz": 6.18,
+      "summary": "A bigram language model predicts the next token based solely on the previous token, using a learned frequency table or lookup matrix. Despite its simplicity (no hidden state or attention), it serves as the baseline starting point for understanding language modeling. It is the first model built in Karpathy's makemore and nanoGPT series."
+    },
+    {
       "id": "Generalist Agents",
       "label": "Generalist Agents",
       "level": 6,
@@ -5536,6 +5569,10 @@
       "to": "Differential Equations"
     },
     {
+      "from": "Calculus",
+      "to": "Autograd"
+    },
+    {
       "from": "Probability & Stats",
       "to": "Loss Functions"
     },
@@ -5566,6 +5603,10 @@
     {
       "from": "Probability & Stats",
       "to": "Maximum Likelihood"
+    },
+    {
+      "from": "Probability & Stats",
+      "to": "Bigram Language Model"
     },
     {
       "from": "Python",
@@ -7914,6 +7955,30 @@
     {
       "from": "FP8 Training",
       "to": "DeepSeek-V3"
+    },
+    {
+      "from": "Autograd",
+      "to": "Backpropagation"
+    },
+    {
+      "from": "Autograd",
+      "to": "Neural Networks"
+    },
+    {
+      "from": "Character-level LM",
+      "to": "RNNs"
+    },
+    {
+      "from": "Character-level LM",
+      "to": "LSTMs"
+    },
+    {
+      "from": "Bigram Language Model",
+      "to": "Character-level LM"
+    },
+    {
+      "from": "Bigram Language Model",
+      "to": "Word Embeddings"
     },
     {
       "from": "Embodied AI",
