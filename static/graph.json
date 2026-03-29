@@ -2143,7 +2143,7 @@
       "sx": -253.98,
       "sy": 458.43,
       "sz": -297.31,
-      "summary": "Neural style transfer Neural style transfer is a computer vision technique that leverages convolutional neural networks (CNNs) to separate the content"
+      "summary": "A convolutional neural network (CNN) is a deep learning architecture consisting of interconnected layers that process grid-structured data, such as images, by applying learnable filters through convolution operations to automatically extract hierarchical features like edges, textures, and objects. Unlike fully connected neural networks, CNNs leverage parameter sharing and local connectivity to reduce computational complexity and enforce translation invariance, making them particularly effective for visual recognition tasks."
     },
     {
       "id": "Residual Networks",
