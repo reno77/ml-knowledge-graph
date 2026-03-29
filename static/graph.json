@@ -5333,7 +5333,7 @@
       "sx": 173.62,
       "sy": -108.75,
       "sz": 384.27,
-      "summary": "Aletheia is a mathematical research agent that iteratively generates, verifies, and revises solutions end-to-end in natural language. It extends inference-time scaling beyond competition-level problems to PhD-level mathematical research, combining advanced reasoning with tool use for navigating mathematical literature."
+      "summary": "Aletheia is a mathematical research agent by Google DeepMind that iteratively generates, verifies, and revises solutions end-to-end in natural language. It extends inference-time scaling beyond competition-level problems to PhD-level mathematical research, combining advanced reasoning with tool use for navigating mathematical literature."
     },
     {
       "id": "Generalist Agents",
@@ -6772,6 +6772,10 @@
       "to": "Multi-Token Prediction"
     },
     {
+      "from": "LLM",
+      "to": "Aletheia"
+    },
+    {
       "from": "Transformers",
       "to": "LLM"
     },
@@ -7894,10 +7898,6 @@
     {
       "from": "DeepSeek-V3",
       "to": "Expert Parallelism"
-    },
-    {
-      "from": "DeepSeek-R1",
-      "to": "Aletheia"
     },
     {
       "from": "DeepSeekMoE",

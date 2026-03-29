@@ -578,7 +578,7 @@ EDGES = [
     ("Pipeline Parallelism", "DualPipe"), ("DeepSeek-V3", "DualPipe"),
     ("Mixture of Experts", "Expert Parallelism"), ("Model Parallelism", "Expert Parallelism"),
     ("DeepSeek-V3", "Expert Parallelism"),
-    ("DeepSeek-R1", "Aletheia"), ("AI Agents", "Aletheia"),
+    ("LLM", "Aletheia"), ("AI Agents", "Aletheia"),
     ("Chain-of-Thought", "Aletheia"),
     ("Bayesian Statistics", "Bayesian Linear Regression"), ("Bayesian Statistics", "Gaussian Process"),
     ("Bayesian Statistics", "MAP Estimation"), ("Bayesian Statistics", "EM Algorithm"),
