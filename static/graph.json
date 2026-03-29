@@ -196,7 +196,7 @@
       "sx": 218.9,
       "sy": -537.6,
       "sz": -178.14,
-      "summary": "Documenting an undocumented SQL Server database involves reverse-engineering the schema directly from the live database without any prior documentation. The best free tools for this purpose include SchemaSpy, DBeaver, and SchemaCrawler. SchemaSpy is\u2026"
+      "summary": "SQL (Structured Query Language) is the standard language for managing and querying relational databases. In machine learning, SQL is essential for data extraction, preprocessing, feature engineering, and managing training datasets. Proficiency in SQL and database design is a foundational skill for data scientists working with structured data at scale."
     },
     {
       "id": "Data Structures",
@@ -1758,7 +1758,7 @@
       "sx": -1088.71,
       "sy": -116.81,
       "sz": -183.28,
-      "summary": "Additive utility, also referred to as additively separable utility, is a representation of preferences in economic decision theory where the overall utility of a multi-attribute outcome or consumption bundle is expressed as the sum of individual uti\u2026"
+      "summary": "DART (Dropouts meet Multiple Additive Regression Trees) is a gradient boosting variant that uses dropout on ensemble members during training to address the over-specialization problem in boosted trees. By randomly dropping trees when computing gradients, DART prevents later trees from only correcting residuals of earlier ones, leading to more balanced ensembles."
     },
     {
       "id": "Snapshot Ensembles",
@@ -2165,7 +2165,7 @@
       "sx": -373.45,
       "sy": 358.88,
       "sz": -203.63,
-      "summary": "Deformable Convolutional Networks (DCN) is a 2017 convolutional neural network architecture extension that learns 2D offsets for sampling locations in convolution kernels, allowing adaptive, geometrically-aware receptive fields that significantly im\u2026"
+      "summary": "DenseNet (Densely Connected Convolutional Networks) connects each layer to every other layer in a feed-forward fashion within dense blocks. Each layer receives feature maps from all preceding layers, enabling feature reuse, strengthening gradient flow, and substantially reducing the number of parameters compared to traditional CNNs."
     },
     {
       "id": "MobileNet",
@@ -2473,7 +2473,7 @@
       "sx": -275.11,
       "sy": 410.49,
       "sz": -333.09,
-      "summary": "3D reconstruction 3D reconstruction is the process of generating digital three-dimensional representations of objects, scenes, or environments from two-dimensional"
+      "summary": "3D Convolutional Neural Networks extend 2D convolutions to process volumetric data by applying 3D filters that capture spatial and temporal features simultaneously. They are widely used in video understanding, medical imaging (CT/MRI scans), and 3D object recognition, where the third dimension carries important structural or temporal information."
     },
     {
       "id": "RNNs",
@@ -3078,7 +3078,7 @@
       "sx": -388.2,
       "sy": 374.06,
       "sz": -69.14,
-      "summary": "An alternative purchase network (APN) refers to commerce systems and platforms that enable the exchange, sharing, or gifting of goods and services as alternatives to conventional retail consumerism, often emphasizing community ties, sustainability,\u2026"
+      "summary": "RetNet (Retentive Network) is a transformer alternative that uses a multi-scale retention mechanism instead of attention, enabling parallel training, recurrent inference, and chunk-wise processing. It achieves training parallelism comparable to transformers while offering O(1) inference complexity and linear long-sequence modeling."
     },
     {
       "id": "RWKV",
@@ -3100,7 +3100,7 @@
       "sx": 391.31,
       "sy": 76.55,
       "sz": 436.12,
-      "summary": "The Nonlocal Attention Operator (NAO), proposed in 2024, is a neural operator architecture that leverages attention mechanisms to enable nonlocal interactions in modeling physical systems. The attention mechanism acts as a double integral operator,\u2026"
+      "summary": "Hyena is a subquadratic attention alternative that replaces the attention mechanism with long convolutions gated by element-wise operations. It achieves comparable quality to transformers on language modeling while scaling to much longer sequences with O(N log N) complexity instead of O(N\u00b2), making it suitable for processing very long documents and genomic sequences."
     },
     {
       "id": "State Space Models",
@@ -3133,7 +3133,7 @@
       "sx": 220.02,
       "sy": -90.25,
       "sz": 361.09,
-      "summary": "The proposed K biases variant in transformer attention is defined as Softmax(1/\u221ad_h Q [k; K]\u1d40 + M) [0; V]. It adds only a learnable key bias (k), with a fixed zero value bias; concatenates k* to K but zeros for V. This variant shows that the att\u2026"
+      "summary": "Attention with Linear Biases (ALiBi) is a positional encoding method that adds a linear bias to attention scores based on the distance between query and key positions, instead of using learned or sinusoidal positional embeddings. It enables length extrapolation \u2014 training on short sequences while inferring on longer ones \u2014 with no additional parameters."
     },
     {
       "id": "RoPE",
@@ -3639,7 +3639,7 @@
       "sx": 311.95,
       "sy": 7.04,
       "sz": 318.55,
-      "summary": "Contrastive Language-Image Pre-training (CLIP) is a multimodal neural network technique developed by OpenAI that aligns images and text in a shared embedding space, enabling zero-shot classification and other cross-modal applications. Installation o\u2026"
+      "summary": "BEiT (Bidirectional Encoder representation from Image Transformers) is a self-supervised pre-training method for vision transformers that uses masked image modeling, analogous to BERT's masked language modeling. It tokenizes image patches into discrete visual tokens using a dVAE, then pre-trains by predicting masked tokens, learning rich visual representations transferable to downstream tasks."
     },
     {
       "id": "DINOv2",
@@ -3749,7 +3749,7 @@
       "sx": 412.37,
       "sy": -62.31,
       "sz": 358.74,
-      "summary": "In off-policy reinforcement learning, distribution shift occurs when the behavior policy generating data differs from the target policy, leading to biased"
+      "summary": "Proximal Policy Optimization (PPO) is a policy gradient reinforcement learning algorithm that uses a clipped surrogate objective to limit policy updates, preventing destructively large steps. It alternates between sampling data through interaction with the environment and optimizing a clipped objective function using stochastic gradient ascent, achieving strong performance with simpler implementation than TRPO."
     },
     {
       "id": "SAC",
@@ -3848,7 +3848,7 @@
       "sx": 365.57,
       "sy": -87.49,
       "sz": 304.77,
-      "summary": "The rlOptimizerOptions object in MATLAB's Reinforcement Learning Toolbox configures optimization settings for actors and critics during reinforcement learning training. It supports parameters such as LearnRate, GradientThreshold, and Algorithm (with\u2026"
+      "summary": "Deep Deterministic Policy Gradient (DDPG) is an off-policy actor-critic reinforcement learning algorithm for continuous action spaces. It combines DQN-style experience replay and target networks with a deterministic policy gradient, enabling stable learning in high-dimensional continuous control tasks like robotics and locomotion."
     },
     {
       "id": "Rainbow DQN",
@@ -3892,7 +3892,7 @@
       "sx": 351.26,
       "sy": 45.29,
       "sz": 320.68,
-      "summary": "Model-free (reinforcement learning) Model-free reinforcement learning is a paradigm within reinforcement learning where an agent learns an optimal policy directly from interactions with the..."
+      "summary": "Dreamer is a model-based reinforcement learning agent that learns a world model from experience and uses it to imagine trajectories for policy optimization, without interacting with the real environment. By learning compact latent dynamics models and using them for planning, Dreamer achieves strong performance on visual control tasks with significantly fewer environment interactions than model-free methods."
     },
     {
       "id": "World Models RL",
@@ -4288,7 +4288,7 @@
       "sx": 92.06,
       "sy": 14.91,
       "sz": 449.09,
-      "summary": "A reasoning model is a type of large language model (LLM) optimized for complex, multi-step reasoning tasks such as mathematics, coding, and logical inference, often through extended internal deliberation before producing a final answer. Unlike stan\u2026"
+      "summary": "ReAct (Reasoning + Acting) is a prompting framework for large language models that interleaves chain-of-thought reasoning with environment actions (like search or code execution). By generating reasoning traces alongside actions, ReAct enables LLMs to ground their reasoning in external information and take corrective actions based on observations."
     },
     {
       "id": "Tool Use",
@@ -4332,7 +4332,7 @@
       "sx": 219.71,
       "sy": 85.34,
       "sz": 95.57,
-      "summary": "Neural Networks is a monthly peer-reviewed scientific journal published by Elsevier, established in 1988 as the official archival publication of three leading neural network societies: the International Neural Network Society (INNS), the Asia-Pacifi\u2026"
+      "summary": "Memory-augmented neural networks extend standard architectures with external memory modules that the network can read from and write to. Examples include Neural Turing Machines and Memory Networks, which enable models to store and retrieve information beyond their fixed parameters, improving performance on tasks requiring long-term dependencies and reasoning."
     },
     {
       "id": "Multi-Agent Systems",
@@ -4970,7 +4970,7 @@
       "sx": 427.1,
       "sy": 143.75,
       "sz": 183.33,
-      "summary": "Grounded is a 1993 science fiction novel by David Bischoff, published by Pocket Books as the twenty-fifth installment in the numbered series of Star Trek: The Next Generation tie-in books. While responding to a distress call from a scientific statio\u2026"
+      "summary": "Grounded generation is a technique in NLP where language model outputs are constrained to be factually grounded in retrieved evidence or knowledge sources. By conditioning generation on verified documents or structured data, it reduces hallucinations and improves factual accuracy in tasks like question answering and summarization."
     },
     {
       "id": "Hallucination Detection",
@@ -5157,7 +5157,7 @@
       "sx": 152.71,
       "sy": -194.87,
       "sz": 230.99,
-      "summary": "The Transformer architecture used in large language models (LLMs). Resources to understand it include The Illustrated Transformer by Jay Alammar for visual intuition, the original paper \"Attention is All You Need,\" and Andrej Karpathy's \"Neural Netw\u2026"
+      "summary": "Robustness in machine learning refers to a model's ability to maintain performance under distribution shift, adversarial perturbations, noisy inputs, or corrupted data. It encompasses adversarial robustness (resistance to intentional attacks), distributional robustness (performance across data shifts), and corruption robustness (tolerance to natural noise)."
     },
     {
       "id": "Adversarial Attacks",
@@ -5190,7 +5190,7 @@
       "sx": 158.15,
       "sy": -184.07,
       "sz": 214.56,
-      "summary": "Generative adversarial network architecture A generative adversarial network (GAN) is a framework for training generative models through an adversarial process..."
+      "summary": "Certified robustness provides provable guarantees that a neural network's predictions remain unchanged under bounded input perturbations. Unlike empirical defenses, certified methods use techniques like randomized smoothing, interval bound propagation, or abstract interpretation to mathematically prove robustness within a specified radius."
     },
     {
       "id": "Data-Centric AI",
