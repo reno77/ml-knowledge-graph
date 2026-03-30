@@ -908,6 +908,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     // ── 3D / Science ──────────────────────────────────────────────────────
     'NeRF':                         { arxiv: '2003.08934', github: 'bmild/nerf' },
     '3D Gaussian Splatting':        { arxiv: '2308.04079', github: 'graphdeco-inria/gaussian-splatting' },
+    '4D Gaussian Splatting':        { arxiv: '2310.08528' },
     'AlphaFold':                    { arxiv: '2102.10360', github: 'google-deepmind/alphafold' },
 
     // ── Continual Learning ─────────────────────────────────────────────────
@@ -1028,7 +1029,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
 
   // Grokipedia page slugs for all nodes (searched via API, curated for ML relevance)
   const GROK_SLUGS = {
-    '3D CNNs':'3D_reconstruction', '3D Gaussian Splatting':'3D_Gaussian_Splatting',
+    '3D CNNs':'3D_reconstruction', '3D Gaussian Splatting':'3D_Gaussian_Splatting', '4D Gaussian Splatting':'3D_Gaussian_Splatting',
     'A3C':'Asynchronous_Advantage_Actor-Critic', 'AI Agents':'AI_agents',
     'AnimateDiff':'AnimateDiff', 'Aura Flow':'Aura_flow',
     'CFG Distillation':'Classifier-free_guidance', 'Classifier-Free Guidance':'Classifier-free_guidance',
@@ -1902,7 +1903,7 @@ fetch('graph.json').then(r => r.json()).then(data => {
     'Post-Training Quantization': 2018, 'Quantization-Aware Training': 2018,
     'GPTQ': 2023, 'AWQ': 2023, 'GGUF': 2023, 'Model Inference': 1990,
     'Knowledge Distillation': 2015, 'Sparse Models': 2019,
-    'NeRF': 2020, '3D Gaussian Splatting': 2023, 'AlphaFold': 2021,
+    'NeRF': 2020, '3D Gaussian Splatting': 2023, '4D Gaussian Splatting': 2023, 'AlphaFold': 2021,
     'World Models': 2018, 'Causal ML': 2009, 'Interpretability': 2015,
     'SHAP': 2017, 'LIME': 2016, 'Conformal Prediction': 2005,
     'AI Safety': 2014, 'Alignment': 2014, 'MLOps': 2019,

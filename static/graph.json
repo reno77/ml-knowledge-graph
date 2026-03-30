@@ -4610,6 +4610,17 @@
       "summary": "3D Gaussian Splatting is a state-of-the-art technique for generating high-quality, compact, and fast-rendering 3D models from scans in the context of 3D reconstruction; it supports dynamic lighting and reflections, outperforming methods like NeRF in\u2026"
     },
     {
+      "id": "4D Gaussian Splatting",
+      "label": "4D Gaussian Splatting",
+      "level": 6,
+      "category": "advanced",
+      "color": "#a01a1a",
+      "sx": -203.61,
+      "sy": -235.26,
+      "sz": -132.89,
+      "summary": "4D Gaussian Splatting extends 3D Gaussian Splatting to dynamic scenes by adding a temporal dimension, representing scenes as collections of Gaussians that evolve over time. It enables real-time rendering of dynamic 3D content by modeling deformations, motion, and appearance changes through time-conditioned Gaussian attributes, achieving high-quality novel view synthesis of moving scenes."
+    },
+    {
       "id": "AlphaFold",
       "label": "AlphaFold",
       "level": 6,
@@ -8556,6 +8567,10 @@
     {
       "from": "NeRF",
       "to": "3D Gaussian Splatting"
+    },
+    {
+      "from": "3D Gaussian Splatting",
+      "to": "4D Gaussian Splatting"
     },
     {
       "from": "AlphaFold",
