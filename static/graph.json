@@ -856,7 +856,7 @@
       "sx": 75.78,
       "sy": -48.96,
       "sz": -347.42,
-      "summary": "Focal dystonia Focal dystonia is a neurological movement disorder characterized by sustained or intermittent involuntary muscle contractions that affect"
+      "summary": "Focal Loss is a specialized objective function designed to address severe class imbalance in deep learning, particularly for dense object detection and semantic segmentation. It modifies the standard Cross-Entropy Loss by introducing a modulating factor that automatically down-weights easy-to-classify examples, forcing the model to focus its learning capacity on hard, misclassified examples."
     },
     {
       "id": "Triplet Loss",
