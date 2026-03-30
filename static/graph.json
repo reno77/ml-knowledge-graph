@@ -892,6 +892,39 @@
       "summary": "Cosine similarity measures the cosine of the angle between two vectors: $\\text{sim}(a, b) = \\frac{a \\cdot b}{\\|a\\| \\|b\\|}$, ranging from -1 (opposite) to 1 (identical direction). It is widely used for comparing embeddings in NLP (word2vec, sentence transformers), information retrieval, and recommendation systems, where magnitude is less important than direction."
     },
     {
+      "id": "Haar Cascades",
+      "label": "Haar Cascades",
+      "level": 2,
+      "category": "supervised",
+      "color": "#2d8a4e",
+      "sx": -24.25,
+      "sy": 146.46,
+      "sz": -202.66,
+      "summary": "Haar Cascades are a machine learning-based object detection method proposed by Viola and Jones in 2001. They use Haar-like rectangular features computed efficiently via integral images, combined with AdaBoost for feature selection and a cascade of classifiers for rapid rejection of non-object windows. Originally designed for real-time face detection, Haar Cascades were the dominant approach before deep learning and remain widely used in OpenCV."
+    },
+    {
+      "id": "SIFT",
+      "label": "SIFT",
+      "level": 2,
+      "category": "core",
+      "color": "#c17d1a",
+      "sx": -69.25,
+      "sy": 191.46,
+      "sz": -232.66,
+      "summary": "Scale-Invariant Feature Transform (SIFT) is a feature detection algorithm proposed by David Lowe in 1999 that identifies and describes local features in images invariant to scale, rotation, and partially to illumination and viewpoint changes. It detects keypoints in scale-space using Difference of Gaussians, assigns orientations from local gradient histograms, and generates 128-dimensional descriptors. SIFT was foundational for image matching, stitching, and object recognition before CNNs."
+    },
+    {
+      "id": "N-gram",
+      "label": "N-gram",
+      "level": 1,
+      "category": "core",
+      "color": "#c17d1a",
+      "sx": 280.89,
+      "sy": -176.56,
+      "sz": -45.02,
+      "summary": "An N-gram is a contiguous sequence of N items (characters or words) from a text. N-gram models estimate the probability of a word given its preceding N-1 words using frequency counts from a corpus: $P(w_n | w_1, ..., w_{n-1}) \\approx P(w_n | w_{n-N+1}, ..., w_{n-1})$. Unigrams (N=1), bigrams (N=2), and trigrams (N=3) were the foundation of statistical NLP before neural language models, used in speech recognition, machine translation, and text generation."
+    },
+    {
       "id": "Batch Gradient Descent",
       "label": "Batch Gradient Descent",
       "level": 2,
@@ -6129,6 +6162,10 @@
       "to": "PageRank"
     },
     {
+      "from": "Linear Algebra",
+      "to": "SIFT"
+    },
+    {
       "from": "Calculus",
       "to": "Gradient Descent"
     },
@@ -6183,6 +6220,10 @@
     {
       "from": "Probability & Stats",
       "to": "Maximum Likelihood"
+    },
+    {
+      "from": "Probability & Stats",
+      "to": "N-gram"
     },
     {
       "from": "Probability & Stats",
@@ -6434,6 +6475,14 @@
     },
     {
       "from": "Feature Engineering",
+      "to": "SIFT"
+    },
+    {
+      "from": "Feature Engineering",
+      "to": "Haar Cascades"
+    },
+    {
+      "from": "Feature Engineering",
       "to": "Linear Regression"
     },
     {
@@ -6591,6 +6640,34 @@
     {
       "from": "Triplet Loss",
       "to": "Contrastive Learning"
+    },
+    {
+      "from": "Haar Cascades",
+      "to": "CNNs"
+    },
+    {
+      "from": "Haar Cascades",
+      "to": "R-CNN"
+    },
+    {
+      "from": "SIFT",
+      "to": "CNNs"
+    },
+    {
+      "from": "N-gram",
+      "to": "Bigram Language Model"
+    },
+    {
+      "from": "N-gram",
+      "to": "Word Embeddings"
+    },
+    {
+      "from": "N-gram",
+      "to": "BPE Tokenization"
+    },
+    {
+      "from": "N-gram",
+      "to": "Naive Bayes"
     },
     {
       "from": "Stochastic Gradient Descent",

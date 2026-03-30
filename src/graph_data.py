@@ -86,6 +86,13 @@ NODES = {
     "Huber Loss":                  (1, "core"),
     "Cosine Similarity":           (1, "core"),
 
+    # Classical Computer Vision (pre-deep learning)
+    "Haar Cascades":               (2, "supervised"),
+    "SIFT":                        (2, "core"),
+
+    # Classical NLP
+    "N-gram":                      (1, "core"),
+
     # Gradient Descent variants (level 2)
     "Batch Gradient Descent":      (2, "core"),
     "Stochastic Gradient Descent": (2, "core"),
@@ -660,6 +667,17 @@ EDGES = [
     ("EM Algorithm", "Gaussian Mixture Models"),
 
     # Karpathy's teachings edges
+    # Classical NLP edges
+    ("Probability & Stats", "N-gram"), ("N-gram", "Bigram Language Model"),
+    ("N-gram", "Word Embeddings"), ("N-gram", "BPE Tokenization"),
+    ("N-gram", "Naive Bayes"),
+
+    # Classical CV edges
+    ("Feature Engineering", "SIFT"), ("Feature Engineering", "Haar Cascades"),
+    ("SIFT", "CNNs"), ("Haar Cascades", "CNNs"),
+    ("Haar Cascades", "R-CNN"),
+    ("Linear Algebra", "SIFT"),
+
     ("Calculus", "Autograd"), ("Autograd", "Backpropagation"),
     ("Autograd", "Neural Networks"),
     ("Probability & Stats", "Bigram Language Model"), ("Bigram Language Model", "Character-level LM"),
